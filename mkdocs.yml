@@ -9,6 +9,32 @@ nav:
   - About: about.md
   - Course Description: course-description.md
 
+  - Chapters:
+    - List of Chapters: chapters/index.md
+    - 1-Mathematical Foundations: chapters/01-mathematical-foundations/index.md
+    - 2-Functions and Properties: chapters/02-functions-and-their-properties/index.md
+    - 3-Rates of Change: chapters/03-rates-of-change/index.md
+    - 4-Linear Functions: chapters/04-linear-functions/index.md
+    - 5-Quadratics and Complex: chapters/05-quadratic-functions-and-complex-numbers/index.md
+    - 6-Polynomial Fundamentals: chapters/06-polynomial-fundamentals/index.md
+    - 7-Polynomial Zeros/Graphs: chapters/07-polynomial-zeros-and-graphs/index.md
+    - 8-Rational Functions: chapters/08-rational-functions/index.md
+    - 9-Function Transformations: chapters/09-function-transformations/index.md
+    - 10-Data Modeling: chapters/10-data-modeling-and-regression/index.md
+    - 11-Composition and Inverses: chapters/11-composition-and-inverse-functions/index.md
+    - 12-Sequences: chapters/12-sequences/index.md
+    - 13-Exponential Functions: chapters/13-exponential-functions/index.md
+    - 14-Logarithmic Functions: chapters/14-logarithmic-functions/index.md
+    - 15-Angles and Unit Circle: chapters/15-angles-and-the-unit-circle/index.md
+    - 16-Trigonometric Functions: chapters/16-trigonometric-functions/index.md
+    - 17-Trigonometric Graphs: chapters/17-trigonometric-graphs/index.md
+    - 18-Sinusoidal Modeling: chapters/18-sinusoidal-modeling/index.md
+    - 19-Trigonometric Identities: chapters/19-trigonometric-identities/index.md
+    - 20-Inverse Trig/Equations: chapters/20-inverse-trig-functions-and-equations/index.md
+    - 21-Polar and Parametric: chapters/21-polar-and-parametric-functions/index.md
+    - 22-Vectors: chapters/22-vectors/index.md
+    - 23-Matrices and Exam Prep: chapters/23-matrices-and-exam-preparation/index.md
+
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Course Description Assessment: learning-graph/course-description-assessment.md
