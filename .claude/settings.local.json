@@ -8,7 +8,9 @@
       "Bash(python ~/Documents/ws/claude-skills/skills/book-installer/scripts/trim-padding-from-image.py --help)",
       "Bash(/Users/dan/.claude/skills/book-installer/scripts/render-mascot-test.sh \"Prema\")",
       "Bash(python ~/Documents/ws/claude-skills/skills/book-installer/scripts/trim-padding-from-image.py)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(python3 /tmp/assemble_glossary.py)",
+      "Bash(grep -c '\\\\$[^$]' /Users/dan/Documents/ws/pre-calc/docs/glossary.md)"
     ]
   }
 }
