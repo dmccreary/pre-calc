@@ -3,7 +3,12 @@
     "allow": [
       "Bash(gh repo *)",
       "Bash(git fetch *)",
-      "Bash(git remote *)"
+      "Bash(git remote *)",
+      "Read(//Users/dan/Documents/ws/claude-skills/skills/book-installer/scripts/**)",
+      "Bash(python ~/Documents/ws/claude-skills/skills/book-installer/scripts/trim-padding-from-image.py --help)",
+      "Bash(/Users/dan/.claude/skills/book-installer/scripts/render-mascot-test.sh \"Prema\")",
+      "Bash(python ~/Documents/ws/claude-skills/skills/book-installer/scripts/trim-padding-from-image.py)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

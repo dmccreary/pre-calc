@@ -42,6 +42,7 @@ nav:
     - Quality Metrics: learning-graph/quality-metrics.md
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Mascot Test: learning-graph/mascot-test.md
 
   - Prompts:
     - Introduction: prompts/index.md
@@ -56,7 +57,7 @@ nav:
 
 theme:
   name: material
-  logo: img/logo-192.png
+  logo: img/mascot/neutral.png
   favicon: img/favicon.ico
   palette:
     primary: 'blue'
@@ -92,6 +93,7 @@ markdown_extensions:
 
 extra_css:
   - css/extra.css
+  - css/mascot.css
 
 extra_javascript:
   - js/extra.js
