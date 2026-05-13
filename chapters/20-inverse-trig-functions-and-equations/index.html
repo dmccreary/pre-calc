@@ -1,0 +1,2085 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Inverse trig functions — arcsine, arccosine, arctangent — with their restricted domains, ranges, and graphs, plus techniques for solving trigonometric equations including general solutions, solutions in an interval, inequalities, and multiple-angle equations.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/20-inverse-trig-functions-and-equations/">
+      
+      
+        <link rel="prev" href="../19-trigonometric-identities/">
+      
+      
+        <link rel="next" href="../21-polar-and-parametric-functions/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Inverse Trigonometric Functions and Equations - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Inverse Trigonometric Functions and Equations - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="Inverse trig functions — arcsine, arccosine, arctangent — with their restricted domains, ranges, and graphs, plus techniques for solving trigonometric equations including general solutions, solutions in an interval, inequalities, and multiple-angle equations." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/20-inverse-trig-functions-and-equations/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/20-inverse-trig-functions-and-equations/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Inverse Trigonometric Functions and Equations - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="Inverse trig functions — arcsine, arccosine, arctangent — with their restricted domains, ranges, and graphs, plus techniques for solving trigonometric equations including general solutions, solutions in an interval, inequalities, and multiple-angle equations." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/20-inverse-trig-functions-and-equations/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inverse-trigonometric-functions-and-equations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Inverse Trigonometric Functions and Equations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-need-for-inverse-trig-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Need for Inverse Trig Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arcsine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arcsine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arccosine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arccosine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arctangent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arctangent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-trig-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Trig Domains
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-trig-ranges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Trig Ranges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-trig-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Trig Graphs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverse Trig Graphs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-trig-graph-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse Trig Graph Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composing-trig-inverses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composing Trig Inverses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving-trig-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solving Trig Equations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Solutions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solutions-in-an-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solutions in an Interval
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trig-inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trig Inequalities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-angle-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Angle Equations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Angle Equations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-trig-equation-solution-unit-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Trig Equation Solution Unit Circle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-need-for-inverse-trig-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Need for Inverse Trig Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arcsine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arcsine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arccosine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arccosine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arctangent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arctangent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-trig-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Trig Domains
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-trig-ranges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Trig Ranges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-trig-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Trig Graphs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverse Trig Graphs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-trig-graph-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse Trig Graph Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composing-trig-inverses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composing Trig Inverses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving-trig-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solving Trig Equations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Solutions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solutions-in-an-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solutions in an Interval
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trig-inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trig Inequalities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-angle-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Angle Equations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Angle Equations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-trig-equation-solution-unit-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Trig Equation Solution Unit Circle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/20-inverse-trig-functions-and-equations/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="inverse-trigonometric-functions-and-equations">Inverse Trigonometric Functions and Equations</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter covers the inverse trigonometric functions and techniques for solving trigonometric equations. Students learn arcsine, arccosine, and arctangent, including their restricted domains, ranges, and graphs. The chapter explores composing trigonometric and inverse trigonometric functions. Students then develop skills for solving trigonometric equations, finding general solutions and solutions in specific intervals, solving trigonometric inequalities, and working with multiple angle equations.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 12 concepts from the learning graph:</p>
+<ol>
+<li>Arcsine</li>
+<li>Arccosine</li>
+<li>Arctangent</li>
+<li>Inverse Trig Domains</li>
+<li>Inverse Trig Ranges</li>
+<li>Inverse Trig Graphs</li>
+<li>Composing Trig Inverses</li>
+<li>Solving Trig Equations</li>
+<li>General Solutions</li>
+<li>Solutions in an Interval</li>
+<li>Trig Inequalities</li>
+<li>Multiple Angle Equations</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../11-composition-and-inverse-functions/">Chapter 11: Composition and Inverse Functions</a></li>
+<li><a href="../15-angles-and-the-unit-circle/">Chapter 15: Angles and the Unit Circle</a></li>
+<li><a href="../16-trigonometric-functions/">Chapter 16: Trigonometric Functions</a></li>
+<li><a href="../19-trigonometric-identities/">Chapter 19: Trigonometric Identities</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Undoing a Trig Function</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+Given an angle, a trig function returns a ratio. But often we have the ratio and need the angle. That's where inverse trig functions come in — they reverse the direction. In this chapter we define those inverses carefully and use them to solve equations.</p>
+</div>
+<h2 id="the-need-for-inverse-trig-functions">The Need for Inverse Trig Functions</h2>
+<p>Suppose we know that <span class="arithmatex">\( \sin\theta = 0.5 \)</span>. Which angle <span class="arithmatex">\( \theta \)</span> produced this value? Looking at the unit circle, we find <span class="arithmatex">\( \theta = \pi/6 \)</span> — but also <span class="arithmatex">\( \theta = 5\pi/6 \)</span>, <span class="arithmatex">\( \theta = \pi/6 + 2\pi \)</span>, <span class="arithmatex">\( \theta = 5\pi/6 + 2\pi \)</span>, and infinitely many other angles. A single output of 0.5 corresponds to infinitely many inputs.</p>
+<p>This is a problem: a well-defined function must return exactly one output for each input. Trig functions are not one-to-one on their entire domain, so their inverses cannot exist on that entire domain. The fix is to <strong>restrict</strong> the domain of each trig function to a piece where it is one-to-one, then invert that restricted piece.</p>
+<p>Before defining the three inverse functions, recall the rule from Chapter 11:</p>
+<ul>
+<li>A function has an inverse if and only if it is one-to-one — each output comes from exactly one input.</li>
+<li>We test this graphically with the horizontal line test.</li>
+<li>If a function fails the test, we can still define an inverse by restricting its domain to a piece that passes.</li>
+</ul>
+<p>Every inverse trig function you meet in this chapter is defined on a carefully chosen restricted domain.</p>
+<h2 id="arcsine">Arcsine</h2>
+<p>The <strong>arcsine</strong> function, written <span class="arithmatex">\( \arcsin(x) \)</span> or <span class="arithmatex">\( \sin^{-1}(x) \)</span>, answers the question: "Which angle has a sine value of <span class="arithmatex">\( x \)</span>?" Because sine repeats infinitely, we restrict our answer to the interval <span class="arithmatex">\( [-\pi/2, \pi/2] \)</span> — the right half of the unit circle, where sine is one-to-one.</p>
+<p>Formally:</p>
+<div class="arithmatex">\[ y = \arcsin(x) \iff \sin(y) = x \quad \text{and} \quad -\frac{\pi}{2} \leq y \leq \frac{\pi}{2} \]</div>
+<p>For example:</p>
+<ul>
+<li><span class="arithmatex">\( \arcsin(0) = 0 \)</span></li>
+<li><span class="arithmatex">\( \arcsin(1/2) = \pi/6 \)</span></li>
+<li><span class="arithmatex">\( \arcsin(1) = \pi/2 \)</span></li>
+<li><span class="arithmatex">\( \arcsin(-1/2) = -\pi/6 \)</span> (not <span class="arithmatex">\( 7\pi/6 \)</span>, because we must stay in the restricted range)</li>
+</ul>
+<div class="admonition mascot-warning">
+<p class="admonition-title"><span class="arithmatex">\( \sin^{-1} \)</span> Does Not Mean <span class="arithmatex">\( 1/\sin \)</span></p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Prema warning">
+The notation <span class="arithmatex">\( \sin^{-1}(x) \)</span> is a standard shorthand for the inverse function arcsine. It does <strong>not</strong> mean <span class="arithmatex">\( 1/\sin(x) \)</span> — that is cosecant, written <span class="arithmatex">\( \csc(x) \)</span>. This is one of the most common notation traps in trigonometry.</p>
+</div>
+<h2 id="arccosine">Arccosine</h2>
+<p>The <strong>arccosine</strong> function, written <span class="arithmatex">\( \arccos(x) \)</span> or <span class="arithmatex">\( \cos^{-1}(x) \)</span>, answers "Which angle has a cosine value of <span class="arithmatex">\( x \)</span>?" The restricted domain for cosine is <span class="arithmatex">\( [0, \pi] \)</span> — the upper half of the unit circle, where cosine is one-to-one.</p>
+<div class="arithmatex">\[ y = \arccos(x) \iff \cos(y) = x \quad \text{and} \quad 0 \leq y \leq \pi \]</div>
+<p>For example:</p>
+<ul>
+<li><span class="arithmatex">\( \arccos(1) = 0 \)</span></li>
+<li><span class="arithmatex">\( \arccos(1/2) = \pi/3 \)</span></li>
+<li><span class="arithmatex">\( \arccos(0) = \pi/2 \)</span></li>
+<li><span class="arithmatex">\( \arccos(-1/2) = 2\pi/3 \)</span></li>
+<li><span class="arithmatex">\( \arccos(-1) = \pi \)</span></li>
+</ul>
+<h2 id="arctangent">Arctangent</h2>
+<p>The <strong>arctangent</strong> function, written <span class="arithmatex">\( \arctan(x) \)</span> or <span class="arithmatex">\( \tan^{-1}(x) \)</span>, answers "Which angle has a tangent value of <span class="arithmatex">\( x \)</span>?" The restricted domain for tangent is the open interval <span class="arithmatex">\( (-\pi/2, \pi/2) \)</span>. The endpoints are excluded because tangent has vertical asymptotes there.</p>
+<div class="arithmatex">\[ y = \arctan(x) \iff \tan(y) = x \quad \text{and} \quad -\frac{\pi}{2} &lt; y &lt; \frac{\pi}{2} \]</div>
+<p>For example:</p>
+<ul>
+<li><span class="arithmatex">\( \arctan(0) = 0 \)</span></li>
+<li><span class="arithmatex">\( \arctan(1) = \pi/4 \)</span></li>
+<li><span class="arithmatex">\( \arctan(\sqrt{3}) = \pi/3 \)</span></li>
+<li><span class="arithmatex">\( \arctan(-1) = -\pi/4 \)</span></li>
+</ul>
+<h2 id="inverse-trig-domains">Inverse Trig Domains</h2>
+<p>The domain of an inverse trig function is the range of the corresponding original function. Sine and cosine only produce outputs between -1 and 1, so their inverses only accept inputs in that range. Tangent produces all real numbers, so arctangent accepts all real numbers.</p>
+<h2 id="inverse-trig-ranges">Inverse Trig Ranges</h2>
+<p>The range of an inverse trig function is the restricted domain we chose for the original. The specific choices are conventions adopted worldwide so that everyone computes the same numerical answer.</p>
+<p>The following table summarizes the domain and range for all three inverse functions:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Domain</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( \arcsin(x) \)</span></td>
+<td><span class="arithmatex">\( [-1, 1] \)</span></td>
+<td><span class="arithmatex">\( [-\pi/2, \pi/2] \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \arccos(x) \)</span></td>
+<td><span class="arithmatex">\( [-1, 1] \)</span></td>
+<td><span class="arithmatex">\( [0, \pi] \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \arctan(x) \)</span></td>
+<td>all real numbers</td>
+<td><span class="arithmatex">\( (-\pi/2, \pi/2) \)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="inverse-trig-graphs">Inverse Trig Graphs</h2>
+<p>The graph of an inverse function is the reflection of the original function across the line <span class="arithmatex">\( y = x \)</span>. Because the original functions have restricted domains, their inverse graphs consist of just one "branch" of what could otherwise be an infinite cascade of points.</p>
+<p>Key features of each graph:</p>
+<ul>
+<li><strong>Arcsine:</strong> S-shaped curve passing through the origin, bounded between <span class="arithmatex">\( y = -\pi/2 \)</span> and <span class="arithmatex">\( y = \pi/2 \)</span>, rising from left to right. Domain <span class="arithmatex">\( [-1, 1] \)</span>.</li>
+<li><strong>Arccosine:</strong> Curve descending from <span class="arithmatex">\( (-1, \pi) \)</span> to <span class="arithmatex">\( (1, 0) \)</span>, passing through <span class="arithmatex">\( (0, \pi/2) \)</span>. Domain <span class="arithmatex">\( [-1, 1] \)</span>.</li>
+<li><strong>Arctangent:</strong> S-shaped curve passing through the origin, with horizontal asymptotes at <span class="arithmatex">\( y = \pi/2 \)</span> (as <span class="arithmatex">\( x \to \infty \)</span>) and <span class="arithmatex">\( y = -\pi/2 \)</span> (as <span class="arithmatex">\( x \to -\infty \)</span>). Domain all real numbers.</li>
+</ul>
+<h4 id="diagram-inverse-trig-graph-explorer">Diagram: Inverse Trig Graph Explorer</h4>
+<iframe src="../../sims/inverse-trig-graphs/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Inverse Trig Graph Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> inverse-trig-graphs<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>Learning objective (Understand, L2, interpret): Interpret each inverse trig graph as the reflection of a restricted piece of the corresponding trig function across the line <span class="arithmatex">\( y = x \)</span>.</p>
+<p>Canvas layout:
+- Left half: original trig function graph on <span class="arithmatex">\( [-2\pi, 2\pi] \)</span> with the restricted piece highlighted
+- Right half: corresponding inverse trig graph
+- Dashed line <span class="arithmatex">\( y = x \)</span> drawn across the full display to make the reflection visible</p>
+<p>Visual elements:
+- Original trig curve in gray with the restricted piece in maroon
+- Inverse curve in maroon on the right panel
+- Horizontal asymptote lines in red for arctangent
+- Axis labels showing <span class="arithmatex">\( \pi/2 \)</span>, <span class="arithmatex">\( \pi \)</span>, etc. as tick marks
+- Moving point with coordinates displayed as the user drags the input slider</p>
+<p>Interactive controls:
+- Radio buttons: select sine, cosine, or tangent
+- Slider: input value on the inverse function
+- Toggle: show / hide reflection line <span class="arithmatex">\( y = x \)</span>
+- Toggle: animate reflection from original to inverse</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show the selected trig function's restricted domain highlighted
+- Stage 2: Show <span class="arithmatex">\( (a, b) \)</span> on the original graph corresponding to the user's input
+- Stage 3: Show the reflected point <span class="arithmatex">\( (b, a) \)</span> on the inverse graph
+- Stage 4: Display the numerical values and the inverse function notation</p>
+<p>Instructional Rationale: Side-by-side display plus slider-driven reflection makes the abstract "swap inputs and outputs" rule concrete. Students can verify each point's reflection before seeing the full curve.</p>
+<p>Implementation: p5.js with responsive canvas.</p>
+</details>
+<h2 id="composing-trig-inverses">Composing Trig Inverses</h2>
+<p><strong>Composing trig inverses</strong> means applying a trig function and its inverse one after the other. When the composition direction and the input are both within the restricted domain, the compositions collapse to the identity:</p>
+<p>[ \sin(\arcsin(x)) = x \quad \text{for } x \in [-1, 1] ]
+[ \arcsin(\sin(\theta)) = \theta \quad \text{for } \theta \in [-\pi/2, \pi/2] ]</p>
+<p>The same pattern holds for cosine and tangent, each on their own restricted interval. But when the input is outside the restricted interval, the composition may not equal the input. For example, <span class="arithmatex">\( \arcsin(\sin(3\pi/4)) = \arcsin(\sqrt{2}/2) = \pi/4 \)</span>, not <span class="arithmatex">\( 3\pi/4 \)</span>, because arcsine's range does not include <span class="arithmatex">\( 3\pi/4 \)</span>.</p>
+<p>A more interesting case is composing a trig function with a <strong>different</strong> inverse trig function, such as <span class="arithmatex">\( \cos(\arctan(x)) \)</span>. The standard move is to draw a right triangle with the angle <span class="arithmatex">\( \theta = \arctan(x) \)</span>:</p>
+<ul>
+<li>Since <span class="arithmatex">\( \tan\theta = x = x/1 \)</span>, the opposite side is <span class="arithmatex">\( x \)</span> and the adjacent side is 1.</li>
+<li>The hypotenuse is <span class="arithmatex">\( \sqrt{x^2 + 1} \)</span> by the Pythagorean theorem.</li>
+<li>Therefore <span class="arithmatex">\( \cos\theta = \text{adjacent}/\text{hypotenuse} = 1/\sqrt{x^2 + 1} \)</span>.</li>
+</ul>
+<p>So <span class="arithmatex">\( \cos(\arctan(x)) = \dfrac{1}{\sqrt{x^2 + 1}} \)</span> for all real <span class="arithmatex">\( x \)</span>.</p>
+<h2 id="solving-trig-equations">Solving Trig Equations</h2>
+<p>A <strong>trigonometric equation</strong> is an equation whose unknown appears inside a trig function. <strong>Solving trig equations</strong> draws on three tools: inverse trig functions (to find one solution), the unit circle (to find other solutions within one period), and the periodicity of trig functions (to extend to all solutions).</p>
+<p><strong>Basic solving procedure for an equation like <span class="arithmatex">\( \sin\theta = k \)</span>:</strong></p>
+<ol>
+<li><strong>Isolate the trig function</strong> on one side if needed.</li>
+<li><strong>Find the reference angle</strong> using the inverse: <span class="arithmatex">\( \alpha = \arcsin(|k|) \)</span>.</li>
+<li><strong>Identify all solutions in <span class="arithmatex">\( [0, 2\pi) \)</span></strong> using the unit circle and reference angle rules.</li>
+<li><strong>Extend to all solutions</strong> by adding integer multiples of the period.</li>
+</ol>
+<p>For example, solve <span class="arithmatex">\( \sin\theta = 1/2 \)</span>:</p>
+<ul>
+<li>Reference angle: <span class="arithmatex">\( \alpha = \arcsin(1/2) = \pi/6 \)</span>.</li>
+<li>Sine is positive in quadrants I and II, so solutions in <span class="arithmatex">\( [0, 2\pi) \)</span> are <span class="arithmatex">\( \theta = \pi/6 \)</span> and <span class="arithmatex">\( \theta = \pi - \pi/6 = 5\pi/6 \)</span>.</li>
+<li>The full solution set is <span class="arithmatex">\( \theta = \pi/6 + 2\pi n \)</span> or <span class="arithmatex">\( \theta = 5\pi/6 + 2\pi n \)</span> for any integer <span class="arithmatex">\( n \)</span>.</li>
+</ul>
+<h2 id="general-solutions">General Solutions</h2>
+<p>A <strong>general solution</strong> gives every angle that satisfies the equation, typically written with an integer parameter <span class="arithmatex">\( n \)</span> that runs over all integers. For sine and cosine, solutions repeat every <span class="arithmatex">\( 2\pi \)</span>; for tangent, solutions repeat every <span class="arithmatex">\( \pi \)</span>.</p>
+<p>The standard templates for the general solution of basic trig equations are:</p>
+<table>
+<thead>
+<tr>
+<th>Equation</th>
+<th>General solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( \sin\theta = k \)</span></td>
+<td><span class="arithmatex">\( \theta = \arcsin(k) + 2\pi n \)</span> or <span class="arithmatex">\( \theta = \pi - \arcsin(k) + 2\pi n \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \cos\theta = k \)</span></td>
+<td><span class="arithmatex">\( \theta = \pm\arccos(k) + 2\pi n \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \tan\theta = k \)</span></td>
+<td><span class="arithmatex">\( \theta = \arctan(k) + \pi n \)</span></td>
+</tr>
+</tbody>
+</table>
+<p>In all three rows, <span class="arithmatex">\( n \)</span> ranges over all integers. The tangent template is simpler because tangent's period is <span class="arithmatex">\( \pi \)</span>, not <span class="arithmatex">\( 2\pi \)</span>.</p>
+<h2 id="solutions-in-an-interval">Solutions in an Interval</h2>
+<p>Often a problem asks only for solutions within a specific interval, usually <span class="arithmatex">\( [0, 2\pi) \)</span> or <span class="arithmatex">\( [0, 360°) \)</span>. To find <strong>solutions in an interval</strong>, first write down the general solution, then choose integer values of <span class="arithmatex">\( n \)</span> that place <span class="arithmatex">\( \theta \)</span> inside the interval, discarding any that fall outside.</p>
+<p><strong>Example:</strong> Find all solutions of <span class="arithmatex">\( \cos\theta = -\sqrt{2}/2 \)</span> in <span class="arithmatex">\( [0, 2\pi) \)</span>.</p>
+<ul>
+<li>Reference angle: <span class="arithmatex">\( \alpha = \arccos(\sqrt{2}/2) = \pi/4 \)</span>.</li>
+<li>Cosine is negative in quadrants II and III, so solutions are <span class="arithmatex">\( \theta = \pi - \pi/4 = 3\pi/4 \)</span> and <span class="arithmatex">\( \theta = \pi + \pi/4 = 5\pi/4 \)</span>.</li>
+<li>Both values lie in <span class="arithmatex">\( [0, 2\pi) \)</span>, so the answer is <span class="arithmatex">\( \theta = 3\pi/4, \, 5\pi/4 \)</span>.</li>
+</ul>
+<h2 id="trig-inequalities">Trig Inequalities</h2>
+<p>A <strong>trigonometric inequality</strong> asks for the set of angles where a trig expression is less than, greater than, or not equal to some value. The standard approach:</p>
+<ol>
+<li>Solve the corresponding equation to find the <strong>boundary angles</strong>.</li>
+<li>Sketch the trig function's graph and mark the boundary angles.</li>
+<li>Read off the intervals where the graph lies on the correct side of the horizontal threshold.</li>
+</ol>
+<p><strong>Example:</strong> Solve <span class="arithmatex">\( \sin\theta &gt; 1/2 \)</span> on <span class="arithmatex">\( [0, 2\pi) \)</span>.</p>
+<ul>
+<li>Solve <span class="arithmatex">\( \sin\theta = 1/2 \)</span>: boundary angles are <span class="arithmatex">\( \pi/6 \)</span> and <span class="arithmatex">\( 5\pi/6 \)</span>.</li>
+<li>The sine graph is above <span class="arithmatex">\( y = 1/2 \)</span> between these two angles.</li>
+<li>Solution: <span class="arithmatex">\( \theta \in (\pi/6, 5\pi/6) \)</span>.</li>
+</ul>
+<h2 id="multiple-angle-equations">Multiple Angle Equations</h2>
+<p>A <strong>multiple angle equation</strong> contains a trig function of a multiple of <span class="arithmatex">\( \theta \)</span>, such as <span class="arithmatex">\( \sin(2\theta) = 1/2 \)</span> or <span class="arithmatex">\( \cos(3\theta) = 0 \)</span>. These require one extra step in the general-solution process because changing variables compresses the period.</p>
+<p><strong>Procedure for <span class="arithmatex">\( \sin(k\theta) = c \)</span>:</strong></p>
+<ol>
+<li>Let <span class="arithmatex">\( u = k\theta \)</span>, so the equation becomes <span class="arithmatex">\( \sin(u) = c \)</span>.</li>
+<li>Write the general solution for <span class="arithmatex">\( u \)</span>.</li>
+<li>Divide through by <span class="arithmatex">\( k \)</span> to get the general solution for <span class="arithmatex">\( \theta \)</span>.</li>
+<li>For problems on a specific interval, list enough integer values of <span class="arithmatex">\( n \)</span> to cover that interval.</li>
+</ol>
+<p><strong>Example:</strong> Find all solutions of <span class="arithmatex">\( \sin(2\theta) = 1/2 \)</span> in <span class="arithmatex">\( [0, 2\pi) \)</span>.</p>
+<ul>
+<li>Let <span class="arithmatex">\( u = 2\theta \)</span>. The range for <span class="arithmatex">\( \theta \in [0, 2\pi) \)</span> becomes <span class="arithmatex">\( u \in [0, 4\pi) \)</span>.</li>
+<li>Solve <span class="arithmatex">\( \sin u = 1/2 \)</span> on <span class="arithmatex">\( [0, 4\pi) \)</span>: <span class="arithmatex">\( u = \pi/6, \, 5\pi/6, \, 13\pi/6, \, 17\pi/6 \)</span>.</li>
+<li>Divide by 2: <span class="arithmatex">\( \theta = \pi/12, \, 5\pi/12, \, 13\pi/12, \, 17\pi/12 \)</span>.</li>
+</ul>
+<p>Notice we got four solutions instead of two because the doubled angle sweeps through two full cycles while <span class="arithmatex">\( \theta \)</span> sweeps through one. Here is the rule in general:</p>
+<table>
+<thead>
+<tr>
+<th>Equation form</th>
+<th>Solutions in <span class="arithmatex">\( [0, 2\pi) \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( \sin\theta = c \)</span> (one coefficient)</td>
+<td>up to 2</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \sin(2\theta) = c \)</span> (double angle)</td>
+<td>up to 4</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \sin(3\theta) = c \)</span> (triple angle)</td>
+<td>up to 6</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \sin(k\theta) = c \)</span></td>
+<td>up to <span class="arithmatex">\( 2k \)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-trig-equation-solution-unit-circle">Diagram: Trig Equation Solution Unit Circle</h4>
+<iframe src="../../sims/trig-equation-unit-circle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Trig Equation Solution Unit Circle</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> trig-equation-unit-circle<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>Learning objective (Apply, L3, solve): Apply unit-circle reasoning to find all solutions of a trigonometric equation in a given interval.</p>
+<p>Canvas layout:
+- Left half: unit circle with the relevant horizontal or vertical line corresponding to the equation's value
+- Right half: listing of solution angles in both exact form and decimal approximation</p>
+<p>Visual elements:
+- Unit circle with angle markers at multiples of <span class="arithmatex">\( \pi/6 \)</span> and <span class="arithmatex">\( \pi/4 \)</span>
+- Horizontal dashed line at <span class="arithmatex">\( y = c \)</span> (for sine equations) or vertical dashed line at <span class="arithmatex">\( x = c \)</span> (for cosine equations)
+- Intersection points of the dashed line with the unit circle marked as gold dots
+- Rays drawn from origin to each intersection, labeled with their angles</p>
+<p>Interactive controls:
+- Dropdown: choose sine, cosine, or tangent equation
+- Slider: value of <span class="arithmatex">\( c \)</span> in the equation
+- Dropdown: coefficient <span class="arithmatex">\( k \)</span> in multiple-angle equations (1, 2, 3)
+- Radio: interval <span class="arithmatex">\( [0, 2\pi) \)</span> or <span class="arithmatex">\( [0, 4\pi) \)</span> or general solution</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show the equation in standard form
+- Stage 2: Show the reference angle computed from arcsin, arccos, or arctan
+- Stage 3: Show all quadrants where the function takes the required sign
+- Stage 4: List all solutions in the selected interval with both exact and decimal values</p>
+<p>Instructional Rationale: Seeing the horizontal line slice the unit circle at one or two points directly explains why sine equations have up to two solutions per period. Animating <span class="arithmatex">\( c \)</span> across <span class="arithmatex">\( [-1, 1] \)</span> shows how the number of solutions changes at the boundary values.</p>
+<p>Implementation: p5.js with responsive canvas.</p>
+</details>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">Four Skills Working Together</p>
+<p><img src="../../img/mascot/encourage.png" class="mascot-admonition-img" alt="Prema encouraging">
+Solving a trig equation uses inverse functions to find the starting angle, the unit circle to find its partner angle, periodicity to generate all solutions, and intervals to pick the ones you need. If you can do each piece by itself, you can do them together — that's the whole strategy.</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>Inverse trig functions exist because we restrict each trig function to a domain where it is one-to-one: <span class="arithmatex">\( [-\pi/2, \pi/2] \)</span> for sine, <span class="arithmatex">\( [0, \pi] \)</span> for cosine, <span class="arithmatex">\( (-\pi/2, \pi/2) \)</span> for tangent.</li>
+<li>The domain of each inverse function is <span class="arithmatex">\( [-1, 1] \)</span> for arcsine and arccosine, all reals for arctangent. The range of each inverse function equals its parent's restricted domain.</li>
+<li>The notation <span class="arithmatex">\( \sin^{-1}(x) \)</span> means arcsine of <span class="arithmatex">\( x \)</span>, not <span class="arithmatex">\( 1/\sin(x) \)</span>.</li>
+<li>To solve a trig equation: find one solution using an inverse, find the other solution in one period using quadrant rules, then add the period times an integer to extend to the general solution.</li>
+<li>Multiple-angle equations produce more solutions per interval — if the coefficient is <span class="arithmatex">\( k \)</span>, expect up to <span class="arithmatex">\( 2k \)</span> solutions in <span class="arithmatex">\( [0, 2\pi) \)</span>.</li>
+<li>Trig inequalities are solved by locating the boundary angles and reading off the intervals where the graph satisfies the inequality.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../19-trigonometric-identities/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 19-Trigonometric Identities">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                19-Trigonometric Identities
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../21-polar-and-parametric-functions/" class="md-footer__link md-footer__link--next" aria-label="Next: 21-Polar and Parametric">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                21-Polar and Parametric
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

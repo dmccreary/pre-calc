@@ -1,0 +1,1979 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Polynomial definitions, degree, leading coefficient, arithmetic, factoring, the Factor and Remainder Theorems, and polynomial division.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/06-polynomial-fundamentals/">
+      
+      
+        <link rel="prev" href="../05-quadratic-functions-and-complex-numbers/">
+      
+      
+        <link rel="next" href="../07-polynomial-zeros-and-graphs/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Polynomial Fundamentals - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Polynomial Fundamentals - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="Polynomial definitions, degree, leading coefficient, arithmetic, factoring, the Factor and Remainder Theorems, and polynomial division." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/06-polynomial-fundamentals/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/06-polynomial-fundamentals/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Polynomial Fundamentals - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="Polynomial definitions, degree, leading coefficient, arithmetic, factoring, the Factor and Remainder Theorems, and polynomial division." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/06-polynomial-fundamentals/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#polynomial-fundamentals" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Polynomial Fundamentals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-polynomial" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Polynomial?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#degree-and-leading-coefficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degree and Leading Coefficient
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classifying-polynomials-by-number-of-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classifying Polynomials by Number of Terms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polynomial-addition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomial Addition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polynomial-multiplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomial Multiplication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factoring-polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factoring Polynomials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-factor-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Factor Theorem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-remainder-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Remainder Theorem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#long-division-of-polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Long Division of Polynomials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synthetic-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synthetic Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Synthetic Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-synthetic-division-animator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Synthetic Division Animator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-polynomial" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Polynomial?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#degree-and-leading-coefficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degree and Leading Coefficient
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classifying-polynomials-by-number-of-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classifying Polynomials by Number of Terms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polynomial-addition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomial Addition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polynomial-multiplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomial Multiplication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factoring-polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factoring Polynomials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-factor-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Factor Theorem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-remainder-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Remainder Theorem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#long-division-of-polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Long Division of Polynomials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synthetic-division" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synthetic Division
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Synthetic Division">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-synthetic-division-animator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Synthetic Division Animator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/06-polynomial-fundamentals/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="polynomial-fundamentals">Polynomial Fundamentals</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter introduces polynomial functions and their essential properties. Students learn about polynomial definitions, degree, leading coefficient, and the classification of polynomials as monomials, binomials, and trinomials. The chapter covers polynomial arithmetic (addition and multiplication), factoring techniques, the Factor Theorem, Remainder Theorem, and both synthetic and long division of polynomials. These algebraic tools are essential for analyzing polynomial behavior in the next chapter.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 13 concepts from the learning graph:</p>
+<ol>
+<li>Polynomial Definition</li>
+<li>Degree of a Polynomial</li>
+<li>Leading Coefficient</li>
+<li>Monomial</li>
+<li>Binomial</li>
+<li>Trinomial</li>
+<li>Polynomial Addition</li>
+<li>Polynomial Multiplication</li>
+<li>Factoring Polynomials</li>
+<li>Factor Theorem</li>
+<li>Remainder Theorem</li>
+<li>Synthetic Division</li>
+<li>Long Division of Polynomials</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-mathematical-foundations/">Chapter 1: Mathematical Foundations</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Beyond the Parabola</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+Linear functions had degree 1. Quadratic functions had degree 2. What happens when we allow the <span class="arithmatex">\( x \)</span> to be raised to any positive whole-number power? We get the polynomials — the largest and most versatile family we have met so far. This chapter builds the algebraic toolkit; Chapter 7 will study what their graphs look like.</p>
+</div>
+<h2 id="what-is-a-polynomial">What Is a Polynomial?</h2>
+<p>A <strong>polynomial</strong> in the variable <span class="arithmatex">\( x \)</span> is any finite sum of terms of the form <span class="arithmatex">\( a_k x^k \)</span>, where each <span class="arithmatex">\( a_k \)</span> is a real-number coefficient and each exponent <span class="arithmatex">\( k \)</span> is a non-negative integer. Written out in descending order of exponent, a general polynomial of degree <span class="arithmatex">\( n \)</span> looks like</p>
+<div class="arithmatex">\[ P(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 \]</div>
+<p>with <span class="arithmatex">\( a_n \neq 0 \)</span>. Every familiar function family we have studied so far — constants, lines, and parabolas — is a polynomial of small degree.</p>
+<p>Two rules in the definition do real work:</p>
+<ul>
+<li><strong>Non-negative integer exponents.</strong> The expression <span class="arithmatex">\( x^{1/2} = \sqrt{x} \)</span> is <em>not</em> a polynomial. Neither is <span class="arithmatex">\( x^{-1} = 1/x \)</span>. Only whole-number powers are allowed.</li>
+<li><strong>Finitely many terms.</strong> The infinite series <span class="arithmatex">\( 1 + x + x^2 + x^3 + \cdots \)</span> is not a polynomial. Polynomials have a highest power, called the degree.</li>
+</ul>
+<p>These two restrictions give polynomials their most useful property: they are completely tame. Every polynomial is defined for every real input, has a smooth unbroken graph, and can be evaluated using only multiplication and addition.</p>
+<h2 id="degree-and-leading-coefficient">Degree and Leading Coefficient</h2>
+<p>The <strong>degree</strong> of a polynomial is the largest exponent that appears with a non-zero coefficient. The <strong>leading coefficient</strong> is the coefficient of that highest-power term.</p>
+<p>For <span class="arithmatex">\( P(x) = 4x^3 - 7x + 2 \)</span>, the degree is 3 and the leading coefficient is 4. For <span class="arithmatex">\( Q(x) = -x^5 + x^2 - 9 \)</span>, the degree is 5 and the leading coefficient is <span class="arithmatex">\( -1 \)</span>. The constant polynomial <span class="arithmatex">\( R(x) = 6 \)</span> has degree 0 (every term is <span class="arithmatex">\( 6 x^0 \)</span>).</p>
+<p>Degree and leading coefficient together predict the most important qualitative feature of a polynomial — its <strong>end behavior</strong>, or what happens to <span class="arithmatex">\( P(x) \)</span> as <span class="arithmatex">\( x \)</span> runs toward <span class="arithmatex">\( \pm\infty \)</span>. We will use this link heavily in Chapter 7. Here we just note which piece of information controls which aspect:</p>
+<ul>
+<li>The <strong>degree</strong> determines how quickly <span class="arithmatex">\( P(x) \)</span> grows and whether the two ends of the graph point the same direction or opposite directions.</li>
+<li>The <strong>leading coefficient</strong> determines the sign of <span class="arithmatex">\( P(x) \)</span> for large <span class="arithmatex">\( |x| \)</span>.</li>
+<li>Lower-degree terms are negligible when <span class="arithmatex">\( |x| \)</span> is huge — they are dominated by <span class="arithmatex">\( a_n x^n \)</span>.</li>
+</ul>
+<h2 id="classifying-polynomials-by-number-of-terms">Classifying Polynomials by Number of Terms</h2>
+<p>Before a polynomial has many terms, it has a descriptive name that comes straight from Greek roots. We define these names now so the vocabulary is in place for the factoring techniques that follow.</p>
+<ul>
+<li>A <strong>monomial</strong> has exactly one term: <span class="arithmatex">\( 7x^4 \)</span>, <span class="arithmatex">\( -3x \)</span>, or the constant <span class="arithmatex">\( 5 \)</span>.</li>
+<li>A <strong>binomial</strong> has exactly two terms: <span class="arithmatex">\( x^2 - 9 \)</span> or <span class="arithmatex">\( 2x + 1 \)</span>.</li>
+<li>A <strong>trinomial</strong> has exactly three terms: <span class="arithmatex">\( x^2 + 5x + 6 \)</span> or <span class="arithmatex">\( 4x^3 - 2x + 7 \)</span>.</li>
+</ul>
+<p>Polynomials with four or more terms are simply called polynomials — no special short name is standard.</p>
+<p>Degree and term count answer different questions. A polynomial can be low-degree with many terms, or high-degree with few. The table below combines both descriptions for a handful of examples.</p>
+<table>
+<thead>
+<tr>
+<th>Polynomial</th>
+<th>Degree</th>
+<th>Leading coefficient</th>
+<th>Number of terms</th>
+<th>Common name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( 5 \)</span></td>
+<td>0</td>
+<td>5</td>
+<td>1</td>
+<td>Constant monomial</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 3x - 2 \)</span></td>
+<td>1</td>
+<td>3</td>
+<td>2</td>
+<td>Linear binomial</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x^2 + 5x + 6 \)</span></td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>Quadratic trinomial</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x^3 - 1 \)</span></td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>Cubic binomial</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 2x^4 - x^3 + 7x - 3 \)</span></td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>Quartic polynomial</td>
+</tr>
+</tbody>
+</table>
+<h2 id="polynomial-addition">Polynomial Addition</h2>
+<p>Adding two polynomials is as simple as combining <strong>like terms</strong> — terms with the same power of <span class="arithmatex">\( x \)</span>. Coefficients add; exponents stay the same. Writing both polynomials in descending order first keeps the work organized.</p>
+<div class="arithmatex">\[ (3x^3 + 2x^2 - x + 4) + (x^3 - 5x^2 + 7) \]</div>
+<p>Combining like terms:</p>
+<ul>
+<li><span class="arithmatex">\( x^3 \)</span> terms: <span class="arithmatex">\( 3x^3 + x^3 = 4x^3 \)</span></li>
+<li><span class="arithmatex">\( x^2 \)</span> terms: <span class="arithmatex">\( 2x^2 - 5x^2 = -3x^2 \)</span></li>
+<li><span class="arithmatex">\( x^1 \)</span> terms: <span class="arithmatex">\( -x \)</span> (only one present)</li>
+<li>Constant terms: <span class="arithmatex">\( 4 + 7 = 11 \)</span></li>
+</ul>
+<p>So the sum is <span class="arithmatex">\( 4x^3 - 3x^2 - x + 11 \)</span>. Subtraction works the same way after distributing the minus sign across the second polynomial. The degree of a sum is at most the larger of the two degrees — sometimes less, if the leading terms cancel.</p>
+<h2 id="polynomial-multiplication">Polynomial Multiplication</h2>
+<p>Multiplying polynomials uses the distributive property: every term of the first polynomial multiplies every term of the second, and like terms are combined at the end.</p>
+<p>For two binomials, the familiar <strong>FOIL</strong> pattern (First, Outer, Inner, Last) is just distribution organized by position:</p>
+<div class="arithmatex">\[ (x + 3)(x - 5) = x \cdot x + x \cdot (-5) + 3 \cdot x + 3 \cdot (-5) = x^2 - 2x - 15 \]</div>
+<p>For larger polynomials, distribute term by term. A short worked example:</p>
+<p>[ (x^2 + 2x - 1)(x + 4) ]
+[ = x^2(x + 4) + 2x(x + 4) - 1(x + 4) ]
+[ = (x^3 + 4x^2) + (2x^2 + 8x) + (-x - 4) ]
+[ = x^3 + 6x^2 + 7x - 4 ]</p>
+<p>The degree of a product is the sum of the degrees. A cubic times a quadratic produces a quintic (degree 5). This multiplicative degree rule is so reliable that it underpins the Fundamental Theorem of Algebra in Chapter 7.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Count the Degrees Before You Start</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema holding up a tip">
+Before multiplying two polynomials, add their degrees and write down the answer's degree. If your final product has the wrong degree, you made an arithmetic slip — the leading term calculation is the first place to check.</p>
+</div>
+<h2 id="factoring-polynomials">Factoring Polynomials</h2>
+<p><strong>Factoring</strong> reverses multiplication: given a polynomial, find smaller polynomials whose product equals it. Factoring is one of the most important operations in pre-calculus because the factored form immediately reveals the <strong>zeros</strong> of the polynomial — the inputs that make it equal to zero.</p>
+<p>Three factoring techniques cover most quadratic-and-up situations in this course:</p>
+<ul>
+<li><strong>Greatest common factor (GCF).</strong> Pull the largest common factor out of all terms. <span class="arithmatex">\( 6x^3 - 9x^2 = 3x^2(2x - 3) \)</span>.</li>
+<li><strong>Difference of squares.</strong> <span class="arithmatex">\( a^2 - b^2 = (a - b)(a + b) \)</span>. Example: <span class="arithmatex">\( x^2 - 25 = (x - 5)(x + 5) \)</span>.</li>
+<li><strong>Trinomial factoring.</strong> For <span class="arithmatex">\( x^2 + bx + c \)</span>, find two numbers that multiply to <span class="arithmatex">\( c \)</span> and add to <span class="arithmatex">\( b \)</span>. For <span class="arithmatex">\( x^2 + 5x + 6 \)</span>, the numbers 2 and 3 work: <span class="arithmatex">\( (x + 2)(x + 3) \)</span>.</li>
+</ul>
+<p>For higher-degree polynomials, factoring usually means first <em>finding</em> a zero <span class="arithmatex">\( r \)</span>, then dividing by <span class="arithmatex">\( (x - r) \)</span> to get a smaller polynomial. The two theorems below explain why that works.</p>
+<h2 id="the-factor-theorem">The Factor Theorem</h2>
+<p>The <strong>Factor Theorem</strong> is a direct link between algebra and geometry:</p>
+<div class="admonition info">
+<p class="admonition-title">Factor Theorem</p>
+<p>A polynomial <span class="arithmatex">\( P(x) \)</span> has <span class="arithmatex">\( (x - r) \)</span> as a factor <strong>if and only if</strong> <span class="arithmatex">\( P(r) = 0 \)</span>.</p>
+</div>
+<p>In other words, <span class="arithmatex">\( r \)</span> is a zero of the polynomial exactly when <span class="arithmatex">\( (x - r) \)</span> divides it evenly. Each real zero produces one linear factor, and each linear factor produces one real zero. This reciprocal relationship turns every zero-finding question into a factoring question, and vice versa.</p>
+<p>Example: is <span class="arithmatex">\( (x - 2) \)</span> a factor of <span class="arithmatex">\( P(x) = x^3 - 6x^2 + 11x - 6 \)</span>? Evaluate <span class="arithmatex">\( P(2) = 8 - 24 + 22 - 6 = 0 \)</span>. Yes — so <span class="arithmatex">\( (x - 2) \)</span> is a factor. The companion factor comes from dividing <span class="arithmatex">\( P(x) \)</span> by <span class="arithmatex">\( (x - 2) \)</span>, which is the subject of the next section.</p>
+<h2 id="the-remainder-theorem">The Remainder Theorem</h2>
+<p>The <strong>Remainder Theorem</strong> is a close cousin of the Factor Theorem:</p>
+<div class="admonition info">
+<p class="admonition-title">Remainder Theorem</p>
+<p>When a polynomial <span class="arithmatex">\( P(x) \)</span> is divided by <span class="arithmatex">\( (x - r) \)</span>, the remainder is <span class="arithmatex">\( P(r) \)</span>.</p>
+</div>
+<p>The Factor Theorem is the special case where that remainder is zero. But the Remainder Theorem is useful in its own right: it gives a quick way to evaluate a polynomial at a single point using division instead of direct substitution, and it tells you in advance what remainder to expect when you divide.</p>
+<p>Example: dividing <span class="arithmatex">\( P(x) = x^3 - 6x^2 + 11x - 6 \)</span> by <span class="arithmatex">\( (x - 4) \)</span> must leave a remainder of <span class="arithmatex">\( P(4) = 64 - 96 + 44 - 6 = 6 \)</span>. Before we even perform the division, we know the answer has a remainder of 6 — so <span class="arithmatex">\( (x - 4) \)</span> is <em>not</em> a factor.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">One Question, Two Theorems</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema thinking">
+The Remainder Theorem says "the remainder is <span class="arithmatex">\( P(r) \)</span>." The Factor Theorem says "the factor test is <span class="arithmatex">\( P(r) = 0 \)</span>." They are the same fact seen from two angles. Once you have one, you have the other for free.</p>
+</div>
+<h2 id="long-division-of-polynomials">Long Division of Polynomials</h2>
+<p>When the Remainder Theorem says the remainder is non-zero, we still might want the full quotient. <strong>Long division of polynomials</strong> is the algorithmic version of the long-division procedure used on numbers in grade school. The divisor, which can be any polynomial, is lined up against the dividend, and we eliminate one leading term at a time.</p>
+<p>Divide <span class="arithmatex">\( x^3 - 6x^2 + 11x - 6 \)</span> by <span class="arithmatex">\( (x - 2) \)</span>. Before reading the work below, note the three ingredients at each step: the current leading term of the dividend, the leading term of the divisor, and the quotient term that cancels them.</p>
+<div class="arithmatex">\[
+\begin{array}{r}
+x^2 - 4x + 3 \phantom{0} \\
+x - 2 \enclose{longdiv}{x^3 - 6x^2 + 11x - 6}
+\end{array}
+\]</div>
+<p>Step-by-step:</p>
+<ol>
+<li><span class="arithmatex">\( x^3 \div x = x^2 \)</span>. Multiply <span class="arithmatex">\( x^2(x - 2) = x^3 - 2x^2 \)</span> and subtract: new dividend tail is <span class="arithmatex">\( -4x^2 + 11x - 6 \)</span>.</li>
+<li><span class="arithmatex">\( -4x^2 \div x = -4x \)</span>. Multiply <span class="arithmatex">\( -4x(x - 2) = -4x^2 + 8x \)</span> and subtract: new tail is <span class="arithmatex">\( 3x - 6 \)</span>.</li>
+<li><span class="arithmatex">\( 3x \div x = 3 \)</span>. Multiply <span class="arithmatex">\( 3(x - 2) = 3x - 6 \)</span> and subtract: remainder is 0.</li>
+</ol>
+<p>Quotient: <span class="arithmatex">\( x^2 - 4x + 3 \)</span>. Remainder: 0. Dividing further: <span class="arithmatex">\( x^2 - 4x + 3 = (x - 1)(x - 3) \)</span>. So the original polynomial factors as <span class="arithmatex">\( (x - 2)(x - 1)(x - 3) \)</span>, with zeros 1, 2, and 3.</p>
+<h2 id="synthetic-division">Synthetic Division</h2>
+<p><strong>Synthetic division</strong> is a streamlined shortcut for the special case of dividing by a linear factor <span class="arithmatex">\( (x - r) \)</span>. Only the coefficients participate; powers of <span class="arithmatex">\( x \)</span> are tracked by position. The procedure is:</p>
+<ol>
+<li>Write the coefficients of the dividend in order of descending power, inserting 0s for any missing powers.</li>
+<li>Write <span class="arithmatex">\( r \)</span> (not <span class="arithmatex">\( -r \)</span>) in a box to the left.</li>
+<li>Bring down the first coefficient.</li>
+<li>Multiply by <span class="arithmatex">\( r \)</span>, add to the next coefficient, and repeat.</li>
+<li>The last number is the remainder; the others are the quotient's coefficients (one degree lower than the dividend).</li>
+</ol>
+<p>Applying synthetic division to <span class="arithmatex">\( (x^3 - 6x^2 + 11x - 6) \div (x - 2) \)</span>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>2 | 1  -6   11   -6
+  |      2   -8    6
+  ------------------
+    1  -4    3    0
+</code></pre></div></td></tr></table></div>
+<p>Quotient: <span class="arithmatex">\( x^2 - 4x + 3 \)</span>. Remainder: 0. Same answer as the long-division work above, obtained with a fraction of the writing.</p>
+<p>Synthetic division only works when the divisor is <span class="arithmatex">\( (x - r) \)</span> — a monic linear factor. For quadratic or higher-degree divisors, long division is required.</p>
+<p>Before the comparison table, notice the division method you choose depends on one question: is the divisor linear? If yes, prefer synthetic division for speed. If no, fall back to long division.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Long division</th>
+<th>Synthetic division</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Works for any divisor</td>
+<td>Yes</td>
+<td>Only for linear <span class="arithmatex">\( (x - r) \)</span></td>
+</tr>
+<tr>
+<td>Keeps powers of <span class="arithmatex">\( x \)</span> explicit</td>
+<td>Yes</td>
+<td>No (only coefficients)</td>
+</tr>
+<tr>
+<td>Faster for linear divisors</td>
+<td>Slower</td>
+<td>Much faster</td>
+</tr>
+<tr>
+<td>Reveals the remainder</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Recommended use</td>
+<td>Quadratic or higher divisors</td>
+<td>Testing a candidate zero</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-synthetic-division-animator">Diagram: Synthetic Division Animator</h4>
+<details>
+<summary>Step-by-step animation of synthetic division with tracked intermediate values</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> synthetic-division-animator<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim that performs synthetic division one step at a time, highlighting the currently active cells and annotating the arithmetic so students see each multiplication and addition.</p>
+<p>Learning objective (Bloom's Applying): Students will execute the synthetic-division procedure to divide a polynomial by a linear factor and verify the result using the Remainder Theorem.</p>
+<p>Visual elements:</p>
+<ul>
+<li>A three-row grid on the left: top row shows the coefficients of the dividend, middle row accumulates the "bring-down × r" values, bottom row shows the running result.</li>
+<li>A boxed <span class="arithmatex">\( r \)</span> value to the left of the grid.</li>
+<li>A cell highlighted in maroon for the current active position; an arrow showing the current multiplication and an arrow showing the current addition.</li>
+<li>On the right, a live status panel showing the quotient being built and the final remainder.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Input boxes for the dividend coefficients and for <span class="arithmatex">\( r \)</span>.</li>
+<li>"Next Step" and "Previous Step" buttons to walk through the procedure one operation at a time.</li>
+<li>"Auto Play" button animates through all steps at a fixed pace.</li>
+<li>"Check with Remainder Theorem" button evaluates <span class="arithmatex">\( P(r) \)</span> directly and compares to the computed remainder.</li>
+</ul>
+<p>Instructional rationale: Apply-level procedures stick better when students see the mechanism, not just the result. Highlighting the active cell and showing each multiplication makes the compressed notation of synthetic division intelligible rather than mysterious.</p>
+<p>Canvas: 900 × 500 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createInput for coefficients, createButton for step controls and check, state machine to track the current step.</p>
+</details>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>This chapter gave you the algebraic toolkit for working with polynomials: knowing their structure (degree, leading coefficient, term count), combining them (addition, multiplication), and decomposing them (factoring, division). With these tools in place, Chapter 7 can focus on the <em>behavior</em> of polynomials — how their zeros, turning points, and end behavior shape their graphs.</p>
+<p>The key ideas to carry forward:</p>
+<ul>
+<li>A <strong>polynomial</strong> is a finite sum of terms <span class="arithmatex">\( a_k x^k \)</span> with non-negative integer exponents.</li>
+<li><strong>Degree</strong> and <strong>leading coefficient</strong> determine end behavior; term count distinguishes <strong>monomials</strong>, <strong>binomials</strong>, and <strong>trinomials</strong>.</li>
+<li>Polynomials <strong>add</strong> by combining like terms and <strong>multiply</strong> by distributing term by term; the degree of a product is the sum of the degrees.</li>
+<li><strong>Factoring</strong> reverses multiplication and exposes zeros; the <strong>Factor Theorem</strong> says <span class="arithmatex">\( (x - r) \)</span> is a factor iff <span class="arithmatex">\( P(r) = 0 \)</span>.</li>
+<li>The <strong>Remainder Theorem</strong> says dividing <span class="arithmatex">\( P(x) \)</span> by <span class="arithmatex">\( (x - r) \)</span> leaves remainder <span class="arithmatex">\( P(r) \)</span>.</li>
+<li><strong>Long division</strong> works for any divisor; <strong>synthetic division</strong> is a fast shortcut when the divisor is linear.</li>
+</ul>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Tools in the Belt</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+You now have every algebraic tool needed to take apart any polynomial that will appear on the AP exam. Chapter 7 will use these tools to <em>see</em> polynomials — to predict the shape of a graph just from its factored form. The graphs are about to become much more interesting.</p>
+</div>
+<details class="question">
+<summary>Quick Check: What is the degree of <span class="arithmatex">\( (2x^3 - x + 1)(x^2 + 4) \)</span>?</summary>
+<p>Product of degree 3 and degree 2 is degree 5.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Is <span class="arithmatex">\( (x + 3) \)</span> a factor of <span class="arithmatex">\( P(x) = x^3 + 2x^2 - 5x - 6 \)</span>?</summary>
+<p>Evaluate <span class="arithmatex">\( P(-3) = -27 + 18 + 15 - 6 = 0 \)</span>. Yes — <span class="arithmatex">\( (x + 3) \)</span> is a factor.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Use synthetic division to divide <span class="arithmatex">\( 2x^3 - 3x^2 + 4x - 5 \)</span> by <span class="arithmatex">\( (x - 1) \)</span>.</summary>
+<p>Coefficients: 2, -3, 4, -5, with <span class="arithmatex">\( r = 1 \)</span>. Bring down 2; 2·1=2, -3+2=-1; -1·1=-1, 4-1=3; 3·1=3, -5+3=-2. Quotient <span class="arithmatex">\( 2x^2 - x + 3 \)</span>, remainder <span class="arithmatex">\( -2 \)</span>.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../05-quadratic-functions-and-complex-numbers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 5-Quadratics and Complex">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                5-Quadratics and Complex
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../07-polynomial-zeros-and-graphs/" class="md-footer__link md-footer__link--next" aria-label="Next: 7-Polynomial Zeros/Graphs">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                7-Polynomial Zeros/Graphs
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

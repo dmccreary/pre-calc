@@ -1,0 +1,2149 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The function concept — notation, domain, range, the vertical line test, graph behavior, intercepts, symmetry, even and odd functions, and bounded behavior.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/02-functions-and-their-properties/">
+      
+      
+        <link rel="prev" href="../01-mathematical-foundations/">
+      
+      
+        <link rel="next" href="../03-rates-of-change/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Functions and Their Properties - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Functions and Their Properties - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="The function concept — notation, domain, range, the vertical line test, graph behavior, intercepts, symmetry, even and odd functions, and bounded behavior." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/02-functions-and-their-properties/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/02-functions-and-their-properties/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Functions and Their Properties - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="The function concept — notation, domain, range, the vertical line test, graph behavior, intercepts, symmetry, even and odd functions, and bounded behavior." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/02-functions-and-their-properties/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#functions-and-their-properties" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Functions and Their Properties
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-a-function-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      What a Function Is
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Evaluation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Machine
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-vertical-line-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Vertical Line Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Vertical Line Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-vertical-line-test-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Vertical Line Test Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-and-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain and Range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#piecewise-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Piecewise Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphing-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphing Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intercepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intercepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-behavior-increasing-decreasing-constant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Behavior: Increasing, Decreasing, Constant
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function Behavior: Increasing, Decreasing, Constant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-behavior-labeler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Behavior Labeler
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positive-and-negative-regions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive and Negative Regions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bounded-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bounded Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symmetry-even-and-odd-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symmetry: Even and Odd Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Symmetry: Even and Odd Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-even-and-odd-function-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Even and Odd Function Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-a-function-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      What a Function Is
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Evaluation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Machine
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-vertical-line-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Vertical Line Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Vertical Line Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-vertical-line-test-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Vertical Line Test Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-and-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain and Range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#piecewise-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Piecewise Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphing-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphing Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intercepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intercepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-behavior-increasing-decreasing-constant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Behavior: Increasing, Decreasing, Constant
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function Behavior: Increasing, Decreasing, Constant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-behavior-labeler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Behavior Labeler
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positive-and-negative-regions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive and Negative Regions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bounded-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bounded Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symmetry-even-and-odd-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symmetry: Even and Odd Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Symmetry: Even and Odd Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-even-and-odd-function-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Even and Odd Function Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/02-functions-and-their-properties/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="functions-and-their-properties">Functions and Their Properties</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter establishes the central concept of a function and explores its key properties. Students learn function definition, notation, evaluation, domain, range, and the vertical line test. The chapter also covers graphing functions, intercepts, increasing and decreasing behavior, symmetry (even and odd functions), bounded functions, and positive/negative regions. These concepts form the language used throughout the rest of the course.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 21 concepts from the learning graph:</p>
+<ol>
+<li>Function Definition</li>
+<li>Function Notation</li>
+<li>Domain</li>
+<li>Range</li>
+<li>Vertical Line Test</li>
+<li>Function Evaluation</li>
+<li>Piecewise Functions</li>
+<li>Domain Restrictions</li>
+<li>Graphing Functions</li>
+<li>Intercepts</li>
+<li>X-Intercept</li>
+<li>Y-Intercept</li>
+<li>Increasing Functions</li>
+<li>Decreasing Functions</li>
+<li>Constant Functions</li>
+<li>Function Behavior</li>
+<li>Positive and Negative Regions</li>
+<li>Bounded Functions</li>
+<li>Even Functions</li>
+<li>Odd Functions</li>
+<li>Symmetry</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-mathematical-foundations/">Chapter 1: Mathematical Foundations</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Meet the Star of the Course</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+Functions are the main characters of pre-calculus — every chapter that follows is really a story about a particular family of functions. Let's learn the vocabulary we'll use to describe them, from notation to shape to symmetry.</p>
+</div>
+<h2 id="what-a-function-is">What a Function Is</h2>
+<p>A <strong>function</strong> is a rule that takes an input and produces exactly one output. The word "exactly" is the heart of the definition: a rule that sometimes gives 3 and sometimes gives −3 for the same input is not a function. Every legitimate function is a reliable machine — the same input always yields the same output.</p>
+<p>We borrow the variable roles from Chapter 1. The <strong>input</strong> is the independent variable, and the <strong>output</strong> is the dependent variable. A function <em>assigns</em> each input to one specific output. The set of allowed inputs is the <strong>domain</strong>, and the set of outputs that actually appear is the <strong>range</strong>.</p>
+<p>To make this precise, we can restate the definition three ways that all mean the same thing:</p>
+<ul>
+<li><em>Rule form:</em> A function from set <span class="arithmatex">\( A \)</span> to set <span class="arithmatex">\( B \)</span> assigns each element of <span class="arithmatex">\( A \)</span> to exactly one element of <span class="arithmatex">\( B \)</span>.</li>
+<li><em>Pair form:</em> A function is a set of ordered pairs <span class="arithmatex">\( (x, y) \)</span> in which no two pairs share the same <span class="arithmatex">\( x \)</span>.</li>
+<li><em>Machine form:</em> A function is a box that takes one number in and returns one number out.</li>
+</ul>
+<h2 id="function-notation">Function Notation</h2>
+<p>Functions are almost always written using <strong>function notation</strong>: <span class="arithmatex">\( f(x) \)</span>, read aloud as "<em>f</em> of <em>x</em>." The letter <span class="arithmatex">\( f \)</span> names the function; the expression inside the parentheses names the input. The whole expression <span class="arithmatex">\( f(x) \)</span> names the output when <span class="arithmatex">\( x \)</span> is the input.</p>
+<p>This notation is more powerful than the equation form <span class="arithmatex">\( y = \ldots \)</span> because it lets us refer to the output for a specific input without drawing a graph. If <span class="arithmatex">\( f(x) = 2x + 1 \)</span>, then <span class="arithmatex">\( f(3) \)</span> is the single number produced when 3 is the input: <span class="arithmatex">\( f(3) = 7 \)</span>. The symbol <span class="arithmatex">\( f(3) \)</span> is a number, not a formula — it is the answer after substitution.</p>
+<p>A few conventions you will see throughout the course:</p>
+<ul>
+<li>We often use different letters for different functions: <span class="arithmatex">\( f, g, h \)</span>, or descriptive names like <span class="arithmatex">\( C(t) \)</span> for cost as a function of time.</li>
+<li>Parentheses around the input do not mean multiplication — <span class="arithmatex">\( f(3) \)</span> is "f of 3," not "f times 3."</li>
+<li>Any expression can appear inside the parentheses: <span class="arithmatex">\( f(x+2) \)</span>, <span class="arithmatex">\( f(-x) \)</span>, or even <span class="arithmatex">\( f(g(x)) \)</span>.</li>
+</ul>
+<h2 id="function-evaluation">Function Evaluation</h2>
+<p><strong>Evaluating</strong> a function means substituting a specific value for the input and simplifying. It is the most common operation you will perform on a function, and the process is always the same: replace every occurrence of the input variable with the given value, then simplify using the order of operations from Chapter 1.</p>
+<p>Suppose <span class="arithmatex">\( f(x) = x^2 - 2x + 5 \)</span>. To evaluate <span class="arithmatex">\( f(4) \)</span>, we replace every <span class="arithmatex">\( x \)</span> with 4:</p>
+<div class="arithmatex">\[ f(4) = (4)^2 - 2(4) + 5 = 16 - 8 + 5 = 13 \]</div>
+<p>Function evaluation also works for expressions, not just numbers. To find <span class="arithmatex">\( f(a + 1) \)</span>, we substitute the entire expression <span class="arithmatex">\( a+1 \)</span> for <span class="arithmatex">\( x \)</span>:</p>
+<div class="arithmatex">\[ f(a+1) = (a+1)^2 - 2(a+1) + 5 = a^2 + 2a + 1 - 2a - 2 + 5 = a^2 + 4 \]</div>
+<h4 id="diagram-function-machine">Diagram: Function Machine</h4>
+<details>
+<summary>Interactive function machine that evaluates user-chosen inputs</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> function-machine<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim showing a stylized "function machine" as a box in the center of the canvas. An input chute enters from the left labeled <span class="arithmatex">\( x \)</span>, and an output chute exits to the right labeled <span class="arithmatex">\( f(x) \)</span>. The rule currently loaded into the machine is displayed on the front of the box (e.g., <span class="arithmatex">\( f(x) = 2x + 1 \)</span>).</p>
+<p>Learning objective (Bloom's Applying): Students will evaluate a function at specific numeric and expression inputs and predict outputs before they are revealed.</p>
+<p>Interactive controls:</p>
+<ul>
+<li>A text input lets the student type any input value (a number or simple expression like "3", "-2", or "a+1").</li>
+<li>A dropdown lets the student choose among five pre-loaded rules: <span class="arithmatex">\( 2x+1 \)</span>, <span class="arithmatex">\( x^2 \)</span>, <span class="arithmatex">\( x^2 - 2x + 5 \)</span>, <span class="arithmatex">\( \sqrt{x} \)</span>, and <span class="arithmatex">\( \frac{1}{x} \)</span>.</li>
+<li>A "Predict" button locks the student's typed answer, then a "Reveal" button animates the input traveling through the machine and shows the computed output. If the prediction matches, the output flashes gold.</li>
+<li>A "Next" button presents the next input in a preset challenge sequence.</li>
+</ul>
+<p>Data visibility: On each run, the display shows three stages — the raw input, the substituted expression (e.g., <span class="arithmatex">\( 2(3) + 1 \)</span>), and the simplified output. Students see the intermediate step, not just the final answer.</p>
+<p>Instructional rationale: Step-through with concrete substituted values is appropriate for an Apply-level objective because it lets students verify their mental substitution matches the machine's substitution, catching errors in arithmetic and order of operations.</p>
+<p>Canvas: 700 × 400 pixels, responsive via updateCanvasSize() in setup(). Maroon for the machine body, cyan-blue for input/output chutes, gold for correct answers.</p>
+<p>Implementation: p5.js using createInput for the typed value, createSelect for the rule, createButton for Predict/Reveal/Next.</p>
+</details>
+<h2 id="the-vertical-line-test">The Vertical Line Test</h2>
+<p>When a function is drawn on the coordinate plane, its graph must obey the "exactly one output" rule visually. A vertical line on the coordinate plane represents a single <span class="arithmatex">\( x \)</span>-value — every point on that vertical line shares the same <span class="arithmatex">\( x \)</span>-coordinate. If the graph of the rule crosses that vertical line in two places, then that single <span class="arithmatex">\( x \)</span> is assigned to two different <span class="arithmatex">\( y \)</span> values. That is not allowed for a function.</p>
+<p>The <strong>vertical line test</strong> formalizes this:</p>
+<div class="admonition info">
+<p class="admonition-title">Vertical Line Test</p>
+<p>A graph in the <span class="arithmatex">\( xy \)</span>-plane represents a function if and only if no vertical line intersects the graph more than once.</p>
+</div>
+<p>The test makes it easy to spot non-functions at a glance. A circle <span class="arithmatex">\( x^2 + y^2 = 25 \)</span>, for example, fails the test — the vertical line <span class="arithmatex">\( x = 3 \)</span> passes through the circle at both <span class="arithmatex">\( (3, 4) \)</span> and <span class="arithmatex">\( (3, -4) \)</span>. A parabola that opens sideways like <span class="arithmatex">\( x = y^2 \)</span> also fails. A parabola that opens up or down, however, passes.</p>
+<p>Before looking at the diagram below, note what "passes" and "fails" will look like: a passing graph is one you can sweep a vertical line across from left to right without ever hitting two points at once.</p>
+<h4 id="diagram-vertical-line-test-explorer">Diagram: Vertical Line Test Explorer</h4>
+<details>
+<summary>Interactive test that drags a vertical line across multiple curves</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> vertical-line-test<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim showing a coordinate plane with one curve drawn at a time. A draggable vertical red line lives on the plane; the student drags it left or right across the curve.</p>
+<p>Learning objective (Bloom's Analyzing): Students will classify graphs as functions or non-functions by observing how many times a vertical line intersects them.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate plane from -10 to 10 on each axis with light gridlines.</li>
+<li>One curve drawn in maroon at a time, selected from a dropdown: parabola <span class="arithmatex">\( y = x^2 \)</span>, sideways parabola <span class="arithmatex">\( x = y^2 \)</span>, circle <span class="arithmatex">\( x^2 + y^2 = 16 \)</span>, line <span class="arithmatex">\( y = 2x - 1 \)</span>, absolute value <span class="arithmatex">\( y = |x| \)</span>, and square root <span class="arithmatex">\( y = \sqrt{x} \)</span>.</li>
+<li>A vertical cyan-blue line the student can drag horizontally across the plane.</li>
+<li>A counter at the top right displaying "Intersections: N" that updates in real time as the line moves.</li>
+<li>A banner at the bottom turning green ("Function so far") while N ≤ 1 for all positions the student has tested, and red ("Not a function — more than one output at <span class="arithmatex">\( x = \_\_ \)</span>") the first time N ≥ 2.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown to select which curve is displayed.</li>
+<li>"Auto-sweep" button that animates the vertical line from -10 to 10 across the plane, displaying intersection counts continuously.</li>
+<li>"Reset" button to clear the test banner.</li>
+</ul>
+<p>Instructional rationale: The Analyze-level objective requires students to make a judgment based on observed behavior. A live intersection counter lets students test their hypothesis interactively rather than just memorizing which shapes are functions.</p>
+<p>Canvas: 650 × 650 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createSelect for curve choice, createButton for Auto-sweep and Reset, and mouseDragged logic for the vertical line.</p>
+</details>
+<h2 id="domain-and-range">Domain and Range</h2>
+<p>The <strong>domain</strong> of a function is the set of all valid inputs. The <strong>range</strong> is the set of all outputs the function actually produces. Domain lives on the <span class="arithmatex">\( x \)</span>-axis; range lives on the <span class="arithmatex">\( y \)</span>-axis.</p>
+<p>Two kinds of reasoning determine a domain. The first is <em>context</em>: if <span class="arithmatex">\( A(r) \)</span> gives the area of a circle with radius <span class="arithmatex">\( r \)</span>, then <span class="arithmatex">\( r \)</span> cannot be negative, so the domain is <span class="arithmatex">\( r \ge 0 \)</span>. The second is <em>algebraic safety</em>: certain operations are undefined for some inputs, and those inputs must be excluded.</p>
+<p>The three most common <strong>domain restrictions</strong> in pre-calculus come from three operations:</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Restriction</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Division <span class="arithmatex">\( \frac{1}{x} \)</span></td>
+<td>Denominator cannot be zero</td>
+<td><span class="arithmatex">\( f(x) = \frac{1}{x-3} \)</span>: exclude <span class="arithmatex">\( x = 3 \)</span></td>
+</tr>
+<tr>
+<td>Even root <span class="arithmatex">\( \sqrt{x} \)</span></td>
+<td>Radicand cannot be negative</td>
+<td><span class="arithmatex">\( f(x) = \sqrt{x - 2} \)</span>: require <span class="arithmatex">\( x \ge 2 \)</span></td>
+</tr>
+<tr>
+<td>Logarithm <span class="arithmatex">\( \log(x) \)</span></td>
+<td>Argument must be positive</td>
+<td><span class="arithmatex">\( f(x) = \log(x + 1) \)</span>: require <span class="arithmatex">\( x &gt; -1 \)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Each restriction can be written using the interval or set-builder notation from Chapter 1. For <span class="arithmatex">\( f(x) = \sqrt{x-2} \)</span>, the domain is <span class="arithmatex">\( [2, \infty) \)</span> in interval notation, or <span class="arithmatex">\( \{ x \mid x \ge 2 \} \)</span> in set-builder notation.</p>
+<p>Finding the range is usually harder than finding the domain because it requires reasoning about outputs. A quick method is to sketch the graph and read off the set of <span class="arithmatex">\( y \)</span>-values covered. For <span class="arithmatex">\( f(x) = x^2 \)</span>, for instance, the graph never dips below the <span class="arithmatex">\( x \)</span>-axis, so the range is <span class="arithmatex">\( [0, \infty) \)</span>.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Three Restriction Checks</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema holding up three fingers">
+Whenever you meet a new function, run the three checks in order: <em>divide, root, log</em>. If none apply, the domain is all real numbers. This habit catches 95% of domain questions on the AP exam.</p>
+</div>
+<h2 id="piecewise-functions">Piecewise Functions</h2>
+<p>Sometimes a single rule cannot capture the behavior we want. A <strong>piecewise function</strong> stitches together two or more rules, each active on a different piece of the domain. The shipping fee that is $5 for packages under 2 pounds and $8 otherwise is naturally a piecewise function.</p>
+<p>We write a piecewise function with a large brace and one rule per row, each paired with the interval on which the rule applies:</p>
+<div class="arithmatex">\[ f(x) = \begin{cases} 2x + 1 &amp; \text{if } x &lt; 0 \\ x^2 &amp; \text{if } x \ge 0 \end{cases} \]</div>
+<p>To evaluate a piecewise function at a specific input, first decide which piece owns that input, then apply that piece's rule. For the function above, <span class="arithmatex">\( f(-3) \)</span> uses the first rule because <span class="arithmatex">\( -3 &lt; 0 \)</span>, giving <span class="arithmatex">\( 2(-3) + 1 = -5 \)</span>. In contrast, <span class="arithmatex">\( f(2) \)</span> uses the second rule because <span class="arithmatex">\( 2 \ge 0 \)</span>, giving <span class="arithmatex">\( 2^2 = 4 \)</span>.</p>
+<p>The domain of a piecewise function is the union of all its pieces' domains. Its graph is the union of the pieces' graphs. A common source of error is forgetting whether each endpoint should be drawn as a closed dot (included) or an open dot (excluded). The inequality in each piece's definition tells you which — a <span class="arithmatex">\( \le \)</span> or <span class="arithmatex">\( \ge \)</span> marks an included endpoint.</p>
+<h2 id="graphing-functions">Graphing Functions</h2>
+<p>The <strong>graph</strong> of a function <span class="arithmatex">\( f \)</span> is the set of all ordered pairs <span class="arithmatex">\( (x, f(x)) \)</span> plotted on the coordinate plane. For each input <span class="arithmatex">\( x \)</span> in the domain, we compute the output <span class="arithmatex">\( f(x) \)</span>, place a point at <span class="arithmatex">\( (x, f(x)) \)</span>, and repeat. The curve (or collection of dots) that emerges is the function's graph.</p>
+<p>Graphs are the primary way pre-calculus students recognize, compare, and reason about functions. Throughout this course, you will build a visual library of function families — linear lines, parabolas, cubics, exponentials, sinusoids — and learn to tell one family from another at a glance. Before we can describe those shapes, though, we need a shared vocabulary for the features every graph shares.</p>
+<h2 id="intercepts">Intercepts</h2>
+<p>An <strong>intercept</strong> is a point where a graph crosses an axis. Because a graph can cross two axes, intercepts come in two kinds.</p>
+<ul>
+<li>The <strong>y-intercept</strong> is the point where the graph crosses the <span class="arithmatex">\( y \)</span>-axis. Every point on the <span class="arithmatex">\( y \)</span>-axis has <span class="arithmatex">\( x = 0 \)</span>, so the <span class="arithmatex">\( y \)</span>-intercept occurs at <span class="arithmatex">\( x = 0 \)</span>. For a function <span class="arithmatex">\( f \)</span>, the <span class="arithmatex">\( y \)</span>-intercept is <span class="arithmatex">\( (0, f(0)) \)</span>.</li>
+<li>An <strong>x-intercept</strong> is a point where the graph crosses the <span class="arithmatex">\( x \)</span>-axis. Every point on the <span class="arithmatex">\( x \)</span>-axis has <span class="arithmatex">\( y = 0 \)</span>, so <span class="arithmatex">\( x \)</span>-intercepts occur where <span class="arithmatex">\( f(x) = 0 \)</span>. These inputs are also called <strong>zeros</strong> or <strong>roots</strong> of the function.</li>
+</ul>
+<p>A function has at most one <span class="arithmatex">\( y \)</span>-intercept (since the vertical line test allows only one output at <span class="arithmatex">\( x = 0 \)</span>), but it can have many <span class="arithmatex">\( x \)</span>-intercepts — or none. The parabola <span class="arithmatex">\( f(x) = x^2 + 1 \)</span>, for instance, sits entirely above the <span class="arithmatex">\( x \)</span>-axis and has zero <span class="arithmatex">\( x \)</span>-intercepts; its <span class="arithmatex">\( y \)</span>-intercept is <span class="arithmatex">\( (0, 1) \)</span>.</p>
+<p>The table below compares how to find each type of intercept for an arbitrary function.</p>
+<table>
+<thead>
+<tr>
+<th>Intercept</th>
+<th>How to find it</th>
+<th>What it tells you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( y \)</span>-intercept</td>
+<td>Evaluate <span class="arithmatex">\( f(0) \)</span></td>
+<td>The output when the input is 0</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x \)</span>-intercepts</td>
+<td>Solve <span class="arithmatex">\( f(x) = 0 \)</span></td>
+<td>Inputs that produce output 0 (zeros)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="function-behavior-increasing-decreasing-constant">Function Behavior: Increasing, Decreasing, Constant</h2>
+<p>Graphs do not just sit still — they rise, fall, and occasionally hold steady. We describe these trends with three terms:</p>
+<ul>
+<li>A function is <strong>increasing</strong> on an interval if larger inputs produce larger outputs — the graph rises as you move left to right.</li>
+<li>A function is <strong>decreasing</strong> on an interval if larger inputs produce smaller outputs — the graph falls as you move left to right.</li>
+<li>A function is <strong>constant</strong> on an interval if the output stays the same across all inputs — the graph is horizontal.</li>
+</ul>
+<p>We describe behavior using the <em>interval of inputs</em>, not the <span class="arithmatex">\( y \)</span>-values. For the parabola <span class="arithmatex">\( f(x) = x^2 \)</span>, the function is decreasing on <span class="arithmatex">\( (-\infty, 0) \)</span> and increasing on <span class="arithmatex">\( (0, \infty) \)</span>. The switching point, <span class="arithmatex">\( x = 0 \)</span>, is called a <strong>turning point</strong>.</p>
+<p>Notice how intervals and function behavior work together: a function's behavior can change from one interval to the next. The same graph can be increasing on one piece of the domain and decreasing on another. When we analyze a function, we break its domain into intervals where the behavior is uniform, then describe each interval separately.</p>
+<h4 id="diagram-function-behavior-labeler">Diagram: Function Behavior Labeler</h4>
+<details>
+<summary>Interactive labeler for increasing, decreasing, and constant intervals</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> function-behavior-labeler<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim showing a multi-feature graph (typically a cubic or piecewise curve) on a coordinate plane. The student divides the domain into intervals and labels each with a behavior type.</p>
+<p>Learning objective (Bloom's Analyzing): Students will partition a function's domain into maximal intervals of uniform behavior and label each interval as increasing, decreasing, or constant.</p>
+<p>Visual elements:</p>
+<ul>
+<li>A coordinate plane with a pre-drawn curve selected from a dropdown (cubic, absolute value, piecewise, or a sinusoidal fragment).</li>
+<li>Draggable vertical dividers the student places at the <span class="arithmatex">\( x \)</span>-coordinates where behavior changes (turning points and corners).</li>
+<li>Three colored bands along the top of each sub-interval: blue for increasing, orange for decreasing, gray for constant.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown to choose the curve.</li>
+<li>"Add Divider" button to place a new vertical divider at the current mouse position.</li>
+<li>Click on each band to cycle its label through increasing → decreasing → constant.</li>
+<li>"Check" button grades the student's labeling, highlighting any incorrectly labeled band in red.</li>
+</ul>
+<p>Data visibility: Whenever the student hovers over the curve, the coordinates of the hovered point appear in a tooltip, so they can confirm that <span class="arithmatex">\( y \)</span>-values are actually rising or falling.</p>
+<p>Instructional rationale: Partitioning and labeling forces students to commit to specific boundaries where behavior changes, making turning points visible rather than hidden. Hovering to see coordinates gives concrete numeric evidence to back the classification.</p>
+<p>Canvas: 800 × 500 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createSelect for curve choice, createButton for Add Divider and Check, mousePressed/mouseDragged for divider placement.</p>
+</details>
+<h2 id="positive-and-negative-regions">Positive and Negative Regions</h2>
+<p>Related to where a function is going, we can ask <em>where it is</em>: above or below the <span class="arithmatex">\( x \)</span>-axis. A function is <strong>positive</strong> on any interval where its outputs are positive (the graph sits above the <span class="arithmatex">\( x \)</span>-axis) and <strong>negative</strong> where its outputs are negative (the graph sits below). The <span class="arithmatex">\( x \)</span>-intercepts mark the boundaries between positive and negative regions.</p>
+<p>Positive and negative regions are used heavily in the later chapters on polynomials and rational functions, where sign charts become the main tool for graphing. For now, remember the distinction: <em>increasing/decreasing</em> describes how the output is changing, while <em>positive/negative</em> describes what sign the output has.</p>
+<h2 id="bounded-functions">Bounded Functions</h2>
+<p>A function is <strong>bounded above</strong> if there is some horizontal line the graph never goes above — a ceiling, in other words. It is <strong>bounded below</strong> if there is a floor the graph never dips under. A function that has both a floor and a ceiling is simply <strong>bounded</strong>.</p>
+<ul>
+<li><span class="arithmatex">\( f(x) = x^2 \)</span> is bounded below (by 0) but not bounded above — outputs can be arbitrarily large.</li>
+<li><span class="arithmatex">\( f(x) = \sin(x) \)</span> is bounded both above (by 1) and below (by −1), so it is bounded.</li>
+<li><span class="arithmatex">\( f(x) = x^3 \)</span> is neither bounded above nor below — the graph runs off to <span class="arithmatex">\( \pm \infty \)</span>.</li>
+</ul>
+<p>Boundedness is a global property; it is a statement about the <em>entire</em> range, not a piece of it. A function that dips to <span class="arithmatex">\(-1\)</span> once and then runs off to <span class="arithmatex">\(-\infty\)</span> is not bounded below, even though on a small interval it looks bounded.</p>
+<h2 id="symmetry-even-and-odd-functions">Symmetry: Even and Odd Functions</h2>
+<p>Some graphs have a built-in symmetry that simplifies analysis. There are two symmetries that pre-calculus cares about, named after the simplest polynomial that exhibits each.</p>
+<ul>
+<li>A function <span class="arithmatex">\( f \)</span> is <strong>even</strong> if <span class="arithmatex">\( f(-x) = f(x) \)</span> for every <span class="arithmatex">\( x \)</span> in the domain. The graph is symmetric about the <span class="arithmatex">\( y \)</span>-axis — reflecting across the <span class="arithmatex">\( y \)</span>-axis leaves the graph unchanged.</li>
+<li>A function <span class="arithmatex">\( f \)</span> is <strong>odd</strong> if <span class="arithmatex">\( f(-x) = -f(x) \)</span> for every <span class="arithmatex">\( x \)</span> in the domain. The graph is symmetric about the <strong>origin</strong> — rotating 180° around the origin leaves the graph unchanged.</li>
+</ul>
+<p>The names come from the polynomials. Every polynomial of even degree built only from even powers (<span class="arithmatex">\( x^0, x^2, x^4, \ldots \)</span>) is an even function; every polynomial built only from odd powers (<span class="arithmatex">\( x^1, x^3, x^5, \ldots \)</span>) is an odd function. A polynomial that mixes the two — like <span class="arithmatex">\( x^2 + x \)</span> — is neither.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Algebraic Test Before Graphical Check</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema with hand to chin">
+To test for evenness or oddness, compute <span class="arithmatex">\( f(-x) \)</span> and compare. If <span class="arithmatex">\( f(-x) = f(x) \)</span>, it's even. If <span class="arithmatex">\( f(-x) = -f(x) \)</span>, it's odd. Anything else — like <span class="arithmatex">\( f(x) = x^2 + x \)</span>, where <span class="arithmatex">\( f(-x) = x^2 - x \)</span> — is neither. Don't guess from the graph when algebra can confirm it in two lines.</p>
+</div>
+<p>The table below summarizes the two symmetries side by side. Notice that "neither" is a legitimate answer — most functions fall into this category.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Algebraic test</th>
+<th>Graphical symmetry</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Even</td>
+<td><span class="arithmatex">\( f(-x) = f(x) \)</span></td>
+<td>Reflection across <span class="arithmatex">\( y \)</span>-axis</td>
+<td><span class="arithmatex">\( f(x) = x^2 \)</span>, <span class="arithmatex">\( \cos(x) \)</span></td>
+</tr>
+<tr>
+<td>Odd</td>
+<td><span class="arithmatex">\( f(-x) = -f(x) \)</span></td>
+<td>Rotation by 180° about origin</td>
+<td><span class="arithmatex">\( f(x) = x^3 \)</span>, <span class="arithmatex">\( \sin(x) \)</span></td>
+</tr>
+<tr>
+<td>Neither</td>
+<td>Neither test passes</td>
+<td>No standard symmetry</td>
+<td><span class="arithmatex">\( f(x) = x^2 + x \)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-even-and-odd-function-explorer">Diagram: Even and Odd Function Explorer</h4>
+<details>
+<summary>Side-by-side comparison of even, odd, and neither symmetries</summary>
+<p>Type: interactive infographic
+<strong>sim-id:</strong> even-odd-explorer<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js infographic with three synchronized panels: the student picks a function from a dropdown, and each panel illustrates a different symmetry test on that function.</p>
+<p>Learning objective (Bloom's Evaluating): Students will determine whether a function is even, odd, or neither by applying both algebraic and graphical tests and justifying the conclusion.</p>
+<p>Panels:</p>
+<ul>
+<li>Left: the graph of <span class="arithmatex">\( f(x) \)</span> plotted on a coordinate plane. A mirror reflection across the <span class="arithmatex">\( y \)</span>-axis is drawn in translucent cyan on top. If the reflection and the original match, the panel flashes green and labels "Even ✓."</li>
+<li>Middle: the same graph rotated 180° about the origin, drawn in translucent gold on top. If the rotation matches the original, the panel flashes green and labels "Odd ✓."</li>
+<li>Right: the algebraic test. Shows the user-chosen <span class="arithmatex">\( f(x) \)</span>, computes and displays <span class="arithmatex">\( f(-x) \)</span>, and compares to <span class="arithmatex">\( f(x) \)</span> and <span class="arithmatex">\( -f(x) \)</span>. The conclusion (Even, Odd, or Neither) is printed below.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown to select from six functions: <span class="arithmatex">\( x^2 \)</span>, <span class="arithmatex">\( x^3 \)</span>, <span class="arithmatex">\( |x| \)</span>, <span class="arithmatex">\( x^2 + x \)</span>, <span class="arithmatex">\( \frac{1}{x} \)</span>, and <span class="arithmatex">\( \cos(x) \)</span>.</li>
+<li>"Compute" button that animates the algebraic substitution for <span class="arithmatex">\( f(-x) \)</span> step by step.</li>
+<li>Checkboxes to toggle the reflection overlay and rotation overlay on or off.</li>
+</ul>
+<p>Instructional rationale: The Evaluate-level objective requires students to justify a classification. Showing the algebraic proof alongside the visual symmetry lets students connect two independent lines of evidence — a student who sees both green checks develops a far stronger grasp than one who memorizes "x² is even."</p>
+<p>Canvas: 900 × 450 pixels (three 300 × 450 panels), responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createSelect for the function, createButton for Compute, createCheckbox for overlay toggles.</p>
+</details>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Every question we will ask about a function for the rest of this course is some combination of the properties introduced here. When we study linear, quadratic, polynomial, exponential, and trigonometric functions, we will describe each by listing the same features:</p>
+<ul>
+<li>Its rule, in function notation.</li>
+<li>Its domain (valid inputs) and range (produced outputs).</li>
+<li>Its intercepts — where it crosses each axis.</li>
+<li>Where it is increasing, decreasing, or constant.</li>
+<li>Where its outputs are positive or negative.</li>
+<li>Whether it is bounded above, below, both, or neither.</li>
+<li>Whether it has even, odd, or no symmetry.</li>
+</ul>
+<p>Master this checklist now, and every function family later in the course becomes a matter of filling in the blanks.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Vocabulary Unlocked</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+You now speak the language of functions — notation, domain, range, behavior, intercepts, and symmetry. Every chapter from here on tells the story of a specific function family using exactly this vocabulary. Let's go watch functions in motion.</p>
+</div>
+<details class="question">
+<summary>Quick Check: What's <span class="arithmatex">\( f(-2) \)</span> if <span class="arithmatex">\( f(x) = x^2 - 3x + 1 \)</span>?</summary>
+<p><span class="arithmatex">\( f(-2) = (-2)^2 - 3(-2) + 1 = 4 + 6 + 1 = 11 \)</span>. The key step is that <span class="arithmatex">\( -3(-2) = +6 \)</span>, not <span class="arithmatex">\( -6 \)</span>.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Is <span class="arithmatex">\( f(x) = x^4 - x^2 \)</span> even, odd, or neither?</summary>
+<p><span class="arithmatex">\( f(-x) = (-x)^4 - (-x)^2 = x^4 - x^2 = f(x) \)</span>. Even. Every term has an even power, which is a reliable shortcut.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01-mathematical-foundations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1-Mathematical Foundations">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                1-Mathematical Foundations
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03-rates-of-change/" class="md-footer__link md-footer__link--next" aria-label="Next: 3-Rates of Change">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                3-Rates of Change
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

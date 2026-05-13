@@ -1,0 +1,2337 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Matrices and their operations — addition, subtraction, scalar multiplication, matrix multiplication, identity, determinant, inverse, and linear transformations including rotation and reflection — followed by AP Pre-Calculus exam preparation strategies.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/23-matrices-and-exam-preparation/">
+      
+      
+        <link rel="prev" href="../22-vectors/">
+      
+      
+        <link rel="next" href="../../learning-graph/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Matrices and Exam Preparation - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Matrices and Exam Preparation - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="Matrices and their operations — addition, subtraction, scalar multiplication, matrix multiplication, identity, determinant, inverse, and linear transformations including rotation and reflection — followed by AP Pre-Calculus exam preparation strategies." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/23-matrices-and-exam-preparation/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/23-matrices-and-exam-preparation/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Matrices and Exam Preparation - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="Matrices and their operations — addition, subtraction, scalar multiplication, matrix multiplication, identity, determinant, inverse, and linear transformations including rotation and reflection — followed by AP Pre-Calculus exam preparation strategies." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/23-matrices-and-exam-preparation/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#matrices-and-exam-preparation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Matrices and Exam Preparation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-matrices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1: Matrices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1: Matrices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matrix-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Dimensions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-addition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Addition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-subtraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Subtraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalar-multiplication-of-matrices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalar Multiplication of Matrices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-multiplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Multiplication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matrix Multiplication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-matrix-multiplication-walkthrough" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Matrix Multiplication Walkthrough
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identity-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identity Matrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#determinant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Determinant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-of-a-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse of a Matrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linear Transformations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotation-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rotation Matrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflection-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection Matrix
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reflection Matrix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-linear-transformation-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Linear Transformation Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Applications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-ap-pre-calculus-exam-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2: AP Pre-Calculus Exam Preparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2: AP Pre-Calculus Exam Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculator-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculator Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-choice-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Choice Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#free-response-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Free Response Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-management-on-exams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time Management on Exams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showing-work-on-free-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Showing Work on Free Response
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Showing Work on Free Response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ap-exam-timing-planner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: AP Exam Timing Planner
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-matrices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1: Matrices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1: Matrices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matrix-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Dimensions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-addition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Addition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-subtraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Subtraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalar-multiplication-of-matrices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalar Multiplication of Matrices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-multiplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Multiplication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matrix Multiplication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-matrix-multiplication-walkthrough" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Matrix Multiplication Walkthrough
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identity-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identity Matrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#determinant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Determinant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-of-a-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse of a Matrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linear Transformations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotation-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rotation Matrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflection-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection Matrix
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reflection Matrix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-linear-transformation-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Linear Transformation Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Applications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-ap-pre-calculus-exam-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2: AP Pre-Calculus Exam Preparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2: AP Pre-Calculus Exam Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculator-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculator Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-choice-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Choice Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#free-response-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Free Response Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-management-on-exams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time Management on Exams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showing-work-on-free-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Showing Work on Free Response
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Showing Work on Free Response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ap-exam-timing-planner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: AP Exam Timing Planner
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/23-matrices-and-exam-preparation/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="matrices-and-exam-preparation">Matrices and Exam Preparation</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter introduces matrices and their operations, then concludes with AP exam preparation strategies. Students learn matrix definitions, dimensions, and operations including addition, subtraction, scalar multiplication, and matrix multiplication. The chapter covers the identity matrix, determinants, matrix inverses, and linear transformations (rotation and reflection matrices). Matrix applications in real-world contexts are explored. The chapter concludes with strategies for the AP Pre-Calculus exam, including calculator use, free response techniques, multiple choice strategies, time management, and showing work effectively.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 18 concepts from the learning graph:</p>
+<ol>
+<li>Matrix Definition</li>
+<li>Matrix Dimensions</li>
+<li>Matrix Addition</li>
+<li>Matrix Subtraction</li>
+<li>Scalar Multiplication of Matrices</li>
+<li>Matrix Multiplication</li>
+<li>Identity Matrix</li>
+<li>Determinant</li>
+<li>Inverse of a Matrix</li>
+<li>Linear Transformations</li>
+<li>Rotation Matrix</li>
+<li>Reflection Matrix</li>
+<li>Matrix Applications</li>
+<li>Calculator Strategies</li>
+<li>Free Response Strategy</li>
+<li>Multiple Choice Strategy</li>
+<li>Time Management on Exams</li>
+<li>Showing Work on Free Response</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../02-functions-and-their-properties/">Chapter 2: Functions and Their Properties</a></li>
+<li><a href="../13-exponential-functions/">Chapter 13: Exponential Functions</a></li>
+<li><a href="../14-logarithmic-functions/">Chapter 14: Logarithmic Functions</a></li>
+<li><a href="../15-angles-and-the-unit-circle/">Chapter 15: Angles and the Unit Circle</a></li>
+<li><a href="../20-inverse-trig-functions-and-equations/">Chapter 20: Inverse Trigonometric Functions and Equations</a></li>
+<li><a href="../22-vectors/">Chapter 22: Vectors</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">The Last Mile</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+Matrices package vectors into grids and give us a compact language for linear transformations — the kinds of operations that rotate, reflect, stretch, and shear whole coordinate systems. After we build that language, we close out the course with strategies for taking the AP Pre-Calculus exam with confidence.</p>
+</div>
+<h2 id="part-1-matrices">Part 1: Matrices</h2>
+<h3 id="matrix-definition">Matrix Definition</h3>
+<p>A <strong>matrix</strong> is a rectangular arrangement of numbers, enclosed in square brackets. Each number in the matrix is called an <strong>entry</strong>. Matrices are named with uppercase letters — <span class="arithmatex">\( A \)</span>, <span class="arithmatex">\( B \)</span>, <span class="arithmatex">\( M \)</span> — while entries and scalars stay lowercase.</p>
+<p>Here are three examples of matrices:</p>
+<div class="arithmatex">\[ A = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \qquad B = \begin{bmatrix} 5 &amp; -1 &amp; 0 \\ 2 &amp; 7 &amp; 3 \end{bmatrix} \qquad C = \begin{bmatrix} 4 \\ -2 \\ 1 \end{bmatrix} \]</div>
+<p>Matrices extend the idea of a vector: a vector is just a matrix with a single column (or single row). All the vector operations from Chapter 22 generalize to matrices.</p>
+<h3 id="matrix-dimensions">Matrix Dimensions</h3>
+<p>The <strong>dimensions</strong> of a matrix count its rows and columns, written as "rows × columns":</p>
+<ul>
+<li><span class="arithmatex">\( A \)</span> above is a <strong>2 × 2 matrix</strong> (2 rows, 2 columns).</li>
+<li><span class="arithmatex">\( B \)</span> is a <strong>2 × 3 matrix</strong> (2 rows, 3 columns).</li>
+<li><span class="arithmatex">\( C \)</span> is a <strong>3 × 1 matrix</strong> (3 rows, 1 column) — this is a <strong>column vector</strong>.</li>
+</ul>
+<p>The entry in row <span class="arithmatex">\( i \)</span>, column <span class="arithmatex">\( j \)</span> of matrix <span class="arithmatex">\( A \)</span> is written <span class="arithmatex">\( a_{ij} \)</span>. Two matrices are <strong>equal</strong> only if they have the same dimensions and all corresponding entries match.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Rows Before Columns</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema offering a tip">
+Always write dimensions as rows-by-columns, not the other way around. A 3 × 2 matrix has three rows and two columns. Mixing this up is the single most common matrix-dimension error — double-check your convention each time.</p>
+</div>
+<h3 id="matrix-addition">Matrix Addition</h3>
+<p><strong>Matrix addition</strong> works entry-by-entry, just like vector addition. Two matrices can be added only if they have the <strong>same dimensions</strong>.</p>
+<div class="arithmatex">\[ \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} + \begin{bmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{bmatrix} = \begin{bmatrix} 6 &amp; 8 \\ 10 &amp; 12 \end{bmatrix} \]</div>
+<h3 id="matrix-subtraction">Matrix Subtraction</h3>
+<p><strong>Matrix subtraction</strong> also works entry-by-entry, with matching dimensions required:</p>
+<div class="arithmatex">\[ \begin{bmatrix} 5 &amp; 7 \\ 3 &amp; 9 \end{bmatrix} - \begin{bmatrix} 2 &amp; 3 \\ 1 &amp; 4 \end{bmatrix} = \begin{bmatrix} 3 &amp; 4 \\ 2 &amp; 5 \end{bmatrix} \]</div>
+<h3 id="scalar-multiplication-of-matrices">Scalar Multiplication of Matrices</h3>
+<p><strong>Scalar multiplication of matrices</strong> multiplies every entry by the same scalar <span class="arithmatex">\( c \)</span>:</p>
+<div class="arithmatex">\[ 3 \cdot \begin{bmatrix} 1 &amp; 2 \\ 4 &amp; -1 \end{bmatrix} = \begin{bmatrix} 3 &amp; 6 \\ 12 &amp; -3 \end{bmatrix} \]</div>
+<p>So far, matrix operations look like vector operations on a grid. The next operation is where matrices become more than just "vector bundles."</p>
+<h3 id="matrix-multiplication">Matrix Multiplication</h3>
+<p><strong>Matrix multiplication</strong> is defined by the <strong>row-column dot product rule</strong>: the entry in row <span class="arithmatex">\( i \)</span>, column <span class="arithmatex">\( j \)</span> of the product <span class="arithmatex">\( AB \)</span> is the dot product of row <span class="arithmatex">\( i \)</span> of <span class="arithmatex">\( A \)</span> with column <span class="arithmatex">\( j \)</span> of <span class="arithmatex">\( B \)</span>.</p>
+<p>Before seeing the example, three rules govern when matrices can be multiplied:</p>
+<ol>
+<li>To compute <span class="arithmatex">\( AB \)</span>, the number of <strong>columns in <span class="arithmatex">\( A \)</span></strong> must equal the number of <strong>rows in <span class="arithmatex">\( B \)</span></strong>.</li>
+<li>If <span class="arithmatex">\( A \)</span> is <span class="arithmatex">\( m \times n \)</span> and <span class="arithmatex">\( B \)</span> is <span class="arithmatex">\( n \times p \)</span>, then <span class="arithmatex">\( AB \)</span> is <span class="arithmatex">\( m \times p \)</span>.</li>
+<li>Matrix multiplication is <strong>not commutative</strong>: <span class="arithmatex">\( AB \)</span> usually does not equal <span class="arithmatex">\( BA \)</span>.</li>
+</ol>
+<p><strong>Example:</strong></p>
+<div class="arithmatex">\[ \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \begin{bmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{bmatrix} = \begin{bmatrix} 1\cdot 5 + 2\cdot 7 &amp; 1\cdot 6 + 2\cdot 8 \\ 3\cdot 5 + 4\cdot 7 &amp; 3\cdot 6 + 4\cdot 8 \end{bmatrix} = \begin{bmatrix} 19 &amp; 22 \\ 43 &amp; 50 \end{bmatrix} \]</div>
+<p>The entry in row 1, column 1 of the product is <span class="arithmatex">\( \langle 1, 2 \rangle \cdot \langle 5, 7 \rangle = 5 + 14 = 19 \)</span>. Every entry of the product is a dot product.</p>
+<h4 id="diagram-matrix-multiplication-walkthrough">Diagram: Matrix Multiplication Walkthrough</h4>
+<iframe src="../../sims/matrix-multiplication/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Matrix Multiplication Walkthrough</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> matrix-multiplication<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>Learning objective (Apply, L3, demonstrate): Demonstrate matrix multiplication step-by-step by following the row-column dot product rule and producing each entry of the result.</p>
+<p>Canvas layout:
+- Left: matrix <span class="arithmatex">\( A \)</span> displayed
+- Middle: matrix <span class="arithmatex">\( B \)</span> displayed
+- Right: the result matrix <span class="arithmatex">\( AB \)</span> with entries filled in one at a time</p>
+<p>Visual elements:
+- When the student clicks an empty cell in the result, the relevant row of <span class="arithmatex">\( A \)</span> highlights in one color, the relevant column of <span class="arithmatex">\( B \)</span> in another color
+- The dot product calculation appears below with numbers substituted
+- Completed cells show the computed value
+- Invalid dimension attempts show a red error message</p>
+<p>Interactive controls:
+- Dimension controls for both matrices
+- Input fields to fill each entry
+- Button: "Fill all" to animate all entries being computed
+- Button: "Reset"</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show the two matrices and compute the expected result dimensions
+- Stage 2: When computing one entry, show the row, column, element-by-element products, and sum
+- Stage 3: After computing, display the full product matrix
+- Stage 4: For illegal multiplications, explain why dimensions don't match</p>
+<p>Instructional Rationale: Step-through cell-by-cell with visible highlighted row and column reinforces that each product entry is a dot product. Continuous animation would hide the key computation.</p>
+<p>Implementation: p5.js with responsive canvas.</p>
+</details>
+<h3 id="identity-matrix">Identity Matrix</h3>
+<p>The <strong>identity matrix</strong> <span class="arithmatex">\( I_n \)</span> is the <span class="arithmatex">\( n \times n \)</span> square matrix with 1's on the main diagonal and 0's elsewhere:</p>
+<div class="arithmatex">\[ I_2 = \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix} \qquad I_3 = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \]</div>
+<p>The identity matrix plays the same role in matrix multiplication that the number 1 plays in ordinary multiplication. For any matrix <span class="arithmatex">\( A \)</span> of compatible size:</p>
+<div class="arithmatex">\[ A I = I A = A \]</div>
+<p>Multiplying by the identity matrix leaves every matrix unchanged — hence the name.</p>
+<h3 id="determinant">Determinant</h3>
+<p>The <strong>determinant</strong> of a square matrix is a single number computed from its entries. For a 2 × 2 matrix:</p>
+<div class="arithmatex">\[ \det\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix} = ad - bc \]</div>
+<p>The determinant carries geometric information: it measures how much the matrix scales area when applied as a linear transformation. Three cases matter:</p>
+<ul>
+<li><span class="arithmatex">\( \det(A) &gt; 0 \)</span>: the matrix preserves orientation and scales area by a factor of <span class="arithmatex">\( \det(A) \)</span>.</li>
+<li><span class="arithmatex">\( \det(A) = 0 \)</span>: the matrix <strong>collapses</strong> the plane onto a line or a point. The matrix has no inverse.</li>
+<li><span class="arithmatex">\( \det(A) &lt; 0 \)</span>: the matrix scales area by <span class="arithmatex">\( |\det(A)| \)</span> <strong>and reflects</strong> the plane (reverses orientation).</li>
+</ul>
+<h3 id="inverse-of-a-matrix">Inverse of a Matrix</h3>
+<p>The <strong>inverse of a matrix</strong> <span class="arithmatex">\( A \)</span>, written <span class="arithmatex">\( A^{-1} \)</span>, is a matrix that satisfies:</p>
+<div class="arithmatex">\[ A A^{-1} = A^{-1} A = I \]</div>
+<p>For a 2 × 2 matrix with non-zero determinant, the inverse has a compact formula:</p>
+<div class="arithmatex">\[ \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}^{-1} = \frac{1}{ad - bc} \begin{bmatrix} d &amp; -b \\ -c &amp; a \end{bmatrix} \]</div>
+<p>The formula fails when <span class="arithmatex">\( ad - bc = 0 \)</span> — a matrix with zero determinant has no inverse and is called <strong>singular</strong>. Inverses are used to solve matrix equations: from <span class="arithmatex">\( A\mathbf{x} = \mathbf{b} \)</span>, multiplying both sides by <span class="arithmatex">\( A^{-1} \)</span> gives <span class="arithmatex">\( \mathbf{x} = A^{-1}\mathbf{b} \)</span>, the matrix analogue of dividing both sides by <span class="arithmatex">\( A \)</span>.</p>
+<h3 id="linear-transformations">Linear Transformations</h3>
+<p>A <strong>linear transformation</strong> is a function that takes a vector as input and returns a vector as output, following two rules:</p>
+<ul>
+<li><span class="arithmatex">\( T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v}) \)</span> — additivity</li>
+<li><span class="arithmatex">\( T(c\mathbf{v}) = cT(\mathbf{v}) \)</span> — scalar compatibility</li>
+</ul>
+<p>The remarkable fact is that every linear transformation from <span class="arithmatex">\( \mathbb{R}^2 \)</span> to <span class="arithmatex">\( \mathbb{R}^2 \)</span> can be represented by a 2 × 2 matrix. Applying the transformation is the same as matrix-multiplying the input vector:</p>
+<div class="arithmatex">\[ T(\mathbf{v}) = A\mathbf{v} \]</div>
+<p>This is the real power of matrices — they are the <strong>language of linear transformations</strong>.</p>
+<h3 id="rotation-matrix">Rotation Matrix</h3>
+<p>The <strong>rotation matrix</strong> rotates every point in the plane by an angle <span class="arithmatex">\( \theta \)</span> counterclockwise around the origin:</p>
+<div class="arithmatex">\[ R(\theta) = \begin{bmatrix} \cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{bmatrix} \]</div>
+<p>To rotate a vector <span class="arithmatex">\( \mathbf{v} = \langle x, y \rangle \)</span> by <span class="arithmatex">\( \theta \)</span>, compute <span class="arithmatex">\( R(\theta)\mathbf{v} \)</span>:</p>
+<div class="arithmatex">\[ R(\theta)\begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} x\cos\theta - y\sin\theta \\ x\sin\theta + y\cos\theta \end{bmatrix} \]</div>
+<p>Some common rotation matrices:</p>
+<table>
+<thead>
+<tr>
+<th>Angle</th>
+<th>Rotation matrix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>90°</td>
+<td><span class="arithmatex">\( \begin{bmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{bmatrix} \)</span></td>
+</tr>
+<tr>
+<td>180°</td>
+<td><span class="arithmatex">\( \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix} \)</span></td>
+</tr>
+<tr>
+<td>270°</td>
+<td><span class="arithmatex">\( \begin{bmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{bmatrix} \)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Note that rotation matrices have determinant 1 — rotations preserve both area and orientation.</p>
+<h3 id="reflection-matrix">Reflection Matrix</h3>
+<p>A <strong>reflection matrix</strong> mirrors every point across a fixed line through the origin. The three most common reflections are:</p>
+<table>
+<thead>
+<tr>
+<th>Line of reflection</th>
+<th>Matrix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( x \)</span>-axis</td>
+<td><span class="arithmatex">\( \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix} \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( y \)</span>-axis</td>
+<td><span class="arithmatex">\( \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix} \)</span></td>
+</tr>
+<tr>
+<td>Line <span class="arithmatex">\( y = x \)</span></td>
+<td><span class="arithmatex">\( \begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix} \)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Reflection matrices always have determinant <span class="arithmatex">\( -1 \)</span> — they preserve area but reverse orientation.</p>
+<h4 id="diagram-linear-transformation-visualizer">Diagram: Linear Transformation Visualizer</h4>
+<iframe src="../../sims/linear-transformation/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Linear Transformation Visualizer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> linear-transformation<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>Learning objective (Analyze, L4, examine): Examine how a 2 × 2 matrix transforms the unit square and the standard basis vectors, connecting the visible geometric effect to the matrix entries.</p>
+<p>Canvas layout:
+- Left: the original coordinate plane with a unit square and labeled basis vectors <span class="arithmatex">\( \mathbf{i} \)</span> and <span class="arithmatex">\( \mathbf{j} \)</span>
+- Right: the transformed plane showing how the square and basis vectors map</p>
+<p>Visual elements:
+- Original plane with light gridlines and a highlighted unit square
+- Standard basis vectors <span class="arithmatex">\( \mathbf{i} \)</span> and <span class="arithmatex">\( \mathbf{j} \)</span> drawn in distinct colors
+- Transformed square and basis vectors in the same colors on the right panel
+- Dashed outline of original square shown on transformed panel for comparison
+- Live display of matrix entries</p>
+<p>Interactive controls:
+- Entry fields for each of the four matrix entries
+- Dropdown: preset transformations (rotation 90°, reflection across <span class="arithmatex">\( x \)</span>-axis, shear, scaling)
+- Slider: rotation angle for rotation preset
+- Button: animate the transformation as a continuous morph</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show current matrix with entries
+- Stage 2: Show where <span class="arithmatex">\( \mathbf{i} \)</span> and <span class="arithmatex">\( \mathbf{j} \)</span> map — the columns of the matrix
+- Stage 3: Show the determinant as a signed area ratio
+- Stage 4: Indicate whether orientation is preserved (positive det) or reversed (negative det)</p>
+<p>Instructional Rationale: Seeing that the columns of the matrix are exactly the images of <span class="arithmatex">\( \mathbf{i} \)</span> and <span class="arithmatex">\( \mathbf{j} \)</span> is the biggest conceptual payoff of this chapter. The step-through morph makes the geometric action of the transformation unmistakable.</p>
+<p>Implementation: p5.js with responsive canvas.</p>
+</details>
+<h3 id="matrix-applications">Matrix Applications</h3>
+<p><strong>Matrix applications</strong> show up in many fields. Three accessible examples for Pre-Calculus:</p>
+<ul>
+<li><strong>Computer graphics:</strong> Every rotation, scaling, reflection, and shearing in 2D animation software is a matrix multiplication applied to the coordinates of shapes.</li>
+<li><strong>Solving systems of equations:</strong> A system like <span class="arithmatex">\( 2x + 3y = 7, \, x - y = 1 \)</span> becomes the matrix equation <span class="arithmatex">\( A\mathbf{x} = \mathbf{b} \)</span>, and the solution is <span class="arithmatex">\( \mathbf{x} = A^{-1}\mathbf{b} \)</span>.</li>
+<li><strong>Markov chains and population models:</strong> Transition probabilities between states are organized into a matrix; multiplying repeatedly by this matrix predicts long-term behavior.</li>
+</ul>
+<h2 id="part-2-ap-pre-calculus-exam-preparation">Part 2: AP Pre-Calculus Exam Preparation</h2>
+<p>The AP Pre-Calculus exam covers Units 1-3 only — Unit 4 (this chapter's matrices and the previous chapter's vectors and parametrics) is not on the exam. Nevertheless, these strategies apply broadly and are worth internalizing for any standardized test.</p>
+<h3 id="calculator-strategies">Calculator Strategies</h3>
+<p><strong>Calculator strategies</strong> start with knowing which section allows the graphing calculator:</p>
+<ul>
+<li>Multiple Choice Part A (28 questions, 80 min): <strong>no calculator</strong></li>
+<li>Multiple Choice Part B (12 questions, 40 min): <strong>calculator required</strong></li>
+<li>Free Response Part A (2 questions, 30 min): <strong>calculator required</strong></li>
+<li>Free Response Part B (2 questions, 30 min): <strong>no calculator</strong></li>
+</ul>
+<p>When the calculator is allowed, use it to speed up computation — but set up the problem mathematically first. Write down the integral, equation, or function you are evaluating before you start typing.</p>
+<p>Here are the calculator operations you should be fluent with:</p>
+<ul>
+<li>Graphing functions and finding zeros via the built-in "zero" or "root" tool.</li>
+<li>Finding the maximum or minimum of a function on a specified interval.</li>
+<li>Computing exact trig values at standard angles.</li>
+<li>Running regressions: linear, quadratic, exponential, logarithmic, and sinusoidal.</li>
+<li>Storing intermediate results to avoid re-entering long decimals.</li>
+</ul>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Calculator Habits That Hurt You</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Prema warning">
+Two mistakes cost students the most points on calculator sections: (1) using radians when the problem is in degrees (or vice versa), and (2) rounding early in a calculation. Check the calculator mode at the start of the exam, and keep at least three decimal places during intermediate steps.</p>
+</div>
+<h3 id="multiple-choice-strategy">Multiple Choice Strategy</h3>
+<p><strong>Multiple choice strategy</strong> has three reliable moves:</p>
+<ol>
+<li><strong>Eliminate wrong answers first.</strong> Even if you can't identify the right choice, ruling out two or three wrong options dramatically improves your odds.</li>
+<li><strong>Work backward from the choices.</strong> For algebra problems, plug each choice into the original equation to see which one works — this is often faster than solving from scratch.</li>
+<li><strong>Estimate before computing.</strong> A quick mental ballpark tells you which choices are in the right range. If an answer is implausibly large or negative where it should be positive, cross it off.</li>
+</ol>
+<p>Because there is no penalty for guessing on the AP exam, <strong>answer every multiple choice question</strong> — even if you have to guess.</p>
+<h3 id="free-response-strategy">Free Response Strategy</h3>
+<p><strong>Free response strategy</strong> is about writing mathematics the reader can follow:</p>
+<ul>
+<li><strong>Read every part of the question before writing anything.</strong> Free response questions are usually multi-part, and later parts often refer to earlier ones.</li>
+<li><strong>Label every answer.</strong> If the question asks for a temperature, write "18°F" not just "18."</li>
+<li><strong>Justify with a sentence when required.</strong> Phrases like "justify" or "explain" mean you need a written reason, not just a number.</li>
+<li><strong>Do not erase.</strong> If you write something and change your mind, cross it out with a single line. Graders often find partial credit in crossed-out work.</li>
+</ul>
+<h3 id="time-management-on-exams">Time Management on Exams</h3>
+<p><strong>Time management on exams</strong> matters more than people expect. Here is the time available per question on each section:</p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Questions</th>
+<th>Minutes</th>
+<th>Time per question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MC Part A (no calc)</td>
+<td>28</td>
+<td>80</td>
+<td>~2 min 51 sec</td>
+</tr>
+<tr>
+<td>MC Part B (calc)</td>
+<td>12</td>
+<td>40</td>
+<td>~3 min 20 sec</td>
+</tr>
+<tr>
+<td>FR Part A (calc)</td>
+<td>2</td>
+<td>30</td>
+<td>15 min each</td>
+</tr>
+<tr>
+<td>FR Part B (no calc)</td>
+<td>2</td>
+<td>30</td>
+<td>15 min each</td>
+</tr>
+</tbody>
+</table>
+<p>Budget these times <strong>during practice</strong>, not for the first time on exam day. If you get stuck on a multiple choice question for more than three minutes, circle it and move on — come back if time permits.</p>
+<h3 id="showing-work-on-free-response">Showing Work on Free Response</h3>
+<p><strong>Showing work on free response</strong> is the single most important habit for maximizing your score. Graders award points for process, not just the final answer. Here are specific recommendations:</p>
+<ul>
+<li><strong>Write the setup.</strong> Before computing, write down what quantity you are calculating and the formula you are using.</li>
+<li><strong>Label intermediate values.</strong> Instead of chains of unlabeled numbers, name each step: "amplitude = 3.5," "period = 12."</li>
+<li><strong>Box or underline final answers</strong> so graders know what you want evaluated.</li>
+<li><strong>Check units.</strong> A final answer with wrong units usually loses a point even if the number is right.</li>
+<li><strong>If you run out of time</strong>, write what you <strong>would</strong> do as a last step. Partial credit is often given for describing the correct approach.</li>
+</ul>
+<p>Here is a before-and-after of a solution to a free-response problem, showing the difference:</p>
+<p><strong>Weak presentation:</strong></p>
+<blockquote>
+<p>f(x) = 3sin(2x)+5. max=8, min=2. amp=3, mid=5</p>
+</blockquote>
+<p><strong>Strong presentation:</strong></p>
+<blockquote>
+<p>The function <span class="arithmatex">\( f(x) = 3\sin(2x) + 5 \)</span> has amplitude <span class="arithmatex">\( |A| = 3 \)</span> and vertical shift <span class="arithmatex">\( D = 5 \)</span>.</p>
+<p>Maximum value: <span class="arithmatex">\( D + |A| = 5 + 3 = 8 \)</span></p>
+<p>Minimum value: <span class="arithmatex">\( D - |A| = 5 - 3 = 2 \)</span></p>
+<p><strong>Amplitude = 3, Midline = y = 5</strong></p>
+</blockquote>
+<p>The strong version would earn full credit; the weak version might lose a point for unlabeled computation or an unclear final answer.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">You've Got This</p>
+<p><img src="../../img/mascot/encourage.png" class="mascot-admonition-img" alt="Prema encouraging">
+Twenty-three chapters of pre-calculus are now behind you. You know polynomials, rationals, exponentials, logarithms, trigonometry, and more. The AP exam is a chance to show what you already understand — not to learn it for the first time. Work steadily, show your reasoning, and trust your preparation.</p>
+</div>
+<h4 id="diagram-ap-exam-timing-planner">Diagram: AP Exam Timing Planner</h4>
+<iframe src="../../sims/ap-exam-timing/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>AP Exam Timing Planner</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> ap-exam-timing<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>Learning objective (Evaluate, L5, prioritize): Prioritize exam sections and plan a time-budget strategy based on personal strengths and the scoring weight of each section.</p>
+<p>Layout: Horizontal timeline split into four sections corresponding to the four parts of the exam.</p>
+<p>Visual elements:
+- Each section drawn as a bar proportional to its time (80, 40, 30, 30 minutes)
+- Number of questions and weight of each section labeled above each bar
+- Within each bar, per-question time sub-divisions shown as minor ticks
+- Legend coding for calculator-allowed vs. no-calculator sections</p>
+<p>Interactive controls:
+- Slider: per-question time budget for each section, with running total updating
+- Checkbox: "Skip hardest 2 MC questions to save time" — redistributes time to other questions
+- Dropdown: "Show strategy comparison" with preset timing plans (conservative, balanced, aggressive)</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show exam structure with all four sections and total time
+- Stage 2: Show per-question time remaining as the user adjusts sliders
+- Stage 3: Compute estimated score based on rough rules of thumb (e.g., 75% MC right × 62.5 weight)
+- Stage 4: Display personalized warning if the plan leaves less than a minute per multiple choice question</p>
+<p>Instructional Rationale: Exam strategy is easier to internalize when a student has literally budgeted their time against a visual timeline. The interactive planner turns abstract advice into a concrete plan the student can carry into the test.</p>
+<p>Implementation: p5.js with responsive canvas.</p>
+</details>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">One Course Complete</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+That's the whole course. Twenty-three chapters, hundreds of concepts, and dozens of MicroSims later — you've built a deep toolkit of functions, transformations, trig, and modeling skills. Calculus is the next step, and everything you just learned will be exactly the foundation you need. Go get that 5!</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>A matrix is a rectangular grid of numbers; its dimensions are rows-by-columns.</li>
+<li>Add, subtract, and scale matrices entry-by-entry (like vectors). Multiply matrices by the row-column dot product rule — which requires compatible dimensions and is not commutative.</li>
+<li>The identity matrix acts like the number 1 in matrix multiplication.</li>
+<li>The determinant of a 2 × 2 matrix <span class="arithmatex">\( \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix} \)</span> is <span class="arithmatex">\( ad - bc \)</span>. Zero determinant means no inverse.</li>
+<li>Every 2 × 2 matrix represents a linear transformation of the plane. Rotation matrices use cosines and sines; reflection matrices have determinant <span class="arithmatex">\( -1 \)</span>.</li>
+<li>Exam strategy: use the calculator only where allowed, eliminate wrong MC answers, show labeled work on FR problems, and budget time per section based on the official minutes-per-question counts.</li>
+<li>Show work, label answers, check units, and guess on every multiple choice question — there is no penalty for guessing.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../22-vectors/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 22-Vectors">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                22-Vectors
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../learning-graph/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Introduction
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

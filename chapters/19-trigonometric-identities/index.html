@@ -1,0 +1,2010 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Pythagorean, reciprocal, quotient, cofunction, and even-odd identities, plus sum, difference, and double-angle formulas, with techniques for verifying identities and simplifying trigonometric expressions.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/19-trigonometric-identities/">
+      
+      
+        <link rel="prev" href="../18-sinusoidal-modeling/">
+      
+      
+        <link rel="next" href="../20-inverse-trig-functions-and-equations/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Trigonometric Identities - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Trigonometric Identities - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="The Pythagorean, reciprocal, quotient, cofunction, and even-odd identities, plus sum, difference, and double-angle formulas, with techniques for verifying identities and simplifying trigonometric expressions." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/19-trigonometric-identities/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/19-trigonometric-identities/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Trigonometric Identities - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="The Pythagorean, reciprocal, quotient, cofunction, and even-odd identities, plus sum, difference, and double-angle formulas, with techniques for verifying identities and simplifying trigonometric expressions." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/19-trigonometric-identities/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#trigonometric-identities" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Trigonometric Identities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity-vs-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identity vs. Equation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pythagorean-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pythagorean Identity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reciprocal-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reciprocal Identities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quotient-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quotient Identities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cofunction-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cofunction Identities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#even-odd-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Even-Odd Identities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sum-and-difference-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum and Difference Formulas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sum and Difference Formulas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-sum-formula-geometric-proof" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Sum Formula Geometric Proof
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#double-angle-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Double Angle Formulas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simplifying-trig-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplifying Trig Expressions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verifying-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifying Identities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Verifying Identities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-identity-verification-worked-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Identity Verification Worked Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity-vs-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identity vs. Equation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pythagorean-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pythagorean Identity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reciprocal-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reciprocal Identities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quotient-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quotient Identities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cofunction-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cofunction Identities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#even-odd-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Even-Odd Identities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sum-and-difference-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum and Difference Formulas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sum and Difference Formulas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-sum-formula-geometric-proof" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Sum Formula Geometric Proof
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#double-angle-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Double Angle Formulas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simplifying-trig-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplifying Trig Expressions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verifying-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifying Identities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Verifying Identities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-identity-verification-worked-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Identity Verification Worked Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/19-trigonometric-identities/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="trigonometric-identities">Trigonometric Identities</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter develops the fundamental trigonometric identities and techniques for working with them. Students learn the Pythagorean, reciprocal, quotient, cofunction, and even-odd identities. The chapter covers the sum and difference formulas and double angle formulas, then applies all of these in verifying identities and simplifying trigonometric expressions. These algebraic manipulation skills are essential for solving trigonometric equations in the next chapter.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 9 concepts from the learning graph:</p>
+<ol>
+<li>Pythagorean Identity</li>
+<li>Reciprocal Identities</li>
+<li>Quotient Identities</li>
+<li>Cofunction Identities</li>
+<li>Even-Odd Identities</li>
+<li>Sum and Difference Formulas</li>
+<li>Double Angle Formulas</li>
+<li>Verifying Identities</li>
+<li>Simplifying Trig Expressions</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../02-functions-and-their-properties/">Chapter 2: Functions and Their Properties</a></li>
+<li><a href="../15-angles-and-the-unit-circle/">Chapter 15: Angles and the Unit Circle</a></li>
+<li><a href="../16-trigonometric-functions/">Chapter 16: Trigonometric Functions</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Equations That Always Hold</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+An identity is an equation that is true for every allowable input, not just special values. In this chapter we collect the trig identities that show up everywhere in the rest of pre-calculus and calculus. They are the grammar rules that make trig expressions rewritable.</p>
+</div>
+<h2 id="identity-vs-equation">Identity vs. Equation</h2>
+<p>Before we dive into specific identities, it's important to separate two words that sound similar but mean different things.</p>
+<ul>
+<li>An <strong>equation</strong> is a statement that is true for certain values of the variable. For example, <span class="arithmatex">\( \sin\theta = 1/2 \)</span> is true only at specific angles like <span class="arithmatex">\( \theta = \pi/6 \)</span> and <span class="arithmatex">\( \theta = 5\pi/6 \)</span>.</li>
+<li>An <strong>identity</strong> is an equation that is true for <strong>every</strong> value in the domain. For example, <span class="arithmatex">\( \sin^2\theta + \cos^2\theta = 1 \)</span> holds for every real <span class="arithmatex">\( \theta \)</span> — you cannot find a counterexample.</li>
+</ul>
+<p>Identities give us permission to rewrite one expression in terms of another. Whenever an equation is getting tangled up in sines and cosines, applying identities is often the move that unlocks it.</p>
+<h2 id="pythagorean-identity">Pythagorean Identity</h2>
+<p>The <strong>Pythagorean identity</strong> is the most important identity in trigonometry:</p>
+<div class="arithmatex">\[ \sin^2\theta + \cos^2\theta = 1 \]</div>
+<p>It follows directly from the equation of the unit circle <span class="arithmatex">\( x^2 + y^2 = 1 \)</span> together with the unit-circle definitions <span class="arithmatex">\( x = \cos\theta \)</span> and <span class="arithmatex">\( y = \sin\theta \)</span> from Chapter 16. Every point on the unit circle automatically satisfies this equation, so every angle automatically satisfies the identity.</p>
+<p>Two other Pythagorean identities follow by dividing through by <span class="arithmatex">\( \cos^2\theta \)</span> or <span class="arithmatex">\( \sin^2\theta \)</span>:</p>
+<ul>
+<li>Divide the base identity by <span class="arithmatex">\( \cos^2\theta \)</span>: <span class="arithmatex">\( \tan^2\theta + 1 = \sec^2\theta \)</span></li>
+<li>Divide the base identity by <span class="arithmatex">\( \sin^2\theta \)</span>: <span class="arithmatex">\( 1 + \cot^2\theta = \csc^2\theta \)</span></li>
+</ul>
+<p>Here are the three Pythagorean identities arranged together so you can see their family resemblance:</p>
+<table>
+<thead>
+<tr>
+<th>Identity</th>
+<th>When to use it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( \sin^2\theta + \cos^2\theta = 1 \)</span></td>
+<td>Convert between <span class="arithmatex">\( \sin^2 \)</span> and <span class="arithmatex">\( \cos^2 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \tan^2\theta + 1 = \sec^2\theta \)</span></td>
+<td>Convert between <span class="arithmatex">\( \tan^2 \)</span> and <span class="arithmatex">\( \sec^2 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 1 + \cot^2\theta = \csc^2\theta \)</span></td>
+<td>Convert between <span class="arithmatex">\( \cot^2 \)</span> and <span class="arithmatex">\( \csc^2 \)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Pick the Right Pythagorean Identity</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema offering a tip">
+Look at your expression. If you see <span class="arithmatex">\( \sin^2 \)</span> or <span class="arithmatex">\( \cos^2 \)</span>, use the first. If you see <span class="arithmatex">\( \tan^2 \)</span> or <span class="arithmatex">\( \sec^2 \)</span>, use the second. If you see <span class="arithmatex">\( \cot^2 \)</span> or <span class="arithmatex">\( \csc^2 \)</span>, use the third. Pick the identity that matches the functions already on the page.</p>
+</div>
+<h2 id="reciprocal-identities">Reciprocal Identities</h2>
+<p>The <strong>reciprocal identities</strong> express the three reciprocal trig functions as one-over their partner functions. These come directly from the definitions given in Chapter 16:</p>
+<div class="arithmatex">\[ \csc\theta = \frac{1}{\sin\theta}, \qquad \sec\theta = \frac{1}{\cos\theta}, \qquad \cot\theta = \frac{1}{\tan\theta} \]</div>
+<p>Equivalent rearrangements that are just as useful:</p>
+<div class="arithmatex">\[ \sin\theta\,\csc\theta = 1, \qquad \cos\theta\,\sec\theta = 1, \qquad \tan\theta\,\cot\theta = 1 \]</div>
+<p>These identities are the tool that lets us eliminate reciprocal functions from an expression, replacing them with sines and cosines so we can work with a smaller toolkit.</p>
+<h2 id="quotient-identities">Quotient Identities</h2>
+<p>The <strong>quotient identities</strong> define tangent and cotangent as ratios of sine and cosine:</p>
+<div class="arithmatex">\[ \tan\theta = \frac{\sin\theta}{\cos\theta}, \qquad \cot\theta = \frac{\cos\theta}{\sin\theta} \]</div>
+<p>Combined with the reciprocal identities, these two relationships let us rewrite <strong>any</strong> trig expression in terms of sine and cosine alone. That rewriting step is often the first move when verifying or simplifying an identity.</p>
+<h2 id="cofunction-identities">Cofunction Identities</h2>
+<p>The <strong>cofunction identities</strong> express each trig function in terms of its complementary angle — the angle that sums to <span class="arithmatex">\( \pi/2 \)</span> radians (90°):</p>
+<div class="arithmatex">\[ \sin\left(\frac{\pi}{2} - \theta\right) = \cos\theta, \qquad \cos\left(\frac{\pi}{2} - \theta\right) = \sin\theta \]</div>
+<div class="arithmatex">\[ \tan\left(\frac{\pi}{2} - \theta\right) = \cot\theta, \qquad \cot\left(\frac{\pi}{2} - \theta\right) = \tan\theta \]</div>
+<div class="arithmatex">\[ \sec\left(\frac{\pi}{2} - \theta\right) = \csc\theta, \qquad \csc\left(\frac{\pi}{2} - \theta\right) = \sec\theta \]</div>
+<p>The reason "cosine" is called co-sine is exactly this: cosine of an angle equals sine of its complement. In a right triangle, the complement of one acute angle is the other acute angle — and the side opposite one angle is the side adjacent to the other. That geometric swap is where all six cofunction identities come from.</p>
+<h2 id="even-odd-identities">Even-Odd Identities</h2>
+<p>The <strong>even-odd identities</strong> describe what happens when the angle is negated. From Chapter 17 we know that cosine is an even function (graph symmetric about the <span class="arithmatex">\( y \)</span>-axis) and sine is an odd function (graph symmetric about the origin):</p>
+<p>[ \sin(-\theta) = -\sin\theta \quad (\text{odd}) ]
+[ \cos(-\theta) = \cos\theta \quad (\text{even}) ]</p>
+<p>The other four functions inherit their parity from these two:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Parity</th>
+<th>Identity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sine</td>
+<td>Odd</td>
+<td><span class="arithmatex">\( \sin(-\theta) = -\sin\theta \)</span></td>
+</tr>
+<tr>
+<td>Cosine</td>
+<td>Even</td>
+<td><span class="arithmatex">\( \cos(-\theta) = \cos\theta \)</span></td>
+</tr>
+<tr>
+<td>Tangent</td>
+<td>Odd</td>
+<td><span class="arithmatex">\( \tan(-\theta) = -\tan\theta \)</span></td>
+</tr>
+<tr>
+<td>Cotangent</td>
+<td>Odd</td>
+<td><span class="arithmatex">\( \cot(-\theta) = -\cot\theta \)</span></td>
+</tr>
+<tr>
+<td>Secant</td>
+<td>Even</td>
+<td><span class="arithmatex">\( \sec(-\theta) = \sec\theta \)</span></td>
+</tr>
+<tr>
+<td>Cosecant</td>
+<td>Odd</td>
+<td><span class="arithmatex">\( \csc(-\theta) = -\csc\theta \)</span></td>
+</tr>
+</tbody>
+</table>
+<p>These identities let us eliminate negative signs from inside a trig function, cleaning up expressions like <span class="arithmatex">\( \sin(-x)\cos(-x) \)</span> into <span class="arithmatex">\( -\sin(x)\cos(x) \)</span>.</p>
+<h2 id="sum-and-difference-formulas">Sum and Difference Formulas</h2>
+<p>The <strong>sum and difference formulas</strong> tell us how to evaluate a trig function of a sum or difference of two angles. The two that matter most are:</p>
+<div class="arithmatex">\[ \sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta \]</div>
+<div class="arithmatex">\[ \cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta \]</div>
+<p>Pay close attention to the signs. The sine formula uses the <strong>same sign</strong> as on the left; the cosine formula uses the <strong>opposite sign</strong>. The tangent sum and difference formula is derived by dividing:</p>
+<div class="arithmatex">\[ \tan(\alpha \pm \beta) = \frac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta} \]</div>
+<p>These formulas let us compute exact values of trig functions at angles that are not on the basic unit-circle list. For example, <span class="arithmatex">\( 15° = 45° - 30° \)</span>, so:</p>
+<div class="arithmatex">\[ \cos 15° = \cos(45° - 30°) = \cos 45°\cos 30° + \sin 45°\sin 30° \]</div>
+<div class="arithmatex">\[ = \frac{\sqrt{2}}{2}\cdot\frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2}\cdot\frac{1}{2} = \frac{\sqrt{6} + \sqrt{2}}{4} \]</div>
+<h4 id="diagram-sum-formula-geometric-proof">Diagram: Sum Formula Geometric Proof</h4>
+<iframe src="../../sims/sum-formula-proof/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Sum Formula Geometric Proof</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> sum-formula-proof<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>Learning objective (Understand, L2, interpret): Interpret the geometric origin of the cosine sum formula by following a rotation-and-distance argument on the unit circle.</p>
+<p>Layout: Unit circle on the left, worked-example panel on the right.</p>
+<p>Visual elements:
+- Unit circle with two adjustable angles <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span> marked with colored arcs
+- Points <span class="arithmatex">\( P_1 = (\cos\alpha, \sin\alpha) \)</span> and <span class="arithmatex">\( P_2 = (\cos(\alpha+\beta), \sin(\alpha+\beta)) \)</span> highlighted
+- Chord connecting <span class="arithmatex">\( P_1 \)</span> and <span class="arithmatex">\( P_2 \)</span> with its length labeled
+- The same chord length recomputed after rotating the figure so one endpoint is at <span class="arithmatex">\( (1, 0) \)</span></p>
+<p>Interactive controls:
+- Slider for <span class="arithmatex">\( \alpha \)</span>: 0 to <span class="arithmatex">\( \pi \)</span>
+- Slider for <span class="arithmatex">\( \beta \)</span>: 0 to <span class="arithmatex">\( \pi \)</span>
+- Step-through buttons: Next / Previous to walk through the four algebraic steps</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show the two angles as numeric values and highlighted arcs
+- Stage 2: Show the coordinates of both points
+- Stage 3: Show the distance formula applied to get a numeric chord length
+- Stage 4: Show the second expression for the chord length and equate them
+- Stage 5: Show the algebraic simplification that produces <span class="arithmatex">\( \cos(\alpha+\beta) = \cos\alpha\cos\beta - \sin\alpha\sin\beta \)</span></p>
+<p>Instructional Rationale: Step-through with concrete numeric values at every stage turns what can feel like a formula memorization exercise into a visible geometric argument. Continuous animation would not let students pause and read the algebra.</p>
+<p>Implementation: p5.js with responsive canvas.</p>
+</details>
+<h2 id="double-angle-formulas">Double Angle Formulas</h2>
+<p>The <strong>double angle formulas</strong> are a special case of the sum formulas with <span class="arithmatex">\( \alpha = \beta \)</span>. Setting both angles to <span class="arithmatex">\( \theta \)</span> in the sum formulas gives:</p>
+<div class="arithmatex">\[ \sin(2\theta) = 2\sin\theta\cos\theta \]</div>
+<div class="arithmatex">\[ \cos(2\theta) = \cos^2\theta - \sin^2\theta \]</div>
+<p>The cosine double-angle formula has two alternative forms that come from substituting the Pythagorean identity. Because <span class="arithmatex">\( \cos^2\theta + \sin^2\theta = 1 \)</span> lets us replace either <span class="arithmatex">\( \cos^2\theta \)</span> or <span class="arithmatex">\( \sin^2\theta \)</span>, we get:</p>
+<div class="arithmatex">\[ \cos(2\theta) = 2\cos^2\theta - 1 = 1 - 2\sin^2\theta \]</div>
+<p>All three forms are equivalent; use whichever one already matches the other terms in your expression. The tangent double-angle formula is:</p>
+<div class="arithmatex">\[ \tan(2\theta) = \frac{2\tan\theta}{1 - \tan^2\theta} \]</div>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Three Cosine Forms — Why?</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema thinking">
+The three versions of <span class="arithmatex">\( \cos(2\theta) \)</span> exist because we can trade one squared term for the other using the Pythagorean identity. When an expression already contains <span class="arithmatex">\( \cos^2\theta \)</span>, use the form with <span class="arithmatex">\( \cos^2 \)</span>. When it contains <span class="arithmatex">\( \sin^2\theta \)</span>, use the <span class="arithmatex">\( \sin^2 \)</span> form. Matching forms keeps the algebra clean.</p>
+</div>
+<h2 id="simplifying-trig-expressions">Simplifying Trig Expressions</h2>
+<p><strong>Simplifying trig expressions</strong> means rewriting an expression in a cleaner equivalent form — often by combining fractions, canceling common factors, or collapsing to a simpler function. There is no single rule that always works, but the following strategy covers most cases.</p>
+<p><strong>Simplification strategy:</strong></p>
+<ol>
+<li><strong>Convert everything to sine and cosine</strong> using the reciprocal and quotient identities.</li>
+<li><strong>Find common denominators</strong> and combine fractions.</li>
+<li><strong>Look for Pythagorean identities</strong> hiding in sums like <span class="arithmatex">\( \sin^2 + \cos^2 \)</span> or <span class="arithmatex">\( 1 - \sin^2 \)</span>.</li>
+<li><strong>Factor when possible</strong> — difference of squares, common factors, or grouping.</li>
+<li><strong>Cancel common factors</strong> in the numerator and denominator.</li>
+</ol>
+<p>For example, simplify <span class="arithmatex">\( \dfrac{\sin\theta}{1 - \cos\theta} + \dfrac{1 - \cos\theta}{\sin\theta} \)</span>:</p>
+<ul>
+<li>Common denominator is <span class="arithmatex">\( \sin\theta(1 - \cos\theta) \)</span>.</li>
+<li>Combine: <span class="arithmatex">\( \dfrac{\sin^2\theta + (1 - \cos\theta)^2}{\sin\theta(1 - \cos\theta)} \)</span>.</li>
+<li>Expand numerator: <span class="arithmatex">\( \sin^2\theta + 1 - 2\cos\theta + \cos^2\theta = 2 - 2\cos\theta \)</span> (using Pythagorean identity).</li>
+<li>Factor: <span class="arithmatex">\( 2(1 - \cos\theta) \)</span>.</li>
+<li>Cancel <span class="arithmatex">\( 1 - \cos\theta \)</span>: <span class="arithmatex">\( \dfrac{2}{\sin\theta} = 2\csc\theta \)</span>.</li>
+</ul>
+<h2 id="verifying-identities">Verifying Identities</h2>
+<p><strong>Verifying an identity</strong> means showing that the two sides of a claimed equation are equal for every allowable input. The rule is: work on one side at a time, transforming it step-by-step until it matches the other side. You may not move terms across the equals sign — that would assume the thing you are trying to prove.</p>
+<p><strong>Verification strategy:</strong></p>
+<ul>
+<li>Start with the <strong>more complicated side</strong> — there's more to simplify, so it's easier to find footholds.</li>
+<li>Convert to sines and cosines if stuck.</li>
+<li>Look for common denominators or factoring opportunities.</li>
+<li>Apply the Pythagorean identity wherever <span class="arithmatex">\( 1 - \sin^2 \)</span>, <span class="arithmatex">\( 1 - \cos^2 \)</span>, <span class="arithmatex">\( \sec^2 - 1 \)</span>, or <span class="arithmatex">\( \csc^2 - 1 \)</span> appears.</li>
+</ul>
+<p><strong>Example:</strong> Verify that <span class="arithmatex">\( \sec\theta - \cos\theta = \sin\theta\tan\theta \)</span>.</p>
+<p>Start with the left (more complicated, with both sec and cos). Convert secant to cosine:</p>
+<div class="arithmatex">\[ \sec\theta - \cos\theta = \frac{1}{\cos\theta} - \cos\theta = \frac{1 - \cos^2\theta}{\cos\theta} \]</div>
+<p>Apply the Pythagorean identity <span class="arithmatex">\( 1 - \cos^2\theta = \sin^2\theta \)</span>:</p>
+<div class="arithmatex">\[ \frac{\sin^2\theta}{\cos\theta} = \sin\theta\cdot\frac{\sin\theta}{\cos\theta} = \sin\theta\tan\theta \]</div>
+<p>which matches the right side. ✓</p>
+<p>Here is a side-by-side comparison of verifying vs. simplifying:</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Input</th>
+<th>Output</th>
+<th>Freedom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simplify</td>
+<td>one expression</td>
+<td>a cleaner equivalent expression</td>
+<td>rewrite however you like</td>
+</tr>
+<tr>
+<td>Verify</td>
+<td>a claimed identity with two sides</td>
+<td>a sequence showing they are equal</td>
+<td>transform one side only; never cross the equals sign</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-identity-verification-worked-examples">Diagram: Identity Verification Worked Examples</h4>
+<iframe src="../../sims/identity-verification-stepper/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Identity Verification Worked Examples</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> identity-verification-stepper<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>Learning objective (Apply, L3, demonstrate): Demonstrate the step-by-step verification of trigonometric identities by choosing the next algebraic move at each stage.</p>
+<p>Canvas layout:
+- Top: current state of the expression being transformed, with the two sides displayed
+- Middle: list of available moves (e.g., "Convert to sin/cos," "Apply Pythagorean identity," "Factor," "Combine fractions")
+- Bottom: feedback area showing whether the chosen move brings the two sides closer</p>
+<p>Visual elements:
+- Current expression in large math-typeset form
+- Highlighted portion of the expression that the selected move will transform
+- Move history stack on the right side
+- Success check when the two sides match</p>
+<p>Interactive controls:
+- Dropdown: choose from 6 preset identities to verify
+- Button array: select the next move
+- Button: Undo last move
+- Button: Show full solution</p>
+<p>Data Visibility Requirements:
+- Stage 1: Starting identity displayed in full
+- Stage 2: After each move, show which rule was applied and the resulting expression
+- Stage 3: Show a progress indicator (how many moves completed vs. expected)
+- Stage 4: When complete, display the full proof as a sequence</p>
+<p>Instructional Rationale: Guided move selection teaches identity verification as a search problem with a small number of good moves, not a magic trick. The undo button encourages experimentation without penalty.</p>
+<p>Implementation: p5.js with math rendering.</p>
+</details>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Algebra with New Rules</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+You have now added trig identities to your algebra toolkit. Solving equations, simplifying expressions, and building models will all be faster because you can rewrite <span class="arithmatex">\( \sin \)</span>, <span class="arithmatex">\( \cos \)</span>, and their relatives with confidence. The next chapter puts these skills to work solving trig equations.</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>An identity is true for every allowable input; an equation is only true for specific values.</li>
+<li>The core identity is <span class="arithmatex">\( \sin^2\theta + \cos^2\theta = 1 \)</span>. Dividing by <span class="arithmatex">\( \cos^2\theta \)</span> or <span class="arithmatex">\( \sin^2\theta \)</span> gives the other two Pythagorean identities.</li>
+<li>Reciprocal and quotient identities let you rewrite any trig expression in terms of sine and cosine.</li>
+<li>Cofunction identities pair each function with the function of its complement.</li>
+<li>Even-odd identities handle negative inputs: cosine and secant are even; the other four are odd.</li>
+<li>Sum and difference formulas compute trig values at sums of angles; double-angle formulas are the <span class="arithmatex">\( \alpha = \beta \)</span> case.</li>
+<li>To verify an identity, transform one side at a time until it matches the other. Start with the more complicated side.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../18-sinusoidal-modeling/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 18-Sinusoidal Modeling">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                18-Sinusoidal Modeling
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../20-inverse-trig-functions-and-equations/" class="md-footer__link md-footer__link--next" aria-label="Next: 20-Inverse Trig/Equations">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                20-Inverse Trig/Equations
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

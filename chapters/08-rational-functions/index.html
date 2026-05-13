@@ -1,0 +1,1910 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Rational expressions, domain, vertical and horizontal and slant asymptotes, holes, end behavior, graphing, and rational inequalities.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/08-rational-functions/">
+      
+      
+        <link rel="prev" href="../07-polynomial-zeros-and-graphs/">
+      
+      
+        <link rel="next" href="../09-function-transformations/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Rational Functions - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Rational Functions - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="Rational expressions, domain, vertical and horizontal and slant asymptotes, holes, end behavior, graphing, and rational inequalities." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/08-rational-functions/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/08-rational-functions/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Rational Functions - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="Rational expressions, domain, vertical and horizontal and slant asymptotes, holes, end behavior, graphing, and rational inequalities." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/08-rational-functions/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rational-functions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Rational Functions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-rational-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Rational Function?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rational-expressions-and-simplification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Expressions and Simplification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-of-a-rational-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain of a Rational Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vertical-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertical Asymptotes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#holes-in-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Holes in Graphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rational-function-zeros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Function Zeros
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end-behavior-and-horizontal-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      End Behavior and Horizontal Asymptotes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphing-a-rational-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphing a Rational Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graphing a Rational Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-rational-function-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Rational Function Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rational-inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Inequalities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-rational-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Rational Function?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rational-expressions-and-simplification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Expressions and Simplification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-of-a-rational-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain of a Rational Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vertical-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertical Asymptotes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#holes-in-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Holes in Graphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rational-function-zeros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Function Zeros
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end-behavior-and-horizontal-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      End Behavior and Horizontal Asymptotes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphing-a-rational-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphing a Rational Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graphing a Rational Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-rational-function-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Rational Function Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rational-inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Inequalities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/08-rational-functions/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="rational-functions">Rational Functions</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter introduces rational functions and their unique features. Students learn about rational expressions, simplification, and domain restrictions. The chapter covers vertical, horizontal, and slant asymptotes, holes in graphs, rational function zeros, and end behavior. Students develop skills in graphing rational functions by combining all of these features, and the chapter concludes with solving rational inequalities.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 12 concepts from the learning graph:</p>
+<ol>
+<li>Rational Function Definition</li>
+<li>Rational Expressions</li>
+<li>Simplifying Rational Expressions</li>
+<li>Vertical Asymptotes</li>
+<li>Horizontal Asymptotes</li>
+<li>Slant Asymptotes</li>
+<li>Holes in Graphs</li>
+<li>Rational Function Zeros</li>
+<li>Rational Function Domain</li>
+<li>End Behavior of Rationals</li>
+<li>Rational Function Graphs</li>
+<li>Rational Inequalities</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../02-functions-and-their-properties/">Chapter 2: Functions and Their Properties</a></li>
+<li><a href="../06-polynomial-fundamentals/">Chapter 6: Polynomial Fundamentals</a></li>
+<li><a href="../07-polynomial-zeros-and-graphs/">Chapter 7: Polynomial Zeros and Graphs</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Polynomials in a Ratio</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+What happens when we divide one polynomial by another? The result is a rational function — a function with all new behavior: forbidden inputs, invisible vertical walls, and horizontal ceilings. This chapter is the grand tour.</p>
+</div>
+<h2 id="what-is-a-rational-function">What Is a Rational Function?</h2>
+<p>A <strong>rational function</strong> is a function that can be written as a ratio of two polynomials:</p>
+<div class="arithmatex">\[ R(x) = \frac{P(x)}{Q(x)} \]</div>
+<p>where <span class="arithmatex">\( P(x) \)</span> and <span class="arithmatex">\( Q(x) \)</span> are polynomials and <span class="arithmatex">\( Q(x) \)</span> is not the zero polynomial. The name <em>rational</em> comes from the word <em>ratio</em> — a rational function is literally a polynomial ratio, much as a rational number is a ratio of integers.</p>
+<p>Every polynomial is trivially a rational function (divide by <span class="arithmatex">\( Q(x) = 1 \)</span>), but the interesting rational functions are those where the denominator actually involves <span class="arithmatex">\( x \)</span>. Division by a variable polynomial opens up behaviors no polynomial can produce:</p>
+<ul>
+<li>Inputs that are forbidden because the denominator is zero (not in the domain).</li>
+<li><strong>Asymptotes</strong> — lines the graph approaches but never touches.</li>
+<li><strong>Holes</strong> — single points removed from an otherwise smooth curve.</li>
+</ul>
+<p>These features make rational functions the first family we have met whose graphs are not a single connected piece.</p>
+<h2 id="rational-expressions-and-simplification">Rational Expressions and Simplification</h2>
+<p>The algebraic object inside a rational function — <span class="arithmatex">\( P(x)/Q(x) \)</span> before we think of it as a function — is called a <strong>rational expression</strong>. Rational expressions can be simplified, added, subtracted, multiplied, and divided using the same rules that govern rational numbers, with polynomial factoring playing the role that integer factoring plays for numeric fractions.</p>
+<p><strong>Simplifying a rational expression</strong> means canceling any factor that appears in both the numerator and the denominator. The one subtle rule: canceling a factor changes the expression's <em>domain</em>, because the canceled factor's zero is still a forbidden input in the original.</p>
+<p>Example:</p>
+<div class="arithmatex">\[ \frac{x^2 - 1}{x - 1} = \frac{(x-1)(x+1)}{x-1} \]</div>
+<p>Cancelling <span class="arithmatex">\( (x - 1) \)</span> gives the simpler expression <span class="arithmatex">\( x + 1 \)</span>, but <span class="arithmatex">\( x = 1 \)</span> is still forbidden in the <em>original</em> rational function — it would require dividing by zero. The simplified version has a <strong>hole</strong> at <span class="arithmatex">\( x = 1 \)</span>, which we will see is a key graphical feature.</p>
+<p>We will treat simplification carefully: cancel factors to reduce the expression, but always track which inputs were forbidden in the original denominator. They become either vertical asymptotes or holes.</p>
+<h2 id="domain-of-a-rational-function">Domain of a Rational Function</h2>
+<p>The <strong>domain</strong> of a rational function <span class="arithmatex">\( R(x) = P(x)/Q(x) \)</span> is the set of all real numbers <span class="arithmatex">\( x \)</span> except those that make the original denominator <span class="arithmatex">\( Q(x) \)</span> equal to zero. These forbidden inputs are called the <strong>domain exclusions</strong>.</p>
+<p>To find the domain, factor <span class="arithmatex">\( Q(x) \)</span> and locate its zeros. Every zero of the original <span class="arithmatex">\( Q(x) \)</span> — even if it cancels with a factor in <span class="arithmatex">\( P(x) \)</span> — is excluded from the domain.</p>
+<p>Example: <span class="arithmatex">\( R(x) = \dfrac{x + 2}{(x - 3)(x + 5)} \)</span>. The denominator is zero when <span class="arithmatex">\( x = 3 \)</span> or <span class="arithmatex">\( x = -5 \)</span>. Domain: all real numbers <em>except</em> 3 and <span class="arithmatex">\( -5 \)</span>.</p>
+<p>Excluded inputs are not all alike. Each one ends up on the graph in one of two ways:</p>
+<ul>
+<li>A <strong>vertical asymptote</strong> at <span class="arithmatex">\( x = c \)</span> if <span class="arithmatex">\( (x - c) \)</span> appears in the denominator but <em>not</em> in the numerator after canceling, or appears with higher multiplicity in the denominator.</li>
+<li>A <strong>hole</strong> at <span class="arithmatex">\( x = c \)</span> if <span class="arithmatex">\( (x - c) \)</span> cancels completely between numerator and denominator.</li>
+</ul>
+<p>The next two sections explain each case in detail.</p>
+<h2 id="vertical-asymptotes">Vertical Asymptotes</h2>
+<p>A <strong>vertical asymptote</strong> is a vertical line <span class="arithmatex">\( x = c \)</span> that the graph of <span class="arithmatex">\( R(x) \)</span> approaches as inputs close in on <span class="arithmatex">\( c \)</span> from either side. The output values grow without bound in magnitude — heading toward <span class="arithmatex">\( +\infty \)</span> or <span class="arithmatex">\( -\infty \)</span> — but the graph never actually touches the line <span class="arithmatex">\( x = c \)</span>.</p>
+<p>To find vertical asymptotes:</p>
+<ol>
+<li>Factor the numerator and denominator.</li>
+<li>Cancel any common factors.</li>
+<li>Every remaining factor <span class="arithmatex">\( (x - c) \)</span> in the denominator produces a vertical asymptote at <span class="arithmatex">\( x = c \)</span>.</li>
+</ol>
+<p>Example: <span class="arithmatex">\( R(x) = \dfrac{x + 2}{(x - 3)(x + 5)} \)</span>. No common factors to cancel, so vertical asymptotes at <span class="arithmatex">\( x = 3 \)</span> and <span class="arithmatex">\( x = -5 \)</span>.</p>
+<p>The graph's behavior near each asymptote depends on the sign of <span class="arithmatex">\( R(x) \)</span> on each side. Testing a point just to the left and just to the right of <span class="arithmatex">\( x = 3 \)</span> in the example:</p>
+<ul>
+<li>Just left of 3 (say <span class="arithmatex">\( x = 2.9 \)</span>): numerator <span class="arithmatex">\( \approx 4.9 &gt; 0 \)</span>; denominator <span class="arithmatex">\( \approx (-0.1)(7.9) &lt; 0 \)</span>. So <span class="arithmatex">\( R(2.9) &lt; 0 \)</span> — graph heads to <span class="arithmatex">\( -\infty \)</span>.</li>
+<li>Just right of 3 (say <span class="arithmatex">\( x = 3.1 \)</span>): numerator <span class="arithmatex">\( \approx 5.1 &gt; 0 \)</span>; denominator <span class="arithmatex">\( \approx (0.1)(8.1) &gt; 0 \)</span>. So <span class="arithmatex">\( R(3.1) &gt; 0 \)</span> — graph heads to <span class="arithmatex">\( +\infty \)</span>.</li>
+</ul>
+<p>The graph plunges down on the left of <span class="arithmatex">\( x = 3 \)</span> and rockets up on the right. Sign analysis around each asymptote is how we know which way the graph blows up.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Asymptotes Are Not Lines on the Graph</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Prema warning">
+A vertical asymptote is a <em>reference line</em> the graph approaches — not a part of the graph itself. Draw it as a dashed line so it is clear it is a guide, not a piece of the function. The function is never defined at the asymptote.</p>
+</div>
+<h2 id="holes-in-graphs">Holes in Graphs</h2>
+<p>A <strong>hole</strong> occurs at <span class="arithmatex">\( x = c \)</span> when the factor <span class="arithmatex">\( (x - c) \)</span> cancels completely between the numerator and the denominator. The simplified rational function is defined at <span class="arithmatex">\( x = c \)</span>, but the <em>original</em> function is not — so a single point is missing from the graph.</p>
+<p>Example: <span class="arithmatex">\( R(x) = \dfrac{(x - 1)(x + 4)}{(x - 1)(x + 2)} \)</span>. The <span class="arithmatex">\( (x - 1) \)</span> factor cancels, leaving <span class="arithmatex">\( \dfrac{x + 4}{x + 2} \)</span> for all <span class="arithmatex">\( x \ne 1 \)</span>. The simplified form has value <span class="arithmatex">\( \dfrac{1 + 4}{1 + 2} = \dfrac{5}{3} \)</span> at <span class="arithmatex">\( x = 1 \)</span>, so the graph looks like <span class="arithmatex">\( \dfrac{x + 4}{x + 2} \)</span> with a single open circle at <span class="arithmatex">\( \left(1, \tfrac{5}{3}\right) \)</span>.</p>
+<p>Holes and vertical asymptotes are the two possible fates of a denominator zero. The rule is clean:</p>
+<ul>
+<li>Factor fully cancels → hole (one open-circle point missing).</li>
+<li>Factor does not cancel (or cancels partially) → vertical asymptote (infinite vertical blowup).</li>
+</ul>
+<p>Before we get to end behavior, the table below summarizes the local behavior at each domain exclusion.</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Graphical feature</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Factor <span class="arithmatex">\( (x - c) \)</span> in denominator only</td>
+<td>Vertical asymptote at <span class="arithmatex">\( x = c \)</span></td>
+<td><span class="arithmatex">\( \dfrac{1}{x - 2} \)</span> at <span class="arithmatex">\( x = 2 \)</span></td>
+</tr>
+<tr>
+<td>Factor <span class="arithmatex">\( (x - c) \)</span> in both, same multiplicity</td>
+<td>Hole at <span class="arithmatex">\( x = c \)</span></td>
+<td><span class="arithmatex">\( \dfrac{(x - 1)(x + 4)}{(x - 1)(x + 2)} \)</span> at <span class="arithmatex">\( x = 1 \)</span></td>
+</tr>
+<tr>
+<td>Factor <span class="arithmatex">\( (x - c) \)</span> in both, higher multiplicity in denominator</td>
+<td>Vertical asymptote at <span class="arithmatex">\( x = c \)</span></td>
+<td><span class="arithmatex">\( \dfrac{x - 2}{(x - 2)^2} \)</span> at <span class="arithmatex">\( x = 2 \)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="rational-function-zeros">Rational Function Zeros</h2>
+<p>The <strong>zeros</strong> of a rational function are the inputs where <span class="arithmatex">\( R(x) = 0 \)</span>. A fraction equals zero only when its numerator equals zero <em>and</em> its denominator does not. So:</p>
+<ul>
+<li>Find the zeros of the numerator.</li>
+<li>Discard any that also zero the original denominator (those are holes, not zeros).</li>
+<li>What remains are the rational function's zeros — the <span class="arithmatex">\( x \)</span>-intercepts of the graph.</li>
+</ul>
+<p>Example: <span class="arithmatex">\( R(x) = \dfrac{(x + 2)(x - 1)}{(x - 1)(x + 5)} \)</span>. Numerator zeros: <span class="arithmatex">\( x = -2 \)</span> and <span class="arithmatex">\( x = 1 \)</span>. But <span class="arithmatex">\( x = 1 \)</span> also zeros the original denominator, so it is a hole. The only genuine zero is <span class="arithmatex">\( x = -2 \)</span>, which is the graph's single <span class="arithmatex">\( x \)</span>-intercept.</p>
+<h2 id="end-behavior-and-horizontal-asymptotes">End Behavior and Horizontal Asymptotes</h2>
+<p>Rational functions have <strong>end behavior</strong> — the same large-<span class="arithmatex">\( |x| \)</span> behavior we studied for polynomials — but with a new possibility. As <span class="arithmatex">\( |x| \)</span> grows, <span class="arithmatex">\( R(x) = P(x)/Q(x) \)</span> behaves like the ratio of leading terms of <span class="arithmatex">\( P \)</span> and <span class="arithmatex">\( Q \)</span>. Comparing the degrees <span class="arithmatex">\( m = \deg P \)</span> and <span class="arithmatex">\( n = \deg Q \)</span> gives three cases:</p>
+<ul>
+<li><strong><span class="arithmatex">\( m &lt; n \)</span> (numerator lower degree):</strong> the ratio shrinks toward 0 for large <span class="arithmatex">\( |x| \)</span>. The graph has a <strong>horizontal asymptote</strong> at <span class="arithmatex">\( y = 0 \)</span>.</li>
+<li><strong><span class="arithmatex">\( m = n \)</span> (equal degrees):</strong> the ratio approaches the ratio of the leading coefficients. The graph has a horizontal asymptote at <span class="arithmatex">\( y = a_m / b_n \)</span>, where <span class="arithmatex">\( a_m \)</span> and <span class="arithmatex">\( b_n \)</span> are the two leading coefficients.</li>
+<li><strong><span class="arithmatex">\( m &gt; n \)</span> by exactly 1 (numerator one degree higher):</strong> the ratio behaves like a linear expression. The graph has a <strong>slant asymptote</strong> (also called an oblique asymptote) found by polynomial long division of <span class="arithmatex">\( P(x) \)</span> by <span class="arithmatex">\( Q(x) \)</span> — the quotient (ignoring the remainder) is the equation of the line.</li>
+<li><strong><span class="arithmatex">\( m &gt; n \)</span> by 2 or more:</strong> no horizontal or slant asymptote; the graph's ends grow like a polynomial.</li>
+</ul>
+<p>A <strong>horizontal asymptote</strong> is a horizontal line that the graph approaches as <span class="arithmatex">\( x \to \pm\infty \)</span>. Unlike a vertical asymptote, a graph <em>can</em> cross its horizontal asymptote at finite <span class="arithmatex">\( x \)</span>-values; the asymptote only controls the <em>extreme</em> ends.</p>
+<p>A <strong>slant asymptote</strong> is a non-horizontal line that the graph approaches. Slant asymptotes arise only when the numerator's degree is exactly one more than the denominator's. Long division produces the asymptote directly.</p>
+<p>Example of a slant asymptote: <span class="arithmatex">\( R(x) = \dfrac{x^2 + 1}{x - 2} \)</span>. Degrees differ by exactly 1. Long division:</p>
+<div class="arithmatex">\[ \frac{x^2 + 1}{x - 2} = x + 2 + \frac{5}{x - 2} \]</div>
+<p>For large <span class="arithmatex">\( |x| \)</span>, the <span class="arithmatex">\( \tfrac{5}{x - 2} \)</span> term vanishes, so the graph approaches the line <span class="arithmatex">\( y = x + 2 \)</span>. That line is the slant asymptote.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Degree Comparison Is Everything</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema holding up a tip">
+To decide what kind of end-behavior asymptote a rational function has, compare only the <em>degrees</em> of the numerator and denominator. Lower numerator → horizontal at 0. Equal → horizontal at ratio of leading coefficients. One higher → slant line from long division. Two or more higher → no end-behavior asymptote at all.</p>
+</div>
+<h2 id="graphing-a-rational-function">Graphing a Rational Function</h2>
+<p>A rational function graph is built by layering all the features we have collected. Follow a seven-step procedure:</p>
+<ol>
+<li><strong>Factor</strong> the numerator and denominator fully.</li>
+<li><strong>Simplify</strong> by canceling any common factors; note each canceled factor as a hole.</li>
+<li><strong>Domain exclusions</strong> → each original denominator zero is either a hole or a vertical asymptote.</li>
+<li><strong>Zeros</strong> → solve (simplified) numerator = 0; discard any that were holes.</li>
+<li><strong>y-intercept</strong> → compute <span class="arithmatex">\( R(0) \)</span>, provided 0 is in the domain.</li>
+<li><strong>End-behavior asymptote</strong> → compare numerator and denominator degrees; find horizontal or slant asymptote.</li>
+<li><strong>Sign chart and sketch</strong> → between the asymptotes and zeros, test the sign of <span class="arithmatex">\( R(x) \)</span> to see which side of the <span class="arithmatex">\( x \)</span>-axis the graph lives on; draw the curve approaching each asymptote correctly.</li>
+</ol>
+<p>Worked example: <span class="arithmatex">\( R(x) = \dfrac{x - 1}{x^2 - 4} \)</span>.</p>
+<ul>
+<li>Factor denominator: <span class="arithmatex">\( R(x) = \dfrac{x - 1}{(x - 2)(x + 2)} \)</span>. No common factors.</li>
+<li>Domain exclusions: <span class="arithmatex">\( x = 2 \)</span>, <span class="arithmatex">\( x = -2 \)</span>. Both are vertical asymptotes.</li>
+<li>Zero: <span class="arithmatex">\( x = 1 \)</span>.</li>
+<li>y-intercept: <span class="arithmatex">\( R(0) = \dfrac{-1}{-4} = \dfrac{1}{4} \)</span>.</li>
+<li>Numerator degree 1, denominator degree 2 → horizontal asymptote at <span class="arithmatex">\( y = 0 \)</span>.</li>
+<li>Sign chart on the four intervals produced by <span class="arithmatex">\( x = -2, 1, 2 \)</span>: negative on <span class="arithmatex">\( (-\infty, -2) \)</span>, positive on <span class="arithmatex">\( (-2, 1) \)</span>, negative on <span class="arithmatex">\( (1, 2) \)</span>, positive on <span class="arithmatex">\( (2, \infty) \)</span>. Graph lives accordingly.</li>
+</ul>
+<h4 id="diagram-rational-function-explorer">Diagram: Rational Function Explorer</h4>
+<details>
+<summary>Interactive layered display of every rational function feature</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> rational-function-explorer<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim that lets students construct a rational function from factored form and reveals each graphical feature — asymptotes, holes, zeros, intercept, end behavior — as separate toggleable layers.</p>
+<p>Learning objective (Bloom's Applying): Students will apply the seven-step graphing procedure to sketch a rational function and verify that each layer of the graph corresponds to an algebraic feature.</p>
+<p>Visual elements:</p>
+<ul>
+<li>A coordinate plane from -8 to 8 on each axis with gridlines.</li>
+<li>A maroon curve drawn piecewise across the domain of the function.</li>
+<li>Dashed cyan-blue lines for each vertical asymptote and the horizontal/slant asymptote.</li>
+<li>Hollow cyan dots marking each hole; filled black dots marking each zero and the y-intercept.</li>
+<li>A side panel listing the seven-step procedure with a checkbox and a live toggle for each visual layer.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Factored-form input fields for up to three linear factors in the numerator and three in the denominator, with multiplicity.</li>
+<li>Preset buttons: <span class="arithmatex">\( \dfrac{1}{x} \)</span>, <span class="arithmatex">\( \dfrac{x-1}{x^2-4} \)</span>, <span class="arithmatex">\( \dfrac{(x-1)(x+4)}{(x-1)(x+2)} \)</span>, <span class="arithmatex">\( \dfrac{x^2+1}{x-2} \)</span>.</li>
+<li>"Show Sign Chart" toggle that overlays a sign-analysis strip beneath the x-axis showing intervals where <span class="arithmatex">\( R(x) \)</span> is positive or negative.</li>
+</ul>
+<p>Instructional rationale: Apply-level graphing becomes reliable when each visual feature is tied back to a specific algebraic fact. Layer-by-layer construction prevents the "memorize the whole picture" trap and makes errors traceable.</p>
+<p>Canvas: 1000 × 650 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createInput for factor entry, createButton for presets, createCheckbox for layer toggles and sign chart.</p>
+</details>
+<h2 id="rational-inequalities">Rational Inequalities</h2>
+<p>A <strong>rational inequality</strong> asks for all inputs where <span class="arithmatex">\( R(x) &gt; 0 \)</span>, <span class="arithmatex">\( R(x) &lt; 0 \)</span>, <span class="arithmatex">\( R(x) \ge 0 \)</span>, or <span class="arithmatex">\( R(x) \le 0 \)</span>. The strategy is straightforward but has one pitfall: you cannot multiply both sides by the denominator because the denominator's sign changes across vertical asymptotes.</p>
+<p>The safe procedure is the <strong>sign chart</strong>:</p>
+<ol>
+<li>Move all terms to one side so the inequality reads <span class="arithmatex">\( R(x) &gt; 0 \)</span> (or <span class="arithmatex">\( \ge \)</span>, <span class="arithmatex">\( &lt; \)</span>, <span class="arithmatex">\( \le \)</span>) with the other side zero.</li>
+<li>Simplify <span class="arithmatex">\( R(x) \)</span> into a single rational expression <span class="arithmatex">\( \dfrac{P(x)}{Q(x)} \)</span> with fully factored numerator and denominator.</li>
+<li>Find all <strong>critical values</strong>: zeros of <span class="arithmatex">\( P(x) \)</span> and zeros of <span class="arithmatex">\( Q(x) \)</span>.</li>
+<li>Mark these critical values on a number line; they partition the real line into intervals.</li>
+<li>Test one value in each interval; record the sign of <span class="arithmatex">\( R \)</span> on that interval.</li>
+<li>Collect the intervals with the desired sign. Use open endpoints at domain exclusions; use closed endpoints at zeros if the inequality is <span class="arithmatex">\( \ge \)</span> or <span class="arithmatex">\( \le \)</span>.</li>
+</ol>
+<p>Worked example: solve <span class="arithmatex">\( \dfrac{x - 1}{x^2 - 4} \ge 0 \)</span>.</p>
+<ul>
+<li>Critical values: <span class="arithmatex">\( x = 1 \)</span> (zero of numerator), <span class="arithmatex">\( x = \pm 2 \)</span> (zeros of denominator).</li>
+<li>Number line split at <span class="arithmatex">\( -2, 1, 2 \)</span> — four intervals.</li>
+<li>Test values: <span class="arithmatex">\( R(-3) &lt; 0 \)</span>, <span class="arithmatex">\( R(0) &gt; 0 \)</span>, <span class="arithmatex">\( R(1.5) &lt; 0 \)</span>, <span class="arithmatex">\( R(3) &gt; 0 \)</span>.</li>
+<li>Want <span class="arithmatex">\( R \ge 0 \)</span>: include <span class="arithmatex">\( (-2, 1] \)</span> and <span class="arithmatex">\( (2, \infty) \)</span>. Include <span class="arithmatex">\( x = 1 \)</span> (zero, satisfies equality). Exclude <span class="arithmatex">\( x = -2 \)</span> and <span class="arithmatex">\( x = 2 \)</span> (not in domain).</li>
+</ul>
+<p>Solution: <span class="arithmatex">\( (-2, 1] \cup (2, \infty) \)</span>.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Why Not Just Multiply Out?</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema thinking">
+With polynomial equations, multiplying both sides by something is safe. With rational inequalities it is dangerous: the denominator might be negative in some intervals and positive in others, which flips the inequality sign for some inputs but not others. The sign-chart method avoids the trap entirely.</p>
+</div>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Rational functions are the first family where the graph can come apart into multiple pieces. Every unfamiliar feature — asymptotes, holes, sign changes — comes from a simple cause: dividing by a polynomial that can be zero.</p>
+<p>The key ideas to carry forward:</p>
+<ul>
+<li>A <strong>rational function</strong> is a ratio of two polynomials; its <strong>domain</strong> excludes zeros of the denominator.</li>
+<li>Each excluded input is a <strong>hole</strong> (if the factor cancels) or a <strong>vertical asymptote</strong> (if it does not).</li>
+<li><strong>Zeros</strong> come from the numerator after simplification.</li>
+<li>End behavior produces a <strong>horizontal asymptote</strong>, a <strong>slant asymptote</strong>, or no asymptote, depending on how numerator and denominator degrees compare.</li>
+<li>Graphing layers these features with a <strong>seven-step procedure</strong>.</li>
+<li><strong>Rational inequalities</strong> are solved by a sign chart on a number line — never by multiplying through.</li>
+</ul>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Onward Through the Asymptotes</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+You now handle the most structurally complex family on the AP Pre-Calculus exam — the one with disconnected graphs, infinite behavior, and multiple kinds of asymptotes. The rest of Unit 1 is about to feel like a breeze!</p>
+</div>
+<details class="question">
+<summary>Quick Check: Find the vertical asymptotes of <span class="arithmatex">\( R(x) = \dfrac{(x-1)(x+2)}{(x-1)(x-3)} \)</span>.</summary>
+<p>Cancel <span class="arithmatex">\( (x-1) \)</span>: hole at <span class="arithmatex">\( x = 1 \)</span>. Remaining denominator factor <span class="arithmatex">\( (x - 3) \)</span>: vertical asymptote at <span class="arithmatex">\( x = 3 \)</span>.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Does <span class="arithmatex">\( R(x) = \dfrac{2x + 1}{x^2 + 3} \)</span> have a horizontal asymptote? Where?</summary>
+<p>Numerator degree 1 &lt; denominator degree 2, so horizontal asymptote at <span class="arithmatex">\( y = 0 \)</span>.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Solve <span class="arithmatex">\( \dfrac{x - 2}{x + 1} &lt; 0 \)</span>.</summary>
+<p>Critical values: <span class="arithmatex">\( x = 2 \)</span> (zero), <span class="arithmatex">\( x = -1 \)</span> (asymptote). Test intervals: negative on <span class="arithmatex">\( (-1, 2) \)</span>. Solution: <span class="arithmatex">\( (-1, 2) \)</span>.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../07-polynomial-zeros-and-graphs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 7-Polynomial Zeros/Graphs">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                7-Polynomial Zeros/Graphs
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../09-function-transformations/" class="md-footer__link md-footer__link--next" aria-label="Next: 9-Function Transformations">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                9-Function Transformations
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

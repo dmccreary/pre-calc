@@ -1,0 +1,1983 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ordered lists of numbers — arithmetic sequences with common differences, geometric sequences with common ratios, recursive and explicit formulas, and the convergence or divergence of sequence values.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/12-sequences/">
+      
+      
+        <link rel="prev" href="../11-composition-and-inverse-functions/">
+      
+      
+        <link rel="next" href="../13-exponential-functions/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Sequences - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Sequences - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="Ordered lists of numbers — arithmetic sequences with common differences, geometric sequences with common ratios, recursive and explicit formulas, and the convergence or divergence of sequence values." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/12-sequences/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/12-sequences/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Sequences - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="Ordered lists of numbers — arithmetic sequences with common differences, geometric sequences with common ratios, recursive and explicit formulas, and the convergence or divergence of sequence values." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/12-sequences/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sequences" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sequences
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arithmetic-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Sequence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Difference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arithmetic-sequence-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Sequence Formula
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Sequence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Ratio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-sequence-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Sequence Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Geometric Sequence Formula">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-arithmetic-vs-geometric-sequence-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Arithmetic vs Geometric Sequence Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursive-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Formulas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explicit-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit Formulas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-convergence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence Convergence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-divergence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence Divergence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arithmetic-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Sequence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Difference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arithmetic-sequence-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Sequence Formula
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Sequence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Ratio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-sequence-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Sequence Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Geometric Sequence Formula">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-arithmetic-vs-geometric-sequence-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Arithmetic vs Geometric Sequence Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursive-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Formulas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explicit-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit Formulas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-convergence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence Convergence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-divergence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequence Divergence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/12-sequences/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="sequences">Sequences</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter introduces sequences as ordered lists of numbers with identifiable patterns. Students learn the definitions and properties of arithmetic sequences (with common differences) and geometric sequences (with common ratios), along with their explicit and recursive formulas. The chapter also covers sequence convergence and divergence, connecting geometric sequences to the exponential functions studied in the next chapter.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 11 concepts from the learning graph:</p>
+<ol>
+<li>Sequence Definition</li>
+<li>Arithmetic Sequence</li>
+<li>Common Difference</li>
+<li>Arithmetic Sequence Formula</li>
+<li>Geometric Sequence</li>
+<li>Common Ratio</li>
+<li>Geometric Sequence Formula</li>
+<li>Recursive Formulas</li>
+<li>Explicit Formulas</li>
+<li>Sequence Convergence</li>
+<li>Sequence Divergence</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../02-functions-and-their-properties/">Chapter 2: Functions and Their Properties</a></li>
+<li><a href="../03-rates-of-change/">Chapter 3: Rates of Change</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Patterns in Lists of Numbers</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+A sequence is a list of numbers that follows a rule. The two rules we focus on this chapter — <em>add the same amount each step</em> and <em>multiply by the same factor each step</em> — are the discrete twins of the linear and exponential functions you will study soon. Spotting which rule a sequence follows is the bridge between this chapter and the rest of Unit 2.</p>
+</div>
+<h2 id="sequence-definition">Sequence Definition</h2>
+<p>A <strong>sequence</strong> is an ordered list of numbers, each one occupying a specific position. The numbers in a sequence are called its <strong>terms</strong>, and the position of each term is its <strong>index</strong>. We write the term at index <span class="arithmatex">\( n \)</span> as <span class="arithmatex">\( a_n \)</span>, so a sequence might appear as:</p>
+<div class="arithmatex">\[ a_1, a_2, a_3, a_4, \ldots \]</div>
+<p>Order matters. The sequence <span class="arithmatex">\( 2, 4, 6, 8 \)</span> is different from <span class="arithmatex">\( 8, 6, 4, 2 \)</span>, even though they contain the same numbers. Each term has both a <em>value</em> (the number itself) and a <em>position</em> (its index).</p>
+<p>Sequences are functions in disguise. The index <span class="arithmatex">\( n \)</span> is an input — usually a positive integer — and the term <span class="arithmatex">\( a_n \)</span> is the output. Because the inputs are restricted to whole-number positions, sequences are sometimes called <em>discrete functions</em>. This connection lets us reuse the function vocabulary from Chapter 2: domain (the index set), range (the set of term values), increasing or decreasing behavior, and even rates of change.</p>
+<p>A sequence can be <strong>finite</strong> (a fixed number of terms) or <strong>infinite</strong> (continuing forever). Most of this chapter focuses on infinite sequences because their long-run behavior — convergence or divergence — is the most useful connection to later topics.</p>
+<h2 id="arithmetic-sequence">Arithmetic Sequence</h2>
+<p>An <strong>arithmetic sequence</strong> is a sequence in which each term is obtained by adding the same fixed number to the previous term. That fixed number is called the <strong>common difference</strong>, written <span class="arithmatex">\( d \)</span>.</p>
+<p>Examples of arithmetic sequences:</p>
+<ul>
+<li><span class="arithmatex">\( 3, 7, 11, 15, 19, \ldots \)</span> with <span class="arithmatex">\( d = 4 \)</span></li>
+<li><span class="arithmatex">\( 100, 95, 90, 85, \ldots \)</span> with <span class="arithmatex">\( d = -5 \)</span></li>
+<li><span class="arithmatex">\( 0, 1.5, 3.0, 4.5, \ldots \)</span> with <span class="arithmatex">\( d = 1.5 \)</span></li>
+</ul>
+<p>Arithmetic sequences exhibit <em>constant additive change</em>. Plotted as points <span class="arithmatex">\( (n, a_n) \)</span>, the points fall on a straight line — they are the discrete cousins of linear functions.</p>
+<h2 id="common-difference">Common Difference</h2>
+<p>The <strong>common difference</strong> <span class="arithmatex">\( d \)</span> is the constant gap between consecutive terms of an arithmetic sequence:</p>
+<div class="arithmatex">\[ d = a_{n+1} - a_n \]</div>
+<p>If the differences between successive terms are not all equal, the sequence is <em>not</em> arithmetic. Computing the first few differences is the standard test:</p>
+<ul>
+<li>For <span class="arithmatex">\( 5, 8, 11, 14, \ldots \)</span>: differences are <span class="arithmatex">\( 3, 3, 3 \)</span> → arithmetic with <span class="arithmatex">\( d = 3 \)</span>.</li>
+<li>For <span class="arithmatex">\( 2, 4, 8, 16, \ldots \)</span>: differences are <span class="arithmatex">\( 2, 4, 8 \)</span> — not constant, so not arithmetic.</li>
+<li>For <span class="arithmatex">\( 10, 7, 4, 1, \ldots \)</span>: differences are <span class="arithmatex">\( -3, -3, -3 \)</span> → arithmetic with <span class="arithmatex">\( d = -3 \)</span>.</li>
+</ul>
+<p>Notice that the common difference can be positive (the sequence increases), negative (the sequence decreases), or zero (every term is the same).</p>
+<h2 id="arithmetic-sequence-formula">Arithmetic Sequence Formula</h2>
+<p>The <strong>arithmetic sequence formula</strong> gives the value of any term using the first term and the common difference:</p>
+<div class="arithmatex">\[ a_n = a_1 + (n - 1)d \]</div>
+<p>The reasoning behind the formula is direct: starting at <span class="arithmatex">\( a_1 \)</span>, we add <span class="arithmatex">\( d \)</span> to reach <span class="arithmatex">\( a_2 \)</span>, add <span class="arithmatex">\( d \)</span> again to reach <span class="arithmatex">\( a_3 \)</span>, and so on. To reach <span class="arithmatex">\( a_n \)</span>, we have added <span class="arithmatex">\( d \)</span> a total of <span class="arithmatex">\( n - 1 \)</span> times.</p>
+<p>A worked example: find the 50th term of the sequence <span class="arithmatex">\( 7, 12, 17, 22, \ldots \)</span>. Here <span class="arithmatex">\( a_1 = 7 \)</span> and <span class="arithmatex">\( d = 5 \)</span>, so:</p>
+<div class="arithmatex">\[ a_{50} = 7 + (50 - 1) \cdot 5 = 7 + 245 = 252 \]</div>
+<p>The formula also works in reverse to identify a sequence's position from a given value. If <span class="arithmatex">\( a_n = 252 \)</span>, <span class="arithmatex">\( a_1 = 7 \)</span>, and <span class="arithmatex">\( d = 5 \)</span>, solving for <span class="arithmatex">\( n \)</span> gives <span class="arithmatex">\( n = 50 \)</span>.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Arithmetic Sequences Are Linear Functions</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema holding up a tip">
+The formula <span class="arithmatex">\( a_n = a_1 + (n-1)d \)</span> rearranges to <span class="arithmatex">\( a_n = d \cdot n + (a_1 - d) \)</span> — a linear function of <span class="arithmatex">\( n \)</span> with slope <span class="arithmatex">\( d \)</span>. Every arithmetic sequence is a linear function evaluated at the integers. The slope is the common difference; the <span class="arithmatex">\( y \)</span>-intercept is whatever the line would predict at <span class="arithmatex">\( n = 0 \)</span>.</p>
+</div>
+<h2 id="geometric-sequence">Geometric Sequence</h2>
+<p>A <strong>geometric sequence</strong> is a sequence in which each term is obtained by multiplying the previous term by the same fixed number. That fixed multiplier is called the <strong>common ratio</strong>, written <span class="arithmatex">\( r \)</span>.</p>
+<p>Examples of geometric sequences:</p>
+<ul>
+<li><span class="arithmatex">\( 3, 6, 12, 24, 48, \ldots \)</span> with <span class="arithmatex">\( r = 2 \)</span></li>
+<li><span class="arithmatex">\( 100, 50, 25, 12.5, \ldots \)</span> with <span class="arithmatex">\( r = 1/2 \)</span></li>
+<li><span class="arithmatex">\( 1, -2, 4, -8, 16, \ldots \)</span> with <span class="arithmatex">\( r = -2 \)</span></li>
+</ul>
+<p>Geometric sequences exhibit <em>constant multiplicative change</em>. Plotted as points <span class="arithmatex">\( (n, a_n) \)</span>, they curve in the recognizable shape of an exponential function — they are the discrete cousins of exponentials.</p>
+<h2 id="common-ratio">Common Ratio</h2>
+<p>The <strong>common ratio</strong> <span class="arithmatex">\( r \)</span> is the constant factor between consecutive terms of a geometric sequence:</p>
+<div class="arithmatex">\[ r = \frac{a_{n+1}}{a_n} \]</div>
+<p>If the ratios between successive terms are not all equal, the sequence is <em>not</em> geometric. As with arithmetic, computing the first few ratios is the standard test:</p>
+<ul>
+<li>For <span class="arithmatex">\( 5, 15, 45, 135, \ldots \)</span>: ratios are <span class="arithmatex">\( 3, 3, 3 \)</span> → geometric with <span class="arithmatex">\( r = 3 \)</span>.</li>
+<li>For <span class="arithmatex">\( 1, 2, 3, 4, \ldots \)</span>: ratios are <span class="arithmatex">\( 2, 1.5, 1.33 \)</span> — not constant, so not geometric.</li>
+<li>For <span class="arithmatex">\( 64, 16, 4, 1, \ldots \)</span>: ratios are <span class="arithmatex">\( 1/4, 1/4, 1/4 \)</span> → geometric with <span class="arithmatex">\( r = 1/4 \)</span>.</li>
+</ul>
+<p>The common ratio can be greater than 1 (the sequence grows), between 0 and 1 (the sequence shrinks toward 0), negative (the sequence alternates sign), or exactly 1 (the sequence is constant). The case <span class="arithmatex">\( r = 0 \)</span> is excluded because then <span class="arithmatex">\( a_2, a_3, \ldots \)</span> would all be 0 and the ratio would be undefined.</p>
+<h2 id="geometric-sequence-formula">Geometric Sequence Formula</h2>
+<p>The <strong>geometric sequence formula</strong> gives any term using the first term and the common ratio:</p>
+<div class="arithmatex">\[ a_n = a_1 \cdot r^{n - 1} \]</div>
+<p>The reasoning parallels the arithmetic case: starting at <span class="arithmatex">\( a_1 \)</span>, we multiply by <span class="arithmatex">\( r \)</span> to reach <span class="arithmatex">\( a_2 \)</span>, multiply by <span class="arithmatex">\( r \)</span> again to reach <span class="arithmatex">\( a_3 \)</span>, and so on. To reach <span class="arithmatex">\( a_n \)</span>, we have multiplied by <span class="arithmatex">\( r \)</span> a total of <span class="arithmatex">\( n - 1 \)</span> times.</p>
+<p>A worked example: find the 10th term of the sequence <span class="arithmatex">\( 4, 12, 36, 108, \ldots \)</span>. Here <span class="arithmatex">\( a_1 = 4 \)</span> and <span class="arithmatex">\( r = 3 \)</span>, so:</p>
+<div class="arithmatex">\[ a_{10} = 4 \cdot 3^{10-1} = 4 \cdot 19683 = 78732 \]</div>
+<p>The next table places the two formulas side by side so the parallel structure is easy to see.</p>
+<table>
+<thead>
+<tr>
+<th>Sequence type</th>
+<th>Pattern of change</th>
+<th>Explicit formula</th>
+<th>Discrete cousin of</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arithmetic</td>
+<td>Add <span class="arithmatex">\( d \)</span> each step</td>
+<td><span class="arithmatex">\( a_n = a_1 + (n-1)d \)</span></td>
+<td>Linear function</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td>Multiply by <span class="arithmatex">\( r \)</span> each step</td>
+<td><span class="arithmatex">\( a_n = a_1 \cdot r^{n-1} \)</span></td>
+<td>Exponential function</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-arithmetic-vs-geometric-sequence-explorer">Diagram: Arithmetic vs Geometric Sequence Explorer</h4>
+<details>
+<summary>Side-by-side plot of arithmetic and geometric sequences with adjustable parameters</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> arithmetic-vs-geometric-explorer<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim showing two sequences plotted as points: an arithmetic sequence on the left, a geometric sequence on the right, with sliders to control the starting value, the common difference, and the common ratio.</p>
+<p>Learning objective (Bloom's Analyzing): Students will analyze the contrast between additive and multiplicative growth patterns by adjusting parameters and observing the resulting shapes.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Two side-by-side coordinate planes, each showing the index <span class="arithmatex">\( n \)</span> on the horizontal axis and the term value <span class="arithmatex">\( a_n \)</span> on the vertical axis.</li>
+<li>Up to 20 points plotted per panel, with the explicit formula displayed above each plot.</li>
+<li>Connecting line for the arithmetic sequence (straight); a dashed exponential curve drawn through the geometric points to emphasize the curved shape.</li>
+<li>A dynamic value table showing <span class="arithmatex">\( a_1 \)</span> through <span class="arithmatex">\( a_{10} \)</span> for both sequences.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>A slider for <span class="arithmatex">\( a_1 \)</span> ranging from -20 to 20.</li>
+<li>A slider for <span class="arithmatex">\( d \)</span> ranging from -5 to 5 (controls arithmetic sequence).</li>
+<li>A slider for <span class="arithmatex">\( r \)</span> ranging from -2 to 2 in steps of 0.1 (controls geometric sequence).</li>
+<li>A "Match Growth" button that picks <span class="arithmatex">\( d \)</span> and <span class="arithmatex">\( r \)</span> so the two sequences agree at <span class="arithmatex">\( a_5 \)</span>, highlighting how multiplicative growth pulls ahead afterward.</li>
+</ul>
+<p>Instructional rationale: Students grasp the linear-vs-exponential contrast much faster when they see both patterns side by side and can drag the parameters to watch the geometric points rocket past the arithmetic ones.</p>
+<p>Canvas: 1100 × 500 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createSlider for parameters, createButton for Match Growth.</p>
+</details>
+<h2 id="recursive-formulas">Recursive Formulas</h2>
+<p>A <strong>recursive formula</strong> defines a sequence by stating two things: a <em>starting value</em> (or starting values), and a <em>recurrence rule</em> that uses the previous term (or terms) to compute the next term.</p>
+<p>For an arithmetic sequence, the recursive form is:</p>
+<div class="arithmatex">\[ a_1 = \text{starting value}, \quad a_n = a_{n-1} + d \text{ for } n \geq 2 \]</div>
+<p>For a geometric sequence:</p>
+<div class="arithmatex">\[ a_1 = \text{starting value}, \quad a_n = a_{n-1} \cdot r \text{ for } n \geq 2 \]</div>
+<p>A recursive formula mirrors the way the sequence is built step by step. It is excellent for computing nearby terms but inefficient for far-away terms — finding <span class="arithmatex">\( a_{1000} \)</span> recursively requires 999 prior computations.</p>
+<h2 id="explicit-formulas">Explicit Formulas</h2>
+<p>An <strong>explicit formula</strong> is a formula that expresses <span class="arithmatex">\( a_n \)</span> directly in terms of <span class="arithmatex">\( n \)</span>, without referring to other terms. The arithmetic and geometric formulas in the previous sections are explicit. Explicit formulas are excellent for jumping straight to a far-away term — <span class="arithmatex">\( a_{1000} \)</span> takes one calculation instead of 999.</p>
+<p>The next table contrasts the two representations and shows when each is more useful.</p>
+<table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Strength</th>
+<th>Weakness</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recursive</td>
+<td>Mirrors the step-by-step pattern</td>
+<td>Slow for far terms</td>
+<td>Building intuition; programming small loops</td>
+</tr>
+<tr>
+<td>Explicit</td>
+<td>Direct calculation of any term</td>
+<td>Sometimes hard to derive</td>
+<td>Solving for specific terms; calculus connections</td>
+</tr>
+</tbody>
+</table>
+<p>A useful skill is converting between the two forms. Given the recursive arithmetic definition <span class="arithmatex">\( a_1 = 4, a_n = a_{n-1} + 6 \)</span>, the explicit form is <span class="arithmatex">\( a_n = 4 + (n-1) \cdot 6 = 6n - 2 \)</span>. Conversely, given <span class="arithmatex">\( a_n = 6n - 2 \)</span>, the common difference is <span class="arithmatex">\( d = 6 \)</span> (the coefficient of <span class="arithmatex">\( n \)</span>) and <span class="arithmatex">\( a_1 = 6(1) - 2 = 4 \)</span>, so the recursive form is recovered.</p>
+<h2 id="sequence-convergence">Sequence Convergence</h2>
+<p>An infinite sequence <strong>converges</strong> if its terms approach a single fixed value as the index <span class="arithmatex">\( n \)</span> grows without bound. That fixed value is called the <strong>limit</strong> of the sequence.</p>
+<p>For a geometric sequence <span class="arithmatex">\( a_n = a_1 \cdot r^{n-1} \)</span>, the long-run behavior is determined entirely by <span class="arithmatex">\( |r| \)</span>:</p>
+<ul>
+<li>If <span class="arithmatex">\( |r| &lt; 1 \)</span>, the powers <span class="arithmatex">\( r^{n-1} \)</span> shrink toward 0, so the sequence converges to 0 (regardless of <span class="arithmatex">\( a_1 \)</span> when <span class="arithmatex">\( a_1 \neq 0 \)</span>, the limit is 0; if <span class="arithmatex">\( a_1 = 0 \)</span>, the sequence is constantly 0).</li>
+<li>If <span class="arithmatex">\( r = 1 \)</span>, every term equals <span class="arithmatex">\( a_1 \)</span>, so the sequence converges to <span class="arithmatex">\( a_1 \)</span>.</li>
+</ul>
+<p>For example, the sequence <span class="arithmatex">\( 100, 50, 25, 12.5, 6.25, \ldots \)</span> (with <span class="arithmatex">\( a_1 = 100, r = 1/2 \)</span>) converges to 0. The terms get arbitrarily close to 0 — and stay close — as <span class="arithmatex">\( n \)</span> grows.</p>
+<p>Convergence is the discrete preview of <em>limits</em>, a topic formalized in calculus. For pre-calculus, the test for a geometric sequence is simple: <span class="arithmatex">\( |r| &lt; 1 \)</span> implies convergence to 0; <span class="arithmatex">\( r = 1 \)</span> implies convergence to <span class="arithmatex">\( a_1 \)</span>.</p>
+<h2 id="sequence-divergence">Sequence Divergence</h2>
+<p>A sequence <strong>diverges</strong> if it does not converge. Three flavors of divergence are common:</p>
+<ul>
+<li><strong>Divergence to infinity</strong>: terms grow without bound (positive or negative). Example: <span class="arithmatex">\( 1, 2, 4, 8, 16, \ldots \)</span> with <span class="arithmatex">\( r = 2 \)</span>.</li>
+<li><strong>Oscillation</strong>: terms bounce between values without settling. Example: <span class="arithmatex">\( 1, -1, 1, -1, \ldots \)</span> with <span class="arithmatex">\( r = -1 \)</span>.</li>
+<li><strong>Unbounded oscillation</strong>: terms swing in alternating signs with growing magnitude. Example: <span class="arithmatex">\( 1, -2, 4, -8, 16, \ldots \)</span> with <span class="arithmatex">\( r = -2 \)</span>.</li>
+</ul>
+<p>For a geometric sequence with <span class="arithmatex">\( a_1 \neq 0 \)</span>, divergence happens whenever <span class="arithmatex">\( |r| &gt; 1 \)</span> (unbounded growth) or <span class="arithmatex">\( r = -1 \)</span> (sign-flipping oscillation).</p>
+<p>For arithmetic sequences, the situation is simpler. Unless <span class="arithmatex">\( d = 0 \)</span> (constant sequence), an arithmetic sequence always diverges — the terms grow without bound (if <span class="arithmatex">\( d &gt; 0 \)</span>) or fall without bound (if <span class="arithmatex">\( d &lt; 0 \)</span>). Linear growth never settles.</p>
+<p>The next table summarizes the long-run behavior of geometric sequences as a function of the common ratio.</p>
+<table>
+<thead>
+<tr>
+<th>Common ratio <span class="arithmatex">\( r \)</span></th>
+<th>Long-run behavior of <span class="arithmatex">\( a_n \)</span></th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( r &gt; 1 \)</span></td>
+<td>Grows without bound</td>
+<td>Diverges to <span class="arithmatex">\( \pm \infty \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( r = 1 \)</span></td>
+<td>Stays at <span class="arithmatex">\( a_1 \)</span></td>
+<td>Converges to <span class="arithmatex">\( a_1 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 0 &lt; r &lt; 1 \)</span></td>
+<td>Shrinks toward 0</td>
+<td>Converges to 0</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( r = 0 \)</span></td>
+<td>Becomes 0 immediately (excluded by definition)</td>
+<td>—</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( -1 &lt; r &lt; 0 \)</span></td>
+<td>Alternates sign while shrinking</td>
+<td>Converges to 0</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( r = -1 \)</span></td>
+<td>Alternates between <span class="arithmatex">\( a_1 \)</span> and <span class="arithmatex">\( -a_1 \)</span></td>
+<td>Diverges (oscillates)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( r &lt; -1 \)</span></td>
+<td>Alternates sign with growing magnitude</td>
+<td>Diverges (unbounded oscillation)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Convergence Lives Inside the Unit Interval</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema thinking">
+For geometric sequences, the dividing line for convergence is <span class="arithmatex">\( |r| = 1 \)</span>. Inside the unit interval (<span class="arithmatex">\( |r| &lt; 1 \)</span>), the terms shrink to 0. Outside (<span class="arithmatex">\( |r| &gt; 1 \)</span>), they explode. Right on the boundary, behavior depends on the sign of <span class="arithmatex">\( r \)</span>. This same boundary will appear again when we study geometric series and exponential decay.</p>
+</div>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Sequences are functions defined on the positive integers, and the two patterns we have studied — additive and multiplicative — preview the linear and exponential functions that dominate the rest of Unit 2.</p>
+<p>Key ideas to carry forward:</p>
+<ul>
+<li>A <strong>sequence</strong> is an ordered list of numbers indexed by position.</li>
+<li>An <strong>arithmetic sequence</strong> has constant additive change <span class="arithmatex">\( d \)</span>; its explicit form <span class="arithmatex">\( a_n = a_1 + (n-1)d \)</span> is linear in <span class="arithmatex">\( n \)</span>.</li>
+<li>A <strong>geometric sequence</strong> has constant multiplicative change <span class="arithmatex">\( r \)</span>; its explicit form <span class="arithmatex">\( a_n = a_1 \cdot r^{n-1} \)</span> is exponential in <span class="arithmatex">\( n \)</span>.</li>
+<li><strong>Recursive formulas</strong> describe the step-by-step rule; <strong>explicit formulas</strong> describe any term directly.</li>
+<li>A geometric sequence <strong>converges</strong> to 0 when <span class="arithmatex">\( |r| &lt; 1 \)</span>, and <strong>diverges</strong> when <span class="arithmatex">\( |r| &gt; 1 \)</span> or <span class="arithmatex">\( r = -1 \)</span>.</li>
+<li>Arithmetic sequences always diverge unless <span class="arithmatex">\( d = 0 \)</span>.</li>
+</ul>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Bridge to Exponentials</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+Geometric sequences are the discrete preview of exponential functions. Every insight you built here — the meaning of <span class="arithmatex">\( r \)</span>, the convergence condition <span class="arithmatex">\( |r| &lt; 1 \)</span>, the explicit formula — has a continuous counterpart waiting in Chapter 13. You are about to meet exponentials with a real head start.</p>
+</div>
+<details class="question">
+<summary>Quick Check: Is the sequence <span class="arithmatex">\( 2, 5, 8, 11, 14, \ldots \)</span> arithmetic, geometric, or neither?</summary>
+<p>Differences are <span class="arithmatex">\( 3, 3, 3, 3 \)</span> — constant. The sequence is arithmetic with <span class="arithmatex">\( a_1 = 2 \)</span> and <span class="arithmatex">\( d = 3 \)</span>.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Find an explicit formula for <span class="arithmatex">\( 6, 12, 24, 48, \ldots \)</span>.</summary>
+<p>Ratios are all 2, so it is geometric with <span class="arithmatex">\( a_1 = 6 \)</span> and <span class="arithmatex">\( r = 2 \)</span>. Explicit formula: <span class="arithmatex">\( a_n = 6 \cdot 2^{n-1} \)</span>.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Does the geometric sequence with <span class="arithmatex">\( a_1 = 80, r = 0.4 \)</span> converge or diverge?</summary>
+<p><span class="arithmatex">\( |r| = 0.4 &lt; 1 \)</span>, so the sequence converges to 0.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../11-composition-and-inverse-functions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 11-Composition and Inverses">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                11-Composition and Inverses
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../13-exponential-functions/" class="md-footer__link md-footer__link--next" aria-label="Next: 13-Exponential Functions">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                13-Exponential Functions
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1966 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Choosing function models for data, analyzing patterns, fitting regressions, validating assumptions, and comparing competing models using residuals and goodness of fit.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/10-data-modeling-and-regression/">
+      
+      
+        <link rel="prev" href="../09-function-transformations/">
+      
+      
+        <link rel="next" href="../11-composition-and-inverse-functions/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Data Modeling and Regression - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Data Modeling and Regression - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="Choosing function models for data, analyzing patterns, fitting regressions, validating assumptions, and comparing competing models using residuals and goodness of fit." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/10-data-modeling-and-regression/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/10-data-modeling-and-regression/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Data Modeling and Regression - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="Choosing function models for data, analyzing patterns, fitting regressions, validating assumptions, and comparing competing models using residuals and goodness of fit." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/10-data-modeling-and-regression/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-modeling-and-regression" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data Modeling and Regression
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Model?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-model-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Model Selection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-analysis-for-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Analysis for Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regression-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regression Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Assumptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Validation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-residual-plot-validator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Residual Plot Validator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpolation-and-extrapolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpolation and Extrapolation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#residual-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Residual Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goodness-of-fit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goodness of Fit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#competing-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Competing Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Competing Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-competing-models-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Competing Models Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Model?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-model-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Model Selection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-analysis-for-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Analysis for Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regression-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regression Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Assumptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Validation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-residual-plot-validator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Residual Plot Validator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpolation-and-extrapolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpolation and Extrapolation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#residual-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Residual Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goodness-of-fit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goodness of Fit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#competing-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Competing Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Competing Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-competing-models-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Competing Models Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/10-data-modeling-and-regression/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="data-modeling-and-regression">Data Modeling and Regression</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter develops the skills needed to select, build, and evaluate mathematical models from data. Students learn about function model selection, data analysis techniques, and regression models. The chapter covers model assumptions, validation, extrapolation, interpolation, residual analysis, goodness of fit, and comparing competing models. These modeling skills are applied throughout the remainder of the course to exponential, logarithmic, and trigonometric contexts.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 10 concepts from the learning graph:</p>
+<ol>
+<li>Function Model Selection</li>
+<li>Data Analysis for Models</li>
+<li>Regression Models</li>
+<li>Model Assumptions</li>
+<li>Model Validation</li>
+<li>Extrapolation</li>
+<li>Interpolation</li>
+<li>Residual Analysis</li>
+<li>Goodness of Fit</li>
+<li>Competing Models</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../03-rates-of-change/">Chapter 3: Rates of Change</a></li>
+<li><a href="../04-linear-functions/">Chapter 4: Linear Functions</a></li>
+<li><a href="../09-function-transformations/">Chapter 9: Function Transformations</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">From Data to Function</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+So far we have built graphs from equations. This chapter reverses the arrow: given a table of real measurements, which function family fits best — and how sure are we? Model-building is the skill that turns pre-calculus from an abstract exercise into a tool for understanding the world.</p>
+</div>
+<h2 id="what-is-a-model">What Is a Model?</h2>
+<p>A <strong>model</strong> is a mathematical function chosen to approximate a relationship observed in real data. Real measurements are noisy, incomplete, and sometimes contradictory, but they often follow a recognizable pattern. A model captures that pattern as an equation we can use to describe, predict, and reason about the underlying process.</p>
+<p>Every model makes a trade-off between two competing goals:</p>
+<ul>
+<li><strong>Fit</strong>: how closely the model's predictions match the observed data points.</li>
+<li><strong>Simplicity</strong>: how few parameters and assumptions the model requires.</li>
+</ul>
+<p>A model that memorizes every data point (perfect fit) may be useless for prediction because it has absorbed the noise along with the signal. A model that is too simple may miss the pattern entirely. Good modeling sits between those extremes.</p>
+<h2 id="function-model-selection">Function Model Selection</h2>
+<p><strong>Function model selection</strong> is the decision of which function family (linear, quadratic, exponential, logarithmic, sinusoidal, etc.) best matches a data set. The choice is guided by two complementary lines of evidence: the <em>shape</em> of the scatterplot and the <em>pattern of change</em> in the data.</p>
+<p>The shape-based approach looks at the scatterplot and compares its visual appearance to the parent-function graphs from Chapter 9. If points cluster along a straight line, a linear model is appropriate. If they cluster along a curve that bends one way consistently, a quadratic, exponential, or power function is a candidate. If the data repeats — a cycle of rises and falls — a sinusoidal model is likely needed.</p>
+<p>The pattern-based approach computes rates of change or ratios and asks which pattern is constant.</p>
+<ul>
+<li><strong>Constant differences</strong>: the output changes by roughly the same amount for each equal step in the input → linear model.</li>
+<li><strong>Constant second differences</strong>: the <em>change in the change</em> is roughly constant → quadratic model.</li>
+<li><strong>Constant ratios</strong>: the output is multiplied by roughly the same factor for each equal input step → exponential model.</li>
+<li><strong>Repeating pattern of rises and falls</strong>: the same values return at regular input intervals → sinusoidal model.</li>
+</ul>
+<p>These two strategies — visual shape and pattern of change — usually point to the same candidate. When they disagree, the pattern-of-change analysis is typically more reliable than a quick visual scan.</p>
+<h2 id="data-analysis-for-models">Data Analysis for Models</h2>
+<p><strong>Data analysis for models</strong> is the preparation step that turns a raw table into evidence for or against a candidate function family. Four routine checks do most of the work:</p>
+<ol>
+<li><strong>Scatterplot inspection.</strong> Plot the data. Look for overall shape, outliers, and obvious breaks.</li>
+<li><strong>First differences.</strong> Compute the change in the output between consecutive data points. A constant first difference points to a linear model.</li>
+<li><strong>Ratios.</strong> Compute the ratio of consecutive outputs. A constant ratio points to an exponential model.</li>
+<li><strong>Second differences.</strong> Compute the differences of the first differences. A constant second difference points to a quadratic model.</li>
+</ol>
+<p>Before the diagnostic table, note that this routine narrows a universe of possible models down to a short list of serious candidates. Once one or two candidates are identified, a regression computes the best parameters.</p>
+<table>
+<thead>
+<tr>
+<th>Pattern found</th>
+<th>Candidate model</th>
+<th>Equation family</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Constant first differences</td>
+<td>Linear</td>
+<td><span class="arithmatex">\( y = mx + b \)</span></td>
+</tr>
+<tr>
+<td>Constant second differences</td>
+<td>Quadratic</td>
+<td><span class="arithmatex">\( y = ax^2 + bx + c \)</span></td>
+</tr>
+<tr>
+<td>Constant ratios</td>
+<td>Exponential</td>
+<td><span class="arithmatex">\( y = a \cdot b^x \)</span></td>
+</tr>
+<tr>
+<td>Repeating highs and lows</td>
+<td>Sinusoidal</td>
+<td><span class="arithmatex">\( y = A \sin(B(x - C)) + D \)</span></td>
+</tr>
+<tr>
+<td>Constant difference of logs vs. difference of <span class="arithmatex">\( x \)</span></td>
+<td>Exponential</td>
+<td><span class="arithmatex">\( y = a \cdot b^x \)</span> (linearized on semi-log plot)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="regression-models">Regression Models</h2>
+<p>A <strong>regression model</strong> is a specific function equation produced by fitting a chosen function family to the data in a way that minimizes some measure of error. We met linear regression in Chapter 4; the idea generalizes to every function family.</p>
+<ul>
+<li><strong>Linear regression</strong> fits <span class="arithmatex">\( y = mx + b \)</span> using least squares on vertical residuals.</li>
+<li><strong>Quadratic regression</strong> fits <span class="arithmatex">\( y = ax^2 + bx + c \)</span> using least squares.</li>
+<li><strong>Exponential regression</strong> fits <span class="arithmatex">\( y = a \cdot b^x \)</span>, often by first taking the logarithm of <span class="arithmatex">\( y \)</span> to turn the problem into a linear regression.</li>
+<li><strong>Logarithmic regression</strong> fits <span class="arithmatex">\( y = a + b \ln x \)</span>.</li>
+<li><strong>Sinusoidal regression</strong> fits <span class="arithmatex">\( y = A \sin(B(x - C)) + D \)</span> using iterative methods.</li>
+</ul>
+<p>Graphing calculators and software perform every one of these regressions automatically, producing both the fitted equation and a quality measure. The analyst's job is (1) to choose a sensible family before running the regression, (2) to check that the fitted model makes physical sense, and (3) to evaluate how well it actually fits.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Regression Is Parameter Fitting, Not Family Selection</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema thinking">
+A regression tool does not decide whether a linear model is appropriate — it only finds the <em>best</em> linear model given that you asked for one. Choosing the family is your call, based on the data analysis. Regression handles the parameters; you handle the shape.</p>
+</div>
+<h2 id="model-assumptions">Model Assumptions</h2>
+<p>Every regression carries <strong>model assumptions</strong> — conditions that must hold for the resulting equation to be trustworthy. The standard assumptions for least-squares regression are:</p>
+<ul>
+<li>The form of the relationship matches the chosen family (linearity for linear regression, etc.).</li>
+<li>Residuals are roughly random — no visible pattern when plotted against <span class="arithmatex">\( x \)</span>.</li>
+<li>Residuals have roughly constant spread across the range of <span class="arithmatex">\( x \)</span>.</li>
+<li>No single data point dominates the fit (no large outliers).</li>
+</ul>
+<p>When an assumption is violated, the regression equation is still produced, but its coefficients may be misleading and its predictions unreliable. Checking assumptions is not optional — it is the difference between a model that informs and a model that misleads.</p>
+<h2 id="model-validation">Model Validation</h2>
+<p><strong>Model validation</strong> is the process of confirming that a fitted model behaves correctly on data it has not seen. A model that fits its training data perfectly can still fail on new data — a phenomenon called <em>overfitting</em>. Validation tests whether the model generalizes.</p>
+<p>Three simple validation techniques are common in pre-calculus:</p>
+<ul>
+<li><strong>Hold-out check</strong>: set aside a few data points before fitting; after the regression, see how well the model predicts those held-out values.</li>
+<li><strong>Residual plot</strong>: plot the residuals against <span class="arithmatex">\( x \)</span>. If the plot looks like random scatter with no pattern, the model is capturing the structure. If a pattern appears — a curve, a fan shape, clusters — the model is missing something.</li>
+<li><strong>Physical reasonableness</strong>: check that the fitted parameters make sense in context. An exponential growth rate of 500% per second is probably wrong even if it minimizes the residual sum.</li>
+</ul>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Always Plot the Residuals</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema holding up a tip">
+A residual plot with no pattern is a green light. A residual plot with a visible curve is a red flag — try a different function family. The residual plot is the single most useful validation tool, and it takes about thirty seconds to produce.</p>
+</div>
+<h4 id="diagram-residual-plot-validator">Diagram: Residual Plot Validator</h4>
+<details>
+<summary>Interactive comparison of a fit and its residual plot for three function families</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> residual-plot-validator<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim showing a scatterplot with a fitted model on the left and the corresponding residual plot on the right, letting students see how a bad choice of model family reveals itself as a pattern in the residuals.</p>
+<p>Learning objective (Bloom's Analyzing): Students will analyze residual plots to detect model misspecification and distinguish random scatter (good fit) from systematic patterns (wrong family).</p>
+<p>Visual elements:</p>
+<ul>
+<li>Left panel: scatterplot of 20 data points following a real pattern (e.g., mildly quadratic), with a fitted curve in maroon.</li>
+<li>Right panel: residual plot with <span class="arithmatex">\( x \)</span> on the horizontal axis and residual value on the vertical axis; a horizontal line at zero.</li>
+<li>Annotations on the residual plot showing "looks random" (green) or "visible pattern" (red) based on live analysis.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>A "Fit Family" dropdown: Linear, Quadratic, Exponential.</li>
+<li>A "True Pattern" dropdown that regenerates the data following Linear, Quadratic, or Exponential ground truth.</li>
+<li>"Swap" button to reverse the currently chosen fit family.</li>
+<li>"Show Ideal" toggle that overlays the true underlying curve on the scatterplot.</li>
+</ul>
+<p>Instructional rationale: Analyze-level detection skills require repeated exposure to both correct and incorrect model choices. Seeing the residual plot transform from pattern-free to visibly curved as the wrong family is chosen builds reliable intuition for diagnosis.</p>
+<p>Canvas: 1100 × 500 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createSelect for fit family and true pattern, createButton for Swap, createCheckbox for Show Ideal.</p>
+</details>
+<h2 id="interpolation-and-extrapolation">Interpolation and Extrapolation</h2>
+<p>Once a model is trusted, it can be used for two kinds of prediction. These kinds are different in reliability and deserve distinct names.</p>
+<p><strong>Interpolation</strong> is predicting the output for an input that lies <em>within</em> the range of the original data. If measurements were collected for <span class="arithmatex">\( x = 0, 1, 2, \ldots, 10 \)</span> and the model is used to predict the output at <span class="arithmatex">\( x = 4.5 \)</span>, that is interpolation. The model has "seen" the surrounding region and is on firm ground.</p>
+<p><strong>Extrapolation</strong> is predicting the output for an input that lies <em>outside</em> the range of the original data. Predicting at <span class="arithmatex">\( x = 20 \)</span> when the data only runs to <span class="arithmatex">\( x = 10 \)</span> is extrapolation. The model has no evidence that the observed pattern continues — it is making a bet.</p>
+<p>Extrapolation is inherently less reliable than interpolation. The further outside the data range, the more the prediction depends on the assumption that the chosen function family is exactly right. A linear model fit to bacterial growth data from hours 1-10 will eventually predict absurd population sizes because biology caps growth in ways the linear model cannot see.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Extrapolation Is a Bet, Not a Fact</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Prema warning">
+Predicting inside the data range is supported by the measurements; predicting outside it requires a leap of faith that the pattern continues. Always flag extrapolations and treat their predictions with much more skepticism than interpolations — or avoid them entirely when the stakes are high.</p>
+</div>
+<h2 id="residual-analysis">Residual Analysis</h2>
+<p><strong>Residual analysis</strong> is the close examination of the residuals from a fitted model. Residuals are the building blocks of every goodness-of-fit measure, and their structure tells a richer story than any single summary number.</p>
+<p>Four routine checks form a complete residual analysis:</p>
+<ul>
+<li><strong>Mean</strong>: the average residual should be approximately 0 for a least-squares fit. A non-zero mean hints at a bias in the model.</li>
+<li><strong>Spread</strong>: the magnitudes of the residuals should be similar across the range of <span class="arithmatex">\( x \)</span>. A spread that grows or shrinks systematically violates the constant-spread assumption.</li>
+<li><strong>Shape</strong>: plotted against <span class="arithmatex">\( x \)</span>, the residuals should look like random scatter. Any curve, U-shape, or diagonal drift indicates the chosen family is too simple.</li>
+<li><strong>Outliers</strong>: a single residual much larger than the rest is either a data error or a genuine anomaly worth investigating.</li>
+</ul>
+<p>A clean residual analysis across all four checks is the strongest practical evidence that a model is appropriate for a data set.</p>
+<h2 id="goodness-of-fit">Goodness of Fit</h2>
+<p><strong>Goodness of fit</strong> is a collection of single-number measures that summarize how well a model fits its data. The two most common in pre-calculus are:</p>
+<ul>
+<li>The <strong>coefficient of determination</strong> <span class="arithmatex">\( R^2 \)</span>: the fraction of the variability in the data that the model explains, always between 0 and 1. <span class="arithmatex">\( R^2 = 1 \)</span> means perfect fit; <span class="arithmatex">\( R^2 = 0 \)</span> means the model explains nothing beyond the mean.</li>
+<li>The <strong>root-mean-square error</strong> (RMSE): the square root of the average squared residual. RMSE is in the same units as <span class="arithmatex">\( y \)</span> and reports typical prediction error in absolute terms.</li>
+</ul>
+<p>For linear regression specifically, <span class="arithmatex">\( R^2 \)</span> is exactly the square of the correlation coefficient <span class="arithmatex">\( r \)</span> from Chapter 4. So <span class="arithmatex">\( r = 0.9 \)</span> corresponds to <span class="arithmatex">\( R^2 = 0.81 \)</span>, meaning 81% of the variability is explained by the linear model.</p>
+<p>Goodness-of-fit numbers should never be the only basis for choosing a model. A model can have a high <span class="arithmatex">\( R^2 \)</span> and still fail badly on a residual plot (for example, if the data has a systematic curve that the model averages across). Always combine the number with the residual plot.</p>
+<h2 id="competing-models">Competing Models</h2>
+<p>When two or more function families produce reasonable fits to the same data, they become <strong>competing models</strong> and we must choose between them. Three comparison criteria are standard:</p>
+<ul>
+<li><strong>Residual patterns</strong>: the model whose residual plot looks most random is usually preferred.</li>
+<li><strong>Goodness of fit</strong>: the model with higher <span class="arithmatex">\( R^2 \)</span> (or lower RMSE) is preferred, all else equal.</li>
+<li><strong>Parsimony</strong>: if two models fit comparably, prefer the one with fewer parameters or the simpler functional form.</li>
+<li><strong>Physical plausibility</strong>: if the problem context suggests a specific family (population growth → exponential; periodic signal → sinusoidal), prefer that family unless evidence strongly contradicts it.</li>
+</ul>
+<p>A good analyst reports <em>both</em> competing models when neither clearly wins, and makes the assumptions behind the choice explicit.</p>
+<h4 id="diagram-competing-models-comparison">Diagram: Competing Models Comparison</h4>
+<details>
+<summary>Side-by-side evaluation of linear, quadratic, and exponential fits on the same data</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> competing-models-comparison<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js infographic showing the same data set with three simultaneous fitted curves — linear, quadratic, and exponential — along with a summary table of their <span class="arithmatex">\( R^2 \)</span>, RMSE, and visual residual-plot quality.</p>
+<p>Learning objective (Bloom's Evaluating): Students will evaluate competing function models for a single data set and justify the choice of one model over the others using multiple criteria.</p>
+<p>Visual elements:</p>
+<ul>
+<li>A main scatterplot with about 30 data points generated from a known underlying process.</li>
+<li>Three fitted curves overlaid: linear (blue), quadratic (green), exponential (red).</li>
+<li>Three small residual plots beneath the main plot, one per model.</li>
+<li>A comparison table showing each model's equation, <span class="arithmatex">\( R^2 \)</span>, RMSE, residual-plot quality ("random," "slight curve," "strong curve").</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>A "True Underlying Process" dropdown regenerates data under a linear, quadratic, or exponential ground truth.</li>
+<li>A "Reveal Winner" button highlights the best-fitting family and explains the criteria that support the choice.</li>
+<li>A "Add Noise" slider to vary data variability and show how fit quality degrades with noise.</li>
+</ul>
+<p>Instructional rationale: Evaluate-level decisions require weighing multiple criteria. Showing all three candidates simultaneously — along with their residual plots and fit numbers — prevents the common mistake of choosing a model on <span class="arithmatex">\( R^2 \)</span> alone.</p>
+<p>Canvas: 1100 × 650 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createSelect for ground truth, createSlider for noise, createButton for Reveal Winner.</p>
+</details>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Modeling is the bridge between pre-calculus functions and real-world applications. Every later chapter — exponential, logarithmic, trigonometric — will revisit this chapter's workflow: analyze the data, select a family, fit a regression, validate the fit, and use the model responsibly within its data range.</p>
+<p>The key ideas to carry forward:</p>
+<ul>
+<li><strong>Model selection</strong> uses scatterplot shape <em>and</em> pattern-of-change analysis to pick a function family.</li>
+<li><strong>Regression</strong> fits the parameters of the chosen family by minimizing residuals.</li>
+<li>Every regression carries <strong>assumptions</strong>; checking them is what makes the fit trustworthy.</li>
+<li><strong>Residual plots</strong> are the single best validation tool: random scatter = good fit, visible pattern = wrong family.</li>
+<li><strong>Interpolation</strong> is trustworthy; <strong>extrapolation</strong> is a bet that depends on the model remaining valid outside the data range.</li>
+<li><strong>Competing models</strong> are compared on residual quality, goodness-of-fit numbers, parsimony, and physical plausibility — not on a single metric.</li>
+</ul>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">The Modeling Mindset</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+You now have a workflow — data analysis, model selection, regression, validation, comparison — that applies to every remaining chapter in this course. Each new function family you meet will fit right into this workflow. Unit 1 is complete!</p>
+</div>
+<details class="question">
+<summary>Quick Check: A data set shows constant first differences of about 3. Which family fits?</summary>
+<p>Linear model — constant first differences are the signature of a linear relationship.</p>
+</details>
+<details class="question">
+<summary>Quick Check: The <span class="arithmatex">\( R^2 \)</span> for a regression is 0.95, but the residual plot shows a clear U-shape. Trust the model?</summary>
+<p>No. The <span class="arithmatex">\( R^2 \)</span> is high but the residual pattern reveals a systematic curve the model is missing. Try a quadratic or exponential family instead.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Is predicting GDP in 2050 from 2000-2020 data interpolation or extrapolation?</summary>
+<p>Extrapolation — 2050 lies outside the data range. Treat the prediction with skepticism.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../09-function-transformations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 9-Function Transformations">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                9-Function Transformations
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../11-composition-and-inverse-functions/" class="md-footer__link md-footer__link--next" aria-label="Next: 11-Composition and Inverses">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                11-Composition and Inverses
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

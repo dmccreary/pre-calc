@@ -1,0 +1,2107 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Vectors as quantities with magnitude and direction — including notation, component form, unit vectors, vector addition and subtraction, scalar multiplication, the dot product, and real-world vector applications.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/22-vectors/">
+      
+      
+        <link rel="prev" href="../21-polar-and-parametric-functions/">
+      
+      
+        <link rel="next" href="../23-matrices-and-exam-preparation/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Vectors - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Vectors - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="Vectors as quantities with magnitude and direction — including notation, component form, unit vectors, vector addition and subtraction, scalar multiplication, the dot product, and real-world vector applications." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/22-vectors/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/22-vectors/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Vectors - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="Vectors as quantities with magnitude and direction — including notation, component form, unit vectors, vector addition and subtraction, scalar multiplication, the dot product, and real-world vector applications." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/22-vectors/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vectors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vectors
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magnitude-of-a-vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnitude of a Vector
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-of-a-vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction of a Vector
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Form
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Vectors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-addition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Addition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-subtraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Subtraction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scalar-multiplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalar Multiplication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scalar Multiplication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-vector-operations-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Vector Operations Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dot-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dot Product
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#force-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation-and-velocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation and Velocity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-done-by-a-force" class="md-nav__link">
+    <span class="md-ellipsis">
+      Work Done by a Force
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Work Done by a Force">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-force-and-displacement-workout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Force and Displacement Workout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magnitude-of-a-vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnitude of a Vector
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-of-a-vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction of a Vector
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Form
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Vectors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-addition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Addition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-subtraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Subtraction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scalar-multiplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalar Multiplication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scalar Multiplication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-vector-operations-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Vector Operations Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dot-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dot Product
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#force-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation-and-velocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation and Velocity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-done-by-a-force" class="md-nav__link">
+    <span class="md-ellipsis">
+      Work Done by a Force
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Work Done by a Force">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-force-and-displacement-workout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Force and Displacement Workout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/22-vectors/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="vectors">Vectors</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter introduces vectors as quantities with both magnitude and direction. Students learn vector definition, notation, and how to find the magnitude and direction of a vector. The chapter covers component form, unit vectors, and vector operations including addition, subtraction, and scalar multiplication. Students also learn about the dot product and explore real-world vector applications. These concepts provide the foundation for understanding matrices and linear transformations in the next chapter.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 11 concepts from the learning graph:</p>
+<ol>
+<li>Vector Definition</li>
+<li>Vector Notation</li>
+<li>Magnitude of a Vector</li>
+<li>Direction of a Vector</li>
+<li>Component Form</li>
+<li>Unit Vectors</li>
+<li>Vector Addition</li>
+<li>Vector Subtraction</li>
+<li>Scalar Multiplication</li>
+<li>Dot Product</li>
+<li>Vector Applications</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-mathematical-foundations/">Chapter 1: Mathematical Foundations</a></li>
+<li><a href="../15-angles-and-the-unit-circle/">Chapter 15: Angles and the Unit Circle</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Arrows That Do Math</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+A vector is an arrow — a quantity with both a size and a direction. Velocity, force, and displacement are all vectors. In this chapter we learn how to describe them, combine them, and use them to model the physical world.</p>
+</div>
+<h2 id="vector-definition">Vector Definition</h2>
+<p>A <strong>vector</strong> is a mathematical object that has both a <strong>magnitude</strong> (how big) and a <strong>direction</strong> (which way). We visualize a vector as an arrow: the length of the arrow represents magnitude, and the way the arrow points represents direction.</p>
+<p>Vectors are different from regular numbers, which are called <strong>scalars</strong> in this context. A scalar has magnitude but no direction — a temperature, a mass, a count of apples. Here are examples to distinguish the two:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Vector or Scalar?</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mass of a box (5 kg)</td>
+<td>Scalar</td>
+<td>Only magnitude</td>
+</tr>
+<tr>
+<td>Temperature (72°F)</td>
+<td>Scalar</td>
+<td>Only magnitude</td>
+</tr>
+<tr>
+<td>Speed (60 mph)</td>
+<td>Scalar</td>
+<td>Magnitude without direction</td>
+</tr>
+<tr>
+<td>Velocity (60 mph, north)</td>
+<td>Vector</td>
+<td>Magnitude <strong>and</strong> direction</td>
+</tr>
+<tr>
+<td>Displacement (3 m east)</td>
+<td>Vector</td>
+<td>Magnitude and direction</td>
+</tr>
+<tr>
+<td>Force (10 N, pushing down)</td>
+<td>Vector</td>
+<td>Magnitude and direction</td>
+</tr>
+</tbody>
+</table>
+<p>A key property: two vectors with the same magnitude and same direction are <strong>equal</strong>, regardless of where they are drawn on the page. Vectors do not have a fixed position — they can be translated anywhere.</p>
+<h2 id="vector-notation">Vector Notation</h2>
+<p><strong>Vector notation</strong> has several common forms, and you'll encounter all of them:</p>
+<ul>
+<li><strong>Bold letters:</strong> <span class="arithmatex">\( \mathbf{v} \)</span> (in print) — this textbook's primary notation.</li>
+<li><strong>Arrow notation:</strong> <span class="arithmatex">\( \vec{v} \)</span> (handwritten) — the standard way to write vectors by hand.</li>
+<li><strong>Endpoint notation:</strong> <span class="arithmatex">\( \overrightarrow{AB} \)</span> — the vector from point <span class="arithmatex">\( A \)</span> to point <span class="arithmatex">\( B \)</span>.</li>
+<li><strong>Angle bracket notation:</strong> <span class="arithmatex">\( \langle 3, 4 \rangle \)</span> — a vector given by its components.</li>
+</ul>
+<p>The magnitude of a vector <span class="arithmatex">\( \mathbf{v} \)</span> is denoted <span class="arithmatex">\( \|\mathbf{v}\| \)</span> or <span class="arithmatex">\( |\mathbf{v}| \)</span>, with the double bars being more formally correct.</p>
+<h2 id="magnitude-of-a-vector">Magnitude of a Vector</h2>
+<p>The <strong>magnitude</strong> of a vector is its length — a non-negative number representing the size of the quantity, ignoring direction. For a vector given in component form <span class="arithmatex">\( \mathbf{v} = \langle a, b \rangle \)</span>, the magnitude follows from the Pythagorean theorem:</p>
+<div class="arithmatex">\[ \|\mathbf{v}\| = \sqrt{a^2 + b^2} \]</div>
+<p>For example, <span class="arithmatex">\( \|\langle 3, 4 \rangle\| = \sqrt{9 + 16} = \sqrt{25} = 5 \)</span>.</p>
+<p>The magnitude is always non-negative. A vector with magnitude zero is called the <strong>zero vector</strong>, written <span class="arithmatex">\( \mathbf{0} \)</span> — it has no direction and is the vector analogue of the number zero.</p>
+<h2 id="direction-of-a-vector">Direction of a Vector</h2>
+<p>The <strong>direction of a vector</strong> is the angle it makes with a reference axis — usually the positive <span class="arithmatex">\( x \)</span>-axis, measured counterclockwise. For a vector <span class="arithmatex">\( \mathbf{v} = \langle a, b \rangle \)</span>:</p>
+<div class="arithmatex">\[ \theta = \arctan\left(\frac{b}{a}\right) \]</div>
+<p>As with the polar conversions in Chapter 21, we must adjust the quadrant:</p>
+<ul>
+<li>If <span class="arithmatex">\( (a, b) \)</span> is in Quadrant I or IV, <span class="arithmatex">\( \theta = \arctan(b/a) \)</span>.</li>
+<li>If <span class="arithmatex">\( (a, b) \)</span> is in Quadrant II or III, <span class="arithmatex">\( \theta = \arctan(b/a) + \pi \)</span>.</li>
+</ul>
+<p>Together, magnitude and direction uniquely specify a vector. Given <span class="arithmatex">\( \|\mathbf{v}\| = r \)</span> and direction angle <span class="arithmatex">\( \theta \)</span>, the components are:</p>
+<div class="arithmatex">\[ a = r\cos\theta, \qquad b = r\sin\theta \]</div>
+<p>These are the same formulas as polar-to-rectangular conversion — and that is no coincidence. A vector in the plane is exactly the polar representation of a point, interpreted as a displacement rather than a location.</p>
+<h2 id="component-form">Component Form</h2>
+<p>The <strong>component form</strong> of a vector writes it as an ordered pair of numbers enclosed in angle brackets: <span class="arithmatex">\( \mathbf{v} = \langle a, b \rangle \)</span>. The first number is the <strong>horizontal component</strong> (how far in the <span class="arithmatex">\( x \)</span>-direction) and the second is the <strong>vertical component</strong> (how far in the <span class="arithmatex">\( y \)</span>-direction).</p>
+<p><strong>Finding component form from two points:</strong> If a vector goes from point <span class="arithmatex">\( P_1 = (x_1, y_1) \)</span> to point <span class="arithmatex">\( P_2 = (x_2, y_2) \)</span>, its component form is:</p>
+<div class="arithmatex">\[ \overrightarrow{P_1 P_2} = \langle x_2 - x_1, y_2 - y_1 \rangle \]</div>
+<p>This is the displacement vector: how far right and how far up you travel to get from the tail to the head.</p>
+<p><strong>Example:</strong> A vector from <span class="arithmatex">\( (2, 1) \)</span> to <span class="arithmatex">\( (5, 7) \)</span> has component form <span class="arithmatex">\( \langle 5 - 2, 7 - 1 \rangle = \langle 3, 6 \rangle \)</span>.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Angle Brackets, Not Parentheses</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema offering a tip">
+Write vector components in angle brackets <span class="arithmatex">\( \langle a, b \rangle \)</span>, not parentheses <span class="arithmatex">\( (a, b) \)</span>. Parentheses indicate a point (a specific location). Angle brackets indicate a vector (a displacement you can apply anywhere). The distinction matters especially when a single page has both.</p>
+</div>
+<h2 id="unit-vectors">Unit Vectors</h2>
+<p>A <strong>unit vector</strong> is any vector with magnitude exactly 1. Unit vectors are useful for representing pure direction without any magnitude information. Given any non-zero vector <span class="arithmatex">\( \mathbf{v} \)</span>, we can produce a unit vector in the same direction by dividing by its magnitude:</p>
+<div class="arithmatex">\[ \hat{\mathbf{v}} = \frac{\mathbf{v}}{\|\mathbf{v}\|} \]</div>
+<p>The "hat" symbol <span class="arithmatex">\( \hat{\phantom{v}} \)</span> conventionally denotes a unit vector. For example, for <span class="arithmatex">\( \mathbf{v} = \langle 3, 4 \rangle \)</span> with magnitude 5:</p>
+<div class="arithmatex">\[ \hat{\mathbf{v}} = \frac{1}{5}\langle 3, 4 \rangle = \langle 0.6, 0.8 \rangle \]</div>
+<p>Two special unit vectors deserve names of their own:</p>
+<ul>
+<li><span class="arithmatex">\( \mathbf{i} = \langle 1, 0 \rangle \)</span> points along the positive <span class="arithmatex">\( x \)</span>-axis.</li>
+<li><span class="arithmatex">\( \mathbf{j} = \langle 0, 1 \rangle \)</span> points along the positive <span class="arithmatex">\( y \)</span>-axis.</li>
+</ul>
+<p>Any vector can be written as a combination of <span class="arithmatex">\( \mathbf{i} \)</span> and <span class="arithmatex">\( \mathbf{j} \)</span>:</p>
+<div class="arithmatex">\[ \langle a, b \rangle = a\mathbf{i} + b\mathbf{j} \]</div>
+<p>This is called the <strong>standard unit vector form</strong>. Both notations — angle brackets and <span class="arithmatex">\( \mathbf{i}, \mathbf{j} \)</span> — are equivalent and you should recognize both.</p>
+<h2 id="vector-addition">Vector Addition</h2>
+<p><strong>Vector addition</strong> combines two vectors into a third. Geometrically, we place the tail of the second vector at the head of the first; the sum is the vector from the starting tail to the final head. This is called the <strong>tip-to-tail</strong> rule.</p>
+<p>Algebraically, add component-by-component:</p>
+<div class="arithmatex">\[ \langle a_1, b_1 \rangle + \langle a_2, b_2 \rangle = \langle a_1 + a_2, b_1 + b_2 \rangle \]</div>
+<p>For example, <span class="arithmatex">\( \langle 3, 2 \rangle + \langle -1, 4 \rangle = \langle 2, 6 \rangle \)</span>.</p>
+<p>Vector addition has two equivalent geometric interpretations:</p>
+<ul>
+<li><strong>Tip-to-tail:</strong> Place the second vector starting at the tip of the first. The sum is tail-of-first to tip-of-second.</li>
+<li><strong>Parallelogram rule:</strong> Draw both vectors from a common starting point. Complete the parallelogram. The sum is the diagonal from the shared tail to the opposite corner.</li>
+</ul>
+<p>These descriptions produce identical results — the parallelogram rule just draws both tip-to-tail arrangements at once.</p>
+<h2 id="vector-subtraction">Vector Subtraction</h2>
+<p><strong>Vector subtraction</strong> is defined as adding the negative: <span class="arithmatex">\( \mathbf{u} - \mathbf{v} = \mathbf{u} + (-\mathbf{v}) \)</span>. The negative vector <span class="arithmatex">\( -\mathbf{v} \)</span> has the same magnitude as <span class="arithmatex">\( \mathbf{v} \)</span> but points in the opposite direction. In components:</p>
+<div class="arithmatex">\[ \langle a_1, b_1 \rangle - \langle a_2, b_2 \rangle = \langle a_1 - a_2, b_1 - b_2 \rangle \]</div>
+<p>Geometrically, <span class="arithmatex">\( \mathbf{u} - \mathbf{v} \)</span> is the vector that goes from the tip of <span class="arithmatex">\( \mathbf{v} \)</span> to the tip of <span class="arithmatex">\( \mathbf{u} \)</span> when both are drawn from the same starting point. This matches our earlier "two points" formula: the vector from <span class="arithmatex">\( P_1 \)</span> to <span class="arithmatex">\( P_2 \)</span> is the position vector of <span class="arithmatex">\( P_2 \)</span> minus the position vector of <span class="arithmatex">\( P_1 \)</span>.</p>
+<h2 id="scalar-multiplication">Scalar Multiplication</h2>
+<p><strong>Scalar multiplication</strong> multiplies a vector by a number. If <span class="arithmatex">\( c \)</span> is a scalar and <span class="arithmatex">\( \mathbf{v} = \langle a, b \rangle \)</span> is a vector, then:</p>
+<div class="arithmatex">\[ c\mathbf{v} = \langle ca, cb \rangle \]</div>
+<p>The effect on the vector depends on the sign and size of <span class="arithmatex">\( c \)</span>:</p>
+<table>
+<thead>
+<tr>
+<th>Value of <span class="arithmatex">\( c \)</span></th>
+<th>Effect on <span class="arithmatex">\( \mathbf{v} \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( c &gt; 1 \)</span></td>
+<td>Same direction, stretched</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 0 &lt; c &lt; 1 \)</span></td>
+<td>Same direction, shrunk</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( c = 0 \)</span></td>
+<td>Zero vector</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( -1 &lt; c &lt; 0 \)</span></td>
+<td>Reversed direction, shrunk</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( c &lt; -1 \)</span></td>
+<td>Reversed direction, stretched</td>
+</tr>
+</tbody>
+</table>
+<p>The magnitude scales proportionally: <span class="arithmatex">\( \|c\mathbf{v}\| = |c| \cdot \|\mathbf{v}\| \)</span>. The direction either stays the same (positive <span class="arithmatex">\( c \)</span>) or flips by 180° (negative <span class="arithmatex">\( c \)</span>).</p>
+<h4 id="diagram-vector-operations-playground">Diagram: Vector Operations Playground</h4>
+<iframe src="../../sims/vector-operations/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Vector Operations Playground</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> vector-operations<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>Learning objective (Apply, L3, demonstrate): Demonstrate the geometric meaning of vector addition, subtraction, and scalar multiplication through hands-on manipulation of component vectors.</p>
+<p>Canvas layout:
+- Main area: coordinate plane with two draggable vectors
+- Right panel: results panel showing the sum, difference, and scalar multiples</p>
+<p>Visual elements:
+- Vector <span class="arithmatex">\( \mathbf{u} \)</span> drawn in blue from origin, with draggable tip
+- Vector <span class="arithmatex">\( \mathbf{v} \)</span> drawn in orange from origin, with draggable tip
+- Sum <span class="arithmatex">\( \mathbf{u} + \mathbf{v} \)</span> drawn in maroon using tip-to-tail construction, dashed parallelogram shown
+- Difference <span class="arithmatex">\( \mathbf{u} - \mathbf{v} \)</span> drawn in green
+- Scalar multiple <span class="arithmatex">\( c\mathbf{v} \)</span> shown in orange (light) with <span class="arithmatex">\( c \)</span> controllable</p>
+<p>Interactive controls:
+- Drag endpoints of both vectors
+- Slider for scalar <span class="arithmatex">\( c \)</span>, range -3 to 3 step 0.1
+- Toggle: tip-to-tail mode vs. parallelogram mode for displaying the sum
+- Button: Reset vectors to standard positions</p>
+<p>Data Visibility Requirements:
+- Stage 1: Display component form of <span class="arithmatex">\( \mathbf{u} \)</span> and <span class="arithmatex">\( \mathbf{v} \)</span>
+- Stage 2: Display computed <span class="arithmatex">\( \mathbf{u} + \mathbf{v} \)</span>, <span class="arithmatex">\( \mathbf{u} - \mathbf{v} \)</span>, <span class="arithmatex">\( c\mathbf{v} \)</span> in component form
+- Stage 3: Display magnitudes of all vectors
+- Stage 4: Display direction angle of each vector</p>
+<p>Instructional Rationale: Dragging the vector tips produces continuous updates to the computed sum and difference, making the algebraic component-wise rule visibly the same as the geometric tip-to-tail construction. This dual presentation anchors both representations.</p>
+<p>Implementation: p5.js with responsive canvas.</p>
+</details>
+<h2 id="dot-product">Dot Product</h2>
+<p>The <strong>dot product</strong> of two vectors is a scalar (not a vector) computed by multiplying corresponding components and adding:</p>
+<div class="arithmatex">\[ \mathbf{u} \cdot \mathbf{v} = \langle a_1, b_1 \rangle \cdot \langle a_2, b_2 \rangle = a_1 a_2 + b_1 b_2 \]</div>
+<p>For example, <span class="arithmatex">\( \langle 3, 4 \rangle \cdot \langle 2, 1 \rangle = 6 + 4 = 10 \)</span>.</p>
+<p>The dot product has a beautiful geometric interpretation in terms of magnitudes and the angle between the vectors:</p>
+<div class="arithmatex">\[ \mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\| \|\mathbf{v}\| \cos\theta \]</div>
+<p>where <span class="arithmatex">\( \theta \)</span> is the angle between the two vectors when drawn from a common starting point. This second formula tells us three useful things:</p>
+<ul>
+<li>If <span class="arithmatex">\( \mathbf{u} \cdot \mathbf{v} &gt; 0 \)</span>, the angle between them is less than 90° (acute).</li>
+<li>If <span class="arithmatex">\( \mathbf{u} \cdot \mathbf{v} = 0 \)</span>, the vectors are perpendicular (orthogonal).</li>
+<li>If <span class="arithmatex">\( \mathbf{u} \cdot \mathbf{v} &lt; 0 \)</span>, the angle is more than 90° (obtuse).</li>
+</ul>
+<p><strong>Finding the angle between two vectors.</strong> Rearranging the geometric formula:</p>
+<div class="arithmatex">\[ \cos\theta = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|}, \qquad \theta = \arccos\left(\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|}\right) \]</div>
+<p><strong>Example:</strong> Find the angle between <span class="arithmatex">\( \mathbf{u} = \langle 1, 2 \rangle \)</span> and <span class="arithmatex">\( \mathbf{v} = \langle 3, 1 \rangle \)</span>.</p>
+<ul>
+<li>Dot product: <span class="arithmatex">\( 1\cdot 3 + 2\cdot 1 = 5 \)</span>.</li>
+<li>Magnitudes: <span class="arithmatex">\( \|\mathbf{u}\| = \sqrt{5} \)</span>, <span class="arithmatex">\( \|\mathbf{v}\| = \sqrt{10} \)</span>.</li>
+<li>Cosine: <span class="arithmatex">\( \cos\theta = 5/(\sqrt{5}\sqrt{10}) = 5/\sqrt{50} = 1/\sqrt{2} \)</span>.</li>
+<li>Angle: <span class="arithmatex">\( \theta = \pi/4 = 45° \)</span>.</li>
+</ul>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Two Formulas, One Concept</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema thinking">
+The dot product has an algebraic formula (components) and a geometric formula (magnitudes and angle). They give the same number. That's why the dot product is the tool for finding the angle between vectors — it connects the component-wise computation to the geometric picture.</p>
+</div>
+<h2 id="vector-applications">Vector Applications</h2>
+<p><strong>Vector applications</strong> appear throughout physics, engineering, computer graphics, and navigation. Here are three classic examples from AP Pre-Calculus.</p>
+<h3 id="force-problems">Force Problems</h3>
+<p>When two or more forces act on an object, the <strong>net force</strong> is the vector sum of the individual forces. The object accelerates in the direction of the net force.</p>
+<p><strong>Example:</strong> Two ropes pull on a crate. Rope A pulls with 50 N at 30° above horizontal; rope B pulls with 40 N at 120° above horizontal. What is the net force?</p>
+<ul>
+<li>Rope A components: <span class="arithmatex">\( \langle 50\cos 30°, 50\sin 30°\rangle \approx \langle 43.3, 25 \rangle \)</span>.</li>
+<li>Rope B components: <span class="arithmatex">\( \langle 40\cos 120°, 40\sin 120°\rangle \approx \langle -20, 34.6 \rangle \)</span>.</li>
+<li>Net force: <span class="arithmatex">\( \langle 23.3, 59.6 \rangle \)</span>.</li>
+<li>Magnitude: <span class="arithmatex">\( \sqrt{23.3^2 + 59.6^2} \approx 64 \)</span> N.</li>
+<li>Direction: <span class="arithmatex">\( \arctan(59.6/23.3) \approx 68.6° \)</span> above horizontal.</li>
+</ul>
+<h3 id="navigation-and-velocity">Navigation and Velocity</h3>
+<p>A plane's <strong>ground velocity</strong> is the vector sum of its <strong>airspeed</strong> (velocity relative to the air) and the <strong>wind velocity</strong>. This is essential for pilots calculating heading and flight time.</p>
+<p><strong>Example:</strong> A plane flies due north at 300 mph airspeed. A 50 mph wind blows from the west (toward the east). The plane's ground velocity is:</p>
+<ul>
+<li>Airspeed vector: <span class="arithmatex">\( \langle 0, 300 \rangle \)</span> (north = positive <span class="arithmatex">\( y \)</span>)</li>
+<li>Wind vector: <span class="arithmatex">\( \langle 50, 0 \rangle \)</span> (east = positive <span class="arithmatex">\( x \)</span>)</li>
+<li>Ground velocity: <span class="arithmatex">\( \langle 50, 300 \rangle \)</span></li>
+<li>Ground speed: <span class="arithmatex">\( \sqrt{50^2 + 300^2} \approx 304 \)</span> mph</li>
+<li>Direction: <span class="arithmatex">\( \arctan(300/50) \approx 80.5° \)</span> — the plane's actual path is deflected 9.5° east of north.</li>
+</ul>
+<h3 id="work-done-by-a-force">Work Done by a Force</h3>
+<p>In physics, <strong>work</strong> done by a force <span class="arithmatex">\( \mathbf{F} \)</span> over a displacement <span class="arithmatex">\( \mathbf{d} \)</span> is the dot product:</p>
+<div class="arithmatex">\[ W = \mathbf{F} \cdot \mathbf{d} \]</div>
+<p>This reveals why only the component of the force along the direction of motion contributes to work. A force perpendicular to the motion does zero work, which matches our dot product observation that perpendicular vectors have zero dot product.</p>
+<h4 id="diagram-force-and-displacement-workout">Diagram: Force and Displacement Workout</h4>
+<iframe src="../../sims/force-displacement-work/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Force and Displacement Workout</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> force-displacement-work<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>Learning objective (Understand, L2, explain): Explain how the dot product <span class="arithmatex">\( W = \mathbf{F} \cdot \mathbf{d} \)</span> picks out only the component of force along the displacement, and why a perpendicular force does zero work.</p>
+<p>Canvas layout:
+- Main area: a block on a flat surface with an arrow showing the applied force and a dashed arrow showing the displacement direction
+- Right panel: numeric breakdown of the dot product computation</p>
+<p>Visual elements:
+- Block as a gray square
+- Displacement vector <span class="arithmatex">\( \mathbf{d} \)</span> in blue, horizontal
+- Force vector <span class="arithmatex">\( \mathbf{F} \)</span> in maroon at an adjustable angle
+- Projection of <span class="arithmatex">\( \mathbf{F} \)</span> onto <span class="arithmatex">\( \mathbf{d} \)</span> shown as a dashed gold segment
+- Numerical work value updated in real time</p>
+<p>Interactive controls:
+- Slider: angle of force relative to displacement (0° to 180°)
+- Slider: force magnitude (0 to 100 N)
+- Slider: displacement magnitude (0 to 20 m)
+- Button: Compute Work (animated step-through of the formula)</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show force and displacement in both component form and magnitude/direction form
+- Stage 2: Show the dot product formula with numbers substituted
+- Stage 3: Show the computed work in joules
+- Stage 4: When force is perpendicular, highlight that work equals zero</p>
+<p>Instructional Rationale: Adjusting the angle to 90° and watching work drop to zero provides a memorable demonstration of the perpendicular case, reinforcing that the dot product measures alignment.</p>
+<p>Implementation: p5.js with responsive canvas.</p>
+</details>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Vectors in Your Toolkit</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+Every quantity in physics, engineering, or computer graphics that has both size and direction is a vector — and you can now add them, subtract them, scale them, and measure the angle between them. In the next chapter we package vector operations into matrices and use them to transform the whole plane.</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>A vector has magnitude and direction; a scalar has only magnitude.</li>
+<li>Component form: <span class="arithmatex">\( \mathbf{v} = \langle a, b \rangle \)</span>, with magnitude <span class="arithmatex">\( \|\mathbf{v}\| = \sqrt{a^2 + b^2} \)</span> and direction <span class="arithmatex">\( \theta = \arctan(b/a) \)</span> (adjusted for quadrant).</li>
+<li>A unit vector has magnitude 1; divide any non-zero vector by its magnitude to get one. The standard unit vectors are <span class="arithmatex">\( \mathbf{i} \)</span> and <span class="arithmatex">\( \mathbf{j} \)</span>.</li>
+<li>Add and subtract vectors component-wise. Geometrically, add tip-to-tail or with the parallelogram rule.</li>
+<li>Scalar multiplication scales magnitude by <span class="arithmatex">\( |c| \)</span> and reverses direction if <span class="arithmatex">\( c &lt; 0 \)</span>.</li>
+<li>The dot product <span class="arithmatex">\( \mathbf{u} \cdot \mathbf{v} = a_1 a_2 + b_1 b_2 = \|\mathbf{u}\|\|\mathbf{v}\|\cos\theta \)</span> is a scalar, not a vector. A zero dot product means the vectors are perpendicular.</li>
+<li>Vector applications model forces, velocities, displacements, and work — any situation where both size and direction matter.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../21-polar-and-parametric-functions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 21-Polar and Parametric">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                21-Polar and Parametric
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../23-matrices-and-exam-preparation/" class="md-footer__link md-footer__link--next" aria-label="Next: 23-Matrices and Exam Prep">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                23-Matrices and Exam Prep
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

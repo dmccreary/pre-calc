@@ -1,0 +1,2129 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The six trigonometric functions defined from the unit circle, exact values at special angles, right-triangle trigonometry, the SOH-CAH-TOA mnemonic, and the reciprocal functions secant, cosecant, and cotangent.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/16-trigonometric-functions/">
+      
+      
+        <link rel="prev" href="../15-angles-and-the-unit-circle/">
+      
+      
+        <link rel="next" href="../17-trigonometric-graphs/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Trigonometric Functions - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Trigonometric Functions - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="The six trigonometric functions defined from the unit circle, exact values at special angles, right-triangle trigonometry, the SOH-CAH-TOA mnemonic, and the reciprocal functions secant, cosecant, and cotangent." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/16-trigonometric-functions/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/16-trigonometric-functions/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Trigonometric Functions - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="The six trigonometric functions defined from the unit circle, exact values at special angles, right-triangle trigonometry, the SOH-CAH-TOA mnemonic, and the reciprocal functions secant, cosecant, and cotangent." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/16-trigonometric-functions/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#trigonometric-functions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Trigonometric Functions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sine-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sine Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosine-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosine Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tangent-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tangent Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reciprocal-trig-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reciprocal Trig Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secant-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secant Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosecant-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosecant Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cotangent-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cotangent Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trig-function-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trig Function Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exact-trig-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exact Trig Values
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exact Trig Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-six-function-evaluation-wheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Six-Function Evaluation Wheel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#right-triangle-trig" class="md-nav__link">
+    <span class="md-ellipsis">
+      Right Triangle Trig
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soh-cah-toa" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOH-CAH-TOA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SOH-CAH-TOA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-right-triangle-soh-cah-toa-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Right Triangle SOH-CAH-TOA Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sine-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sine Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosine-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosine Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tangent-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tangent Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reciprocal-trig-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reciprocal Trig Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secant-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secant Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosecant-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosecant Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cotangent-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cotangent Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trig-function-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trig Function Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exact-trig-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exact Trig Values
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exact Trig Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-six-function-evaluation-wheel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Six-Function Evaluation Wheel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#right-triangle-trig" class="md-nav__link">
+    <span class="md-ellipsis">
+      Right Triangle Trig
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soh-cah-toa" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOH-CAH-TOA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SOH-CAH-TOA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-right-triangle-soh-cah-toa-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Right Triangle SOH-CAH-TOA Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/16-trigonometric-functions/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="trigonometric-functions">Trigonometric Functions</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter defines the six trigonometric functions and develops skills for evaluating them. Students learn the sine, cosine, and tangent functions from the unit circle, along with the reciprocal functions (secant, cosecant, cotangent). The chapter covers trigonometric function evaluation at special angles, finding exact trigonometric values, right triangle trigonometry, and the SOH-CAH-TOA mnemonic. These definitions and evaluation skills are used extensively in the remaining trigonometry chapters.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 11 concepts from the learning graph:</p>
+<ol>
+<li>Sine Function</li>
+<li>Cosine Function</li>
+<li>Tangent Function</li>
+<li>Reciprocal Trig Functions</li>
+<li>Secant Function</li>
+<li>Cosecant Function</li>
+<li>Cotangent Function</li>
+<li>Trig Function Evaluation</li>
+<li>Exact Trig Values</li>
+<li>Right Triangle Trig</li>
+<li>SOH-CAH-TOA</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../15-angles-and-the-unit-circle/">Chapter 15: Angles and the Unit Circle</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Six Functions, One Circle</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+The unit circle from the last chapter does double duty in this one: it gives us the values of the six trigonometric functions for every angle. We will start with sine, cosine, and tangent — the three workhorses — then add the three reciprocals that round out the set. Every later trigonometry chapter assumes you can evaluate these six functions fluently at the special angles.</p>
+</div>
+<h2 id="sine-function">Sine Function</h2>
+<p>The <strong>sine function</strong> is defined for any angle <span class="arithmatex">\( \theta \)</span> in standard position as the <span class="arithmatex">\( y \)</span>-coordinate of the point where the terminal side meets the unit circle:</p>
+<div class="arithmatex">\[ \sin\theta = y \]</div>
+<p>A few immediate consequences from the unit-circle definition:</p>
+<ul>
+<li>The sine function's value is always between -1 and 1, because every <span class="arithmatex">\( y \)</span>-coordinate on the unit circle satisfies <span class="arithmatex">\( -1 \leq y \leq 1 \)</span>.</li>
+<li><span class="arithmatex">\( \sin\theta = 0 \)</span> whenever the terminal side is on the <span class="arithmatex">\( x \)</span>-axis (<span class="arithmatex">\( \theta = 0, \pi, 2\pi, \ldots \)</span>).</li>
+<li><span class="arithmatex">\( \sin\theta = 1 \)</span> when the terminal side points up the positive <span class="arithmatex">\( y \)</span>-axis (<span class="arithmatex">\( \theta = \pi/2 \)</span>).</li>
+<li><span class="arithmatex">\( \sin\theta = -1 \)</span> when the terminal side points down the negative <span class="arithmatex">\( y \)</span>-axis (<span class="arithmatex">\( \theta = 3\pi/2 \)</span>).</li>
+<li>The sign of <span class="arithmatex">\( \sin\theta \)</span> follows the sign of <span class="arithmatex">\( y \)</span>: positive in QI and QII, negative in QIII and QIV.</li>
+</ul>
+<h2 id="cosine-function">Cosine Function</h2>
+<p>The <strong>cosine function</strong> is defined for any angle <span class="arithmatex">\( \theta \)</span> in standard position as the <span class="arithmatex">\( x \)</span>-coordinate of the point where the terminal side meets the unit circle:</p>
+<div class="arithmatex">\[ \cos\theta = x \]</div>
+<p>The cosine has parallel properties to the sine:</p>
+<ul>
+<li>The cosine function's value is always between -1 and 1.</li>
+<li><span class="arithmatex">\( \cos\theta = 0 \)</span> whenever the terminal side is on the <span class="arithmatex">\( y \)</span>-axis (<span class="arithmatex">\( \theta = \pi/2, 3\pi/2, \ldots \)</span>).</li>
+<li><span class="arithmatex">\( \cos\theta = 1 \)</span> when the terminal side points along the positive <span class="arithmatex">\( x \)</span>-axis (<span class="arithmatex">\( \theta = 0, 2\pi, \ldots \)</span>).</li>
+<li><span class="arithmatex">\( \cos\theta = -1 \)</span> when the terminal side points along the negative <span class="arithmatex">\( x \)</span>-axis (<span class="arithmatex">\( \theta = \pi \)</span>).</li>
+<li>The sign of <span class="arithmatex">\( \cos\theta \)</span> follows the sign of <span class="arithmatex">\( x \)</span>: positive in QI and QIV, negative in QII and QIII.</li>
+</ul>
+<p>The Pythagorean identity <span class="arithmatex">\( \cos^2\theta + \sin^2\theta = 1 \)</span> follows immediately from the unit-circle equation <span class="arithmatex">\( x^2 + y^2 = 1 \)</span> — sine and cosine are not independent, but always linked by this constraint.</p>
+<h2 id="tangent-function">Tangent Function</h2>
+<p>The <strong>tangent function</strong> is defined as the ratio of sine to cosine:</p>
+<div class="arithmatex">\[ \tan\theta = \frac{\sin\theta}{\cos\theta} = \frac{y}{x} \]</div>
+<p>Three things follow directly:</p>
+<ul>
+<li>Tangent is undefined wherever cosine is 0 — that is, at <span class="arithmatex">\( \theta = \pi/2, 3\pi/2 \)</span>, and any angle coterminal with these. These are the <em>vertical asymptotes</em> of the tangent graph.</li>
+<li>Unlike sine and cosine, tangent is not bounded between -1 and 1; it can take any real value.</li>
+<li>The sign of <span class="arithmatex">\( \tan\theta \)</span> is the sign of <span class="arithmatex">\( y/x \)</span>, which is positive in QI and QIII (where <span class="arithmatex">\( x \)</span> and <span class="arithmatex">\( y \)</span> share signs) and negative in QII and QIV.</li>
+</ul>
+<p>Geometrically, the tangent at angle <span class="arithmatex">\( \theta \)</span> measures the <em>slope</em> of the line from the origin through the unit-circle point — rise over run = <span class="arithmatex">\( y/x \)</span>. The connection to slope explains why tangent grows large near the vertical asymptotes and changes sign as the terminal side rotates past the <span class="arithmatex">\( y \)</span>-axis.</p>
+<h2 id="reciprocal-trig-functions">Reciprocal Trig Functions</h2>
+<p>The <strong>reciprocal trigonometric functions</strong> are the multiplicative inverses (reciprocals, <em>not</em> inverses-as-functions) of sine, cosine, and tangent. Each pairs with one of the primary functions:</p>
+<ul>
+<li>Cosecant pairs with sine.</li>
+<li>Secant pairs with cosine.</li>
+<li>Cotangent pairs with tangent.</li>
+</ul>
+<p>The naming pattern is consistent but not always intuitive — note that <strong>co</strong>secant pairs with sine (no "co"), and <strong>co</strong>tangent pairs with tangent. Only secant pairs with the obvious primary function.</p>
+<h2 id="secant-function">Secant Function</h2>
+<p>The <strong>secant function</strong> is the reciprocal of cosine:</p>
+<div class="arithmatex">\[ \sec\theta = \frac{1}{\cos\theta} = \frac{1}{x} \]</div>
+<p>Properties:</p>
+<ul>
+<li>Secant is undefined wherever cosine is 0 (at <span class="arithmatex">\( \theta = \pi/2, 3\pi/2, \ldots \)</span>) — same vertical asymptotes as tangent.</li>
+<li>Because <span class="arithmatex">\( |\cos\theta| \leq 1 \)</span>, the secant satisfies <span class="arithmatex">\( |\sec\theta| \geq 1 \)</span>. Its range is <span class="arithmatex">\( (-\infty, -1] \cup [1, \infty) \)</span>.</li>
+<li>The sign of <span class="arithmatex">\( \sec\theta \)</span> matches the sign of <span class="arithmatex">\( \cos\theta \)</span>.</li>
+</ul>
+<h2 id="cosecant-function">Cosecant Function</h2>
+<p>The <strong>cosecant function</strong> is the reciprocal of sine:</p>
+<div class="arithmatex">\[ \csc\theta = \frac{1}{\sin\theta} = \frac{1}{y} \]</div>
+<p>Properties:</p>
+<ul>
+<li>Cosecant is undefined wherever sine is 0 (at <span class="arithmatex">\( \theta = 0, \pi, 2\pi, \ldots \)</span>).</li>
+<li>Because <span class="arithmatex">\( |\sin\theta| \leq 1 \)</span>, the cosecant satisfies <span class="arithmatex">\( |\csc\theta| \geq 1 \)</span>. Its range is <span class="arithmatex">\( (-\infty, -1] \cup [1, \infty) \)</span>.</li>
+<li>The sign of <span class="arithmatex">\( \csc\theta \)</span> matches the sign of <span class="arithmatex">\( \sin\theta \)</span>.</li>
+</ul>
+<h2 id="cotangent-function">Cotangent Function</h2>
+<p>The <strong>cotangent function</strong> is the reciprocal of tangent, which works out to the ratio of cosine to sine:</p>
+<div class="arithmatex">\[ \cot\theta = \frac{1}{\tan\theta} = \frac{\cos\theta}{\sin\theta} = \frac{x}{y} \]</div>
+<p>Properties:</p>
+<ul>
+<li>Cotangent is undefined wherever sine is 0 (at <span class="arithmatex">\( \theta = 0, \pi, 2\pi, \ldots \)</span>).</li>
+<li>Cotangent can take any real value.</li>
+<li>The sign of <span class="arithmatex">\( \cot\theta \)</span> matches the sign of <span class="arithmatex">\( \tan\theta \)</span>: positive in QI and QIII, negative in QII and QIV.</li>
+</ul>
+<p>The next table consolidates the six function definitions in unit-circle terms so they can be compared at a glance.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Definition</th>
+<th>Undefined when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( \sin\theta \)</span></td>
+<td><span class="arithmatex">\( y \)</span></td>
+<td>never</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \cos\theta \)</span></td>
+<td><span class="arithmatex">\( x \)</span></td>
+<td>never</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \tan\theta \)</span></td>
+<td><span class="arithmatex">\( y/x \)</span></td>
+<td><span class="arithmatex">\( x = 0 \)</span> (i.e., <span class="arithmatex">\( \theta = \pi/2 + k\pi \)</span>)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \csc\theta \)</span></td>
+<td><span class="arithmatex">\( 1/y \)</span></td>
+<td><span class="arithmatex">\( y = 0 \)</span> (i.e., <span class="arithmatex">\( \theta = k\pi \)</span>)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \sec\theta \)</span></td>
+<td><span class="arithmatex">\( 1/x \)</span></td>
+<td><span class="arithmatex">\( x = 0 \)</span> (i.e., <span class="arithmatex">\( \theta = \pi/2 + k\pi \)</span>)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \cot\theta \)</span></td>
+<td><span class="arithmatex">\( x/y \)</span></td>
+<td><span class="arithmatex">\( y = 0 \)</span> (i.e., <span class="arithmatex">\( \theta = k\pi \)</span>)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Reciprocal Pairs Share Asymptotes</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema holding up a tip">
+<span class="arithmatex">\( \tan\theta \)</span> and <span class="arithmatex">\( \sec\theta \)</span> both blow up where <span class="arithmatex">\( \cos\theta = 0 \)</span>. <span class="arithmatex">\( \cot\theta \)</span> and <span class="arithmatex">\( \csc\theta \)</span> both blow up where <span class="arithmatex">\( \sin\theta = 0 \)</span>. If you remember which primary function lives in the denominator of each ratio, you never need to memorize the asymptotes separately.</p>
+</div>
+<h2 id="trig-function-evaluation">Trig Function Evaluation</h2>
+<p><strong>Trigonometric function evaluation</strong> at any angle uses the same three-step procedure regardless of which of the six functions is being computed:</p>
+<ol>
+<li>Determine the angle's <strong>quadrant</strong> (or recognize it as a quadrantal angle on the axes).</li>
+<li>Compute the <strong>reference angle</strong> to one of the special angles <span class="arithmatex">\( 0, \pi/6, \pi/4, \pi/3, \pi/2 \)</span>.</li>
+<li>Look up the trig value at the reference angle, then attach the <strong>sign</strong> dictated by the quadrant via ASTC.</li>
+</ol>
+<p>A worked example: evaluate <span class="arithmatex">\( \sin(7\pi/6) \)</span>.</p>
+<ol>
+<li><span class="arithmatex">\( 7\pi/6 \)</span> lies in QIII (between <span class="arithmatex">\( \pi \)</span> and <span class="arithmatex">\( 3\pi/2 \)</span>).</li>
+<li>Reference angle: <span class="arithmatex">\( 7\pi/6 - \pi = \pi/6 \)</span>.</li>
+<li><span class="arithmatex">\( \sin(\pi/6) = 1/2 \)</span>, and sine is negative in QIII, so <span class="arithmatex">\( \sin(7\pi/6) = -1/2 \)</span>.</li>
+</ol>
+<p>Another example: evaluate <span class="arithmatex">\( \cos(5\pi/4) \)</span>.</p>
+<ol>
+<li><span class="arithmatex">\( 5\pi/4 \)</span> lies in QIII.</li>
+<li>Reference angle: <span class="arithmatex">\( 5\pi/4 - \pi = \pi/4 \)</span>.</li>
+<li><span class="arithmatex">\( \cos(\pi/4) = \sqrt{2}/2 \)</span>, and cosine is negative in QIII, so <span class="arithmatex">\( \cos(5\pi/4) = -\sqrt{2}/2 \)</span>.</li>
+</ol>
+<p>The reciprocal functions follow from these primary values: <span class="arithmatex">\( \csc(7\pi/6) = 1/\sin(7\pi/6) = 1/(-1/2) = -2 \)</span>, and <span class="arithmatex">\( \sec(5\pi/4) = 1/\cos(5\pi/4) = -\sqrt{2} \)</span>.</p>
+<h2 id="exact-trig-values">Exact Trig Values</h2>
+<p><strong>Exact trigonometric values</strong> are values expressed in closed form (using integers, fractions, and square roots) rather than as a calculator decimal. They are produced by combining the special-angle values from Chapter 15 with the sign rules above.</p>
+<p>The next table tabulates the exact sine, cosine, and tangent values at every special angle in the first revolution. Combining this table with the sign rules gives the exact value at any angle.</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\( \theta \)</span></th>
+<th><span class="arithmatex">\( \sin\theta \)</span></th>
+<th><span class="arithmatex">\( \cos\theta \)</span></th>
+<th><span class="arithmatex">\( \tan\theta \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi/6 \)</span></td>
+<td><span class="arithmatex">\( 1/2 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{3}/2 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{3}/3 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi/4 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{2}/2 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{2}/2 \)</span></td>
+<td>1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi/3 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{3}/2 \)</span></td>
+<td><span class="arithmatex">\( 1/2 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{3} \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi/2 \)</span></td>
+<td>1</td>
+<td>0</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 2\pi/3 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{3}/2 \)</span></td>
+<td><span class="arithmatex">\( -1/2 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{3} \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 3\pi/4 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{2}/2 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{2}/2 \)</span></td>
+<td>-1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 5\pi/6 \)</span></td>
+<td><span class="arithmatex">\( 1/2 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{3}/2 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{3}/3 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi \)</span></td>
+<td>0</td>
+<td>-1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 7\pi/6 \)</span></td>
+<td><span class="arithmatex">\( -1/2 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{3}/2 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{3}/3 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 5\pi/4 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{2}/2 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{2}/2 \)</span></td>
+<td>1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 4\pi/3 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{3}/2 \)</span></td>
+<td><span class="arithmatex">\( -1/2 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{3} \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 3\pi/2 \)</span></td>
+<td>-1</td>
+<td>0</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 5\pi/3 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{3}/2 \)</span></td>
+<td><span class="arithmatex">\( 1/2 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{3} \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 7\pi/4 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{2}/2 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{2}/2 \)</span></td>
+<td>-1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 11\pi/6 \)</span></td>
+<td><span class="arithmatex">\( -1/2 \)</span></td>
+<td><span class="arithmatex">\( \sqrt{3}/2 \)</span></td>
+<td><span class="arithmatex">\( -\sqrt{3}/3 \)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-six-function-evaluation-wheel">Diagram: Six-Function Evaluation Wheel</h4>
+<details>
+<summary>Interactive unit circle that displays all six trigonometric values for the selected angle</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> six-function-evaluation-wheel<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim showing the unit circle with a draggable terminal side, alongside a panel that displays exact and decimal values for all six trigonometric functions of the current angle.</p>
+<p>Learning objective (Bloom's Applying): Students will apply the unit-circle definitions to evaluate any of the six trig functions at any angle, observing the connection between the unit-circle coordinates and the function values.</p>
+<p>Visual elements:</p>
+<ul>
+<li>The unit circle centered at the origin in a coordinate plane spanning <span class="arithmatex">\(-1.5\)</span> to <span class="arithmatex">\(1.5\)</span> on both axes.</li>
+<li>A draggable terminal-side ray with a highlighted point on the circle showing <span class="arithmatex">\( (\cos\theta, \sin\theta) \)</span>.</li>
+<li>A vertical green segment from the <span class="arithmatex">\( x \)</span>-axis to the point representing <span class="arithmatex">\( \sin\theta \)</span>, and a horizontal blue segment from the <span class="arithmatex">\( y \)</span>-axis to the point representing <span class="arithmatex">\( \cos\theta \)</span>.</li>
+<li>A side panel listing all six function values: <span class="arithmatex">\( \sin, \cos, \tan, \csc, \sec, \cot \)</span> — exact form for special angles, decimal otherwise.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Drag the terminal side to set the angle.</li>
+<li>A "Snap to Special Angles" button.</li>
+<li>A "Show Reference Angle" toggle that displays the acute angle to the <span class="arithmatex">\( x \)</span>-axis.</li>
+<li>A "Quiz Mode" that hides one or more values for student recall practice.</li>
+</ul>
+<p>Instructional rationale: Seeing all six values change in real time as the terminal side rotates makes the relationships among the six functions obvious — sine and cosecant move together, cosine and secant move together, and tangent and cotangent reciprocate around 1.</p>
+<p>Canvas: 1100 × 700 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with mouseDragged for terminal side, createButton for snap and quiz, createCheckbox for reference angle.</p>
+</details>
+<h2 id="right-triangle-trig">Right Triangle Trig</h2>
+<p>The <strong>right triangle definitions</strong> of the trig functions are the older, geometry-based definitions. They apply to <em>acute</em> angles only — angles strictly between 0 and <span class="arithmatex">\( \pi/2 \)</span> (or 0° and 90°) — but they are extremely useful in applied problems involving right triangles.</p>
+<p>For an acute angle <span class="arithmatex">\( \theta \)</span> in a right triangle, label the three sides relative to <span class="arithmatex">\( \theta \)</span>:</p>
+<ul>
+<li>The <strong>opposite</strong> side is the side across from <span class="arithmatex">\( \theta \)</span>.</li>
+<li>The <strong>adjacent</strong> side is the side touching <span class="arithmatex">\( \theta \)</span> that is <em>not</em> the hypotenuse.</li>
+<li>The <strong>hypotenuse</strong> is the side opposite the right angle (always the longest side).</li>
+</ul>
+<p>The three primary trig functions are then defined as the side ratios:</p>
+<div class="arithmatex">\[ \sin\theta = \frac{\text{opposite}}{\text{hypotenuse}}, \quad \cos\theta = \frac{\text{adjacent}}{\text{hypotenuse}}, \quad \tan\theta = \frac{\text{opposite}}{\text{adjacent}} \]</div>
+<p>These ratios depend only on the angle <span class="arithmatex">\( \theta \)</span>, not on the size of the triangle — a consequence of similarity. Two right triangles with the same acute angle have proportional sides, so the side <em>ratios</em> are identical.</p>
+<p>The right-triangle definitions and the unit-circle definitions agree perfectly for acute angles. If we drop a perpendicular from the unit-circle point <span class="arithmatex">\( (\cos\theta, \sin\theta) \)</span> to the <span class="arithmatex">\( x \)</span>-axis, we get a right triangle with hypotenuse 1, opposite side of length <span class="arithmatex">\( \sin\theta \)</span>, and adjacent side of length <span class="arithmatex">\( \cos\theta \)</span>. The unit-circle definition is the broader one — it works for <em>every</em> angle — but the right-triangle picture is the right tool when the problem already contains a triangle.</p>
+<h2 id="soh-cah-toa">SOH-CAH-TOA</h2>
+<p><strong>SOH-CAH-TOA</strong> is the standard mnemonic for remembering the three primary right-triangle ratios:</p>
+<ul>
+<li><strong>SOH</strong>: <strong>S</strong>ine = <strong>O</strong>pposite over <strong>H</strong>ypotenuse.</li>
+<li><strong>CAH</strong>: <strong>C</strong>osine = <strong>A</strong>djacent over <strong>H</strong>ypotenuse.</li>
+<li><strong>TOA</strong>: <strong>T</strong>angent = <strong>O</strong>pposite over <strong>A</strong>djacent.</li>
+</ul>
+<p>The mnemonic is a memory aid for the side ratios, not a deeper definition — it just compresses the three formulas above into nine letters.</p>
+<p>A worked example: in a right triangle, the angle <span class="arithmatex">\( \theta \)</span> has opposite side 3 and hypotenuse 5. Find all six trig values.</p>
+<p>The Pythagorean theorem gives the missing adjacent side: <span class="arithmatex">\( a^2 + 3^2 = 5^2 \implies a = 4 \)</span>. Then:</p>
+<ul>
+<li><span class="arithmatex">\( \sin\theta = 3/5 \)</span>, <span class="arithmatex">\( \cos\theta = 4/5 \)</span>, <span class="arithmatex">\( \tan\theta = 3/4 \)</span>.</li>
+<li>The reciprocals follow: <span class="arithmatex">\( \csc\theta = 5/3 \)</span>, <span class="arithmatex">\( \sec\theta = 5/4 \)</span>, <span class="arithmatex">\( \cot\theta = 4/3 \)</span>.</li>
+</ul>
+<p>This 3-4-5 triangle is one of the most useful exact triangles in trig. Two others worth memorizing are the 5-12-13 and 8-15-17 right triangles, which give exact values for angles other than the special angles.</p>
+<h4 id="diagram-right-triangle-soh-cah-toa-visualizer">Diagram: Right Triangle SOH-CAH-TOA Visualizer</h4>
+<details>
+<summary>Interactive right triangle with adjustable acute angle showing the three side ratios</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> right-triangle-soh-cah-toa<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim displaying a right triangle with one acute angle controllable by a slider, showing the side lengths, the three ratios, and the SOH-CAH-TOA labels in real time.</p>
+<p>Learning objective (Bloom's Understanding): Students will explain that the three trig ratios depend only on the acute angle, not on the triangle's size.</p>
+<p>Visual elements:</p>
+<ul>
+<li>A right triangle drawn in the lower-left corner of the canvas.</li>
+<li>The acute angle <span class="arithmatex">\( \theta \)</span> labeled at one vertex; the right angle marked by a small square at the corner.</li>
+<li>Side labels: opposite (green), adjacent (blue), hypotenuse (maroon).</li>
+<li>A side panel showing the three ratios, the SOH-CAH-TOA mnemonic, and the decimal values.</li>
+<li>An optional second similar triangle of different scale shown side-by-side to demonstrate that the ratios are unchanged.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>A slider for the acute angle <span class="arithmatex">\( \theta \)</span> ranging from <span class="arithmatex">\( 5° \)</span> to <span class="arithmatex">\( 85° \)</span>.</li>
+<li>A slider for the triangle's overall scale.</li>
+<li>A "Show Similar Triangle" toggle that displays a second, larger triangle with the same angles.</li>
+</ul>
+<p>Instructional rationale: Many students first meet trig ratios in geometry without seeing why the ratio depends only on the angle. The side-by-side similar triangle demonstration makes the size-independence visible.</p>
+<p>Canvas: 1000 × 600 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createSlider for angle and scale, createCheckbox for similar triangle.</p>
+</details>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Two Definitions, One Function</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema thinking">
+The right-triangle definition and the unit-circle definition are the <em>same</em> function for acute angles. The unit circle just generalizes the right-triangle picture so that sine, cosine, and tangent are defined for every angle. Use whichever picture is more convenient — the right triangle for surveying and physics word problems, the unit circle for the wider range of angles in periodic models.</p>
+</div>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>The six trigonometric functions all flow from one geometric source: a point on the unit circle. Sine and cosine are the coordinates; tangent and cotangent are their ratios; secant and cosecant are their reciprocals. Once those definitions are in hand, evaluation is a routine of <em>quadrant + reference angle + sign rule</em>.</p>
+<p>Key ideas to carry forward:</p>
+<ul>
+<li><strong>Sine</strong> is the <span class="arithmatex">\( y \)</span>-coordinate, <strong>cosine</strong> is the <span class="arithmatex">\( x \)</span>-coordinate, and <strong>tangent</strong> is the ratio <span class="arithmatex">\( y/x \)</span> on the unit circle.</li>
+<li>The <strong>reciprocal functions</strong> are <span class="arithmatex">\( \csc = 1/\sin \)</span>, <span class="arithmatex">\( \sec = 1/\cos \)</span>, <span class="arithmatex">\( \cot = 1/\tan \)</span> — each pair shares its asymptotes.</li>
+<li><strong>Trig evaluation</strong> at any angle uses three steps: identify the quadrant, find the reference angle, and apply ASTC sign rules.</li>
+<li><strong>Exact values</strong> at the special angles (multiples of <span class="arithmatex">\( \pi/6 \)</span> and <span class="arithmatex">\( \pi/4 \)</span>) come from the 30-60-90 and 45-45-90 right triangles.</li>
+<li><strong>SOH-CAH-TOA</strong> organizes the right-triangle definitions: sine = opp/hyp, cosine = adj/hyp, tangent = opp/adj.</li>
+<li>The right-triangle and unit-circle definitions agree on acute angles; the unit-circle version generalizes to every angle.</li>
+</ul>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">All Six Functions, Mastered</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+You can now evaluate any of the six trig functions at any of the special angles, in any quadrant, using only the unit-circle picture and the sign rules. The next chapter promotes these point values to <em>graphs</em> — turning the rotation around the circle into the wave shapes that model every periodic process in nature.</p>
+</div>
+<details class="question">
+<summary>Quick Check: Find <span class="arithmatex">\( \sin(2\pi/3) \)</span> exactly.</summary>
+<p><span class="arithmatex">\( 2\pi/3 \)</span> is in QII with reference angle <span class="arithmatex">\( \pi/3 \)</span>. <span class="arithmatex">\( \sin(\pi/3) = \sqrt{3}/2 \)</span>, and sine is positive in QII, so <span class="arithmatex">\( \sin(2\pi/3) = \sqrt{3}/2 \)</span>.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Find <span class="arithmatex">\( \tan(5\pi/4) \)</span> exactly.</summary>
+<p><span class="arithmatex">\( 5\pi/4 \)</span> is in QIII with reference angle <span class="arithmatex">\( \pi/4 \)</span>. <span class="arithmatex">\( \tan(\pi/4) = 1 \)</span>, and tangent is positive in QIII, so <span class="arithmatex">\( \tan(5\pi/4) = 1 \)</span>.</p>
+</details>
+<details class="question">
+<summary>Quick Check: A right triangle has legs of length 6 and 8. Find <span class="arithmatex">\( \sin\theta \)</span> and <span class="arithmatex">\( \cos\theta \)</span> for the angle <span class="arithmatex">\( \theta \)</span> opposite the leg of length 6.</summary>
+<p>The hypotenuse is <span class="arithmatex">\( \sqrt{6^2 + 8^2} = 10 \)</span>. So <span class="arithmatex">\( \sin\theta = 6/10 = 3/5 \)</span> and <span class="arithmatex">\( \cos\theta = 8/10 = 4/5 \)</span>.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Why is <span class="arithmatex">\( \sec(\pi/2) \)</span> undefined?</summary>
+<p>Secant is the reciprocal of cosine, and <span class="arithmatex">\( \cos(\pi/2) = 0 \)</span>. Division by 0 is undefined, so <span class="arithmatex">\( \sec(\pi/2) \)</span> is undefined as well.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../15-angles-and-the-unit-circle/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 15-Angles and Unit Circle">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                15-Angles and Unit Circle
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../17-trigonometric-graphs/" class="md-footer__link md-footer__link--next" aria-label="Next: 17-Trigonometric Graphs">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                17-Trigonometric Graphs
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

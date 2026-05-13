@@ -1,0 +1,2280 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Angles in degrees and radians, arc length and sector area, standard position, reference and coterminal angles, the unit circle and its special-angle coordinates that define every trigonometric value.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/15-angles-and-the-unit-circle/">
+      
+      
+        <link rel="prev" href="../14-logarithmic-functions/">
+      
+      
+        <link rel="next" href="../16-trigonometric-functions/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Angles and the Unit Circle - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Angles and the Unit Circle - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="Angles in degrees and radians, arc length and sector area, standard position, reference and coterminal angles, the unit circle and its special-angle coordinates that define every trigonometric value." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/15-angles-and-the-unit-circle/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/15-angles-and-the-unit-circle/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Angles and the Unit Circle - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="Angles in degrees and radians, arc length and sector area, standard position, reference and coterminal angles, the unit circle and its special-angle coordinates that define every trigonometric value." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/15-angles-and-the-unit-circle/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#angles-and-the-unit-circle" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Angles and the Unit Circle
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angle-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angle Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#degree-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degree Measure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radian-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radian Measure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#degree-radian-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degree-Radian Conversion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arc-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arc Length
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sector-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sector Area
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standard-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Position
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminal-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminal Side
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference Angle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coterminal-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coterminal Angles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Coterminal Angles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-standard-position-and-reference-angles-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Standard Position and Reference Angles Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-circle-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Circle Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-circle-coordinates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Circle Coordinates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Angles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quadrantal-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quadrantal Angles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signs-by-quadrant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signs by Quadrant
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Signs by Quadrant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-unit-circle-with-special-angles-and-coordinates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Unit Circle with Special Angles and Coordinates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angle-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angle Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#degree-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degree Measure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radian-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radian Measure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#degree-radian-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degree-Radian Conversion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arc-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arc Length
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sector-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sector Area
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standard-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Position
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminal-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminal Side
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference Angle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coterminal-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coterminal Angles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Coterminal Angles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-standard-position-and-reference-angles-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Standard Position and Reference Angles Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-circle-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Circle Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-circle-coordinates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Circle Coordinates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Angles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quadrantal-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quadrantal Angles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signs-by-quadrant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signs by Quadrant
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Signs by Quadrant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-unit-circle-with-special-angles-and-coordinates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Unit Circle with Special Angles and Coordinates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/15-angles-and-the-unit-circle/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="angles-and-the-unit-circle">Angles and the Unit Circle</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter transitions into trigonometry by establishing the foundational concepts of angles and the unit circle. Students learn about angle definitions in degrees and radians, degree-radian conversion, arc length, and sector area. The chapter covers angles in standard position, terminal sides, reference angles, and coterminal angles. Students then explore the unit circle, its coordinate system, special angles, quadrantal angles, and signs by quadrant — all essential for defining trigonometric functions in the next chapter.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 15 concepts from the learning graph:</p>
+<ol>
+<li>Angle Definition</li>
+<li>Degree Measure</li>
+<li>Radian Measure</li>
+<li>Degree-Radian Conversion</li>
+<li>Arc Length</li>
+<li>Sector Area</li>
+<li>Standard Position</li>
+<li>Terminal Side</li>
+<li>Reference Angle</li>
+<li>Coterminal Angles</li>
+<li>Unit Circle Definition</li>
+<li>Unit Circle Coordinates</li>
+<li>Special Angles</li>
+<li>Quadrantal Angles</li>
+<li>Signs by Quadrant</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-mathematical-foundations/">Chapter 1: Mathematical Foundations</a></li>
+<li><a href="../13-exponential-functions/">Chapter 13: Exponential Functions</a> (for Natural Base e used in Radian Measure)</li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">From Functions to Angles</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+Welcome to Unit 3. The toolkit changes here: instead of polynomials and exponentials, we will work with angles and rotation. The single most important picture in trigonometry is the <strong>unit circle</strong>, and this chapter builds it from scratch — angles, radians, special points, and the rules for moving around the four quadrants. Master these foundations and the rest of trig is bookkeeping.</p>
+</div>
+<h2 id="angle-definition">Angle Definition</h2>
+<p>An <strong>angle</strong> is the figure formed by two rays sharing a common endpoint. The shared endpoint is called the <strong>vertex</strong>, and the two rays are called the <strong>sides</strong> of the angle. One side is called the <em>initial side</em> and the other is the <em>terminal side</em>; the angle's measure describes the rotation that takes the initial side to the terminal side.</p>
+<p>Two important conventions about rotation:</p>
+<ul>
+<li>A <strong>positive</strong> angle rotates counterclockwise (the standard math convention).</li>
+<li>A <strong>negative</strong> angle rotates clockwise.</li>
+</ul>
+<p>So an angle of <span class="arithmatex">\( +90° \)</span> is a quarter turn counterclockwise; an angle of <span class="arithmatex">\( -90° \)</span> is a quarter turn clockwise. Both produce a right angle, but they reach it from opposite directions.</p>
+<h2 id="degree-measure">Degree Measure</h2>
+<p><strong>Degree measure</strong> is the familiar unit of angle: a full rotation is divided into 360 equal parts, and each part is one degree. The system is ancient (originating with Babylonian astronomers) and persists because 360 has many integer factors — it can be split into halves, thirds, fourths, fifths, sixths, eighths, and so on without remainders.</p>
+<p>A few benchmark angles in degrees:</p>
+<ul>
+<li>A full rotation: <span class="arithmatex">\( 360° \)</span>.</li>
+<li>A half rotation (a straight line): <span class="arithmatex">\( 180° \)</span>.</li>
+<li>A quarter rotation (a right angle): <span class="arithmatex">\( 90° \)</span>.</li>
+<li>An eighth rotation: <span class="arithmatex">\( 45° \)</span>.</li>
+<li>A twelfth rotation: <span class="arithmatex">\( 30° \)</span>.</li>
+</ul>
+<h2 id="radian-measure">Radian Measure</h2>
+<p><strong>Radian measure</strong> is the natural mathematical unit of angle. One radian is defined as the angle subtended at the center of a circle by an arc whose length equals the circle's radius. Equivalently:</p>
+<div class="arithmatex">\[ 1 \text{ radian} = \text{the angle whose arc length equals the radius} \]</div>
+<p>Because the full circumference of a circle of radius 1 is <span class="arithmatex">\( 2\pi \)</span>, there are exactly <span class="arithmatex">\( 2\pi \)</span> radians in a full rotation:</p>
+<div class="arithmatex">\[ 2\pi \text{ radians} = 360° \quad \text{and} \quad \pi \text{ radians} = 180° \]</div>
+<p>Why bother with radians? Because they are a <em>pure ratio</em> (arc length divided by radius, a unitless number), they make the calculus and physics formulas clean. The derivative of <span class="arithmatex">\( \sin x \)</span> is <span class="arithmatex">\( \cos x \)</span> only when <span class="arithmatex">\( x \)</span> is measured in radians; in degrees, that derivative carries an extra constant factor. Throughout the rest of trigonometry, <em>radians are the default</em> unless degrees are explicitly requested.</p>
+<p>A few benchmark angles in radians:</p>
+<ul>
+<li>A full rotation: <span class="arithmatex">\( 2\pi \)</span>.</li>
+<li>A half rotation: <span class="arithmatex">\( \pi \)</span>.</li>
+<li>A quarter rotation: <span class="arithmatex">\( \pi/2 \)</span>.</li>
+<li>An eighth rotation: <span class="arithmatex">\( \pi/4 \)</span>.</li>
+<li>A twelfth rotation: <span class="arithmatex">\( \pi/6 \)</span>.</li>
+</ul>
+<h2 id="degree-radian-conversion">Degree-Radian Conversion</h2>
+<p>The <strong>degree-radian conversion</strong> rests on the single identity <span class="arithmatex">\( \pi \text{ rad} = 180° \)</span>. Two conversion factors fall out immediately:</p>
+<div class="arithmatex">\[ \text{degrees} \to \text{radians:} \quad \theta_{\text{rad}} = \theta_{\text{deg}} \cdot \frac{\pi}{180} \]</div>
+<div class="arithmatex">\[ \text{radians} \to \text{degrees:} \quad \theta_{\text{deg}} = \theta_{\text{rad}} \cdot \frac{180}{\pi} \]</div>
+<p>A worked example: convert <span class="arithmatex">\( 60° \)</span> to radians.</p>
+<div class="arithmatex">\[ 60° \cdot \frac{\pi}{180} = \frac{60\pi}{180} = \frac{\pi}{3} \approx 1.047 \text{ rad} \]</div>
+<p>Another: convert <span class="arithmatex">\( 5\pi/4 \)</span> radians to degrees.</p>
+<div class="arithmatex">\[ \frac{5\pi}{4} \cdot \frac{180}{\pi} = \frac{5 \cdot 180}{4} = 225° \]</div>
+<p>The next table tabulates the conversions for the angles you will see most often. Memorizing this table makes every later trigonometry computation faster.</p>
+<table>
+<thead>
+<tr>
+<th>Degrees</th>
+<th>Radians</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0°</td>
+<td>0</td>
+<td>Initial position</td>
+</tr>
+<tr>
+<td>30°</td>
+<td><span class="arithmatex">\( \pi/6 \)</span></td>
+<td>Special angle</td>
+</tr>
+<tr>
+<td>45°</td>
+<td><span class="arithmatex">\( \pi/4 \)</span></td>
+<td>Special angle</td>
+</tr>
+<tr>
+<td>60°</td>
+<td><span class="arithmatex">\( \pi/3 \)</span></td>
+<td>Special angle</td>
+</tr>
+<tr>
+<td>90°</td>
+<td><span class="arithmatex">\( \pi/2 \)</span></td>
+<td>Quadrantal</td>
+</tr>
+<tr>
+<td>120°</td>
+<td><span class="arithmatex">\( 2\pi/3 \)</span></td>
+<td></td>
+</tr>
+<tr>
+<td>135°</td>
+<td><span class="arithmatex">\( 3\pi/4 \)</span></td>
+<td></td>
+</tr>
+<tr>
+<td>150°</td>
+<td><span class="arithmatex">\( 5\pi/6 \)</span></td>
+<td></td>
+</tr>
+<tr>
+<td>180°</td>
+<td><span class="arithmatex">\( \pi \)</span></td>
+<td>Quadrantal</td>
+</tr>
+<tr>
+<td>270°</td>
+<td><span class="arithmatex">\( 3\pi/2 \)</span></td>
+<td>Quadrantal</td>
+</tr>
+<tr>
+<td>360°</td>
+<td><span class="arithmatex">\( 2\pi \)</span></td>
+<td>Full rotation</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Multiply by π/180 to Get Smaller, by 180/π to Get Bigger</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema holding up a tip">
+Degrees are bigger numbers than radians (90 vs. 1.57), so converting from degrees to radians shrinks the number — multiply by <span class="arithmatex">\( \pi/180 \)</span>. Going the other way grows the number — multiply by <span class="arithmatex">\( 180/\pi \)</span>. Whichever direction you choose, the units that survive should be the ones you want.</p>
+</div>
+<h2 id="arc-length">Arc Length</h2>
+<p><strong>Arc length</strong> is the distance traveled along a circular arc. For an arc that subtends an angle <span class="arithmatex">\( \theta \)</span> (in radians) at the center of a circle of radius <span class="arithmatex">\( r \)</span>, the formula is:</p>
+<div class="arithmatex">\[ s = r\theta \]</div>
+<p>This formula is the entire reason radians exist — it is breathtakingly simple compared to its degree-measure cousin. (In degrees, the arc length is <span class="arithmatex">\( s = (\pi/180) r \theta \)</span>, which carries an unwanted conversion factor.)</p>
+<p>A worked example: find the arc length on a circle of radius 5 meters that subtends an angle of <span class="arithmatex">\( \pi/3 \)</span> radians.</p>
+<div class="arithmatex">\[ s = 5 \cdot \frac{\pi}{3} = \frac{5\pi}{3} \approx 5.24 \text{ meters} \]</div>
+<p>Another example: a wheel of radius 0.4 m turns through 2 full rotations. How far does a point on the rim travel?</p>
+<p>Two rotations is <span class="arithmatex">\( 2 \cdot 2\pi = 4\pi \)</span> radians, so:</p>
+<div class="arithmatex">\[ s = 0.4 \cdot 4\pi = 1.6\pi \approx 5.03 \text{ meters} \]</div>
+<h2 id="sector-area">Sector Area</h2>
+<p>A <strong>sector</strong> of a circle is the pie-slice region bounded by two radii and the arc between them. The sector's area is:</p>
+<div class="arithmatex">\[ A = \frac{1}{2} r^2 \theta \]</div>
+<p>with <span class="arithmatex">\( \theta \)</span> measured in radians. This formula is the rotational analog of the standard triangle area formula <span class="arithmatex">\( \frac{1}{2}bh \)</span> — and again, it is much simpler in radians than in degrees.</p>
+<p>A worked example: find the area of a sector of radius 6 cm with central angle <span class="arithmatex">\( \pi/4 \)</span> radians.</p>
+<div class="arithmatex">\[ A = \frac{1}{2} \cdot 6^2 \cdot \frac{\pi}{4} = \frac{1}{2} \cdot 36 \cdot \frac{\pi}{4} = \frac{36\pi}{8} = \frac{9\pi}{2} \approx 14.14 \text{ cm}^2 \]</div>
+<h2 id="standard-position">Standard Position</h2>
+<p>An angle is in <strong>standard position</strong> when:</p>
+<ol>
+<li>Its vertex is at the origin of the coordinate plane.</li>
+<li>Its initial side lies along the positive <span class="arithmatex">\( x \)</span>-axis.</li>
+</ol>
+<p>This convention places every angle on a common reference frame, so we can speak unambiguously about <em>where</em> the terminal side ends up. Angles in standard position are the bridge from the geometric idea of an angle to the coordinate-based definitions of sine, cosine, and tangent in the next chapter.</p>
+<h2 id="terminal-side">Terminal Side</h2>
+<p>The <strong>terminal side</strong> of an angle in standard position is the ray that results after the rotation specified by the angle has been applied to the initial side. Knowing the terminal side's direction is enough to evaluate every trigonometric function of the angle.</p>
+<p>Some examples of terminal-side directions:</p>
+<ul>
+<li>For <span class="arithmatex">\( \theta = 0 \)</span>, the terminal side lies along the positive <span class="arithmatex">\( x \)</span>-axis.</li>
+<li>For <span class="arithmatex">\( \theta = \pi/2 \)</span> (90°), the terminal side lies along the positive <span class="arithmatex">\( y \)</span>-axis.</li>
+<li>For <span class="arithmatex">\( \theta = \pi \)</span> (180°), the terminal side lies along the negative <span class="arithmatex">\( x \)</span>-axis.</li>
+<li>For <span class="arithmatex">\( \theta = 3\pi/2 \)</span> (270°), the terminal side lies along the negative <span class="arithmatex">\( y \)</span>-axis.</li>
+</ul>
+<p>Once an angle exceeds <span class="arithmatex">\( 2\pi \)</span>, the terminal side has wrapped past its starting position and lands somewhere it has been before. That repetition is the source of the <em>coterminal</em> relationship below.</p>
+<h2 id="reference-angle">Reference Angle</h2>
+<p>The <strong>reference angle</strong> of an angle <span class="arithmatex">\( \theta \)</span> in standard position is the <em>positive acute angle</em> between the terminal side and the nearest part of the <span class="arithmatex">\( x \)</span>-axis. Reference angles are always between 0 and <span class="arithmatex">\( \pi/2 \)</span> (between 0° and 90°).</p>
+<p>The trick of reference angles: every trigonometric value of <span class="arithmatex">\( \theta \)</span> is, up to a sign, equal to the same trigonometric value of its reference angle. Knowing the few special-angle values (sine and cosine of 0, <span class="arithmatex">\( \pi/6 \)</span>, <span class="arithmatex">\( \pi/4 \)</span>, <span class="arithmatex">\( \pi/3 \)</span>, <span class="arithmatex">\( \pi/2 \)</span>) plus the sign rules from the quadrant tells us the value at any related angle.</p>
+<p>The next table shows how to compute the reference angle in each quadrant, where <span class="arithmatex">\( \theta \)</span> is between 0 and <span class="arithmatex">\( 2\pi \)</span> (or 0° and 360°).</p>
+<table>
+<thead>
+<tr>
+<th>Quadrant containing the terminal side</th>
+<th>Reference angle (radians)</th>
+<th>Reference angle (degrees)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QI (0 to <span class="arithmatex">\( \pi/2 \)</span>)</td>
+<td><span class="arithmatex">\( \theta \)</span></td>
+<td><span class="arithmatex">\( \theta \)</span></td>
+</tr>
+<tr>
+<td>QII (<span class="arithmatex">\( \pi/2 \)</span> to <span class="arithmatex">\( \pi \)</span>)</td>
+<td><span class="arithmatex">\( \pi - \theta \)</span></td>
+<td><span class="arithmatex">\( 180° - \theta \)</span></td>
+</tr>
+<tr>
+<td>QIII (<span class="arithmatex">\( \pi \)</span> to <span class="arithmatex">\( 3\pi/2 \)</span>)</td>
+<td><span class="arithmatex">\( \theta - \pi \)</span></td>
+<td><span class="arithmatex">\( \theta - 180° \)</span></td>
+</tr>
+<tr>
+<td>QIV (<span class="arithmatex">\( 3\pi/2 \)</span> to <span class="arithmatex">\( 2\pi \)</span>)</td>
+<td><span class="arithmatex">\( 2\pi - \theta \)</span></td>
+<td><span class="arithmatex">\( 360° - \theta \)</span></td>
+</tr>
+</tbody>
+</table>
+<p>A worked example: the reference angle of <span class="arithmatex">\( \theta = 5\pi/6 \)</span> (in QII) is <span class="arithmatex">\( \pi - 5\pi/6 = \pi/6 \)</span>. The trig values at <span class="arithmatex">\( 5\pi/6 \)</span> match those at <span class="arithmatex">\( \pi/6 \)</span>, with signs determined by QII.</p>
+<h2 id="coterminal-angles">Coterminal Angles</h2>
+<p>Two angles are <strong>coterminal</strong> if they share the same terminal side. Because a full rotation returns the terminal side to its starting position, adding or subtracting any multiple of <span class="arithmatex">\( 2\pi \)</span> (360°) produces a coterminal angle.</p>
+<p>Formally, the coterminal angles of <span class="arithmatex">\( \theta \)</span> are:</p>
+<div class="arithmatex">\[ \theta + 2\pi k \quad \text{for any integer } k \]</div>
+<p>A worked example: angles coterminal with <span class="arithmatex">\( \pi/4 \)</span> include <span class="arithmatex">\( \pi/4 + 2\pi = 9\pi/4 \)</span>, <span class="arithmatex">\( \pi/4 - 2\pi = -7\pi/4 \)</span>, <span class="arithmatex">\( \pi/4 + 4\pi = 17\pi/4 \)</span>, and so on.</p>
+<p>Coterminal angles have <em>exactly the same</em> trigonometric values, because trig functions depend only on the terminal side. So when an angle is given as <span class="arithmatex">\( 13\pi/4 \)</span>, we can subtract <span class="arithmatex">\( 2\pi \)</span> twice to reduce it to <span class="arithmatex">\( 13\pi/4 - 4\pi = -3\pi/4 \)</span>, or once to <span class="arithmatex">\( 5\pi/4 \)</span>, and work with whichever form is most convenient.</p>
+<h4 id="diagram-standard-position-and-reference-angles-explorer">Diagram: Standard Position and Reference Angles Explorer</h4>
+<details>
+<summary>Interactive coordinate plane showing an angle, its terminal side, and its reference angle</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> standard-position-reference-angles<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim with a draggable angle in standard position, displaying the terminal side, the reference angle, and the quadrant in real time.</p>
+<p>Learning objective (Bloom's Applying): Students will apply the reference-angle rules to compute the acute angle to the <span class="arithmatex">\( x \)</span>-axis for any given angle.</p>
+<p>Visual elements:</p>
+<ul>
+<li>A coordinate plane with the four quadrants clearly labeled (QI, QII, QIII, QIV).</li>
+<li>The angle <span class="arithmatex">\( \theta \)</span> drawn from the positive <span class="arithmatex">\( x \)</span>-axis to the terminal side, shaded as a sector.</li>
+<li>The reference angle drawn from the terminal side to the nearest part of the <span class="arithmatex">\( x \)</span>-axis, in a contrasting color.</li>
+<li>A status panel showing <span class="arithmatex">\( \theta \)</span> in both degrees and radians, the quadrant, and the reference angle.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>A slider for <span class="arithmatex">\( \theta \)</span> ranging from <span class="arithmatex">\( -2\pi \)</span> to <span class="arithmatex">\( 4\pi \)</span>.</li>
+<li>A "Snap to Special Angles" button that jumps to the nearest multiple of <span class="arithmatex">\( \pi/6 \)</span> or <span class="arithmatex">\( \pi/4 \)</span>.</li>
+<li>A "Show Coterminal" toggle that draws additional dashed terminal sides for <span class="arithmatex">\( \theta + 2\pi \)</span> and <span class="arithmatex">\( \theta - 2\pi \)</span>.</li>
+</ul>
+<p>Instructional rationale: Reference angles and coterminal angles are spatial concepts that students struggle to internalize from formulas alone. Watching the reference angle update live as the terminal side rotates anchors the idea visually.</p>
+<p>Canvas: 800 × 800 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createSlider for the angle, createButton for snap, createCheckbox for coterminal display.</p>
+</details>
+<h2 id="unit-circle-definition">Unit Circle Definition</h2>
+<p>The <strong>unit circle</strong> is the circle of radius 1 centered at the origin of the coordinate plane:</p>
+<div class="arithmatex">\[ x^2 + y^2 = 1 \]</div>
+<p>Its single most important feature for trigonometry is this: every point on the unit circle can be written as <span class="arithmatex">\( (\cos\theta, \sin\theta) \)</span> for some angle <span class="arithmatex">\( \theta \)</span> measured from the positive <span class="arithmatex">\( x \)</span>-axis. The unit circle is the geometric definition of sine and cosine.</p>
+<p>Because the radius is 1, all the conversion factors that would otherwise clutter trig formulas vanish. Arc length on the unit circle is exactly the angle in radians. Coordinates on the unit circle are exactly the cosine and sine of the angle. Choosing radius 1 is a deliberate piece of mathematical hygiene.</p>
+<h2 id="unit-circle-coordinates">Unit Circle Coordinates</h2>
+<p>The <strong>unit circle coordinates</strong> of a point at angle <span class="arithmatex">\( \theta \)</span> are:</p>
+<div class="arithmatex">\[ (x, y) = (\cos\theta, \sin\theta) \]</div>
+<p>This identity is the <em>definition</em> of sine and cosine for general angles. For an angle <span class="arithmatex">\( \theta \)</span> in standard position, the terminal side intersects the unit circle at exactly one point, and that point's <span class="arithmatex">\( x \)</span>-coordinate is <span class="arithmatex">\( \cos\theta \)</span> while its <span class="arithmatex">\( y \)</span>-coordinate is <span class="arithmatex">\( \sin\theta \)</span>.</p>
+<p>An immediate consequence is the <strong>Pythagorean identity</strong> <span class="arithmatex">\( \cos^2 \theta + \sin^2 \theta = 1 \)</span>, which holds for every angle <span class="arithmatex">\( \theta \)</span> because every point on the unit circle satisfies <span class="arithmatex">\( x^2 + y^2 = 1 \)</span>.</p>
+<h2 id="special-angles">Special Angles</h2>
+<p>The <strong>special angles</strong> are the angles whose sine and cosine values can be expressed exactly in closed form, without needing a calculator. The five special angles in the first quadrant are:</p>
+<ul>
+<li><span class="arithmatex">\( 0 \)</span> (or <span class="arithmatex">\( 0° \)</span>)</li>
+<li><span class="arithmatex">\( \pi/6 \)</span> (or <span class="arithmatex">\( 30° \)</span>)</li>
+<li><span class="arithmatex">\( \pi/4 \)</span> (or <span class="arithmatex">\( 45° \)</span>)</li>
+<li><span class="arithmatex">\( \pi/3 \)</span> (or <span class="arithmatex">\( 60° \)</span>)</li>
+<li><span class="arithmatex">\( \pi/2 \)</span> (or <span class="arithmatex">\( 90° \)</span>)</li>
+</ul>
+<p>Their sine and cosine values come from the side ratios of the special right triangles (45-45-90 and 30-60-90) that you met in geometry. The next table lists the values you will use throughout trigonometry — committing them to memory is one of the highest-value investments in this entire course.</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\( \theta \)</span> (rad)</th>
+<th><span class="arithmatex">\( \theta \)</span> (deg)</th>
+<th><span class="arithmatex">\( \cos\theta \)</span></th>
+<th><span class="arithmatex">\( \sin\theta \)</span></th>
+<th>Unit-circle point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0°</td>
+<td>1</td>
+<td>0</td>
+<td><span class="arithmatex">\( (1, 0) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi/6 \)</span></td>
+<td>30°</td>
+<td><span class="arithmatex">\( \frac{\sqrt{3}}{2} \)</span></td>
+<td><span class="arithmatex">\( \frac{1}{2} \)</span></td>
+<td><span class="arithmatex">\( \left(\frac{\sqrt{3}}{2}, \frac{1}{2}\right) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi/4 \)</span></td>
+<td>45°</td>
+<td><span class="arithmatex">\( \frac{\sqrt{2}}{2} \)</span></td>
+<td><span class="arithmatex">\( \frac{\sqrt{2}}{2} \)</span></td>
+<td><span class="arithmatex">\( \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}\right) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi/3 \)</span></td>
+<td>60°</td>
+<td><span class="arithmatex">\( \frac{1}{2} \)</span></td>
+<td><span class="arithmatex">\( \frac{\sqrt{3}}{2} \)</span></td>
+<td><span class="arithmatex">\( \left(\frac{1}{2}, \frac{\sqrt{3}}{2}\right) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi/2 \)</span></td>
+<td>90°</td>
+<td>0</td>
+<td>1</td>
+<td><span class="arithmatex">\( (0, 1) \)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The values for special angles in other quadrants are obtained by combining the first-quadrant values above with the sign rules introduced below.</p>
+<h2 id="quadrantal-angles">Quadrantal Angles</h2>
+<p>The <strong>quadrantal angles</strong> are the angles whose terminal sides lie <em>along</em> the coordinate axes rather than inside a quadrant. These are the angles <span class="arithmatex">\( 0, \pi/2, \pi, 3\pi/2 \)</span> and any of their coterminal partners.</p>
+<p>For quadrantal angles, one of the unit-circle coordinates is 0 and the other is <span class="arithmatex">\( \pm 1 \)</span>.</p>
+<table>
+<thead>
+<tr>
+<th>Quadrantal angle</th>
+<th>Terminal side</th>
+<th>Unit-circle point</th>
+<th><span class="arithmatex">\( \cos\theta \)</span></th>
+<th><span class="arithmatex">\( \sin\theta \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>+<span class="arithmatex">\( x \)</span>-axis</td>
+<td><span class="arithmatex">\( (1, 0) \)</span></td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi/2 \)</span></td>
+<td>+<span class="arithmatex">\( y \)</span>-axis</td>
+<td><span class="arithmatex">\( (0, 1) \)</span></td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi \)</span></td>
+<td>−<span class="arithmatex">\( x \)</span>-axis</td>
+<td><span class="arithmatex">\( (-1, 0) \)</span></td>
+<td>-1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 3\pi/2 \)</span></td>
+<td>−<span class="arithmatex">\( y \)</span>-axis</td>
+<td><span class="arithmatex">\( (0, -1) \)</span></td>
+<td>0</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<p>These four angles are the easiest values to evaluate exactly because the coordinates sit right on the axes — no triangles required.</p>
+<h2 id="signs-by-quadrant">Signs by Quadrant</h2>
+<p>Once an angle's terminal side leaves the first quadrant, the unit-circle coordinates can be negative. The <strong>signs by quadrant</strong> rule simply asks: "is the <span class="arithmatex">\( x \)</span>-coordinate positive or negative? Is the <span class="arithmatex">\( y \)</span>-coordinate positive or negative?"</p>
+<p>The mnemonic <strong>"All Students Take Calculus"</strong> (or ASTC) records which trig functions are positive in each quadrant, going counterclockwise from QI:</p>
+<ul>
+<li><strong>A</strong>ll positive in QI (cosine, sine, tangent — and reciprocals — all positive).</li>
+<li><strong>S</strong>ine positive in QII (cosine and tangent negative).</li>
+<li><strong>T</strong>angent positive in QIII (sine and cosine both negative, but their ratio is positive).</li>
+<li><strong>C</strong>osine positive in QIV (sine and tangent negative).</li>
+</ul>
+<p>The next table summarizes the signs for sine, cosine, and tangent in all four quadrants.</p>
+<table>
+<thead>
+<tr>
+<th>Quadrant</th>
+<th><span class="arithmatex">\( \cos\theta \)</span> (= x)</th>
+<th><span class="arithmatex">\( \sin\theta \)</span> (= y)</th>
+<th><span class="arithmatex">\( \tan\theta \)</span> (= y/x)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QI</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>QII</td>
+<td>−</td>
+<td>+</td>
+<td>−</td>
+</tr>
+<tr>
+<td>QIII</td>
+<td>−</td>
+<td>−</td>
+<td>+</td>
+</tr>
+<tr>
+<td>QIV</td>
+<td>+</td>
+<td>−</td>
+<td>−</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-unit-circle-with-special-angles-and-coordinates">Diagram: Unit Circle with Special Angles and Coordinates</h4>
+<details>
+<summary>Interactive unit circle showing all special-angle coordinates and signs by quadrant</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> unit-circle-special-angles<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim displaying the unit circle with all 16 standard special-angle points labeled, plus a draggable point that shows the current angle's exact coordinates and sign verdicts.</p>
+<p>Learning objective (Bloom's Remembering): Students will recall the unit-circle coordinates of the special angles and the sign of each trigonometric function in each quadrant.</p>
+<p>Visual elements:</p>
+<ul>
+<li>The unit circle drawn at the center of a coordinate plane spanning <span class="arithmatex">\(-1.5\)</span> to <span class="arithmatex">\(1.5\)</span> on both axes.</li>
+<li>16 special-angle points marked with their coordinates in exact form (e.g., <span class="arithmatex">\( (\sqrt{3}/2, 1/2) \)</span>).</li>
+<li>ASTC labels in each quadrant (All, Sine, Tangent, Cosine) listing which functions are positive.</li>
+<li>A draggable point on the circle showing the current angle in degrees and radians, plus its coordinates.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Drag the point on the circle to move the terminal side.</li>
+<li>A "Snap to Special Angles" button.</li>
+<li>A "Show/Hide ASTC Labels" toggle.</li>
+<li>A "Quiz Me" mode that hides the coordinates and prompts the student to recall them.</li>
+</ul>
+<p>Instructional rationale: The unit circle is the single most-used reference object in trigonometry. Repeated, interactive exposure with both the coordinates and the sign rules visible builds the recall fluency the rest of the unit assumes.</p>
+<p>Canvas: 800 × 800 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with mouseDragged for the moving point, createButton for snap and quiz, createCheckbox for ASTC display.</p>
+</details>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">The Unit Circle Is Your Map</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema thinking">
+Every trigonometric value in this course can be read off a unit circle if you know two things: the special-angle coordinates in the first quadrant, and the sign rules for the other three quadrants. Combine those two skills and you can evaluate sine and cosine of any angle without a calculator.</p>
+</div>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Trigonometry begins with rotation. Angles are how we measure rotation; radians are the unit that makes the formulas clean; the unit circle is the geometric object that turns angles into coordinates and coordinates into trig values.</p>
+<p>Key ideas to carry forward:</p>
+<ul>
+<li>An <strong>angle</strong> is rotation; positive is counterclockwise, negative is clockwise.</li>
+<li><strong>Degrees</strong> divide a full rotation into 360 parts; <strong>radians</strong> measure angle as arc-length-to-radius ratio, with <span class="arithmatex">\( 2\pi \)</span> rad in a full rotation.</li>
+<li>The <strong>conversion</strong> <span class="arithmatex">\( \pi \text{ rad} = 180° \)</span> generates both directions of conversion.</li>
+<li><strong>Arc length</strong> <span class="arithmatex">\( s = r\theta \)</span> and <strong>sector area</strong> <span class="arithmatex">\( A = \frac{1}{2}r^2\theta \)</span> require <span class="arithmatex">\( \theta \)</span> in radians.</li>
+<li>An angle in <strong>standard position</strong> has its vertex at the origin and initial side along the positive <span class="arithmatex">\( x \)</span>-axis; its <strong>terminal side</strong> sets the trig values.</li>
+<li>The <strong>reference angle</strong> is the acute angle between the terminal side and the <span class="arithmatex">\( x \)</span>-axis; <strong>coterminal angles</strong> differ by multiples of <span class="arithmatex">\( 2\pi \)</span>.</li>
+<li>The <strong>unit circle</strong> <span class="arithmatex">\( x^2 + y^2 = 1 \)</span> defines <span class="arithmatex">\( (\cos\theta, \sin\theta) \)</span> as the coordinates of the terminal side's intersection.</li>
+<li>The <strong>special angles</strong> <span class="arithmatex">\( 0, \pi/6, \pi/4, \pi/3, \pi/2 \)</span> give exact trig values; the <strong>quadrantal angles</strong> give the simplest values; <strong>ASTC</strong> sets the signs in each quadrant.</li>
+</ul>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">The Map Is Built</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+You can now navigate the unit circle: read off the coordinates of any special angle, find a reference angle, attach the right sign for the right quadrant, and switch between degrees and radians without missing a beat. Next chapter, we promote those coordinates to full-fledged trigonometric functions.</p>
+</div>
+<details class="question">
+<summary>Quick Check: Convert 135° to radians.</summary>
+<p><span class="arithmatex">\( 135° \cdot \pi/180 = 135\pi/180 = 3\pi/4 \)</span> radians.</p>
+</details>
+<details class="question">
+<summary>Quick Check: A circle has radius 8 cm. What is the arc length subtended by an angle of <span class="arithmatex">\( \pi/6 \)</span> radians?</summary>
+<p><span class="arithmatex">\( s = r\theta = 8 \cdot \pi/6 = 4\pi/3 \approx 4.19 \)</span> cm.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Find the reference angle for <span class="arithmatex">\( \theta = 7\pi/6 \)</span>.</summary>
+<p><span class="arithmatex">\( 7\pi/6 \)</span> is in QIII, so the reference angle is <span class="arithmatex">\( 7\pi/6 - \pi = \pi/6 \)</span>.</p>
+</details>
+<details class="question">
+<summary>Quick Check: What are the unit-circle coordinates of <span class="arithmatex">\( \theta = 2\pi/3 \)</span>?</summary>
+<p>Reference angle is <span class="arithmatex">\( \pi/3 \)</span>, with coordinates <span class="arithmatex">\( (1/2, \sqrt{3}/2) \)</span>. In QII, <span class="arithmatex">\( x \)</span> is negative and <span class="arithmatex">\( y \)</span> is positive, giving <span class="arithmatex">\( (-1/2, \sqrt{3}/2) \)</span>.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../14-logarithmic-functions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 14-Logarithmic Functions">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                14-Logarithmic Functions
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../16-trigonometric-functions/" class="md-footer__link md-footer__link--next" aria-label="Next: 16-Trigonometric Functions">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                16-Trigonometric Functions
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

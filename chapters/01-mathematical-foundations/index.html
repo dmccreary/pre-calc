@@ -1,0 +1,2064 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Core building blocks of pre-calculus — real numbers, the number line, order of operations, variables, the coordinate plane, and interval and set-builder notation.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/01-mathematical-foundations/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02-functions-and-their-properties/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Mathematical Foundations - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Mathematical Foundations - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="Core building blocks of pre-calculus — real numbers, the number line, order of operations, variables, the coordinate plane, and interval and set-builder notation." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/01-mathematical-foundations/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/01-mathematical-foundations/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Mathematical Foundations - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="Core building blocks of pre-calculus — real numbers, the number line, order of operations, variables, the coordinate plane, and interval and set-builder notation." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/01-mathematical-foundations/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mathematical-foundations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Mathematical Foundations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-foundations-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Foundations Matter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-real-number-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Real Number System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Real Number System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-real-number-system-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Real Number System Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-number-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Number Line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#order-of-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order of Operations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-and-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables and Expressions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-output-and-variable-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input, Output, and Variable Roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-coordinate-plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Coordinate Plane
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Coordinate Plane">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordered-pairs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordered Pairs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ordered Pairs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-coordinate-plane-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Coordinate Plane Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interval-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interval Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-builder-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set-Builder Notation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Set-Builder Notation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-notation-translator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Notation Translator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-composition-and-inverse-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-foundations-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Foundations Matter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-real-number-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Real Number System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Real Number System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-real-number-system-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Real Number System Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-number-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Number Line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#order-of-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order of Operations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-and-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables and Expressions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-output-and-variable-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input, Output, and Variable Roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-coordinate-plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Coordinate Plane
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Coordinate Plane">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordered-pairs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordered Pairs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ordered Pairs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-coordinate-plane-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Coordinate Plane Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interval-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interval Notation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-builder-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set-Builder Notation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Set-Builder Notation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-notation-translator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Notation Translator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/01-mathematical-foundations/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="mathematical-foundations">Mathematical Foundations</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter introduces the core mathematical building blocks that underpin all of pre-calculus. Students will review the real number system, the number line, order of operations, variables and expressions, and the coordinate plane. The chapter also covers notation systems including interval and set-builder notation, and distinguishes between independent and dependent variables. These foundational concepts are prerequisites for every subsequent chapter.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 11 concepts from the learning graph:</p>
+<ol>
+<li>Real Number System</li>
+<li>Number Line</li>
+<li>Order of Operations</li>
+<li>Variables and Expressions</li>
+<li>Coordinate Plane</li>
+<li>Ordered Pairs</li>
+<li>Input and Output</li>
+<li>Independent Variable</li>
+<li>Dependent Variable</li>
+<li>Interval Notation</li>
+<li>Set-Builder Notation</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>.</p>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Welcome to Pre-Calculus</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving hello">
+Hi, I'm <strong>Prema</strong> — your learning companion for this textbook. I'll pop up throughout every chapter to introduce new ideas, flag common pitfalls, celebrate your wins, and whisper shortcuts when they help. My one big rule: <em>decompose — let's break this down together!</em> Before we dive into functions and graphs, we need a shared vocabulary, so think of this chapter as sharpening our tools.</p>
+</div>
+<h2 id="why-foundations-matter">Why Foundations Matter</h2>
+<p>Pre-calculus is the language of change, and like any language, it has an alphabet. The symbols, number systems, and notation conventions introduced in this chapter will appear on nearly every page of this textbook. A student who is fluent with interval notation can read a solution set in seconds; a student who is shaky on the order of operations will second-guess every algebraic step.</p>
+<p>The goal of this chapter is not to teach anything dramatically new — most of these ideas surfaced in Algebra 1 and 2 — but to unify the notation we will use from here onward. Each subsequent chapter assumes confident command of the vocabulary laid out below.</p>
+<h2 id="the-real-number-system">The Real Number System</h2>
+<p>A <strong>real number</strong> is any number that can be placed on a continuous number line. The real numbers include familiar quantities like 3, -7, 1/2, and 0, but also numbers that cannot be written as a ratio of integers, such as <span class="arithmatex">\( \pi \)</span> and <span class="arithmatex">\( \sqrt{2} \)</span>. We write the set of all real numbers as <span class="arithmatex">\( \mathbb{R} \)</span>.</p>
+<p>The real numbers are not a flat, undifferentiated pool — they are organized into nested categories. Each category is a subset of the one that contains it, and membership in a category tells us what kinds of operations are safe to perform.</p>
+<ul>
+<li><strong>Natural numbers</strong> <span class="arithmatex">\( \mathbb{N} = \{1, 2, 3, \dots\} \)</span>: the counting numbers.</li>
+<li><strong>Whole numbers</strong>: the natural numbers together with 0.</li>
+<li><strong>Integers</strong> <span class="arithmatex">\( \mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\} \)</span>: whole numbers and their negatives.</li>
+<li><strong>Rational numbers</strong> <span class="arithmatex">\( \mathbb{Q} \)</span>: any number expressible as <span class="arithmatex">\( \tfrac{p}{q} \)</span> where <span class="arithmatex">\( p \)</span> and <span class="arithmatex">\( q \)</span> are integers and <span class="arithmatex">\( q \neq 0 \)</span>.</li>
+<li><strong>Irrational numbers</strong>: real numbers that are not rational — their decimal expansions neither terminate nor repeat.</li>
+<li><strong>Real numbers</strong> <span class="arithmatex">\( \mathbb{R} \)</span>: the union of the rationals and the irrationals.</li>
+</ul>
+<p>Each category above is strictly larger than the one preceding it (except irrationals, which are a separate branch). Every natural number is an integer, every integer is rational, and every rational is real — but not every real is rational. The number <span class="arithmatex">\( \pi = 3.14159\ldots \)</span> is real but not rational.</p>
+<p>Before we look at the diagram below, note that it visualizes the <em>containment</em> relationship: each smaller circle sits inside every circle that represents a larger category.</p>
+<h4 id="diagram-real-number-system-hierarchy">Diagram: Real Number System Hierarchy</h4>
+<details>
+<summary>Nested Venn diagram of number categories</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> real-number-hierarchy<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A nested Venn-style infographic showing the containment of number categories within the real numbers. The outermost region is labeled "Real Numbers (ℝ)" in a maroon color. Inside, a large circle labeled "Rational Numbers (ℚ)" sits to the left, and a separate circle labeled "Irrational Numbers" sits to the right with no overlap with Rationals. Inside Rationals, nested circles appear in order: Integers (ℤ), Whole Numbers, Natural Numbers (ℕ). Each region displays 2-3 example numbers: Naturals show {1, 2, 3}, Integers add {-3, 0}, Rationals add {1/2, -3/4, 0.25}, Irrationals show {π, √2, e}.</p>
+<p>Learning objective (Bloom's Understanding): Students will classify a given real number into its most restrictive category.</p>
+<p>Interactive behavior: A clickable number tray at the bottom offers numbers like -5, π, 2/3, √9, 0, 1.7. When the student clicks one, the number animates into the correct region(s) and the region briefly highlights in gold. A counter shows "Correctly placed: X of 6." A "Reset" button returns all numbers to the tray.</p>
+<p>Canvas: 700 × 500 pixels, responsive to container width via updateCanvasSize() in setup(). Color palette matches textbook maroon (#800020) for outer boundaries and cyan-blue (#00BFFF) for highlights.</p>
+<p>Implementation: p5.js MicroSim using createButton for reset and createSelect for difficulty (easy/medium/hard, which changes the set of tray numbers).</p>
+</details>
+<h2 id="the-number-line">The Number Line</h2>
+<p>The <strong>number line</strong> is a geometric representation of the real numbers. Every real number corresponds to exactly one point on the line, and every point on the line corresponds to exactly one real number. This one-to-one correspondence between numbers and points is what allows us to use geometric intuition — distance, direction, betweenness — to reason about algebraic quantities.</p>
+<p>By convention, the number line extends infinitely in both directions, with 0 at the origin, positive numbers to the right, and negative numbers to the left. The distance between any two consecutive integers is fixed, and every point between two integers represents a real number that is neither.</p>
+<h2 id="order-of-operations">Order of Operations</h2>
+<p>When an expression contains several operations, we need a rule that tells every reader to evaluate it the same way. Without such a rule, the expression <span class="arithmatex">\( 3 + 4 \times 2 \)</span> could mean 14 (adding first) or 11 (multiplying first). The convention we use is called the <strong>order of operations</strong>, often remembered by the mnemonic PEMDAS.</p>
+<p>The table below summarizes PEMDAS. A common mistake is to treat multiplication as "stronger than" division, or addition as "stronger than" subtraction. In fact, operations within the same row are performed left to right in the order they appear.</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Operation</th>
+<th>Symbol(s)</th>
+<th>Left-to-right rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Parentheses (grouping)</td>
+<td>( ), [ ], { }</td>
+<td>Evaluate innermost first</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Exponents</td>
+<td><span class="arithmatex">\( x^n \)</span>, <span class="arithmatex">\( \sqrt{x} \)</span></td>
+<td>Right-to-left for stacked exponents</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Multiplication &amp; Division</td>
+<td><span class="arithmatex">\( \times, \div, \cdot \)</span></td>
+<td>Equal priority; left-to-right</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Addition &amp; Subtraction</td>
+<td><span class="arithmatex">\( +, - \)</span></td>
+<td>Equal priority; left-to-right</td>
+</tr>
+</tbody>
+</table>
+<p>As an example, consider <span class="arithmatex">\( 12 - 2 \times (3 + 1)^2 \div 4 \)</span>. Working through PEMDAS:</p>
+<ol>
+<li>Parentheses: <span class="arithmatex">\( (3 + 1) = 4 \)</span>, giving <span class="arithmatex">\( 12 - 2 \times 4^2 \div 4 \)</span></li>
+<li>Exponents: <span class="arithmatex">\( 4^2 = 16 \)</span>, giving <span class="arithmatex">\( 12 - 2 \times 16 \div 4 \)</span></li>
+<li>Multiplication and division, left to right: <span class="arithmatex">\( 2 \times 16 = 32 \)</span>, then <span class="arithmatex">\( 32 \div 4 = 8 \)</span>, giving <span class="arithmatex">\( 12 - 8 \)</span></li>
+<li>Subtraction: <span class="arithmatex">\( 12 - 8 = 4 \)</span></li>
+</ol>
+<div class="admonition mascot-warning">
+<p class="admonition-title">The Most Common PEMDAS Trap</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Prema holding up a cautionary sign">
+Multiplication does not beat division, and addition does not beat subtraction — they share priority. When you see <span class="arithmatex">\( 8 \div 4 \times 2 \)</span>, resist the urge to multiply first; scan left to right and divide first. This single habit prevents a surprising number of sign errors.</p>
+</div>
+<h2 id="variables-and-expressions">Variables and Expressions</h2>
+<p>A <strong>variable</strong> is a symbol — usually a letter like <span class="arithmatex">\( x \)</span>, <span class="arithmatex">\( y \)</span>, or <span class="arithmatex">\( t \)</span> — that represents a number whose value may change or is not yet known. Variables let us write statements that are true for entire families of numbers rather than just one specific case. The equation <span class="arithmatex">\( 2x + 1 \)</span> is a <strong>variable expression</strong>: a combination of variables, numbers, and operations that evaluates to a number once we substitute a value for the variable.</p>
+<p>An expression is not an equation. Expressions have no equals sign — they produce a value. Equations, in contrast, assert that two expressions are equal. The expression <span class="arithmatex">\( 3x + 5 \)</span> evaluates to 11 when <span class="arithmatex">\( x = 2 \)</span>; the equation <span class="arithmatex">\( 3x + 5 = 11 \)</span> asks <em>which</em> values of <span class="arithmatex">\( x \)</span> make the statement true (in this case, only <span class="arithmatex">\( x = 2 \)</span>).</p>
+<h2 id="input-output-and-variable-roles">Input, Output, and Variable Roles</h2>
+<p>A central habit of pre-calculus is separating the roles that variables play. In an expression like <span class="arithmatex">\( y = 3x + 1 \)</span>, one variable determines the value of the other. We call the variable we choose freely the <strong>input</strong>, and the variable whose value depends on that choice the <strong>output</strong>.</p>
+<ul>
+<li>The <strong>independent variable</strong> is the input — the quantity we set or choose.</li>
+<li>The <strong>dependent variable</strong> is the output — the quantity produced by the rule.</li>
+</ul>
+<p>By near-universal convention in pre-calculus, <span class="arithmatex">\( x \)</span> is the independent variable and <span class="arithmatex">\( y \)</span> is the dependent variable. When modeling a real-world situation, the independent variable is often time, a cost, or a count; the dependent variable is the response — distance traveled, total price, population size. Recognizing which is which is the first step in building any model.</p>
+<p>The table below shows how the same idea appears in different real-world settings. Notice that the independent variable is always the one we can change first, and the dependent variable is the consequence.</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Independent (input)</th>
+<th>Dependent (output)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Driving at 60 mph</td>
+<td>Time elapsed, <span class="arithmatex">\( t \)</span></td>
+<td>Distance traveled, <span class="arithmatex">\( d \)</span></td>
+</tr>
+<tr>
+<td>Buying apples at $2 each</td>
+<td>Number of apples, <span class="arithmatex">\( n \)</span></td>
+<td>Total cost, <span class="arithmatex">\( C \)</span></td>
+</tr>
+<tr>
+<td>A plant growing over days</td>
+<td>Days since planting, <span class="arithmatex">\( d \)</span></td>
+<td>Height of plant, <span class="arithmatex">\( h \)</span></td>
+</tr>
+<tr>
+<td>Temperature over a day</td>
+<td>Hour of day, <span class="arithmatex">\( t \)</span></td>
+<td>Temperature, <span class="arithmatex">\( T \)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Which Variable Comes First?</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema thinking with a finger to her temple">
+Here's a reliable test: ask yourself, "If I changed this quantity, would the other one have to change too?" The one you changed is the independent variable. The one that <em>responded</em> is the dependent variable. Cause leads; effect follows.</p>
+</div>
+<h2 id="the-coordinate-plane">The Coordinate Plane</h2>
+<p>To see how two variables relate, we need a way to picture pairs of numbers at once. The <strong>coordinate plane</strong> (also called the Cartesian plane) solves this by crossing two perpendicular number lines: a horizontal <strong>x-axis</strong> and a vertical <strong>y-axis</strong>. Their intersection is the <strong>origin</strong>, labeled (0, 0).</p>
+<p>The two axes divide the plane into four <strong>quadrants</strong>, numbered I, II, III, and IV counterclockwise starting from the upper right. In Quadrant I both coordinates are positive; in Quadrant II <span class="arithmatex">\( x \)</span> is negative and <span class="arithmatex">\( y \)</span> is positive; in Quadrant III both are negative; in Quadrant IV <span class="arithmatex">\( x \)</span> is positive and <span class="arithmatex">\( y \)</span> is negative.</p>
+<h3 id="ordered-pairs">Ordered Pairs</h3>
+<p>Every point in the coordinate plane corresponds to a unique <strong>ordered pair</strong> <span class="arithmatex">\( (x, y) \)</span>. The first number is the horizontal position (how far right or left of the origin) and the second is the vertical position (how far up or down). The order matters: (3, 5) and (5, 3) name different points.</p>
+<p>Before exploring the interactive below, note that the horizontal coordinate always appears first. A helpful memory device: the x-axis is mentioned first in "x and y," and the x-coordinate is mentioned first in <span class="arithmatex">\( (x, y) \)</span>.</p>
+<h4 id="diagram-coordinate-plane-explorer">Diagram: Coordinate Plane Explorer</h4>
+<details>
+<summary>Interactive coordinate plane with clickable points</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> coordinate-plane-explorer<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A MicroSim showing a coordinate plane spanning x from -10 to 10 and y from -10 to 10 with integer gridlines. Axes are labeled with tick marks at every integer and larger labels at every fifth integer. The four quadrants are softly tinted (Q1 light blue, Q2 light green, Q3 light yellow, Q4 light pink) with Roman numeral labels in the corner of each quadrant.</p>
+<p>Learning objective (Bloom's Applying): Students will locate and identify ordered pairs on the coordinate plane and name the quadrant containing a given point.</p>
+<p>Interactive behavior:
+- A "Mystery Point" label displays an ordered pair like (4, -3). The student clicks anywhere on the plane to guess the location; correct clicks within a 0.5-unit radius flash gold and play a confirmation tone. Incorrect clicks display the actual pair next to the click location so the student can see their offset.
+- A slider labeled "Mystery points remaining" decrements on each correct answer.
+- A checkbox labeled "Show coordinates on hover" displays the (x, y) value at the mouse cursor when enabled.
+- A "New Round" button generates a fresh set of 5 mystery points.
+- A dropdown lets the student filter which quadrants are sampled (All, Quadrant I only, Quadrants I and II, etc.).</p>
+<p>Canvas: 600 × 600 pixels, responsive via updateCanvasSize() in setup(). Gridlines are pale gray; axes are bold black; the maroon brand color highlights the most recent clicked point.</p>
+<p>Implementation: p5.js with createButton for "New Round," createCheckbox for hover coordinates, createSelect for quadrant filter, and createSlider for grid density (integer-only or half-integer gridlines).</p>
+</details>
+<h2 id="interval-notation">Interval Notation</h2>
+<p>Once we start working with functions, we need compact ways to describe sets of real numbers — the values a variable can take, or the solution set of an inequality. <strong>Interval notation</strong> is one such language. It uses brackets and parentheses to describe a range of numbers on the number line.</p>
+<p>The key distinction is between brackets <span class="arithmatex">\( [ \, ] \)</span> and parentheses <span class="arithmatex">\( ( \, ) \)</span>:</p>
+<ul>
+<li>A <strong>bracket</strong> means the endpoint is <strong>included</strong> in the interval. We call this a <em>closed</em> endpoint.</li>
+<li>A <strong>parenthesis</strong> means the endpoint is <strong>excluded</strong>. We call this an <em>open</em> endpoint.</li>
+<li><strong>Infinity</strong> <span class="arithmatex">\( \infty \)</span> is never a reachable number, so it always appears with a parenthesis.</li>
+</ul>
+<p>The table below summarizes the five main shapes of interval you will encounter. Each row shows the same set written three ways — as an inequality, in interval notation, and in plain words — so the translation from one form to another becomes automatic.</p>
+<table>
+<thead>
+<tr>
+<th>Inequality</th>
+<th>Interval Notation</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( 2 \le x \le 5 \)</span></td>
+<td><span class="arithmatex">\( [2, 5] \)</span></td>
+<td>All reals between 2 and 5, including both</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 2 &lt; x &lt; 5 \)</span></td>
+<td><span class="arithmatex">\( (2, 5) \)</span></td>
+<td>All reals strictly between 2 and 5</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( 2 \le x &lt; 5 \)</span></td>
+<td><span class="arithmatex">\( [2, 5) \)</span></td>
+<td>Includes 2, excludes 5</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x &gt; 2 \)</span></td>
+<td><span class="arithmatex">\( (2, \infty) \)</span></td>
+<td>All reals greater than 2</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x \le 5 \)</span></td>
+<td><span class="arithmatex">\( (-\infty, 5] \)</span></td>
+<td>All reals less than or equal to 5</td>
+</tr>
+</tbody>
+</table>
+<p>A single interval describes a connected stretch of the number line. When we need two disconnected stretches, we join them with the <strong>union</strong> symbol <span class="arithmatex">\( \cup \)</span>. For example, "all real numbers except 3" is written <span class="arithmatex">\( (-\infty, 3) \cup (3, \infty) \)</span>.</p>
+<h2 id="set-builder-notation">Set-Builder Notation</h2>
+<p>Interval notation is compact, but it can only describe <em>continuous</em> regions of the number line. When we need to describe a set that follows a more complex rule — say, "all real numbers whose square is less than 4" — we use <strong>set-builder notation</strong>.</p>
+<p>Set-builder notation has a consistent three-part structure: <code>{ variable | condition }</code>, read aloud as "the set of all <em>variable</em> such that <em>condition</em>." The vertical bar <code>|</code> (sometimes written as a colon <code>:</code>) is read as "such that."</p>
+<p>The example below uses each part of the pattern:</p>
+<div class="arithmatex">\[ \{ x \mid x \in \mathbb{R}, \; x &gt; 0 \} \]</div>
+<p>This reads: "the set of all <span class="arithmatex">\( x \)</span> such that <span class="arithmatex">\( x \)</span> is a real number and <span class="arithmatex">\( x \)</span> is greater than 0." In plain English: the positive real numbers.</p>
+<p>Interval notation and set-builder notation often describe the same set — they are different dialects, not different meanings. The table below translates between them so you can move fluently between the two when the problem favors one over the other.</p>
+<table>
+<thead>
+<tr>
+<th>Set-Builder</th>
+<th>Interval Notation</th>
+<th>In Words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( \{ x \mid x \ge 0 \} \)</span></td>
+<td><span class="arithmatex">\( [0, \infty) \)</span></td>
+<td>Non-negative reals</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \{ x \mid -3 &lt; x \le 2 \} \)</span></td>
+<td><span class="arithmatex">\( (-3, 2] \)</span></td>
+<td>Reals from -3 (exclusive) to 2 (inclusive)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \{ x \mid x \neq 0 \} \)</span></td>
+<td><span class="arithmatex">\( (-\infty, 0) \cup (0, \infty) \)</span></td>
+<td>All reals except 0</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \{ x \mid x^2 &lt; 9 \} \)</span></td>
+<td><span class="arithmatex">\( (-3, 3) \)</span></td>
+<td>Reals whose square is less than 9</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-tip">
+<p class="admonition-title">When to Reach for Each Notation</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema giving a helpful pointer">
+Use <em>interval notation</em> whenever you can — it's shorter and easier to read. Switch to <em>set-builder notation</em> when the set follows a rule that isn't a simple interval, like "all <span class="arithmatex">\( x \)</span> whose cosine is positive." The rule-based form handles cases that brackets cannot.</p>
+</div>
+<h4 id="diagram-notation-translator">Diagram: Notation Translator</h4>
+<details>
+<summary>Three-way translator between inequality, interval, and set-builder notation</summary>
+<p>Type: interactive infographic
+<strong>sim-id:</strong> notation-translator<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>An infographic with three synchronized panels arranged horizontally: (1) a number line showing a shaded region with open/closed endpoints, (2) interval notation (e.g., <code>[-2, 5)</code>), and (3) set-builder notation (e.g., <code>{x | -2 ≤ x &lt; 5}</code>). All three representations always agree.</p>
+<p>Learning objective (Bloom's Applying): Students will translate between inequality, interval, and set-builder notations for the same set.</p>
+<p>Interactive behavior:
+- The student can drag two endpoint handles along the number line from -10 to 10. As the handles move, all three representations update in real time.
+- Each endpoint has a clickable toggle (open circle ⚪ or filled circle ⚫) that flips inclusion on or off. The bracket/parenthesis in the interval panel and the <span class="arithmatex">\( \le \)</span>/<span class="arithmatex">\( &lt; \)</span> in the set-builder panel update together.
+- A "Challenge Mode" button displays a random target interval in one representation (e.g., shows only the interval notation) and asks the student to reproduce it using the number-line handles. Correct matches award a point and unlock the next challenge.
+- A "Union" button adds a second shaded region on the number line; the interval and set-builder panels both update to use <span class="arithmatex">\( \cup \)</span> notation.</p>
+<p>Canvas: 900 × 400 pixels, responsive via updateCanvasSize() in setup(). Number line is horizontal, 800 pixels wide, with integer tick marks; the shaded region is drawn in maroon with 40% opacity.</p>
+<p>Implementation: p5.js with createButton for Challenge Mode, Union, and Reset, plus mousePressed/mouseDragged logic for endpoint handles and inclusion toggles.</p>
+</details>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>The concepts in this chapter form a single connected vocabulary. A function, introduced in the next chapter, is a rule that takes an <strong>input</strong> (an independent variable), applies some sequence of <strong>operations</strong> (respecting order of operations), and produces an <strong>output</strong> (a dependent variable). We visualize it on the <strong>coordinate plane</strong> using <strong>ordered pairs</strong>, describe which inputs are allowed using <strong>interval</strong> or <strong>set-builder notation</strong>, and verify that all the numbers involved belong to the <strong>real number system</strong>.</p>
+<p>Every idea in the list below recurs dozens of times in the chapters that follow. Re-read the ones that feel shaky before moving on.</p>
+<ul>
+<li>Real numbers are organized into nested categories; knowing the category tells you what operations are safe.</li>
+<li>The number line gives every real number a unique geometric location, and vice versa.</li>
+<li>The order of operations is a convention; multiplication and division share priority, as do addition and subtraction.</li>
+<li>Variables are symbols that represent numbers. Expressions evaluate to a value; equations assert equality.</li>
+<li>In <span class="arithmatex">\( y = f(x) \)</span>, <span class="arithmatex">\( x \)</span> is the independent variable (input) and <span class="arithmatex">\( y \)</span> is the dependent variable (output).</li>
+<li>The coordinate plane uses two perpendicular number lines to place ordered pairs <span class="arithmatex">\( (x, y) \)</span> — horizontal first, then vertical.</li>
+<li>Interval notation uses brackets for included endpoints and parentheses for excluded endpoints (and always parentheses around <span class="arithmatex">\( \pm \infty \)</span>).</li>
+<li>Set-builder notation has the form <code>{ variable | condition }</code> and is read "the set of all <em>variable</em> such that <em>condition</em>."</li>
+</ul>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Foundations Locked In</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating with arms raised">
+You now have the vocabulary that every chapter to come will rely on — real numbers, coordinates, variable roles, and two ways to describe sets. Keep this chapter bookmarked; it is the Rosetta Stone of the rest of the course. On to functions!</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: List of Chapters">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                List of Chapters
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02-functions-and-their-properties/" class="md-footer__link md-footer__link--next" aria-label="Next: 2-Functions and Properties">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                2-Functions and Properties
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

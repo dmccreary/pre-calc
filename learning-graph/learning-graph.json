@@ -1,0 +1,3825 @@
+{
+  "metadata": {
+    "title": "AP Pre-Calculus Learning Graph",
+    "description": "A comprehensive learning graph for AP Pre-Calculus covering polynomial, rational, exponential, logarithmic, trigonometric, and polar functions following the College Board curriculum framework.",
+    "creator": "Dan McCreary",
+    "date": "2026-03-16",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "LightCoral",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FUNC": {
+      "classifierName": "Function Fundamentals",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "RATE": {
+      "classifierName": "Rates of Change",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "LNQD": {
+      "classifierName": "Linear and Quadratic",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    },
+    "POLY": {
+      "classifierName": "Polynomial Functions",
+      "color": "Plum",
+      "font": {
+        "color": "black"
+      }
+    },
+    "RATL": {
+      "classifierName": "Rational Functions",
+      "color": "SteelBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TMOD": {
+      "classifierName": "Transformations and Modeling",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SEQX": {
+      "classifierName": "Sequences and Exponential",
+      "color": "MintCream",
+      "font": {
+        "color": "black"
+      }
+    },
+    "LOGR": {
+      "classifierName": "Logarithmic Functions",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TRIG": {
+      "classifierName": "Trigonometric Functions",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "POLR": {
+      "classifierName": "Polar and Parametric",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "VECM": {
+      "classifierName": "Vectors and Matrices",
+      "color": "LavenderBlush",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Real Number System",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Number Line",
+      "group": "FOUND"
+    },
+    {
+      "id": 3,
+      "label": "Order of Operations",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Variables and Expressions",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Coordinate Plane",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "Ordered Pairs",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "Input and Output",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Function Definition",
+      "group": "FUNC"
+    },
+    {
+      "id": 9,
+      "label": "Function Notation",
+      "group": "FUNC"
+    },
+    {
+      "id": 10,
+      "label": "Domain",
+      "group": "FUNC"
+    },
+    {
+      "id": 11,
+      "label": "Range",
+      "group": "FUNC"
+    },
+    {
+      "id": 12,
+      "label": "Independent Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 13,
+      "label": "Dependent Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 14,
+      "label": "Interval Notation",
+      "group": "FOUND"
+    },
+    {
+      "id": 15,
+      "label": "Set-Builder Notation",
+      "group": "FOUND"
+    },
+    {
+      "id": 16,
+      "label": "Vertical Line Test",
+      "group": "FUNC"
+    },
+    {
+      "id": 17,
+      "label": "Function Evaluation",
+      "group": "FUNC"
+    },
+    {
+      "id": 18,
+      "label": "Piecewise Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 19,
+      "label": "Domain Restrictions",
+      "group": "FUNC"
+    },
+    {
+      "id": 20,
+      "label": "Graphing Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 21,
+      "label": "Intercepts",
+      "group": "FUNC"
+    },
+    {
+      "id": 22,
+      "label": "X-Intercept",
+      "group": "FUNC"
+    },
+    {
+      "id": 23,
+      "label": "Y-Intercept",
+      "group": "FUNC"
+    },
+    {
+      "id": 24,
+      "label": "Increasing Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 25,
+      "label": "Decreasing Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 26,
+      "label": "Constant Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 27,
+      "label": "Function Behavior",
+      "group": "FUNC"
+    },
+    {
+      "id": 28,
+      "label": "Positive and Negative Regions",
+      "group": "FUNC"
+    },
+    {
+      "id": 29,
+      "label": "Bounded Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 30,
+      "label": "Even Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 31,
+      "label": "Odd Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 32,
+      "label": "Symmetry",
+      "group": "FUNC"
+    },
+    {
+      "id": 33,
+      "label": "Change in Tandem",
+      "group": "RATE"
+    },
+    {
+      "id": 34,
+      "label": "Average Rate of Change",
+      "group": "RATE"
+    },
+    {
+      "id": 35,
+      "label": "Slope",
+      "group": "RATE"
+    },
+    {
+      "id": 36,
+      "label": "Slope Formula",
+      "group": "RATE"
+    },
+    {
+      "id": 37,
+      "label": "Rate of Change Units",
+      "group": "RATE"
+    },
+    {
+      "id": 38,
+      "label": "Secant Line",
+      "group": "RATE"
+    },
+    {
+      "id": 39,
+      "label": "Linear Rate of Change",
+      "group": "RATE"
+    },
+    {
+      "id": 40,
+      "label": "Nonlinear Rate of Change",
+      "group": "RATE"
+    },
+    {
+      "id": 41,
+      "label": "Concavity from Rates",
+      "group": "RATE"
+    },
+    {
+      "id": 42,
+      "label": "Increasing Rate of Change",
+      "group": "RATE"
+    },
+    {
+      "id": 43,
+      "label": "Decreasing Rate of Change",
+      "group": "RATE"
+    },
+    {
+      "id": 44,
+      "label": "Linear Function Definition",
+      "group": "LNQD"
+    },
+    {
+      "id": 45,
+      "label": "Slope-Intercept Form",
+      "group": "LNQD"
+    },
+    {
+      "id": 46,
+      "label": "Point-Slope Form",
+      "group": "LNQD"
+    },
+    {
+      "id": 47,
+      "label": "Standard Form of a Line",
+      "group": "LNQD"
+    },
+    {
+      "id": 48,
+      "label": "Parallel Lines",
+      "group": "LNQD"
+    },
+    {
+      "id": 49,
+      "label": "Perpendicular Lines",
+      "group": "LNQD"
+    },
+    {
+      "id": 50,
+      "label": "Linear Regression",
+      "group": "LNQD"
+    },
+    {
+      "id": 51,
+      "label": "Residuals",
+      "group": "LNQD"
+    },
+    {
+      "id": 52,
+      "label": "Correlation",
+      "group": "LNQD"
+    },
+    {
+      "id": 53,
+      "label": "Quadratic Function Definition",
+      "group": "LNQD"
+    },
+    {
+      "id": 54,
+      "label": "Standard Form of Quadratic",
+      "group": "LNQD"
+    },
+    {
+      "id": 55,
+      "label": "Vertex Form",
+      "group": "LNQD"
+    },
+    {
+      "id": 56,
+      "label": "Factored Form",
+      "group": "LNQD"
+    },
+    {
+      "id": 57,
+      "label": "Vertex",
+      "group": "LNQD"
+    },
+    {
+      "id": 58,
+      "label": "Axis of Symmetry",
+      "group": "LNQD"
+    },
+    {
+      "id": 59,
+      "label": "Parabola",
+      "group": "LNQD"
+    },
+    {
+      "id": 60,
+      "label": "Completing the Square",
+      "group": "LNQD"
+    },
+    {
+      "id": 61,
+      "label": "Quadratic Formula",
+      "group": "LNQD"
+    },
+    {
+      "id": 62,
+      "label": "Discriminant",
+      "group": "LNQD"
+    },
+    {
+      "id": 63,
+      "label": "Complex Numbers",
+      "group": "LNQD"
+    },
+    {
+      "id": 64,
+      "label": "Imaginary Unit",
+      "group": "LNQD"
+    },
+    {
+      "id": 65,
+      "label": "Complex Zeros",
+      "group": "LNQD"
+    },
+    {
+      "id": 66,
+      "label": "Polynomial Definition",
+      "group": "POLY"
+    },
+    {
+      "id": 67,
+      "label": "Degree of a Polynomial",
+      "group": "POLY"
+    },
+    {
+      "id": 68,
+      "label": "Leading Coefficient",
+      "group": "POLY"
+    },
+    {
+      "id": 69,
+      "label": "Monomial",
+      "group": "POLY"
+    },
+    {
+      "id": 70,
+      "label": "Binomial",
+      "group": "POLY"
+    },
+    {
+      "id": 71,
+      "label": "Trinomial",
+      "group": "POLY"
+    },
+    {
+      "id": 72,
+      "label": "Polynomial Addition",
+      "group": "POLY"
+    },
+    {
+      "id": 73,
+      "label": "Polynomial Multiplication",
+      "group": "POLY"
+    },
+    {
+      "id": 74,
+      "label": "Factoring Polynomials",
+      "group": "POLY"
+    },
+    {
+      "id": 75,
+      "label": "Factor Theorem",
+      "group": "POLY"
+    },
+    {
+      "id": 76,
+      "label": "Remainder Theorem",
+      "group": "POLY"
+    },
+    {
+      "id": 77,
+      "label": "Synthetic Division",
+      "group": "POLY"
+    },
+    {
+      "id": 78,
+      "label": "Long Division of Polynomials",
+      "group": "POLY"
+    },
+    {
+      "id": 79,
+      "label": "Zeros of Polynomials",
+      "group": "POLY"
+    },
+    {
+      "id": 80,
+      "label": "Multiplicity of Zeros",
+      "group": "POLY"
+    },
+    {
+      "id": 81,
+      "label": "Real Zeros",
+      "group": "POLY"
+    },
+    {
+      "id": 82,
+      "label": "Complex Conjugate Zeros",
+      "group": "POLY"
+    },
+    {
+      "id": 83,
+      "label": "Fundamental Theorem of Algebra",
+      "group": "POLY"
+    },
+    {
+      "id": 84,
+      "label": "Polynomial End Behavior",
+      "group": "POLY"
+    },
+    {
+      "id": 85,
+      "label": "Leading Term Test",
+      "group": "POLY"
+    },
+    {
+      "id": 86,
+      "label": "Turning Points",
+      "group": "POLY"
+    },
+    {
+      "id": 87,
+      "label": "Polynomial Graphs",
+      "group": "POLY"
+    },
+    {
+      "id": 88,
+      "label": "Local Maximum",
+      "group": "POLY"
+    },
+    {
+      "id": 89,
+      "label": "Local Minimum",
+      "group": "POLY"
+    },
+    {
+      "id": 90,
+      "label": "Global Maximum",
+      "group": "POLY"
+    },
+    {
+      "id": 91,
+      "label": "Global Minimum",
+      "group": "POLY"
+    },
+    {
+      "id": 92,
+      "label": "Intermediate Value Theorem",
+      "group": "POLY"
+    },
+    {
+      "id": 93,
+      "label": "Rational Function Definition",
+      "group": "RATL"
+    },
+    {
+      "id": 94,
+      "label": "Rational Expressions",
+      "group": "RATL"
+    },
+    {
+      "id": 95,
+      "label": "Simplifying Rational Expr",
+      "group": "RATL"
+    },
+    {
+      "id": 96,
+      "label": "Vertical Asymptotes",
+      "group": "RATL"
+    },
+    {
+      "id": 97,
+      "label": "Horizontal Asymptotes",
+      "group": "RATL"
+    },
+    {
+      "id": 98,
+      "label": "Slant Asymptotes",
+      "group": "RATL"
+    },
+    {
+      "id": 99,
+      "label": "Holes in Graphs",
+      "group": "RATL"
+    },
+    {
+      "id": 100,
+      "label": "Rational Function Zeros",
+      "group": "RATL"
+    },
+    {
+      "id": 101,
+      "label": "Rational Function Domain",
+      "group": "RATL"
+    },
+    {
+      "id": 102,
+      "label": "End Behavior of Rationals",
+      "group": "RATL"
+    },
+    {
+      "id": 103,
+      "label": "Rational Function Graphs",
+      "group": "RATL"
+    },
+    {
+      "id": 104,
+      "label": "Rational Inequalities",
+      "group": "RATL"
+    },
+    {
+      "id": 105,
+      "label": "Parent Functions",
+      "group": "TMOD"
+    },
+    {
+      "id": 106,
+      "label": "Vertical Translation",
+      "group": "TMOD"
+    },
+    {
+      "id": 107,
+      "label": "Horizontal Translation",
+      "group": "TMOD"
+    },
+    {
+      "id": 108,
+      "label": "Vertical Stretch",
+      "group": "TMOD"
+    },
+    {
+      "id": 109,
+      "label": "Vertical Compression",
+      "group": "TMOD"
+    },
+    {
+      "id": 110,
+      "label": "Horizontal Stretch",
+      "group": "TMOD"
+    },
+    {
+      "id": 111,
+      "label": "Horizontal Compression",
+      "group": "TMOD"
+    },
+    {
+      "id": 112,
+      "label": "Reflection Over X-Axis",
+      "group": "TMOD"
+    },
+    {
+      "id": 113,
+      "label": "Reflection Over Y-Axis",
+      "group": "TMOD"
+    },
+    {
+      "id": 114,
+      "label": "Combined Transformations",
+      "group": "TMOD"
+    },
+    {
+      "id": 115,
+      "label": "Transformation Order",
+      "group": "TMOD"
+    },
+    {
+      "id": 116,
+      "label": "Writing Transformed Eqns",
+      "group": "TMOD"
+    },
+    {
+      "id": 117,
+      "label": "Function Model Selection",
+      "group": "TMOD"
+    },
+    {
+      "id": 118,
+      "label": "Data Analysis for Models",
+      "group": "TMOD"
+    },
+    {
+      "id": 119,
+      "label": "Regression Models",
+      "group": "TMOD"
+    },
+    {
+      "id": 120,
+      "label": "Model Assumptions",
+      "group": "TMOD"
+    },
+    {
+      "id": 121,
+      "label": "Model Validation",
+      "group": "TMOD"
+    },
+    {
+      "id": 122,
+      "label": "Extrapolation",
+      "group": "TMOD"
+    },
+    {
+      "id": 123,
+      "label": "Interpolation",
+      "group": "TMOD"
+    },
+    {
+      "id": 124,
+      "label": "Residual Analysis",
+      "group": "TMOD"
+    },
+    {
+      "id": 125,
+      "label": "Goodness of Fit",
+      "group": "TMOD"
+    },
+    {
+      "id": 126,
+      "label": "Competing Models",
+      "group": "TMOD"
+    },
+    {
+      "id": 127,
+      "label": "Sequence Definition",
+      "group": "SEQX"
+    },
+    {
+      "id": 128,
+      "label": "Arithmetic Sequence",
+      "group": "SEQX"
+    },
+    {
+      "id": 129,
+      "label": "Common Difference",
+      "group": "SEQX"
+    },
+    {
+      "id": 130,
+      "label": "Arithmetic Sequence Formula",
+      "group": "SEQX"
+    },
+    {
+      "id": 131,
+      "label": "Geometric Sequence",
+      "group": "SEQX"
+    },
+    {
+      "id": 132,
+      "label": "Common Ratio",
+      "group": "SEQX"
+    },
+    {
+      "id": 133,
+      "label": "Geometric Sequence Formula",
+      "group": "SEQX"
+    },
+    {
+      "id": 134,
+      "label": "Recursive Formulas",
+      "group": "SEQX"
+    },
+    {
+      "id": 135,
+      "label": "Explicit Formulas",
+      "group": "SEQX"
+    },
+    {
+      "id": 136,
+      "label": "Sequence Convergence",
+      "group": "SEQX"
+    },
+    {
+      "id": 137,
+      "label": "Sequence Divergence",
+      "group": "SEQX"
+    },
+    {
+      "id": 138,
+      "label": "Exponential Function Def",
+      "group": "SEQX"
+    },
+    {
+      "id": 139,
+      "label": "Base of Exponential",
+      "group": "SEQX"
+    },
+    {
+      "id": 140,
+      "label": "Growth Factor",
+      "group": "SEQX"
+    },
+    {
+      "id": 141,
+      "label": "Decay Factor",
+      "group": "SEQX"
+    },
+    {
+      "id": 142,
+      "label": "Exponential Growth",
+      "group": "SEQX"
+    },
+    {
+      "id": 143,
+      "label": "Exponential Decay",
+      "group": "SEQX"
+    },
+    {
+      "id": 144,
+      "label": "Natural Base e",
+      "group": "SEQX"
+    },
+    {
+      "id": 145,
+      "label": "Continuous Growth",
+      "group": "SEQX"
+    },
+    {
+      "id": 146,
+      "label": "Compound Interest",
+      "group": "SEQX"
+    },
+    {
+      "id": 147,
+      "label": "Exponential Equations",
+      "group": "SEQX"
+    },
+    {
+      "id": 148,
+      "label": "Exponential Graphs",
+      "group": "SEQX"
+    },
+    {
+      "id": 149,
+      "label": "Exponential Transformations",
+      "group": "SEQX"
+    },
+    {
+      "id": 150,
+      "label": "Exponential Modeling",
+      "group": "SEQX"
+    },
+    {
+      "id": 151,
+      "label": "Half-Life",
+      "group": "SEQX"
+    },
+    {
+      "id": 152,
+      "label": "Doubling Time",
+      "group": "SEQX"
+    },
+    {
+      "id": 153,
+      "label": "Percent Rate of Change",
+      "group": "SEQX"
+    },
+    {
+      "id": 154,
+      "label": "Logarithm Definition",
+      "group": "LOGR"
+    },
+    {
+      "id": 155,
+      "label": "Common Logarithm",
+      "group": "LOGR"
+    },
+    {
+      "id": 156,
+      "label": "Natural Logarithm",
+      "group": "LOGR"
+    },
+    {
+      "id": 157,
+      "label": "Logarithmic Form",
+      "group": "LOGR"
+    },
+    {
+      "id": 158,
+      "label": "Exponential-Log Conversion",
+      "group": "LOGR"
+    },
+    {
+      "id": 159,
+      "label": "Properties of Logarithms",
+      "group": "LOGR"
+    },
+    {
+      "id": 160,
+      "label": "Product Rule for Logs",
+      "group": "LOGR"
+    },
+    {
+      "id": 161,
+      "label": "Quotient Rule for Logs",
+      "group": "LOGR"
+    },
+    {
+      "id": 162,
+      "label": "Power Rule for Logs",
+      "group": "LOGR"
+    },
+    {
+      "id": 163,
+      "label": "Change of Base Formula",
+      "group": "LOGR"
+    },
+    {
+      "id": 164,
+      "label": "Logarithmic Equations",
+      "group": "LOGR"
+    },
+    {
+      "id": 165,
+      "label": "Logarithmic Graphs",
+      "group": "LOGR"
+    },
+    {
+      "id": 166,
+      "label": "Logarithmic Transformations",
+      "group": "LOGR"
+    },
+    {
+      "id": 167,
+      "label": "Logarithmic Modeling",
+      "group": "LOGR"
+    },
+    {
+      "id": 168,
+      "label": "Logarithmic Scale",
+      "group": "LOGR"
+    },
+    {
+      "id": 169,
+      "label": "Semi-Log Plot",
+      "group": "LOGR"
+    },
+    {
+      "id": 170,
+      "label": "Linearizing Exp Data",
+      "group": "LOGR"
+    },
+    {
+      "id": 171,
+      "label": "Log-Log Plots",
+      "group": "LOGR"
+    },
+    {
+      "id": 172,
+      "label": "Exponential Regression",
+      "group": "LOGR"
+    },
+    {
+      "id": 173,
+      "label": "Power Regression",
+      "group": "LOGR"
+    },
+    {
+      "id": 174,
+      "label": "Composition of Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 175,
+      "label": "Domain of Compositions",
+      "group": "FUNC"
+    },
+    {
+      "id": 176,
+      "label": "Decomposing Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 177,
+      "label": "Inverse Function Definition",
+      "group": "FUNC"
+    },
+    {
+      "id": 178,
+      "label": "One-to-One Functions",
+      "group": "FUNC"
+    },
+    {
+      "id": 179,
+      "label": "Horizontal Line Test",
+      "group": "FUNC"
+    },
+    {
+      "id": 180,
+      "label": "Finding Inverses Algebraically",
+      "group": "FUNC"
+    },
+    {
+      "id": 181,
+      "label": "Inverse Function Graphs",
+      "group": "FUNC"
+    },
+    {
+      "id": 182,
+      "label": "Restricting Domains",
+      "group": "FUNC"
+    },
+    {
+      "id": 183,
+      "label": "Angle Definition",
+      "group": "TRIG",
+      "shape": "box"
+    },
+    {
+      "id": 184,
+      "label": "Degree Measure",
+      "group": "TRIG"
+    },
+    {
+      "id": 185,
+      "label": "Radian Measure",
+      "group": "TRIG"
+    },
+    {
+      "id": 186,
+      "label": "Degree-Radian Conversion",
+      "group": "TRIG"
+    },
+    {
+      "id": 187,
+      "label": "Arc Length",
+      "group": "TRIG"
+    },
+    {
+      "id": 188,
+      "label": "Sector Area",
+      "group": "TRIG"
+    },
+    {
+      "id": 189,
+      "label": "Standard Position",
+      "group": "TRIG"
+    },
+    {
+      "id": 190,
+      "label": "Terminal Side",
+      "group": "TRIG"
+    },
+    {
+      "id": 191,
+      "label": "Reference Angle",
+      "group": "TRIG"
+    },
+    {
+      "id": 192,
+      "label": "Coterminal Angles",
+      "group": "TRIG"
+    },
+    {
+      "id": 193,
+      "label": "Unit Circle Definition",
+      "group": "TRIG"
+    },
+    {
+      "id": 194,
+      "label": "Unit Circle Coordinates",
+      "group": "TRIG"
+    },
+    {
+      "id": 195,
+      "label": "Special Angles",
+      "group": "TRIG"
+    },
+    {
+      "id": 196,
+      "label": "Quadrantal Angles",
+      "group": "TRIG"
+    },
+    {
+      "id": 197,
+      "label": "Signs by Quadrant",
+      "group": "TRIG"
+    },
+    {
+      "id": 198,
+      "label": "Sine Function",
+      "group": "TRIG"
+    },
+    {
+      "id": 199,
+      "label": "Cosine Function",
+      "group": "TRIG"
+    },
+    {
+      "id": 200,
+      "label": "Tangent Function",
+      "group": "TRIG"
+    },
+    {
+      "id": 201,
+      "label": "Reciprocal Trig Functions",
+      "group": "TRIG"
+    },
+    {
+      "id": 202,
+      "label": "Secant Function",
+      "group": "TRIG"
+    },
+    {
+      "id": 203,
+      "label": "Cosecant Function",
+      "group": "TRIG"
+    },
+    {
+      "id": 204,
+      "label": "Cotangent Function",
+      "group": "TRIG"
+    },
+    {
+      "id": 205,
+      "label": "Trig Function Evaluation",
+      "group": "TRIG"
+    },
+    {
+      "id": 206,
+      "label": "Exact Trig Values",
+      "group": "TRIG"
+    },
+    {
+      "id": 207,
+      "label": "Right Triangle Trig",
+      "group": "TRIG"
+    },
+    {
+      "id": 208,
+      "label": "SOH-CAH-TOA",
+      "group": "TRIG"
+    },
+    {
+      "id": 209,
+      "label": "Sine Graph",
+      "group": "TRIG"
+    },
+    {
+      "id": 210,
+      "label": "Cosine Graph",
+      "group": "TRIG"
+    },
+    {
+      "id": 211,
+      "label": "Amplitude",
+      "group": "TRIG"
+    },
+    {
+      "id": 212,
+      "label": "Period",
+      "group": "TRIG"
+    },
+    {
+      "id": 213,
+      "label": "Midline",
+      "group": "TRIG"
+    },
+    {
+      "id": 214,
+      "label": "Frequency",
+      "group": "TRIG"
+    },
+    {
+      "id": 215,
+      "label": "Phase Shift",
+      "group": "TRIG"
+    },
+    {
+      "id": 216,
+      "label": "Vertical Shift of Trig",
+      "group": "TRIG"
+    },
+    {
+      "id": 217,
+      "label": "Sinusoidal Functions",
+      "group": "TRIG"
+    },
+    {
+      "id": 218,
+      "label": "Tangent Graph",
+      "group": "TRIG"
+    },
+    {
+      "id": 219,
+      "label": "Period of Tangent",
+      "group": "TRIG"
+    },
+    {
+      "id": 220,
+      "label": "Asymptotes of Tangent",
+      "group": "TRIG"
+    },
+    {
+      "id": 221,
+      "label": "Secant Graph",
+      "group": "TRIG"
+    },
+    {
+      "id": 222,
+      "label": "Cosecant Graph",
+      "group": "TRIG"
+    },
+    {
+      "id": 223,
+      "label": "Cotangent Graph",
+      "group": "TRIG"
+    },
+    {
+      "id": 224,
+      "label": "Graphing Trig Transformations",
+      "group": "TRIG"
+    },
+    {
+      "id": 225,
+      "label": "Sinusoidal Modeling",
+      "group": "TRIG"
+    },
+    {
+      "id": 226,
+      "label": "Periodic Data Analysis",
+      "group": "TRIG"
+    },
+    {
+      "id": 227,
+      "label": "Tidal Models",
+      "group": "TRIG"
+    },
+    {
+      "id": 228,
+      "label": "Temperature Models",
+      "group": "TRIG"
+    },
+    {
+      "id": 229,
+      "label": "Daylight Hour Models",
+      "group": "TRIG"
+    },
+    {
+      "id": 230,
+      "label": "Sinusoidal Regression",
+      "group": "TRIG"
+    },
+    {
+      "id": 231,
+      "label": "Period from Data",
+      "group": "TRIG"
+    },
+    {
+      "id": 232,
+      "label": "Amplitude from Data",
+      "group": "TRIG"
+    },
+    {
+      "id": 233,
+      "label": "Pythagorean Identity",
+      "group": "TRIG"
+    },
+    {
+      "id": 234,
+      "label": "Reciprocal Identities",
+      "group": "TRIG"
+    },
+    {
+      "id": 235,
+      "label": "Quotient Identities",
+      "group": "TRIG"
+    },
+    {
+      "id": 236,
+      "label": "Cofunction Identities",
+      "group": "TRIG"
+    },
+    {
+      "id": 237,
+      "label": "Even-Odd Identities",
+      "group": "TRIG"
+    },
+    {
+      "id": 238,
+      "label": "Sum and Difference Formulas",
+      "group": "TRIG"
+    },
+    {
+      "id": 239,
+      "label": "Double Angle Formulas",
+      "group": "TRIG"
+    },
+    {
+      "id": 240,
+      "label": "Verifying Identities",
+      "group": "TRIG"
+    },
+    {
+      "id": 241,
+      "label": "Simplifying Trig Expr",
+      "group": "TRIG"
+    },
+    {
+      "id": 242,
+      "label": "Arcsine",
+      "group": "TRIG"
+    },
+    {
+      "id": 243,
+      "label": "Arccosine",
+      "group": "TRIG"
+    },
+    {
+      "id": 244,
+      "label": "Arctangent",
+      "group": "TRIG"
+    },
+    {
+      "id": 245,
+      "label": "Inverse Trig Domains",
+      "group": "TRIG"
+    },
+    {
+      "id": 246,
+      "label": "Inverse Trig Ranges",
+      "group": "TRIG"
+    },
+    {
+      "id": 247,
+      "label": "Inverse Trig Graphs",
+      "group": "TRIG"
+    },
+    {
+      "id": 248,
+      "label": "Composing Trig Inverses",
+      "group": "TRIG"
+    },
+    {
+      "id": 249,
+      "label": "Solving Trig Equations",
+      "group": "TRIG"
+    },
+    {
+      "id": 250,
+      "label": "General Solutions",
+      "group": "TRIG"
+    },
+    {
+      "id": 251,
+      "label": "Solutions in an Interval",
+      "group": "TRIG"
+    },
+    {
+      "id": 252,
+      "label": "Trig Inequalities",
+      "group": "TRIG"
+    },
+    {
+      "id": 253,
+      "label": "Multiple Angle Equations",
+      "group": "TRIG"
+    },
+    {
+      "id": 254,
+      "label": "Polar Coordinate System",
+      "group": "POLR"
+    },
+    {
+      "id": 255,
+      "label": "Polar Point Plotting",
+      "group": "POLR"
+    },
+    {
+      "id": 256,
+      "label": "Rectangular to Polar",
+      "group": "POLR"
+    },
+    {
+      "id": 257,
+      "label": "Polar to Rectangular",
+      "group": "POLR"
+    },
+    {
+      "id": 258,
+      "label": "Multiple Polar Represent",
+      "group": "POLR"
+    },
+    {
+      "id": 259,
+      "label": "Polar Function Definition",
+      "group": "POLR"
+    },
+    {
+      "id": 260,
+      "label": "Polar Graphs",
+      "group": "POLR"
+    },
+    {
+      "id": 261,
+      "label": "Circles in Polar Form",
+      "group": "POLR"
+    },
+    {
+      "id": 262,
+      "label": "Cardioids",
+      "group": "POLR"
+    },
+    {
+      "id": 263,
+      "label": "Lima\u00e7ons",
+      "group": "POLR"
+    },
+    {
+      "id": 264,
+      "label": "Rose Curves",
+      "group": "POLR"
+    },
+    {
+      "id": 265,
+      "label": "Petal Count of Roses",
+      "group": "POLR"
+    },
+    {
+      "id": 266,
+      "label": "Symmetry of Polar Graphs",
+      "group": "POLR"
+    },
+    {
+      "id": 267,
+      "label": "Polar Rate of Change",
+      "group": "POLR"
+    },
+    {
+      "id": 268,
+      "label": "Polar Graph Intersections",
+      "group": "POLR"
+    },
+    {
+      "id": 269,
+      "label": "Parametric Equations",
+      "group": "POLR"
+    },
+    {
+      "id": 270,
+      "label": "Parameter",
+      "group": "POLR"
+    },
+    {
+      "id": 271,
+      "label": "Parametric Graphs",
+      "group": "POLR"
+    },
+    {
+      "id": 272,
+      "label": "Eliminating the Parameter",
+      "group": "POLR"
+    },
+    {
+      "id": 273,
+      "label": "Parametric Motion",
+      "group": "POLR"
+    },
+    {
+      "id": 274,
+      "label": "Position Functions",
+      "group": "POLR"
+    },
+    {
+      "id": 275,
+      "label": "Velocity from Parametrics",
+      "group": "POLR"
+    },
+    {
+      "id": 276,
+      "label": "Direction of Motion",
+      "group": "POLR"
+    },
+    {
+      "id": 277,
+      "label": "Parametric Modeling",
+      "group": "POLR"
+    },
+    {
+      "id": 278,
+      "label": "Projectile Motion Model",
+      "group": "POLR"
+    },
+    {
+      "id": 279,
+      "label": "Vector Definition",
+      "group": "VECM",
+      "shape": "box"
+    },
+    {
+      "id": 280,
+      "label": "Vector Notation",
+      "group": "VECM"
+    },
+    {
+      "id": 281,
+      "label": "Magnitude of a Vector",
+      "group": "VECM"
+    },
+    {
+      "id": 282,
+      "label": "Direction of a Vector",
+      "group": "VECM"
+    },
+    {
+      "id": 283,
+      "label": "Component Form",
+      "group": "VECM"
+    },
+    {
+      "id": 284,
+      "label": "Unit Vectors",
+      "group": "VECM"
+    },
+    {
+      "id": 285,
+      "label": "Vector Addition",
+      "group": "VECM"
+    },
+    {
+      "id": 286,
+      "label": "Vector Subtraction",
+      "group": "VECM"
+    },
+    {
+      "id": 287,
+      "label": "Scalar Multiplication",
+      "group": "VECM"
+    },
+    {
+      "id": 288,
+      "label": "Dot Product",
+      "group": "VECM"
+    },
+    {
+      "id": 289,
+      "label": "Vector Applications",
+      "group": "VECM"
+    },
+    {
+      "id": 290,
+      "label": "Matrix Definition",
+      "group": "VECM",
+      "shape": "box"
+    },
+    {
+      "id": 291,
+      "label": "Matrix Dimensions",
+      "group": "VECM"
+    },
+    {
+      "id": 292,
+      "label": "Matrix Addition",
+      "group": "VECM"
+    },
+    {
+      "id": 293,
+      "label": "Matrix Subtraction",
+      "group": "VECM"
+    },
+    {
+      "id": 294,
+      "label": "Scalar Mult of Matrices",
+      "group": "VECM"
+    },
+    {
+      "id": 295,
+      "label": "Matrix Multiplication",
+      "group": "VECM"
+    },
+    {
+      "id": 296,
+      "label": "Identity Matrix",
+      "group": "VECM"
+    },
+    {
+      "id": 297,
+      "label": "Determinant",
+      "group": "VECM"
+    },
+    {
+      "id": 298,
+      "label": "Inverse of a Matrix",
+      "group": "VECM"
+    },
+    {
+      "id": 299,
+      "label": "Linear Transformations",
+      "group": "VECM"
+    },
+    {
+      "id": 300,
+      "label": "Rotation Matrix",
+      "group": "VECM"
+    },
+    {
+      "id": 301,
+      "label": "Reflection Matrix",
+      "group": "VECM"
+    },
+    {
+      "id": 302,
+      "label": "Matrix Applications",
+      "group": "VECM"
+    },
+    {
+      "id": 303,
+      "label": "Calculator Strategies",
+      "group": "VECM"
+    },
+    {
+      "id": 304,
+      "label": "Free Response Strategy",
+      "group": "VECM"
+    },
+    {
+      "id": 305,
+      "label": "Multiple Choice Strategy",
+      "group": "VECM"
+    },
+    {
+      "id": 306,
+      "label": "Time Management on Exams",
+      "group": "VECM"
+    },
+    {
+      "id": 307,
+      "label": "Showing Work on Free Resp",
+      "group": "VECM"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 3
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 7,
+      "to": 4
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 8
+    },
+    {
+      "from": 11,
+      "to": 8
+    },
+    {
+      "from": 12,
+      "to": 7
+    },
+    {
+      "from": 13,
+      "to": 7
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 14,
+      "to": 2
+    },
+    {
+      "from": 15,
+      "to": 4
+    },
+    {
+      "from": 16,
+      "to": 8
+    },
+    {
+      "from": 16,
+      "to": 5
+    },
+    {
+      "from": 17,
+      "to": 9
+    },
+    {
+      "from": 18,
+      "to": 8
+    },
+    {
+      "from": 18,
+      "to": 10
+    },
+    {
+      "from": 18,
+      "to": 14
+    },
+    {
+      "from": 19,
+      "to": 10
+    },
+    {
+      "from": 20,
+      "to": 5
+    },
+    {
+      "from": 20,
+      "to": 9
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 21
+    },
+    {
+      "from": 24,
+      "to": 20
+    },
+    {
+      "from": 24,
+      "to": 27
+    },
+    {
+      "from": 25,
+      "to": 20
+    },
+    {
+      "from": 25,
+      "to": 27
+    },
+    {
+      "from": 26,
+      "to": 8
+    },
+    {
+      "from": 27,
+      "to": 20
+    },
+    {
+      "from": 28,
+      "to": 20
+    },
+    {
+      "from": 28,
+      "to": 22
+    },
+    {
+      "from": 29,
+      "to": 11
+    },
+    {
+      "from": 29,
+      "to": 20
+    },
+    {
+      "from": 30,
+      "to": 20
+    },
+    {
+      "from": 30,
+      "to": 32
+    },
+    {
+      "from": 31,
+      "to": 20
+    },
+    {
+      "from": 31,
+      "to": 32
+    },
+    {
+      "from": 32,
+      "to": 20
+    },
+    {
+      "from": 33,
+      "to": 7
+    },
+    {
+      "from": 33,
+      "to": 12
+    },
+    {
+      "from": 33,
+      "to": 13
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 34,
+      "to": 9
+    },
+    {
+      "from": 35,
+      "to": 34
+    },
+    {
+      "from": 36,
+      "to": 35
+    },
+    {
+      "from": 36,
+      "to": 6
+    },
+    {
+      "from": 37,
+      "to": 34
+    },
+    {
+      "from": 38,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 20
+    },
+    {
+      "from": 39,
+      "to": 35
+    },
+    {
+      "from": 40,
+      "to": 34
+    },
+    {
+      "from": 40,
+      "to": 39
+    },
+    {
+      "from": 41,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 24
+    },
+    {
+      "from": 43,
+      "to": 40
+    },
+    {
+      "from": 43,
+      "to": 25
+    },
+    {
+      "from": 44,
+      "to": 8
+    },
+    {
+      "from": 44,
+      "to": 35
+    },
+    {
+      "from": 45,
+      "to": 44
+    },
+    {
+      "from": 45,
+      "to": 23
+    },
+    {
+      "from": 46,
+      "to": 44
+    },
+    {
+      "from": 46,
+      "to": 36
+    },
+    {
+      "from": 47,
+      "to": 44
+    },
+    {
+      "from": 48,
+      "to": 35
+    },
+    {
+      "from": 48,
+      "to": 44
+    },
+    {
+      "from": 49,
+      "to": 35
+    },
+    {
+      "from": 49,
+      "to": 44
+    },
+    {
+      "from": 50,
+      "to": 44
+    },
+    {
+      "from": 50,
+      "to": 6
+    },
+    {
+      "from": 51,
+      "to": 50
+    },
+    {
+      "from": 52,
+      "to": 50
+    },
+    {
+      "from": 53,
+      "to": 8
+    },
+    {
+      "from": 53,
+      "to": 66
+    },
+    {
+      "from": 54,
+      "to": 53
+    },
+    {
+      "from": 55,
+      "to": 53
+    },
+    {
+      "from": 55,
+      "to": 60
+    },
+    {
+      "from": 56,
+      "to": 53
+    },
+    {
+      "from": 57,
+      "to": 55
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 58,
+      "to": 32
+    },
+    {
+      "from": 59,
+      "to": 53
+    },
+    {
+      "from": 59,
+      "to": 20
+    },
+    {
+      "from": 60,
+      "to": 54
+    },
+    {
+      "from": 61,
+      "to": 54
+    },
+    {
+      "from": 61,
+      "to": 60
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 1
+    },
+    {
+      "from": 64,
+      "to": 63
+    },
+    {
+      "from": 65,
+      "to": 62
+    },
+    {
+      "from": 65,
+      "to": 64
+    },
+    {
+      "from": 66,
+      "to": 4
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 68,
+      "to": 66
+    },
+    {
+      "from": 69,
+      "to": 66
+    },
+    {
+      "from": 70,
+      "to": 66
+    },
+    {
+      "from": 71,
+      "to": 66
+    },
+    {
+      "from": 72,
+      "to": 66
+    },
+    {
+      "from": 73,
+      "to": 66
+    },
+    {
+      "from": 73,
+      "to": 72
+    },
+    {
+      "from": 74,
+      "to": 66
+    },
+    {
+      "from": 74,
+      "to": 73
+    },
+    {
+      "from": 75,
+      "to": 74
+    },
+    {
+      "from": 75,
+      "to": 79
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 76,
+      "to": 77
+    },
+    {
+      "from": 77,
+      "to": 66
+    },
+    {
+      "from": 78,
+      "to": 66
+    },
+    {
+      "from": 79,
+      "to": 66
+    },
+    {
+      "from": 79,
+      "to": 22
+    },
+    {
+      "from": 80,
+      "to": 79
+    },
+    {
+      "from": 81,
+      "to": 79
+    },
+    {
+      "from": 82,
+      "to": 79
+    },
+    {
+      "from": 82,
+      "to": 65
+    },
+    {
+      "from": 83,
+      "to": 67
+    },
+    {
+      "from": 83,
+      "to": 79
+    },
+    {
+      "from": 83,
+      "to": 63
+    },
+    {
+      "from": 84,
+      "to": 67
+    },
+    {
+      "from": 84,
+      "to": 68
+    },
+    {
+      "from": 85,
+      "to": 84
+    },
+    {
+      "from": 86,
+      "to": 87
+    },
+    {
+      "from": 87,
+      "to": 79
+    },
+    {
+      "from": 87,
+      "to": 80
+    },
+    {
+      "from": 87,
+      "to": 84
+    },
+    {
+      "from": 87,
+      "to": 20
+    },
+    {
+      "from": 88,
+      "to": 86
+    },
+    {
+      "from": 89,
+      "to": 86
+    },
+    {
+      "from": 90,
+      "to": 88
+    },
+    {
+      "from": 91,
+      "to": 89
+    },
+    {
+      "from": 92,
+      "to": 87
+    },
+    {
+      "from": 92,
+      "to": 10
+    },
+    {
+      "from": 93,
+      "to": 66
+    },
+    {
+      "from": 93,
+      "to": 8
+    },
+    {
+      "from": 94,
+      "to": 93
+    },
+    {
+      "from": 95,
+      "to": 94
+    },
+    {
+      "from": 95,
+      "to": 74
+    },
+    {
+      "from": 96,
+      "to": 93
+    },
+    {
+      "from": 96,
+      "to": 19
+    },
+    {
+      "from": 97,
+      "to": 93
+    },
+    {
+      "from": 97,
+      "to": 84
+    },
+    {
+      "from": 98,
+      "to": 97
+    },
+    {
+      "from": 98,
+      "to": 78
+    },
+    {
+      "from": 99,
+      "to": 95
+    },
+    {
+      "from": 99,
+      "to": 96
+    },
+    {
+      "from": 100,
+      "to": 93
+    },
+    {
+      "from": 100,
+      "to": 79
+    },
+    {
+      "from": 101,
+      "to": 93
+    },
+    {
+      "from": 101,
+      "to": 19
+    },
+    {
+      "from": 102,
+      "to": 97
+    },
+    {
+      "from": 102,
+      "to": 98
+    },
+    {
+      "from": 103,
+      "to": 96
+    },
+    {
+      "from": 103,
+      "to": 97
+    },
+    {
+      "from": 103,
+      "to": 99
+    },
+    {
+      "from": 103,
+      "to": 100
+    },
+    {
+      "from": 103,
+      "to": 20
+    },
+    {
+      "from": 104,
+      "to": 103
+    },
+    {
+      "from": 104,
+      "to": 28
+    },
+    {
+      "from": 105,
+      "to": 20
+    },
+    {
+      "from": 105,
+      "to": 44
+    },
+    {
+      "from": 105,
+      "to": 53
+    },
+    {
+      "from": 105,
+      "to": 93
+    },
+    {
+      "from": 106,
+      "to": 105
+    },
+    {
+      "from": 107,
+      "to": 105
+    },
+    {
+      "from": 108,
+      "to": 105
+    },
+    {
+      "from": 109,
+      "to": 108
+    },
+    {
+      "from": 110,
+      "to": 105
+    },
+    {
+      "from": 111,
+      "to": 110
+    },
+    {
+      "from": 112,
+      "to": 105
+    },
+    {
+      "from": 113,
+      "to": 105
+    },
+    {
+      "from": 114,
+      "to": 106
+    },
+    {
+      "from": 114,
+      "to": 107
+    },
+    {
+      "from": 114,
+      "to": 108
+    },
+    {
+      "from": 114,
+      "to": 110
+    },
+    {
+      "from": 114,
+      "to": 112
+    },
+    {
+      "from": 114,
+      "to": 113
+    },
+    {
+      "from": 115,
+      "to": 114
+    },
+    {
+      "from": 116,
+      "to": 114
+    },
+    {
+      "from": 116,
+      "to": 9
+    },
+    {
+      "from": 117,
+      "to": 105
+    },
+    {
+      "from": 117,
+      "to": 34
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 118,
+      "to": 6
+    },
+    {
+      "from": 119,
+      "to": 50
+    },
+    {
+      "from": 119,
+      "to": 118
+    },
+    {
+      "from": 120,
+      "to": 117
+    },
+    {
+      "from": 121,
+      "to": 119
+    },
+    {
+      "from": 121,
+      "to": 51
+    },
+    {
+      "from": 122,
+      "to": 119
+    },
+    {
+      "from": 123,
+      "to": 119
+    },
+    {
+      "from": 124,
+      "to": 51
+    },
+    {
+      "from": 124,
+      "to": 121
+    },
+    {
+      "from": 125,
+      "to": 124
+    },
+    {
+      "from": 125,
+      "to": 52
+    },
+    {
+      "from": 126,
+      "to": 125
+    },
+    {
+      "from": 127,
+      "to": 8
+    },
+    {
+      "from": 128,
+      "to": 127
+    },
+    {
+      "from": 128,
+      "to": 35
+    },
+    {
+      "from": 129,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 131,
+      "to": 127
+    },
+    {
+      "from": 132,
+      "to": 131
+    },
+    {
+      "from": 133,
+      "to": 131
+    },
+    {
+      "from": 133,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 127
+    },
+    {
+      "from": 135,
+      "to": 127
+    },
+    {
+      "from": 135,
+      "to": 130
+    },
+    {
+      "from": 135,
+      "to": 133
+    },
+    {
+      "from": 136,
+      "to": 131
+    },
+    {
+      "from": 136,
+      "to": 11
+    },
+    {
+      "from": 137,
+      "to": 131
+    },
+    {
+      "from": 137,
+      "to": 136
+    },
+    {
+      "from": 138,
+      "to": 8
+    },
+    {
+      "from": 138,
+      "to": 131
+    },
+    {
+      "from": 139,
+      "to": 138
+    },
+    {
+      "from": 140,
+      "to": 138
+    },
+    {
+      "from": 140,
+      "to": 132
+    },
+    {
+      "from": 141,
+      "to": 138
+    },
+    {
+      "from": 141,
+      "to": 132
+    },
+    {
+      "from": 142,
+      "to": 138
+    },
+    {
+      "from": 142,
+      "to": 140
+    },
+    {
+      "from": 143,
+      "to": 138
+    },
+    {
+      "from": 143,
+      "to": 141
+    },
+    {
+      "from": 144,
+      "to": 138
+    },
+    {
+      "from": 145,
+      "to": 144
+    },
+    {
+      "from": 145,
+      "to": 142
+    },
+    {
+      "from": 146,
+      "to": 142
+    },
+    {
+      "from": 146,
+      "to": 145
+    },
+    {
+      "from": 147,
+      "to": 138
+    },
+    {
+      "from": 147,
+      "to": 3
+    },
+    {
+      "from": 148,
+      "to": 138
+    },
+    {
+      "from": 148,
+      "to": 20
+    },
+    {
+      "from": 149,
+      "to": 148
+    },
+    {
+      "from": 149,
+      "to": 114
+    },
+    {
+      "from": 150,
+      "to": 142
+    },
+    {
+      "from": 150,
+      "to": 143
+    },
+    {
+      "from": 150,
+      "to": 118
+    },
+    {
+      "from": 151,
+      "to": 143
+    },
+    {
+      "from": 152,
+      "to": 142
+    },
+    {
+      "from": 153,
+      "to": 140
+    },
+    {
+      "from": 153,
+      "to": 141
+    },
+    {
+      "from": 154,
+      "to": 138
+    },
+    {
+      "from": 155,
+      "to": 154
+    },
+    {
+      "from": 156,
+      "to": 154
+    },
+    {
+      "from": 156,
+      "to": 144
+    },
+    {
+      "from": 157,
+      "to": 154
+    },
+    {
+      "from": 158,
+      "to": 154
+    },
+    {
+      "from": 158,
+      "to": 147
+    },
+    {
+      "from": 159,
+      "to": 154
+    },
+    {
+      "from": 160,
+      "to": 159
+    },
+    {
+      "from": 161,
+      "to": 159
+    },
+    {
+      "from": 162,
+      "to": 159
+    },
+    {
+      "from": 163,
+      "to": 159
+    },
+    {
+      "from": 163,
+      "to": 155
+    },
+    {
+      "from": 163,
+      "to": 156
+    },
+    {
+      "from": 164,
+      "to": 158
+    },
+    {
+      "from": 164,
+      "to": 159
+    },
+    {
+      "from": 165,
+      "to": 154
+    },
+    {
+      "from": 165,
+      "to": 20
+    },
+    {
+      "from": 166,
+      "to": 165
+    },
+    {
+      "from": 166,
+      "to": 114
+    },
+    {
+      "from": 167,
+      "to": 165
+    },
+    {
+      "from": 167,
+      "to": 150
+    },
+    {
+      "from": 168,
+      "to": 154
+    },
+    {
+      "from": 168,
+      "to": 2
+    },
+    {
+      "from": 169,
+      "to": 168
+    },
+    {
+      "from": 169,
+      "to": 148
+    },
+    {
+      "from": 170,
+      "to": 169
+    },
+    {
+      "from": 170,
+      "to": 50
+    },
+    {
+      "from": 171,
+      "to": 169
+    },
+    {
+      "from": 172,
+      "to": 170
+    },
+    {
+      "from": 172,
+      "to": 119
+    },
+    {
+      "from": 173,
+      "to": 171
+    },
+    {
+      "from": 173,
+      "to": 119
+    },
+    {
+      "from": 174,
+      "to": 8
+    },
+    {
+      "from": 174,
+      "to": 9
+    },
+    {
+      "from": 174,
+      "to": 17
+    },
+    {
+      "from": 175,
+      "to": 174
+    },
+    {
+      "from": 175,
+      "to": 10
+    },
+    {
+      "from": 175,
+      "to": 19
+    },
+    {
+      "from": 176,
+      "to": 174
+    },
+    {
+      "from": 177,
+      "to": 8
+    },
+    {
+      "from": 177,
+      "to": 174
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 179,
+      "to": 178
+    },
+    {
+      "from": 179,
+      "to": 16
+    },
+    {
+      "from": 180,
+      "to": 177
+    },
+    {
+      "from": 180,
+      "to": 9
+    },
+    {
+      "from": 181,
+      "to": 177
+    },
+    {
+      "from": 181,
+      "to": 20
+    },
+    {
+      "from": 181,
+      "to": 113
+    },
+    {
+      "from": 182,
+      "to": 178
+    },
+    {
+      "from": 182,
+      "to": 10
+    },
+    {
+      "from": 184,
+      "to": 183
+    },
+    {
+      "from": 185,
+      "to": 183
+    },
+    {
+      "from": 185,
+      "to": 144
+    },
+    {
+      "from": 186,
+      "to": 184
+    },
+    {
+      "from": 186,
+      "to": 185
+    },
+    {
+      "from": 187,
+      "to": 185
+    },
+    {
+      "from": 188,
+      "to": 185
+    },
+    {
+      "from": 188,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 183
+    },
+    {
+      "from": 189,
+      "to": 5
+    },
+    {
+      "from": 190,
+      "to": 189
+    },
+    {
+      "from": 191,
+      "to": 190
+    },
+    {
+      "from": 191,
+      "to": 184
+    },
+    {
+      "from": 192,
+      "to": 190
+    },
+    {
+      "from": 192,
+      "to": 184
+    },
+    {
+      "from": 193,
+      "to": 5
+    },
+    {
+      "from": 193,
+      "to": 185
+    },
+    {
+      "from": 194,
+      "to": 193
+    },
+    {
+      "from": 194,
+      "to": 6
+    },
+    {
+      "from": 195,
+      "to": 194
+    },
+    {
+      "from": 195,
+      "to": 191
+    },
+    {
+      "from": 196,
+      "to": 194
+    },
+    {
+      "from": 197,
+      "to": 194
+    },
+    {
+      "from": 198,
+      "to": 193
+    },
+    {
+      "from": 198,
+      "to": 194
+    },
+    {
+      "from": 199,
+      "to": 193
+    },
+    {
+      "from": 199,
+      "to": 194
+    },
+    {
+      "from": 200,
+      "to": 198
+    },
+    {
+      "from": 200,
+      "to": 199
+    },
+    {
+      "from": 201,
+      "to": 198
+    },
+    {
+      "from": 201,
+      "to": 199
+    },
+    {
+      "from": 201,
+      "to": 200
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 202,
+      "to": 199
+    },
+    {
+      "from": 203,
+      "to": 201
+    },
+    {
+      "from": 203,
+      "to": 198
+    },
+    {
+      "from": 204,
+      "to": 201
+    },
+    {
+      "from": 204,
+      "to": 200
+    },
+    {
+      "from": 205,
+      "to": 198
+    },
+    {
+      "from": 205,
+      "to": 199
+    },
+    {
+      "from": 205,
+      "to": 200
+    },
+    {
+      "from": 205,
+      "to": 195
+    },
+    {
+      "from": 206,
+      "to": 205
+    },
+    {
+      "from": 206,
+      "to": 195
+    },
+    {
+      "from": 207,
+      "to": 183
+    },
+    {
+      "from": 207,
+      "to": 198
+    },
+    {
+      "from": 207,
+      "to": 199
+    },
+    {
+      "from": 207,
+      "to": 200
+    },
+    {
+      "from": 208,
+      "to": 207
+    },
+    {
+      "from": 209,
+      "to": 198
+    },
+    {
+      "from": 209,
+      "to": 20
+    },
+    {
+      "from": 210,
+      "to": 199
+    },
+    {
+      "from": 210,
+      "to": 20
+    },
+    {
+      "from": 211,
+      "to": 209
+    },
+    {
+      "from": 211,
+      "to": 210
+    },
+    {
+      "from": 212,
+      "to": 209
+    },
+    {
+      "from": 212,
+      "to": 210
+    },
+    {
+      "from": 212,
+      "to": 185
+    },
+    {
+      "from": 213,
+      "to": 209
+    },
+    {
+      "from": 213,
+      "to": 210
+    },
+    {
+      "from": 214,
+      "to": 212
+    },
+    {
+      "from": 215,
+      "to": 209
+    },
+    {
+      "from": 215,
+      "to": 210
+    },
+    {
+      "from": 215,
+      "to": 107
+    },
+    {
+      "from": 216,
+      "to": 209
+    },
+    {
+      "from": 216,
+      "to": 210
+    },
+    {
+      "from": 216,
+      "to": 106
+    },
+    {
+      "from": 217,
+      "to": 211
+    },
+    {
+      "from": 217,
+      "to": 212
+    },
+    {
+      "from": 217,
+      "to": 213
+    },
+    {
+      "from": 217,
+      "to": 215
+    },
+    {
+      "from": 217,
+      "to": 216
+    },
+    {
+      "from": 218,
+      "to": 200
+    },
+    {
+      "from": 218,
+      "to": 20
+    },
+    {
+      "from": 219,
+      "to": 218
+    },
+    {
+      "from": 219,
+      "to": 212
+    },
+    {
+      "from": 220,
+      "to": 218
+    },
+    {
+      "from": 220,
+      "to": 96
+    },
+    {
+      "from": 221,
+      "to": 202
+    },
+    {
+      "from": 221,
+      "to": 20
+    },
+    {
+      "from": 222,
+      "to": 203
+    },
+    {
+      "from": 222,
+      "to": 20
+    },
+    {
+      "from": 223,
+      "to": 204
+    },
+    {
+      "from": 223,
+      "to": 20
+    },
+    {
+      "from": 224,
+      "to": 217
+    },
+    {
+      "from": 224,
+      "to": 114
+    },
+    {
+      "from": 225,
+      "to": 217
+    },
+    {
+      "from": 225,
+      "to": 118
+    },
+    {
+      "from": 226,
+      "to": 225
+    },
+    {
+      "from": 227,
+      "to": 225
+    },
+    {
+      "from": 228,
+      "to": 225
+    },
+    {
+      "from": 229,
+      "to": 225
+    },
+    {
+      "from": 230,
+      "to": 225
+    },
+    {
+      "from": 230,
+      "to": 119
+    },
+    {
+      "from": 231,
+      "to": 226
+    },
+    {
+      "from": 231,
+      "to": 212
+    },
+    {
+      "from": 232,
+      "to": 226
+    },
+    {
+      "from": 232,
+      "to": 211
+    },
+    {
+      "from": 233,
+      "to": 198
+    },
+    {
+      "from": 233,
+      "to": 199
+    },
+    {
+      "from": 234,
+      "to": 201
+    },
+    {
+      "from": 235,
+      "to": 200
+    },
+    {
+      "from": 235,
+      "to": 198
+    },
+    {
+      "from": 235,
+      "to": 199
+    },
+    {
+      "from": 236,
+      "to": 198
+    },
+    {
+      "from": 236,
+      "to": 199
+    },
+    {
+      "from": 236,
+      "to": 191
+    },
+    {
+      "from": 237,
+      "to": 198
+    },
+    {
+      "from": 237,
+      "to": 199
+    },
+    {
+      "from": 237,
+      "to": 30
+    },
+    {
+      "from": 237,
+      "to": 31
+    },
+    {
+      "from": 238,
+      "to": 233
+    },
+    {
+      "from": 238,
+      "to": 198
+    },
+    {
+      "from": 238,
+      "to": 199
+    },
+    {
+      "from": 239,
+      "to": 238
+    },
+    {
+      "from": 240,
+      "to": 233
+    },
+    {
+      "from": 240,
+      "to": 234
+    },
+    {
+      "from": 240,
+      "to": 235
+    },
+    {
+      "from": 240,
+      "to": 236
+    },
+    {
+      "from": 241,
+      "to": 240
+    },
+    {
+      "from": 242,
+      "to": 198
+    },
+    {
+      "from": 242,
+      "to": 177
+    },
+    {
+      "from": 242,
+      "to": 182
+    },
+    {
+      "from": 243,
+      "to": 199
+    },
+    {
+      "from": 243,
+      "to": 177
+    },
+    {
+      "from": 243,
+      "to": 182
+    },
+    {
+      "from": 244,
+      "to": 200
+    },
+    {
+      "from": 244,
+      "to": 177
+    },
+    {
+      "from": 244,
+      "to": 182
+    },
+    {
+      "from": 245,
+      "to": 242
+    },
+    {
+      "from": 245,
+      "to": 243
+    },
+    {
+      "from": 245,
+      "to": 244
+    },
+    {
+      "from": 245,
+      "to": 10
+    },
+    {
+      "from": 246,
+      "to": 242
+    },
+    {
+      "from": 246,
+      "to": 243
+    },
+    {
+      "from": 246,
+      "to": 244
+    },
+    {
+      "from": 246,
+      "to": 11
+    },
+    {
+      "from": 247,
+      "to": 242
+    },
+    {
+      "from": 247,
+      "to": 243
+    },
+    {
+      "from": 247,
+      "to": 244
+    },
+    {
+      "from": 247,
+      "to": 181
+    },
+    {
+      "from": 248,
+      "to": 242
+    },
+    {
+      "from": 248,
+      "to": 243
+    },
+    {
+      "from": 248,
+      "to": 244
+    },
+    {
+      "from": 248,
+      "to": 174
+    },
+    {
+      "from": 249,
+      "to": 205
+    },
+    {
+      "from": 249,
+      "to": 242
+    },
+    {
+      "from": 249,
+      "to": 243
+    },
+    {
+      "from": 249,
+      "to": 244
+    },
+    {
+      "from": 250,
+      "to": 249
+    },
+    {
+      "from": 250,
+      "to": 192
+    },
+    {
+      "from": 251,
+      "to": 249
+    },
+    {
+      "from": 251,
+      "to": 14
+    },
+    {
+      "from": 252,
+      "to": 249
+    },
+    {
+      "from": 252,
+      "to": 28
+    },
+    {
+      "from": 253,
+      "to": 249
+    },
+    {
+      "from": 253,
+      "to": 239
+    },
+    {
+      "from": 254,
+      "to": 5
+    },
+    {
+      "from": 254,
+      "to": 185
+    },
+    {
+      "from": 255,
+      "to": 254
+    },
+    {
+      "from": 256,
+      "to": 254
+    },
+    {
+      "from": 256,
+      "to": 198
+    },
+    {
+      "from": 256,
+      "to": 199
+    },
+    {
+      "from": 257,
+      "to": 254
+    },
+    {
+      "from": 257,
+      "to": 198
+    },
+    {
+      "from": 257,
+      "to": 199
+    },
+    {
+      "from": 258,
+      "to": 254
+    },
+    {
+      "from": 258,
+      "to": 192
+    },
+    {
+      "from": 259,
+      "to": 254
+    },
+    {
+      "from": 259,
+      "to": 8
+    },
+    {
+      "from": 260,
+      "to": 259
+    },
+    {
+      "from": 260,
+      "to": 255
+    },
+    {
+      "from": 261,
+      "to": 260
+    },
+    {
+      "from": 262,
+      "to": 260
+    },
+    {
+      "from": 263,
+      "to": 260
+    },
+    {
+      "from": 264,
+      "to": 260
+    },
+    {
+      "from": 265,
+      "to": 264
+    },
+    {
+      "from": 266,
+      "to": 260
+    },
+    {
+      "from": 266,
+      "to": 32
+    },
+    {
+      "from": 267,
+      "to": 260
+    },
+    {
+      "from": 267,
+      "to": 34
+    },
+    {
+      "from": 268,
+      "to": 260
+    },
+    {
+      "from": 269,
+      "to": 5
+    },
+    {
+      "from": 269,
+      "to": 8
+    },
+    {
+      "from": 270,
+      "to": 269
+    },
+    {
+      "from": 271,
+      "to": 269
+    },
+    {
+      "from": 271,
+      "to": 20
+    },
+    {
+      "from": 272,
+      "to": 269
+    },
+    {
+      "from": 272,
+      "to": 9
+    },
+    {
+      "from": 273,
+      "to": 271
+    },
+    {
+      "from": 273,
+      "to": 270
+    },
+    {
+      "from": 274,
+      "to": 273
+    },
+    {
+      "from": 275,
+      "to": 273
+    },
+    {
+      "from": 275,
+      "to": 34
+    },
+    {
+      "from": 276,
+      "to": 275
+    },
+    {
+      "from": 277,
+      "to": 273
+    },
+    {
+      "from": 277,
+      "to": 118
+    },
+    {
+      "from": 278,
+      "to": 277
+    },
+    {
+      "from": 278,
+      "to": 53
+    },
+    {
+      "from": 280,
+      "to": 279
+    },
+    {
+      "from": 281,
+      "to": 279
+    },
+    {
+      "from": 281,
+      "to": 1
+    },
+    {
+      "from": 282,
+      "to": 279
+    },
+    {
+      "from": 282,
+      "to": 183
+    },
+    {
+      "from": 283,
+      "to": 279
+    },
+    {
+      "from": 283,
+      "to": 5
+    },
+    {
+      "from": 284,
+      "to": 281
+    },
+    {
+      "from": 284,
+      "to": 283
+    },
+    {
+      "from": 285,
+      "to": 283
+    },
+    {
+      "from": 286,
+      "to": 283
+    },
+    {
+      "from": 286,
+      "to": 285
+    },
+    {
+      "from": 287,
+      "to": 279
+    },
+    {
+      "from": 287,
+      "to": 283
+    },
+    {
+      "from": 288,
+      "to": 283
+    },
+    {
+      "from": 288,
+      "to": 285
+    },
+    {
+      "from": 289,
+      "to": 285
+    },
+    {
+      "from": 289,
+      "to": 286
+    },
+    {
+      "from": 289,
+      "to": 287
+    },
+    {
+      "from": 291,
+      "to": 290
+    },
+    {
+      "from": 292,
+      "to": 290
+    },
+    {
+      "from": 292,
+      "to": 291
+    },
+    {
+      "from": 293,
+      "to": 290
+    },
+    {
+      "from": 293,
+      "to": 292
+    },
+    {
+      "from": 294,
+      "to": 290
+    },
+    {
+      "from": 295,
+      "to": 290
+    },
+    {
+      "from": 295,
+      "to": 291
+    },
+    {
+      "from": 296,
+      "to": 290
+    },
+    {
+      "from": 296,
+      "to": 295
+    },
+    {
+      "from": 297,
+      "to": 290
+    },
+    {
+      "from": 297,
+      "to": 295
+    },
+    {
+      "from": 298,
+      "to": 296
+    },
+    {
+      "from": 298,
+      "to": 297
+    },
+    {
+      "from": 299,
+      "to": 295
+    },
+    {
+      "from": 299,
+      "to": 283
+    },
+    {
+      "from": 300,
+      "to": 299
+    },
+    {
+      "from": 300,
+      "to": 185
+    },
+    {
+      "from": 301,
+      "to": 299
+    },
+    {
+      "from": 302,
+      "to": 295
+    },
+    {
+      "from": 302,
+      "to": 298
+    },
+    {
+      "from": 302,
+      "to": 299
+    },
+    {
+      "from": 303,
+      "to": 17
+    },
+    {
+      "from": 303,
+      "to": 147
+    },
+    {
+      "from": 303,
+      "to": 164
+    },
+    {
+      "from": 303,
+      "to": 249
+    },
+    {
+      "from": 304,
+      "to": 303
+    },
+    {
+      "from": 305,
+      "to": 303
+    },
+    {
+      "from": 306,
+      "to": 303
+    },
+    {
+      "from": 307,
+      "to": 304
+    }
+  ]
+}

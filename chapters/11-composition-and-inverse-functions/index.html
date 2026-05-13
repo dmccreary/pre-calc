@@ -1,0 +1,2046 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Combining functions through composition, decomposing complex expressions, and reversing input-output relationships through inverse functions, the horizontal line test, and domain restriction.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/pre-calc/chapters/11-composition-and-inverse-functions/">
+      
+      
+        <link rel="prev" href="../10-data-modeling-and-regression/">
+      
+      
+        <link rel="next" href="../12-sequences/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Composition and Inverse Functions - Pre-Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7JV5NK9Y25"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7JV5NK9Y25",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7JV5NK9Y25",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Composition and Inverse Functions - Pre-Calculus" >
+      
+        <meta  property="og:description"  content="Combining functions through composition, decomposing complex expressions, and reversing input-output relationships through inverse functions, the horizontal line test, and domain restriction." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/11-composition-and-inverse-functions/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/pre-calc/chapters/11-composition-and-inverse-functions/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Composition and Inverse Functions - Pre-Calculus" >
+      
+        <meta  name="twitter:description"  content="Combining functions through composition, decomposing complex expressions, and reversing input-output relationships through inverse functions, the horizontal line test, and domain restriction." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/pre-calc/assets/images/social/chapters/11-composition-and-inverse-functions/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#composition-and-inverse-functions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pre-Calculus" class="md-header__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pre-Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Composition and Inverse Functions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pre-Calculus" class="md-nav__button md-logo" aria-label="Pre-Calculus" data-md-component="logo">
+      
+  <img src="../../img/mascot/neutral.png" alt="logo">
+
+    </a>
+    Pre-Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/pre-calc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Chapters
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mathematical-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1-Mathematical Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-functions-and-their-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2-Functions and Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-rates-of-change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3-Rates of Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-linear-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-Linear Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-quadratic-functions-and-complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5-Quadratics and Complex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-polynomial-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6-Polynomial Fundamentals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-polynomial-zeros-and-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7-Polynomial Zeros/Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rational-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8-Rational Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-function-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9-Function Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-data-modeling-and-regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10-Data Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    11-Composition and Inverses
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composition-of-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composition of Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Composition of Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-composition-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Composition Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-of-compositions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain of Compositions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decomposing-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decomposing Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-function-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Function Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-to-one-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-to-One Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#horizontal-line-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontal Line Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Horizontal Line Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-vertical-and-horizontal-line-tests-compared" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Vertical and Horizontal Line Tests Compared
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-inverses-algebraically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Inverses Algebraically
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-function-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Function Graphs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverse Function Graphs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-as-reflection-across-y-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse as Reflection Across y = x
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restricting-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restricting Domains
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-sequences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12-Sequences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-exponential-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13-Exponential Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-logarithmic-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14-Logarithmic Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-angles-and-the-unit-circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15-Angles and Unit Circle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-trigonometric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    16-Trigonometric Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-trigonometric-graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    17-Trigonometric Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-sinusoidal-modeling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    18-Sinusoidal Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-trigonometric-identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    19-Trigonometric Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-inverse-trig-functions-and-equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20-Inverse Trig/Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-polar-and-parametric-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    21-Polar and Parametric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    22-Vectors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-matrices-and-exam-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    23-Matrices and Exam Prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Learning Graph
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Prompts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MicroSims
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composition-of-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composition of Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Composition of Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-composition-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Composition Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-of-compositions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain of Compositions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decomposing-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decomposing Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-function-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Function Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-to-one-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-to-One Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#horizontal-line-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontal Line Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Horizontal Line Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-vertical-and-horizontal-line-tests-compared" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Vertical and Horizontal Line Tests Compared
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-inverses-algebraically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Inverses Algebraically
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-function-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Function Graphs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverse Function Graphs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-as-reflection-across-y-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse as Reflection Across y = x
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restricting-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restricting Domains
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/dmccreary/pre-calc/edit/master/docs/chapters/11-composition-and-inverse-functions/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="composition-and-inverse-functions">Composition and Inverse Functions</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter covers two important ways to combine and relate functions: composition and inversion. Students learn to compose functions, determine the domain of compositions, and decompose complex functions into simpler components. The chapter introduces inverse functions, one-to-one functions, the horizontal line test, finding inverses algebraically, graphing inverse functions as reflections, and restricting domains to create invertible functions. These concepts are essential for understanding exponential-logarithmic and trigonometric inverse relationships.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 9 concepts from the learning graph:</p>
+<ol>
+<li>Composition of Functions</li>
+<li>Domain of Compositions</li>
+<li>Decomposing Functions</li>
+<li>Inverse Function Definition</li>
+<li>One-to-One Functions</li>
+<li>Horizontal Line Test</li>
+<li>Finding Inverses Algebraically</li>
+<li>Inverse Function Graphs</li>
+<li>Restricting Domains</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../02-functions-and-their-properties/">Chapter 2: Functions and Their Properties</a></li>
+<li><a href="../09-function-transformations/">Chapter 9: Function Transformations</a></li>
+</ul>
+<hr />
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Two Ways to Connect Functions</p>
+<p><img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Prema waving">
+So far we have studied functions one at a time. This chapter introduces two operations that link functions together: <strong>composition</strong>, which feeds the output of one function into the input of another, and <strong>inversion</strong>, which reverses an input-output relationship. Both ideas appear constantly in the trigonometry and exponential chapters that follow.</p>
+</div>
+<h2 id="composition-of-functions">Composition of Functions</h2>
+<p><strong>Composition of functions</strong> is the operation of using one function's output as another function's input. If <span class="arithmatex">\( f \)</span> and <span class="arithmatex">\( g \)</span> are functions, the composition <span class="arithmatex">\( f \circ g \)</span> (read "f composed with g" or "f of g") is defined by:</p>
+<div class="arithmatex">\[ (f \circ g)(x) = f(g(x)) \]</div>
+<p>The notation reads from the inside out: first <span class="arithmatex">\( g \)</span> acts on <span class="arithmatex">\( x \)</span>, and then <span class="arithmatex">\( f \)</span> acts on the result. The order matters — <span class="arithmatex">\( f \circ g \)</span> is generally not the same function as <span class="arithmatex">\( g \circ f \)</span>.</p>
+<p>For example, if <span class="arithmatex">\( f(x) = x^2 \)</span> and <span class="arithmatex">\( g(x) = x + 3 \)</span>, then:</p>
+<ul>
+<li><span class="arithmatex">\( (f \circ g)(x) = f(g(x)) = f(x+3) = (x+3)^2 \)</span></li>
+<li><span class="arithmatex">\( (g \circ f)(x) = g(f(x)) = g(x^2) = x^2 + 3 \)</span></li>
+</ul>
+<p>The first composition squares the result of adding 3, while the second adds 3 to the square. Same two functions, different compositions, different outputs.</p>
+<p>Composition can be visualized as a pipeline: the input enters one function, its output flows directly into the next function, and the final output emerges. The next diagram shows that pipeline so we can see clearly which function runs first.</p>
+<h4 id="diagram-function-composition-pipeline">Diagram: Function Composition Pipeline</h4>
+<details>
+<summary>Pipeline view of f(g(x)) showing input flowing through g, then through f</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> function-composition-pipeline<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim that visualizes the composition <span class="arithmatex">\( f(g(x)) \)</span> as two boxes connected by an arrow, with a draggable input value that flows through the pipeline.</p>
+<p>Learning objective (Bloom's Understanding): Students will explain that in <span class="arithmatex">\( f(g(x)) \)</span>, the inner function runs first and its output becomes the input to the outer function.</p>
+<p>Visual elements:</p>
+<ul>
+<li>An input slider on the left labeled <span class="arithmatex">\( x \)</span>.</li>
+<li>A box labeled <span class="arithmatex">\( g(x) = x + 3 \)</span> showing the intermediate value.</li>
+<li>An arrow connecting the box to a second box labeled <span class="arithmatex">\( f(x) = x^2 \)</span>.</li>
+<li>A final output value on the right labeled <span class="arithmatex">\( f(g(x)) \)</span>.</li>
+<li>A toggle to swap the order of <span class="arithmatex">\( f \)</span> and <span class="arithmatex">\( g \)</span>, showing how <span class="arithmatex">\( g(f(x)) \)</span> produces a different result.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>A slider for the input <span class="arithmatex">\( x \)</span> ranging from -5 to 5 in steps of 0.1.</li>
+<li>A "Swap Order" button to compare <span class="arithmatex">\( f \circ g \)</span> with <span class="arithmatex">\( g \circ f \)</span>.</li>
+<li>A dropdown to choose between three preset <span class="arithmatex">\( f, g \)</span> pairs: <span class="arithmatex">\( (x^2, x+3) \)</span>, <span class="arithmatex">\( (\sqrt{x}, 2x) \)</span>, <span class="arithmatex">\( (1/x, x-1) \)</span>.</li>
+</ul>
+<p>Instructional rationale: Composition order is the most common student confusion in this chapter. Watching a single value flow through a pipeline — and seeing the answer change when the order swaps — builds the inside-out reading habit that the algebra requires.</p>
+<p>Canvas: 900 × 400 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createSlider for input, createButton for swap, createSelect for function pairs.</p>
+</details>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Read Compositions Inside-Out</p>
+<p><img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Prema thinking">
+The expression <span class="arithmatex">\( f(g(x)) \)</span> reads from the inside out: <span class="arithmatex">\( g \)</span> runs first, then <span class="arithmatex">\( f \)</span> acts on whatever <span class="arithmatex">\( g \)</span> produced. Once you see that order, composition stops feeling tangled.</p>
+</div>
+<h2 id="domain-of-compositions">Domain of Compositions</h2>
+<p>The <strong>domain of compositions</strong> is the set of inputs <span class="arithmatex">\( x \)</span> for which the entire pipeline produces a valid output. An input <span class="arithmatex">\( x \)</span> belongs to the domain of <span class="arithmatex">\( f \circ g \)</span> only when two conditions both hold:</p>
+<ol>
+<li><span class="arithmatex">\( x \)</span> is in the domain of <span class="arithmatex">\( g \)</span> (so <span class="arithmatex">\( g(x) \)</span> is defined).</li>
+<li><span class="arithmatex">\( g(x) \)</span> is in the domain of <span class="arithmatex">\( f \)</span> (so <span class="arithmatex">\( f(g(x)) \)</span> is defined).</li>
+</ol>
+<p>A common pitfall is to compute <span class="arithmatex">\( f(g(x)) \)</span> algebraically and use the resulting expression's "natural" domain. That can wrongly include inputs that fail the inner function. Always check both conditions in order.</p>
+<p>For example, let <span class="arithmatex">\( g(x) = \sqrt{x} \)</span> and <span class="arithmatex">\( f(x) = x - 1 \)</span>. The algebraic composition is <span class="arithmatex">\( f(g(x)) = \sqrt{x} - 1 \)</span>. The expression looks defined for all <span class="arithmatex">\( x \)</span>, but <span class="arithmatex">\( g(x) = \sqrt{x} \)</span> requires <span class="arithmatex">\( x \geq 0 \)</span>, so the domain of <span class="arithmatex">\( f \circ g \)</span> is <span class="arithmatex">\( [0, \infty) \)</span>, not all real numbers.</p>
+<p>The next table summarizes how restrictions from each function combine to form the composition's domain.</p>
+<table>
+<thead>
+<tr>
+<th>Inner function <span class="arithmatex">\( g \)</span></th>
+<th>Outer function <span class="arithmatex">\( f \)</span></th>
+<th>Domain of <span class="arithmatex">\( f \circ g \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( g(x) = \sqrt{x} \)</span></td>
+<td><span class="arithmatex">\( f(x) = x - 1 \)</span></td>
+<td><span class="arithmatex">\( [0, \infty) \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( g(x) = 1/x \)</span></td>
+<td><span class="arithmatex">\( f(x) = x^2 \)</span></td>
+<td><span class="arithmatex">\( x \neq 0 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( g(x) = x^2 \)</span></td>
+<td><span class="arithmatex">\( f(x) = \sqrt{x} \)</span></td>
+<td>All real numbers (since <span class="arithmatex">\( x^2 \geq 0 \)</span>)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( g(x) = x - 3 \)</span></td>
+<td><span class="arithmatex">\( f(x) = 1/x \)</span></td>
+<td><span class="arithmatex">\( x \neq 3 \)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-warning">
+<p class="admonition-title">The Algebra Can Hide Restrictions</p>
+<p><img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Prema warning">
+Simplifying <span class="arithmatex">\( f(g(x)) \)</span> to a clean expression sometimes erases the inner function's domain restrictions. Always determine the domain <em>before</em> simplifying — the inner function's rules apply even when they vanish from the final formula.</p>
+</div>
+<h2 id="decomposing-functions">Decomposing Functions</h2>
+<p><strong>Decomposing functions</strong> is the reverse of composition: given a complicated function, identify simpler functions <span class="arithmatex">\( f \)</span> and <span class="arithmatex">\( g \)</span> whose composition reproduces it. The skill is essential for the chain rule in calculus, but it is also useful right now for recognizing structure.</p>
+<p>A standard strategy is to identify the <strong>outer operation</strong> (what is done last to a packaged input) and the <strong>inner operation</strong> (the package itself).</p>
+<p>For example, decompose <span class="arithmatex">\( h(x) = (3x + 1)^4 \)</span>:</p>
+<ul>
+<li>The outer operation is "raise to the fourth power": <span class="arithmatex">\( f(u) = u^4 \)</span>.</li>
+<li>The inner operation is "multiply by 3 and add 1": <span class="arithmatex">\( g(x) = 3x + 1 \)</span>.</li>
+<li>Check: <span class="arithmatex">\( f(g(x)) = f(3x+1) = (3x+1)^4 = h(x) \)</span>. ✓</li>
+</ul>
+<p>Another example: decompose <span class="arithmatex">\( h(x) = \sqrt{x^2 + 5} \)</span>.</p>
+<ul>
+<li>The outer operation is "take the square root": <span class="arithmatex">\( f(u) = \sqrt{u} \)</span>.</li>
+<li>The inner operation is "square and add 5": <span class="arithmatex">\( g(x) = x^2 + 5 \)</span>.</li>
+<li>Check: <span class="arithmatex">\( f(g(x)) = \sqrt{x^2 + 5} = h(x) \)</span>. ✓</li>
+</ul>
+<p>Decomposition is rarely unique — <span class="arithmatex">\( h(x) = ((3x+1)^2)^2 \)</span> gives a different valid pair. We usually prefer the decomposition that splits the function into the most familiar pieces.</p>
+<h2 id="inverse-function-definition">Inverse Function Definition</h2>
+<p>An <strong>inverse function</strong> undoes what the original function did. If <span class="arithmatex">\( f \)</span> takes input <span class="arithmatex">\( a \)</span> to output <span class="arithmatex">\( b \)</span>, then its inverse <span class="arithmatex">\( f^{-1} \)</span> takes <span class="arithmatex">\( b \)</span> back to <span class="arithmatex">\( a \)</span>. Formally, <span class="arithmatex">\( f^{-1} \)</span> is the function that satisfies both:</p>
+<div class="arithmatex">\[ f^{-1}(f(x)) = x \quad \text{for every } x \text{ in the domain of } f \]</div>
+<div class="arithmatex">\[ f(f^{-1}(x)) = x \quad \text{for every } x \text{ in the domain of } f^{-1} \]</div>
+<p>The notation <span class="arithmatex">\( f^{-1} \)</span> is a piece of standard mathematical shorthand, <strong>not</strong> an exponent — it does not mean <span class="arithmatex">\( 1/f(x) \)</span>. The reciprocal of <span class="arithmatex">\( f(x) \)</span> is written <span class="arithmatex">\( 1/f(x) \)</span> or <span class="arithmatex">\( [f(x)]^{-1} \)</span> to avoid the conflict.</p>
+<p>Three facts follow directly from the definition:</p>
+<ul>
+<li>The <strong>domain of <span class="arithmatex">\( f^{-1} \)</span> equals the range of <span class="arithmatex">\( f \)</span></strong>.</li>
+<li>The <strong>range of <span class="arithmatex">\( f^{-1} \)</span> equals the domain of <span class="arithmatex">\( f \)</span></strong>.</li>
+<li>An inverse exists only if every output of <span class="arithmatex">\( f \)</span> comes from exactly one input — a property called <em>one-to-one</em>, defined next.</li>
+</ul>
+<h2 id="one-to-one-functions">One-to-One Functions</h2>
+<p>A function is <strong>one-to-one</strong> (also called <em>injective</em>) if every output value is produced by exactly one input. Equivalently, no two distinct inputs share the same output:</p>
+<div class="arithmatex">\[ f(a) = f(b) \implies a = b \]</div>
+<p>Why does one-to-one matter for inverses? If two inputs <span class="arithmatex">\( a \)</span> and <span class="arithmatex">\( b \)</span> produced the same output <span class="arithmatex">\( c \)</span>, then the would-be inverse would have to send <span class="arithmatex">\( c \)</span> both back to <span class="arithmatex">\( a \)</span> and back to <span class="arithmatex">\( b \)</span> at once — which is not a function. The inverse exists only when the original function pairs inputs and outputs uniquely in both directions.</p>
+<p>Some quick examples:</p>
+<ul>
+<li><span class="arithmatex">\( f(x) = 2x + 1 \)</span> is one-to-one: each output traces back to one input.</li>
+<li><span class="arithmatex">\( f(x) = x^2 \)</span> is <em>not</em> one-to-one over all real numbers: <span class="arithmatex">\( f(2) = f(-2) = 4 \)</span>, so the output 4 has two sources.</li>
+<li><span class="arithmatex">\( f(x) = x^3 \)</span> is one-to-one: cubing is a strictly increasing operation, so each output has a single input.</li>
+</ul>
+<h2 id="horizontal-line-test">Horizontal Line Test</h2>
+<p>The <strong>horizontal line test</strong> is a graphical way to check whether a function is one-to-one. The test states: a function is one-to-one if and only if every horizontal line crosses the graph at most once.</p>
+<p>A horizontal line at height <span class="arithmatex">\( y = c \)</span> represents the question "which inputs produce output <span class="arithmatex">\( c \)</span>?" If the line hits the graph in two or more places, two or more inputs share that output, violating the one-to-one property. If every horizontal line hits the graph in at most one place, every output is unique to one input.</p>
+<p>The horizontal line test pairs neatly with the <em>vertical line test</em> from Chapter 2: vertical lines confirm a relation is a function, horizontal lines confirm a function is one-to-one. Both tests are required for the function to have an inverse function.</p>
+<h4 id="diagram-vertical-and-horizontal-line-tests-compared">Diagram: Vertical and Horizontal Line Tests Compared</h4>
+<details>
+<summary>Side-by-side demonstration of vertical-line-test (function) and horizontal-line-test (one-to-one)</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> line-tests-compared<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js infographic showing four sample graphs, each tested against both vertical and horizontal lines, with passing/failing indicators.</p>
+<p>Learning objective (Bloom's Analyzing): Students will analyze a graph against both line tests and determine whether the relation is a function and whether the function has an inverse.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Four graph panels arranged 2×2: a parabola <span class="arithmatex">\( y = x^2 \)</span>, a sideways parabola <span class="arithmatex">\( x = y^2 \)</span>, a cubic <span class="arithmatex">\( y = x^3 \)</span>, and a circle <span class="arithmatex">\( x^2 + y^2 = 4 \)</span>.</li>
+<li>A draggable vertical line and a draggable horizontal line on each panel.</li>
+<li>Status badges per panel: "Function?" (green/red) and "One-to-one?" (green/red).</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Drag handles to slide the vertical and horizontal lines across each panel.</li>
+<li>A "Reveal Verdicts" button that animates the test lines across each graph, showing intersection counts.</li>
+</ul>
+<p>Instructional rationale: Side-by-side display makes the relationship between the two tests concrete. Students see that a function (vertical-line pass) might still fail to have an inverse (horizontal-line fail) and vice versa.</p>
+<p>Canvas: 900 × 700 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with mouseDragged for line handles, createButton for reveal verdicts.</p>
+</details>
+<h2 id="finding-inverses-algebraically">Finding Inverses Algebraically</h2>
+<p>Once we know a function is one-to-one, we can find its inverse algebraically. The standard procedure has three steps:</p>
+<ol>
+<li>Replace <span class="arithmatex">\( f(x) \)</span> with <span class="arithmatex">\( y \)</span>.</li>
+<li>Swap <span class="arithmatex">\( x \)</span> and <span class="arithmatex">\( y \)</span> (this reflects the role of input and output).</li>
+<li>Solve the new equation for <span class="arithmatex">\( y \)</span>. The result is <span class="arithmatex">\( f^{-1}(x) \)</span>.</li>
+</ol>
+<p>A short example: find the inverse of <span class="arithmatex">\( f(x) = 2x + 5 \)</span>.</p>
+<ol>
+<li>Write <span class="arithmatex">\( y = 2x + 5 \)</span>.</li>
+<li>Swap: <span class="arithmatex">\( x = 2y + 5 \)</span>.</li>
+<li>Solve for <span class="arithmatex">\( y \)</span>: <span class="arithmatex">\( y = (x - 5)/2 \)</span>. So <span class="arithmatex">\( f^{-1}(x) = \frac{x - 5}{2} \)</span>.</li>
+</ol>
+<p>We can verify by composing: <span class="arithmatex">\( f(f^{-1}(x)) = 2 \cdot \frac{x-5}{2} + 5 = (x - 5) + 5 = x \)</span>. ✓</p>
+<p>A second example: find the inverse of <span class="arithmatex">\( f(x) = x^3 - 1 \)</span>.</p>
+<ol>
+<li>Write <span class="arithmatex">\( y = x^3 - 1 \)</span>.</li>
+<li>Swap: <span class="arithmatex">\( x = y^3 - 1 \)</span>.</li>
+<li>Solve for <span class="arithmatex">\( y \)</span>: <span class="arithmatex">\( y^3 = x + 1 \)</span>, so <span class="arithmatex">\( y = \sqrt[3]{x+1} \)</span>. Thus <span class="arithmatex">\( f^{-1}(x) = \sqrt[3]{x + 1} \)</span>.</li>
+</ol>
+<p>Verification: <span class="arithmatex">\( f(f^{-1}(x)) = (\sqrt[3]{x+1})^3 - 1 = (x + 1) - 1 = x \)</span>. ✓</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Verify by Composition</p>
+<p><img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Prema holding up a tip">
+After finding <span class="arithmatex">\( f^{-1}(x) \)</span>, compute <span class="arithmatex">\( f(f^{-1}(x)) \)</span> and confirm you get <span class="arithmatex">\( x \)</span>. One quick algebra step catches almost every error in finding inverses.</p>
+</div>
+<h2 id="inverse-function-graphs">Inverse Function Graphs</h2>
+<p>The <strong>graph of <span class="arithmatex">\( f^{-1} \)</span></strong> is the reflection of the graph of <span class="arithmatex">\( f \)</span> across the line <span class="arithmatex">\( y = x \)</span>. This geometric fact follows directly from the swap step in the algebraic procedure: swapping <span class="arithmatex">\( x \)</span> and <span class="arithmatex">\( y \)</span> in an equation reflects every point <span class="arithmatex">\( (a, b) \)</span> on the curve to the point <span class="arithmatex">\( (b, a) \)</span>, and the line of reflection that takes <span class="arithmatex">\( (a, b) \)</span> to <span class="arithmatex">\( (b, a) \)</span> is exactly <span class="arithmatex">\( y = x \)</span>.</p>
+<p>A few visual consequences worth remembering:</p>
+<ul>
+<li>The point <span class="arithmatex">\( (3, 8) \)</span> on the graph of <span class="arithmatex">\( f \)</span> corresponds to the point <span class="arithmatex">\( (8, 3) \)</span> on the graph of <span class="arithmatex">\( f^{-1} \)</span>.</li>
+<li>Any point on the line <span class="arithmatex">\( y = x \)</span> is its own reflection — so if <span class="arithmatex">\( (c, c) \)</span> is on <span class="arithmatex">\( f \)</span>, it is also on <span class="arithmatex">\( f^{-1} \)</span>.</li>
+<li>If <span class="arithmatex">\( f \)</span> crosses the <span class="arithmatex">\( x \)</span>-axis at <span class="arithmatex">\( (a, 0) \)</span>, then <span class="arithmatex">\( f^{-1} \)</span> crosses the <span class="arithmatex">\( y \)</span>-axis at <span class="arithmatex">\( (0, a) \)</span>.</li>
+<li>A horizontal asymptote of <span class="arithmatex">\( f \)</span> becomes a vertical asymptote of <span class="arithmatex">\( f^{-1} \)</span>, and vice versa.</li>
+</ul>
+<h4 id="diagram-inverse-as-reflection-across-y-x">Diagram: Inverse as Reflection Across y = x</h4>
+<details>
+<summary>Interactive reflection of a function across the line y = x to produce its inverse</summary>
+<p>Type: MicroSim
+<strong>sim-id:</strong> inverse-reflection-yx<br/>
+<strong>Library:</strong> p5.js<br/>
+<strong>Status:</strong> Specified</p>
+<p>A p5.js MicroSim showing a function and its inverse mirrored across the line <span class="arithmatex">\( y = x \)</span>, with a draggable point that simultaneously appears on both curves.</p>
+<p>Learning objective (Bloom's Understanding): Students will describe the geometric relationship between a function and its inverse as a reflection across <span class="arithmatex">\( y = x \)</span>.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate plane from -10 to 10 on both axes.</li>
+<li>A dashed line <span class="arithmatex">\( y = x \)</span> drawn diagonally.</li>
+<li>The graph of a chosen function in maroon and its inverse in gold.</li>
+<li>A draggable point on <span class="arithmatex">\( f \)</span> at <span class="arithmatex">\( (a, b) \)</span> and an automatically synced point on <span class="arithmatex">\( f^{-1} \)</span> at <span class="arithmatex">\( (b, a) \)</span>, with a dotted segment connecting them through <span class="arithmatex">\( y = x \)</span>.</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>A function dropdown: linear <span class="arithmatex">\( 2x + 1 \)</span>, cubic <span class="arithmatex">\( x^3 \)</span>, exponential <span class="arithmatex">\( 2^x \)</span>, square root <span class="arithmatex">\( \sqrt{x} \)</span>.</li>
+<li>A "Show/Hide <span class="arithmatex">\( y = x \)</span>" toggle.</li>
+<li>A "Trace Reflection" button that animates many points being reflected across the diagonal.</li>
+</ul>
+<p>Instructional rationale: The reflection idea sticks better when students drag a point on one curve and watch its mirror image move on the other. The dotted connector across <span class="arithmatex">\( y = x \)</span> makes the symmetry concrete.</p>
+<p>Canvas: 800 × 800 pixels, responsive via updateCanvasSize() in setup().</p>
+<p>Implementation: p5.js with createSelect for function, createCheckbox for diagonal, createButton for trace.</p>
+</details>
+<h2 id="restricting-domains">Restricting Domains</h2>
+<p>Some important functions are not one-to-one over their natural domain. The squaring function <span class="arithmatex">\( f(x) = x^2 \)</span> sends both 3 and -3 to 9, so it has no inverse on all real numbers. The fix is <strong>restricting domains</strong> — choosing a smaller domain on which the function <em>is</em> one-to-one, and defining the inverse on that restricted domain.</p>
+<p>For <span class="arithmatex">\( f(x) = x^2 \)</span>, the restriction <span class="arithmatex">\( x \geq 0 \)</span> makes the function one-to-one. On that restricted domain, the inverse is <span class="arithmatex">\( f^{-1}(x) = \sqrt{x} \)</span>. The restriction <span class="arithmatex">\( x \leq 0 \)</span> would also work, with inverse <span class="arithmatex">\( f^{-1}(x) = -\sqrt{x} \)</span>. Either choice is valid, but mathematicians conventionally pick the non-negative branch so that the principal square root is the standard inverse.</p>
+<p>Domain restriction is the engine behind the inverse trigonometric functions, which we will meet in Chapter 20.</p>
+<ul>
+<li>Sine is not one-to-one over all reals, but restricting to <span class="arithmatex">\( [-\pi/2, \pi/2] \)</span> makes it one-to-one. The inverse on that interval is <span class="arithmatex">\( \arcsin \)</span>.</li>
+<li>Cosine restricted to <span class="arithmatex">\( [0, \pi] \)</span> gives <span class="arithmatex">\( \arccos \)</span>.</li>
+<li>Tangent restricted to <span class="arithmatex">\( (-\pi/2, \pi/2) \)</span> gives <span class="arithmatex">\( \arctan \)</span>.</li>
+</ul>
+<p>The next table summarizes the most common restrictions used to build standard inverse functions.</p>
+<table>
+<thead>
+<tr>
+<th>Original function</th>
+<th>Natural domain</th>
+<th>Restricted domain</th>
+<th>Inverse on restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( f(x) = x^2 \)</span></td>
+<td>All reals</td>
+<td><span class="arithmatex">\( x \geq 0 \)</span></td>
+<td><span class="arithmatex">\( f^{-1}(x) = \sqrt{x} \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( f(x) = \sin x \)</span></td>
+<td>All reals</td>
+<td><span class="arithmatex">\( [-\pi/2, \pi/2] \)</span></td>
+<td><span class="arithmatex">\( f^{-1}(x) = \arcsin x \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( f(x) = \cos x \)</span></td>
+<td>All reals</td>
+<td><span class="arithmatex">\( [0, \pi] \)</span></td>
+<td><span class="arithmatex">\( f^{-1}(x) = \arccos x \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( f(x) = \tan x \)</span></td>
+<td>All reals (with gaps)</td>
+<td><span class="arithmatex">\( (-\pi/2, \pi/2) \)</span></td>
+<td><span class="arithmatex">\( f^{-1}(x) = \arctan x \)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You've Built the Inverse Toolkit</p>
+<p><img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Prema celebrating">
+Composition, inversion, the horizontal line test, and domain restriction are the four ideas you will reach for over and over in the rest of this course. Exponentials and logarithms (Chapters 13 and 14) are inverses of each other. Inverse trigonometric functions (Chapter 20) rely on careful domain restrictions. You now have everything you need to recognize that pattern wherever it appears.</p>
+</div>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Composition and inversion are companion operations. Composition glues two functions into a pipeline; inversion reverses the pipeline of a single function. Both operations are governed by careful attention to domain — the inputs that survive the pipeline (for composition) or that map back uniquely (for inversion).</p>
+<p>Key ideas to carry forward:</p>
+<ul>
+<li>Composition reads inside-out: <span class="arithmatex">\( f(g(x)) \)</span> means <span class="arithmatex">\( g \)</span> first, then <span class="arithmatex">\( f \)</span>.</li>
+<li>The composition's domain is more restrictive than either function's domain alone — always check both functions.</li>
+<li>Decomposition is the reverse of composition, splitting a complex expression into outer and inner pieces.</li>
+<li>An inverse exists only for one-to-one functions; the horizontal line test is the visual check.</li>
+<li>The graph of <span class="arithmatex">\( f^{-1} \)</span> is the reflection of <span class="arithmatex">\( f \)</span> across the line <span class="arithmatex">\( y = x \)</span>.</li>
+<li>Restricting the domain creates an inverse for any function that is locally one-to-one — this trick will return for inverse trig functions.</li>
+</ul>
+<details class="question">
+<summary>Quick Check: If <span class="arithmatex">\( f(x) = x + 4 \)</span> and <span class="arithmatex">\( g(x) = x^2 \)</span>, what is <span class="arithmatex">\( (f \circ g)(3) \)</span>?</summary>
+<p><span class="arithmatex">\( g(3) = 9 \)</span>, then <span class="arithmatex">\( f(9) = 13 \)</span>. So <span class="arithmatex">\( (f \circ g)(3) = 13 \)</span>.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Does <span class="arithmatex">\( f(x) = x^4 \)</span> pass the horizontal line test?</summary>
+<p>No — the horizontal line <span class="arithmatex">\( y = 16 \)</span>, for example, crosses the graph at <span class="arithmatex">\( x = 2 \)</span> and <span class="arithmatex">\( x = -2 \)</span>. The function is not one-to-one over all reals and therefore has no inverse without a domain restriction.</p>
+</details>
+<details class="question">
+<summary>Quick Check: Find the inverse of <span class="arithmatex">\( f(x) = 3x - 7 \)</span>.</summary>
+<p>Swap and solve: <span class="arithmatex">\( x = 3y - 7 \implies y = (x + 7)/3 \)</span>. So <span class="arithmatex">\( f^{-1}(x) = \frac{x + 7}{3} \)</span>.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../10-data-modeling-and-regression/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 10-Data Modeling">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                10-Data Modeling
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../12-sequences/" class="md-footer__link md-footer__link--next" aria-label="Next: 12-Sequences">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                12-Sequences
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
