@@ -119,6 +119,10 @@ Before we examine the explorer below, let's name the three quantities it will di
 
 #### Diagram: Secant Line Explorer
 
+
+<iframe src="../../sims/secant-line-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Secant Line Explorer Fullscreen](../../sims/secant-line-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive secant line on a user-chosen curve</summary>
 Type: MicroSim
@@ -217,6 +221,10 @@ For \( f(x) = x^2 \), we just saw the rates 1, 3, 5, 7 — increasing — so the
 Concavity is the first hint of a classification that will organize most of pre-calculus. The diagram below summarizes the four combinations of increasing/decreasing and concave up/concave down behavior; every function family in this course will be analyzed in these terms.
 
 #### Diagram: The Four Shapes of Change
+
+
+<iframe src="../../sims/four-shapes-of-change/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run The Four Shapes of Change Fullscreen](../../sims/four-shapes-of-change/main.html)
 
 <details markdown="1">
 <summary>Four-quadrant infographic of increasing/decreasing crossed with concave up/down</summary>

@@ -205,6 +205,10 @@ The change of base formula is the bridge between calculator-only logarithms and 
 
 #### Diagram: Exponential and Logarithm as Inverse Reflections
 
+
+<iframe src="../../sims/exp-log-inverse-reflection/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Exponential and Logarithm as Inverse Reflections Fullscreen](../../sims/exp-log-inverse-reflection/main.html)
+
 <details markdown="1">
 <summary>Side-by-side graphs of y = b^x and y = log_b x reflected across y = x</summary>
 Type: MicroSim
@@ -321,6 +325,10 @@ The workflow:
 This workflow is exactly how scientific calculators and spreadsheet "exponential regression" buttons compute their answers internally.
 
 #### Diagram: Linear vs Semi-Log Plot of Exponential Data
+
+
+<iframe src="../../sims/semilog-linearization/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Linear vs Semi-Log Plot of Exponential Data Fullscreen](../../sims/semilog-linearization/main.html)
 
 <details markdown="1">
 <summary>Same exponential data shown on a linear plot and a semi-log plot side by side</summary>

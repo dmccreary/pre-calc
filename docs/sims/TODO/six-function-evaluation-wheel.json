@@ -1,0 +1,15 @@
+{
+  "sim_id": "six-function-evaluation-wheel",
+  "diagram_name": "Six-Function Evaluation Wheel",
+  "chapter_number": 16,
+  "chapter_title": "Trigonometric Functions",
+  "chapter_dir": "16-trigonometric-functions",
+  "chapter_rel_dir": "chapters/16-trigonometric-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** six-function-evaluation-wheel<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim showing the unit circle with a draggable terminal side, alongside a panel that displays exact and decimal values for all six trigonometric functions of the current angle.\n\nLearning objective (Bloom's Applying): Students will apply the unit-circle definitions to evaluate any of the six trig functions at any angle, observing the connection between the unit-circle coordinates and the function values.\n\nVisual elements:\n\n- The unit circle centered at the origin in a coordinate plane spanning \\(-1.5\\) to \\(1.5\\) on both axes.\n- A draggable terminal-side ray with a highlighted point on the circle showing \\( (\\cos\\theta, \\sin\\theta) \\).\n- A vertical green segment from the \\( x \\)-axis to the point representing \\( \\sin\\theta \\), and a horizontal blue segment from the \\( y \\)-axis to the point representing \\( \\cos\\theta \\).\n- A side panel listing all six function values: \\( \\sin, \\cos, \\tan, \\csc, \\sec, \\cot \\) — exact form for special angles, decimal otherwise.\n\nInteractive controls:\n\n- Drag the terminal side to set the angle.\n- A \"Snap to Special Angles\" button.\n- A \"Show Reference Angle\" toggle that displays the acute angle to the \\( x \\)-axis.\n- A \"Quiz Mode\" that hides one or more values for student recall practice.\n\nInstructional rationale: Seeing all six values change in real time as the terminal side rotates makes the relationships among the six functions obvious — sine and cosecant move together, cosine and secant move together, and tangent and cotangent reciprocate around 1.\n\nCanvas: 1100 × 700 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with mouseDragged for terminal side, createButton for snap and quiz, createCheckbox for reference angle."
+}

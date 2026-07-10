@@ -1,0 +1,15 @@
+{
+  "sim_id": "polar-curve-gallery",
+  "diagram_name": "Polar Curve Gallery",
+  "chapter_number": 21,
+  "chapter_title": "Polar and Parametric Functions",
+  "chapter_dir": "21-polar-and-parametric-functions",
+  "chapter_rel_dir": "chapters/21-polar-and-parametric-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** polar-curve-gallery<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Analyze, L4, distinguish): Distinguish the shape of a polar curve from its equation by adjusting parameters and observing changes in cardioids, limaçons, and rose curves.\n\nCanvas layout:\n- Main area: polar grid with the current curve drawn\n- Control panel: equation template selector and parameter sliders\n\nVisual elements:\n- Polar grid with concentric circles and radial lines\n- Current curve drawn in maroon with a pulse animation tracing through \\( \\theta \\) from 0 to \\( 2\\pi \\)\n- Highlighted origin dot\n- Symmetry axis lines shown as dotted lines when applicable\n\nInteractive controls:\n- Dropdown: curve type (circle, cardioid, limaçon, rose)\n- Sliders for coefficients \\( a \\), \\( b \\), and the multiplier \\( n \\) for roses\n- Button: Reset to classic example\n- Toggle: trace the angle marker as the curve is drawn\n\nData Visibility Requirements:\n- Stage 1: Show the equation with current parameters\n- Stage 2: Show the shape category (e.g., \"dimpled limaçon\" based on \\( a/b \\) ratio)\n- Stage 3: Show expected petal count for rose curves\n- Stage 4: Show symmetry axes the curve possesses\n\nInstructional Rationale: Sweeping a parameter and watching the curve morph lets students discover the shape classifications rather than memorize them from a table. The category readout reinforces classification after observation.\n\nImplementation: p5.js with responsive canvas."
+}

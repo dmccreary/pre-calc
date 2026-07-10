@@ -50,7 +50,60 @@ nav:
     - Learning Graph: prompts/02-learning-graph.md
 
   - MicroSims:
-    - Graph Viewer: sims/graph-viewer/index.md
+    - List of MicroSims: sims/index.md
+    - AP Exam Timing Planner: sims/ap-exam-timing/index.md
+    - Arithmetic vs Geometric Sequence Explorer: sims/arithmetic-vs-geometric-explorer/index.md
+    - Competing Models Comparison: sims/competing-models-comparison/index.md
+    - Coordinate Plane Explorer: sims/coordinate-plane-explorer/index.md
+    - Daylight Hours by Latitude: sims/daylight-hours-by-latitude/index.md
+    - Discriminant Decision Tree: sims/discriminant-decision-tree/index.md
+    - Even and Odd Function Explorer: sims/even-odd-explorer/index.md
+    - Exponential and Logarithm as Inverse Reflections: sims/exp-log-inverse-reflection/index.md
+    - Exponential Growth vs Decay Explorer: sims/exponential-growth-vs-decay/index.md
+    - Force and Displacement Workout: sims/force-displacement-work/index.md
+    - Function Behavior Labeler: sims/function-behavior-labeler/index.md
+    - Function Composition Pipeline: sims/function-composition-pipeline/index.md
+    - Function Machine: sims/function-machine/index.md
+    - Half-Life and Doubling-Time Visualizer: sims/halflife-doubling-visualizer/index.md
+    - Identity Verification Worked Examples: sims/identity-verification-stepper/index.md
+    - Inverse as Reflection Across y = x: sims/inverse-reflection-yx/index.md
+    - Inverse Trig Graph Explorer: sims/inverse-trig-graphs/index.md
+    - Leading Term Test Sandbox: sims/leading-term-test-sandbox/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
+    - Linear Transformation Visualizer: sims/linear-transformation/index.md
+    - Linear vs Semi-Log Plot of Exponential Data: sims/semilog-linearization/index.md
+    - Matrix Multiplication Walkthrough: sims/matrix-multiplication/index.md
+    - Notation Translator: sims/notation-translator/index.md
+    - Polar Curve Gallery: sims/polar-curve-gallery/index.md
+    - Polar-Rectangular Converter: sims/polar-rectangular-converter/index.md
+    - Polynomial Graph Builder: sims/polynomial-graph-builder/index.md
+    - Projectile Motion Simulator: sims/projectile-motion/index.md
+    - Rational Function Explorer: sims/rational-function-explorer/index.md
+    - Real Number System Hierarchy: sims/real-number-hierarchy/index.md
+    - Residual Plot Validator: sims/residual-plot-validator/index.md
+    - Residuals and the Line of Best Fit: sims/residuals-explorer/index.md
+    - Right Triangle SOH-CAH-TOA Visualizer: sims/right-triangle-soh-cah-toa/index.md
+    - Secant Line Explorer: sims/secant-line-explorer/index.md
+    - Sinusoidal Model Builder: sims/sinusoidal-model-builder/index.md
+    - Sinusoidal Parameter Explorer: sims/sinusoidal-parameter-explorer/index.md
+    - Six Trig Graph Comparison: sims/six-trig-graphs/index.md
+    - Six-Function Evaluation Wheel: sims/six-function-evaluation-wheel/index.md
+    - Standard Position and Reference Angles Explorer: sims/standard-position-reference-angles/index.md
+    - Sum Formula Geometric Proof: sims/sum-formula-proof/index.md
+    - Synthetic Division Animator: sims/synthetic-division-animator/index.md
+    - The Four Shapes of Change: sims/four-shapes-of-change/index.md
+    - Three Forms of a Parabola: sims/three-forms-parabola/index.md
+    - Three-Form Translator: sims/linear-form-translator/index.md
+    - Transformation Composer: sims/transformation-composer/index.md
+    - Transformation Sandbox: sims/transformation-sandbox/index.md
+    - Trig Equation Solution Unit Circle: sims/trig-equation-unit-circle/index.md
+    - Unit Circle to Sine Graph Animation: sims/circle-to-sine-graph/index.md
+    - Unit Circle with Special Angles and Coordinates: sims/unit-circle-special-angles/index.md
+    - Vector Operations Playground: sims/vector-operations/index.md
+    - Vertical and Horizontal Line Tests Compared: sims/line-tests-compared/index.md
+    - Vertical Line Test Explorer: sims/vertical-line-test/index.md
+
+
 
   - Glossary: glossary.md
   - License: license.md

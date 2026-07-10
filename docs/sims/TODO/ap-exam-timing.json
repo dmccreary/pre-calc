@@ -1,0 +1,15 @@
+{
+  "sim_id": "ap-exam-timing",
+  "diagram_name": "AP Exam Timing Planner",
+  "chapter_number": 23,
+  "chapter_title": "Matrices and Exam Preparation",
+  "chapter_dir": "23-matrices-and-exam-preparation",
+  "chapter_rel_dir": "chapters/23-matrices-and-exam-preparation",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** ap-exam-timing<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Evaluate, L5, prioritize): Prioritize exam sections and plan a time-budget strategy based on personal strengths and the scoring weight of each section.\n\nLayout: Horizontal timeline split into four sections corresponding to the four parts of the exam.\n\nVisual elements:\n- Each section drawn as a bar proportional to its time (80, 40, 30, 30 minutes)\n- Number of questions and weight of each section labeled above each bar\n- Within each bar, per-question time sub-divisions shown as minor ticks\n- Legend coding for calculator-allowed vs. no-calculator sections\n\nInteractive controls:\n- Slider: per-question time budget for each section, with running total updating\n- Checkbox: \"Skip hardest 2 MC questions to save time\" — redistributes time to other questions\n- Dropdown: \"Show strategy comparison\" with preset timing plans (conservative, balanced, aggressive)\n\nData Visibility Requirements:\n- Stage 1: Show exam structure with all four sections and total time\n- Stage 2: Show per-question time remaining as the user adjusts sliders\n- Stage 3: Compute estimated score based on rough rules of thumb (e.g., 75% MC right × 62.5 weight)\n- Stage 4: Display personalized warning if the plan leaves less than a minute per multiple choice question\n\nInstructional Rationale: Exam strategy is easier to internalize when a student has literally budgeted their time against a visual timeline. The interactive planner turns abstract advice into a concrete plan the student can carry into the test.\n\nImplementation: p5.js with responsive canvas."
+}

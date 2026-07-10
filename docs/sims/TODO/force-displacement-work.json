@@ -1,0 +1,15 @@
+{
+  "sim_id": "force-displacement-work",
+  "diagram_name": "Force and Displacement Workout",
+  "chapter_number": 22,
+  "chapter_title": "Vectors",
+  "chapter_dir": "22-vectors",
+  "chapter_rel_dir": "chapters/22-vectors",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** force-displacement-work<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Understand, L2, explain): Explain how the dot product \\( W = \\mathbf{F} \\cdot \\mathbf{d} \\) picks out only the component of force along the displacement, and why a perpendicular force does zero work.\n\nCanvas layout:\n- Main area: a block on a flat surface with an arrow showing the applied force and a dashed arrow showing the displacement direction\n- Right panel: numeric breakdown of the dot product computation\n\nVisual elements:\n- Block as a gray square\n- Displacement vector \\( \\mathbf{d} \\) in blue, horizontal\n- Force vector \\( \\mathbf{F} \\) in maroon at an adjustable angle\n- Projection of \\( \\mathbf{F} \\) onto \\( \\mathbf{d} \\) shown as a dashed gold segment\n- Numerical work value updated in real time\n\nInteractive controls:\n- Slider: angle of force relative to displacement (0° to 180°)\n- Slider: force magnitude (0 to 100 N)\n- Slider: displacement magnitude (0 to 20 m)\n- Button: Compute Work (animated step-through of the formula)\n\nData Visibility Requirements:\n- Stage 1: Show force and displacement in both component form and magnitude/direction form\n- Stage 2: Show the dot product formula with numbers substituted\n- Stage 3: Show the computed work in joules\n- Stage 4: When force is perpendicular, highlight that work equals zero\n\nInstructional Rationale: Adjusting the angle to 90° and watching work drop to zero provides a memorable demonstration of the perpendicular case, reinforcing that the dot product measures alignment.\n\nImplementation: p5.js with responsive canvas."
+}

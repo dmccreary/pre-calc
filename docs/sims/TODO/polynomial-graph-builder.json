@@ -1,0 +1,15 @@
+{
+  "sim_id": "polynomial-graph-builder",
+  "diagram_name": "Polynomial Graph Builder",
+  "chapter_number": 7,
+  "chapter_title": "Polynomial Zeros and Graphs",
+  "chapter_dir": "07-polynomial-zeros-and-graphs",
+  "chapter_rel_dir": "chapters/07-polynomial-zeros-and-graphs",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** polynomial-graph-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js infographic that walks through the six-step graphing procedure on a chosen polynomial, revealing one layer of the graph at each step.\n\nLearning objective (Bloom's Applying): Students will apply a structured procedure to sketch a polynomial graph from its factored form, justifying each visual feature with algebraic reasoning.\n\nVisual elements:\n\n- A coordinate plane from -5 to 5 on each axis with gridlines.\n- A left-hand control panel listing the six steps, each as a checkbox. Checking a step reveals the corresponding visual layer on the graph.\n- Step 1 reveals arrows at the two ends showing end behavior.\n- Step 2 places dots at each zero with cross/bounce labels.\n- Step 3 places a dot at the y-intercept.\n- Step 4 displays the turning-point bound as text.\n- Step 5 animates the maroon polynomial curve connecting all features with the minimum number of turning points.\n- Step 6 displays a checklist verifying degree, end behavior, and turning count.\n\nInteractive controls:\n\n- Preset polynomials: \\( (x+2)(x-1)^2(x-3) \\), \\( -x^3 + 4x \\), \\( (x+1)^3(x-2) \\), \\( x^4 - 5x^2 + 4 \\).\n- \"Custom\" mode to enter a factored form with up to four linear factors and optional multiplicities.\n- \"Reset Steps\" button to clear all checkboxes and start over.\n\nInstructional rationale: Apply-level procedures need a clear sequence to become reliable. Layering the features one at a time makes the causal structure explicit: each algebraic fact produces exactly one visible feature.\n\nCanvas: 1000 × 600 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createCheckbox for each step, createSelect for preset choice, createInput for custom mode."
+}

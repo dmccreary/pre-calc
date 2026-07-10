@@ -1,0 +1,2052 @@
+{
+  "faq_version": "1.0",
+  "generated_date": "2026-07-10",
+  "source_textbook": "AP Pre-Calculus",
+  "total_questions": 77,
+  "questions": [
+    {
+      "id": "faq-001",
+      "category": "Getting Started",
+      "question": "What is this course about?",
+      "answer": "This is an interactive intelligent textbook for AP Pre-Calculus, following the College Board AP Pre-Calculus curriculum framework. The course builds a deep understanding of functions — polynomial, rational, exponential, logarithmic, and trigonometric — and how they model change in the real world. You will learn to reason with functions across multiple representations: graphs, tables, equations, and verbal descriptions. The course emphasizes function modeling, which means choosing and building the right kind of function to describe real data such as population growth, tides, or projectile motion. Everything is designed to prepare you for the AP Pre-Calculus exam and for future calculus coursework. See the full Course Description for details.",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concepts": [],
+      "keywords": [
+        "about",
+        "course"
+      ],
+      "source_links": [
+        "docs/course-description.md"
+      ],
+      "has_example": false,
+      "word_count": 108
+    },
+    {
+      "id": "faq-002",
+      "category": "Getting Started",
+      "question": "Who is this course for?",
+      "answer": "The primary audience is high school students in grades 10–12 who are preparing for the AP Pre-Calculus exam and planning to take AP Calculus afterward. The course is also useful for anyone who wants a solid, function-centered foundation for college mathematics. Self-paced learners, homeschool students, and teachers looking for interactive classroom material will all find the chapters, quizzes, and MicroSims useful. See the Course Description for the complete audience profile.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [],
+      "keywords": [
+        "course",
+        "who"
+      ],
+      "source_links": [
+        "docs/course-description.md"
+      ],
+      "has_example": false,
+      "word_count": 70
+    },
+    {
+      "id": "faq-003",
+      "category": "Getting Started",
+      "question": "What do I need to know before starting this course?",
+      "answer": "You should have successfully completed Algebra 2 or an equivalent course. Specifically, you should be comfortable with linear and quadratic functions, basic polynomial operations, systems of equations, and foundational coordinate geometry. The first chapter, Mathematical Foundations, reviews the essential building blocks — the real number system, the coordinate plane, order of operations, and notation systems — so you can refresh any skills that feel rusty before moving into new material.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Real Number System",
+        "Coordinate Plane"
+      ],
+      "keywords": [
+        "before",
+        "coordinate plane",
+        "course",
+        "know",
+        "need",
+        "real number system",
+        "starting"
+      ],
+      "source_links": [
+        "docs/chapters/01-mathematical-foundations/index.md"
+      ],
+      "has_example": false,
+      "word_count": 70
+    },
+    {
+      "id": "faq-004",
+      "category": "Getting Started",
+      "question": "How is this textbook organized?",
+      "answer": "The textbook contains 23 chapters covering 307 concepts, organized around the four units of the College Board framework. Chapters 1–8 cover Unit 1 (polynomial and rational functions), Chapters 9–10 bridge into transformations and data modeling, Chapters 11–14 cover Unit 2 (exponential and logarithmic functions), Chapters 15–20 cover Unit 3 (trigonometric functions), and Chapters 21–23 cover Unit 4 (polar, parametric, vectors, and matrices) plus exam preparation. Chapters are sequenced so that each one builds on concepts from earlier chapters. The Chapters overview lists every chapter with a one-line summary.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [],
+      "keywords": [
+        "organized",
+        "textbook"
+      ],
+      "source_links": [
+        "docs/chapters/index.md"
+      ],
+      "has_example": false,
+      "word_count": 88
+    },
+    {
+      "id": "faq-005",
+      "category": "Getting Started",
+      "question": "What is the format of the AP Pre-Calculus exam?",
+      "answer": "The AP Pre-Calculus exam has two sections. Section I is multiple choice, worth 62.5% of your score: Part A has 28 questions in 80 minutes with no calculator, and Part B has 12 questions in 40 minutes with a graphing calculator required. Section II is free response, worth 37.5%: Part A has 2 questions in 30 minutes with a graphing calculator, and Part B has 2 questions in 30 minutes without one. Only Units 1–3 appear on the exam. Matrices and Exam Preparation covers test-taking strategies in depth.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Calculator Strategies"
+      ],
+      "keywords": [
+        "calculator strategies",
+        "exam",
+        "format",
+        "pre-calculus"
+      ],
+      "source_links": [
+        "docs/chapters/23-matrices-and-exam-preparation/index.md"
+      ],
+      "has_example": false,
+      "word_count": 88
+    },
+    {
+      "id": "faq-006",
+      "category": "Getting Started",
+      "question": "Which chapters are tested on the AP exam?",
+      "answer": "Content from Units 1–3 — covered in Chapters 1 through 20 — is tested on the AP exam. This includes polynomial, rational, exponential, logarithmic, and trigonometric functions. Unit 4 topics (polar functions beyond the basics, parametric functions, vectors, and matrices, found in Polar and Parametric Functions, Vectors, and Matrices and Exam Preparation) is enrichment content that is **not** on the AP exam, but it builds valuable readiness for calculus and college mathematics.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [],
+      "keywords": [
+        "chapters",
+        "exam",
+        "tested"
+      ],
+      "source_links": [
+        "docs/chapters/21-polar-and-parametric-functions/index.md",
+        "docs/chapters/22-vectors/index.md",
+        "docs/chapters/23-matrices-and-exam-preparation/index.md"
+      ],
+      "has_example": false,
+      "word_count": 72
+    },
+    {
+      "id": "faq-007",
+      "category": "Getting Started",
+      "question": "What are MicroSims and how do I use them?",
+      "answer": "MicroSims are small interactive simulations embedded throughout the chapters that let you explore mathematical ideas by moving sliders, clicking buttons, and watching graphs respond in real time. For example, the unit circle MicroSim animates how the height of a point moving around a circle traces out the sine curve. Instead of just reading that \"amplitude stretches a graph vertically,\" you can drag an amplitude slider and watch it happen. Each MicroSim includes instructions describing what to try. They run directly in your browser — no installation needed. Use them actively: form a prediction first, then test it with the controls.",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concepts": [],
+      "keywords": [
+        "microsims",
+        "them",
+        "use"
+      ],
+      "source_links": [],
+      "has_example": true,
+      "word_count": 100
+    },
+    {
+      "id": "faq-008",
+      "category": "Getting Started",
+      "question": "How much time should I plan to spend on this course?",
+      "answer": "The course is designed for a full academic year, approximately 140–160 instructional hours, matching the pace of a typical AP Pre-Calculus classroom. If you are using the book as supplementary material alongside a class, you can move self-paced and focus on the chapters where you need reinforcement. Plan for roughly one to two weeks per chapter, including time to work the practice problems, explore the MicroSims, and take the chapter quiz before moving on.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [],
+      "keywords": [
+        "course",
+        "much",
+        "plan",
+        "spend",
+        "time"
+      ],
+      "source_links": [],
+      "has_example": false,
+      "word_count": 74
+    },
+    {
+      "id": "faq-009",
+      "category": "Getting Started",
+      "question": "Do I need a graphing calculator?",
+      "answer": "Yes. A graphing calculator is required on Section I Part B and Section II Part A of the AP exam, so you should practice with one throughout the course. You will use it for regression, evaluating functions, finding intersections, and checking graphs. Free tools such as the Desmos graphing calculator work well while studying, but make sure you also practice with the physical calculator model you will bring to the exam. Calculator strategies are covered in Matrices and Exam Preparation.",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concepts": [
+        "Calculator Strategies"
+      ],
+      "keywords": [
+        "calculator",
+        "calculator strategies",
+        "graphing",
+        "need"
+      ],
+      "source_links": [
+        "docs/chapters/23-matrices-and-exam-preparation/index.md"
+      ],
+      "has_example": false,
+      "word_count": 80
+    },
+    {
+      "id": "faq-010",
+      "category": "Getting Started",
+      "question": "How should I use the glossary and learning graph?",
+      "answer": "The Glossary contains precise definitions of over 300 terms used in this course — whenever a term in a chapter feels unfamiliar, look it up there. The learning graph maps how all 307 concepts depend on each other, showing which ideas are prerequisites for which. If you are struggling with a topic, the learning graph helps you trace backward to the earlier concept you may need to review first. For example, if sinusoidal modeling feels hard, the graph shows it depends on amplitude, period, and midline, which in turn depend on the unit circle.",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concepts": [],
+      "keywords": [
+        "glossary",
+        "graph",
+        "learning",
+        "use"
+      ],
+      "source_links": [
+        "docs/glossary.md"
+      ],
+      "has_example": true,
+      "word_count": 94
+    },
+    {
+      "id": "faq-011",
+      "category": "Core Concepts",
+      "question": "What is a function?",
+      "answer": "A function is a rule that assigns exactly one output to each input. Think of it as a machine: you feed in a value from the domain, and the machine produces exactly one value in the range. The key requirement is *exactly one* output — if a single input could produce two different outputs, the relationship is not a function. For example, f(x) = x^2 is a function because every number has exactly one square, but \"y is a number whose square is x\" is not, because 9 would map to both 3 and −3. Functions are the central object of this entire course. See Functions and Their Properties.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Function Definition",
+        "Input and Output",
+        "Domain",
+        "Range"
+      ],
+      "keywords": [
+        "domain",
+        "function",
+        "function definition",
+        "input and output",
+        "range"
+      ],
+      "source_links": [
+        "docs/chapters/02-functions-and-their-properties/index.md"
+      ],
+      "has_example": true,
+      "word_count": 109
+    },
+    {
+      "id": "faq-012",
+      "category": "Core Concepts",
+      "question": "What are domain and range?",
+      "answer": "The domain of a function is the set of all allowed input values; the range is the set of all output values the function actually produces. For example, f(x) = \\sqrt{x} has domain x \\geq 0 (you cannot take the square root of a negative number in the real numbers) and range y \\geq 0. Common domain restrictions come from division by zero, square roots of negatives, and logarithms of non-positive numbers. Interval notation is the standard way to write domains and ranges. Functions and Their Properties covers both in detail.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Domain",
+        "Range",
+        "Domain Restrictions",
+        "Interval Notation"
+      ],
+      "keywords": [
+        "domain",
+        "domain restrictions",
+        "interval notation",
+        "range"
+      ],
+      "source_links": [
+        "docs/chapters/02-functions-and-their-properties/index.md"
+      ],
+      "has_example": true,
+      "word_count": 91
+    },
+    {
+      "id": "faq-013",
+      "category": "Core Concepts",
+      "question": "What is average rate of change?",
+      "answer": "The average rate of change of a function over an interval [a, b] is the change in output divided by the change in input: \\frac{f(b) - f(a)}{b - a}. Graphically, it is the slope of the secant line connecting the two points. For example, if a ball's height goes from 10 meters at t = 1 second to 4 meters at t = 3 seconds, the average rate of change is \\frac{4 - 10}{3 - 1} = -3 meters per second. This single idea underlies how AP Pre-Calculus classifies function families and is the gateway to derivatives in calculus. See Rates of Change.",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concepts": [
+        "Average Rate of Change",
+        "Secant Line",
+        "Slope"
+      ],
+      "keywords": [
+        "average",
+        "average rate of change",
+        "change",
+        "rate",
+        "secant line",
+        "slope"
+      ],
+      "source_links": [
+        "docs/chapters/03-rates-of-change/index.md"
+      ],
+      "has_example": true,
+      "word_count": 103
+    },
+    {
+      "id": "faq-014",
+      "category": "Core Concepts",
+      "question": "What does concavity tell me about a function?",
+      "answer": "Concavity describes how a function's *rate of change* is itself changing. A graph is concave up when its rate of change is increasing — the graph bends upward like a cup. It is concave down when its rate of change is decreasing — bending like a dome. A function can be increasing while concave down (growing, but more slowly each step) or decreasing while concave up (falling, but leveling off). For example, a car braking smoothly has decreasing position change — concave down distance. Distinguishing increasing/decreasing from concave up/down is heavily tested on the AP exam. See Rates of Change.",
+      "bloom_level": "Analyze",
+      "difficulty": "medium",
+      "concepts": [
+        "Concavity from Rates",
+        "Increasing Rate of Change",
+        "Decreasing Rate of Change",
+        "Function Behavior"
+      ],
+      "keywords": [
+        "about",
+        "concavity",
+        "concavity from rates",
+        "decreasing rate of change",
+        "function",
+        "function behavior",
+        "increasing rate of change",
+        "tell"
+      ],
+      "source_links": [
+        "docs/chapters/03-rates-of-change/index.md"
+      ],
+      "has_example": true,
+      "word_count": 100
+    },
+    {
+      "id": "faq-015",
+      "category": "Core Concepts",
+      "question": "How do the degree and leading coefficient determine a polynomial's end behavior?",
+      "answer": "The leading term dominates a polynomial for large |x|, so only the degree and leading coefficient matter for end behavior. If the degree is even, both ends point the same way: up when the leading coefficient is positive, down when negative. If the degree is odd, the ends point in opposite directions: down-left and up-right for a positive leading coefficient, and the reverse for negative. For example, f(x) = -2x^3 + 5x has odd degree and a negative leading coefficient, so it rises to the left and falls to the right. See Polynomial Zeros and Graphs.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Polynomial End Behavior",
+        "Leading Term Test",
+        "Degree of a Polynomial",
+        "Leading Coefficient"
+      ],
+      "keywords": [
+        "behavior",
+        "coefficient",
+        "degree",
+        "degree of a polynomial",
+        "determine",
+        "end",
+        "leading",
+        "leading coefficient",
+        "leading term test",
+        "polynomial",
+        "polynomial end behavior"
+      ],
+      "source_links": [
+        "docs/chapters/07-polynomial-zeros-and-graphs/index.md"
+      ],
+      "has_example": true,
+      "word_count": 96
+    },
+    {
+      "id": "faq-016",
+      "category": "Core Concepts",
+      "question": "What are zeros of a polynomial and why do they matter?",
+      "answer": "The zeros of a polynomial are the input values where the function equals zero — the x-intercepts of its graph (when the zeros are real). Zeros matter because they anchor the entire graph: between consecutive real zeros, a polynomial cannot change sign, so knowing the zeros tells you where the function is positive and negative. The Factor Theorem links zeros to factors: x = c is a zero exactly when (x - c) is a factor. The Fundamental Theorem of Algebra guarantees a degree-n polynomial has exactly n zeros, counting multiplicity and complex zeros. See Polynomial Zeros and Graphs.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Zeros of Polynomials",
+        "Real Zeros",
+        "Factor Theorem",
+        "Fundamental Theorem of Algebra",
+        "X-Intercept"
+      ],
+      "keywords": [
+        "factor theorem",
+        "fundamental theorem of algebra",
+        "matter",
+        "polynomial",
+        "real zeros",
+        "they",
+        "x-intercept",
+        "zeros",
+        "zeros of polynomials"
+      ],
+      "source_links": [
+        "docs/chapters/07-polynomial-zeros-and-graphs/index.md"
+      ],
+      "has_example": false,
+      "word_count": 99
+    },
+    {
+      "id": "faq-017",
+      "category": "Core Concepts",
+      "question": "How does the multiplicity of a zero affect a graph?",
+      "answer": "Multiplicity is the number of times a factor repeats, and it controls how the graph meets the x-axis at that zero. Odd multiplicity means the graph *crosses* the axis; even multiplicity means it *touches* the axis and turns back. Higher multiplicity also flattens the graph near the zero. For example, f(x) = (x - 1)^2(x + 2) touches and bounces at x = 1 (multiplicity 2) but crosses at x = -2 (multiplicity 1). When sketching, mark each zero and ask \"cross or bounce?\" before drawing. See Polynomial Zeros and Graphs.",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concepts": [
+        "Multiplicity of Zeros",
+        "Polynomial Graphs"
+      ],
+      "keywords": [
+        "affect",
+        "graph",
+        "multiplicity",
+        "multiplicity of zeros",
+        "polynomial graphs",
+        "zero"
+      ],
+      "source_links": [
+        "docs/chapters/07-polynomial-zeros-and-graphs/index.md"
+      ],
+      "has_example": true,
+      "word_count": 91
+    },
+    {
+      "id": "faq-018",
+      "category": "Core Concepts",
+      "question": "What is a rational function?",
+      "answer": "A rational function is a ratio of two polynomials, r(x) = \\frac{p(x)}{q(x)}, where the denominator is not the zero polynomial. Rational functions introduce behavior polynomials cannot show: vertical asymptotes where the denominator is zero, horizontal or slant asymptotes describing end behavior, and holes where a factor cancels. They model quantities like average cost per item and concentration over time, where dividing one changing quantity by another is natural. The domain excludes every input that makes the denominator zero. See Rational Functions.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Rational Function Definition",
+        "Rational Expressions",
+        "Rational Function Domain"
+      ],
+      "keywords": [
+        "function",
+        "rational",
+        "rational expressions",
+        "rational function definition",
+        "rational function domain"
+      ],
+      "source_links": [
+        "docs/chapters/08-rational-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 81
+    },
+    {
+      "id": "faq-019",
+      "category": "Core Concepts",
+      "question": "What causes vertical asymptotes and holes in rational functions?",
+      "answer": "Both come from zeros of the denominator, and the difference is whether the factor cancels. Write the numerator and denominator in factored form. If a factor of the denominator cancels completely with the numerator, the graph has a *hole* at that input — a single missing point. If the factor does not cancel (or does not cancel completely), the graph has a *vertical asymptote* there, and the function grows without bound nearby. For example, \\frac{(x-2)(x+1)}{(x-2)(x-3)} has a hole at x = 2 and a vertical asymptote at x = 3. See Rational Functions.",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concepts": [
+        "Vertical Asymptotes",
+        "Holes in Graphs",
+        "Rational Function Zeros"
+      ],
+      "keywords": [
+        "asymptotes",
+        "causes",
+        "functions",
+        "holes",
+        "holes in graphs",
+        "rational",
+        "rational function zeros",
+        "vertical",
+        "vertical asymptotes"
+      ],
+      "source_links": [
+        "docs/chapters/08-rational-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 93
+    },
+    {
+      "id": "faq-020",
+      "category": "Core Concepts",
+      "question": "What are parent functions?",
+      "answer": "A parent function is the simplest member of a function family, before any transformations are applied. Key parents in this course include f(x) = x, x^2, x^3, \\sqrt{x}, |x|, \\frac{1}{x}, b^x, \\log_b x, \\sin x, and \\cos x. Knowing each parent's shape, domain, range, and key points lets you graph complicated functions quickly: any function like g(x) = -2(x + 3)^2 + 5 is just the parabola parent shifted, stretched, and reflected. Learning the small catalog of parent shapes pays off in every later chapter. See Function Transformations.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Parent Functions"
+      ],
+      "keywords": [
+        "functions",
+        "parent",
+        "parent functions"
+      ],
+      "source_links": [
+        "docs/chapters/09-function-transformations/index.md"
+      ],
+      "has_example": false,
+      "word_count": 88
+    },
+    {
+      "id": "faq-021",
+      "category": "Core Concepts",
+      "question": "How do transformations change a function's graph?",
+      "answer": "Starting from a parent function f(x), the transformed function g(x) = a\\,f(b(x - h)) + k moves and reshapes the graph in predictable ways. The constant h shifts the graph horizontally, k shifts it vertically, a stretches or compresses vertically (and reflects over the x-axis when negative), and b stretches or compresses horizontally (and reflects over the y-axis when negative). Outside changes act on outputs (vertical effects); inside changes act on inputs (horizontal effects, in the *opposite* direction you might expect). For example, g(x) = f(x - 3) + 2 moves every point right 3 and up 2. See Function Transformations.",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concepts": [
+        "Vertical Translation",
+        "Horizontal Translation",
+        "Vertical Stretch",
+        "Reflection Over X-Axis",
+        "Combined Transformations"
+      ],
+      "keywords": [
+        "change",
+        "combined transformations",
+        "function",
+        "graph",
+        "horizontal translation",
+        "reflection over x-axis",
+        "transformations",
+        "vertical stretch",
+        "vertical translation"
+      ],
+      "source_links": [
+        "docs/chapters/09-function-transformations/index.md"
+      ],
+      "has_example": true,
+      "word_count": 101
+    },
+    {
+      "id": "faq-022",
+      "category": "Core Concepts",
+      "question": "What is function composition?",
+      "answer": "Composition applies one function to the output of another: (f \\circ g)(x) = f(g(x)) means \"run g first, then feed its result into f.\" Order matters — f(g(x)) and g(f(x)) are usually different functions. For example, if f(x) = x^2 and g(x) = x + 1, then f(g(2)) = f(3) = 9 but g(f(2)) = g(4) = 5. Composition models chained processes, like converting dollars to euros and then euros to yen. It is also the foundation for understanding inverse functions, since inverses \"undo\" each other under composition. See Composition and Inverse Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Composition of Functions"
+      ],
+      "keywords": [
+        "composition",
+        "composition of functions",
+        "function"
+      ],
+      "source_links": [
+        "docs/chapters/11-composition-and-inverse-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 93
+    },
+    {
+      "id": "faq-023",
+      "category": "Core Concepts",
+      "question": "What is an inverse function?",
+      "answer": "An inverse function reverses the input-output relationship: if f sends a to b, then f^{-1} sends b back to a. Composing them returns the original input: f^{-1}(f(x)) = x. Only one-to-one functions — those passing the horizontal line test — have inverses, because reversing a function that sends two inputs to the same output would be ambiguous. Graphically, a function and its inverse are reflections of each other across the line y = x, and the domain and range swap roles. Exponential and logarithmic functions are the most important inverse pair in this course. See Composition and Inverse Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Inverse Function Definition",
+        "One-to-One Functions",
+        "Inverse Function Graphs"
+      ],
+      "keywords": [
+        "function",
+        "inverse",
+        "inverse function definition",
+        "inverse function graphs",
+        "one-to-one functions"
+      ],
+      "source_links": [
+        "docs/chapters/11-composition-and-inverse-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 99
+    },
+    {
+      "id": "faq-024",
+      "category": "Core Concepts",
+      "question": "What is the difference between arithmetic and geometric sequences?",
+      "answer": "An arithmetic sequence changes by *adding* the same amount each step (the common difference), while a geometric sequence changes by *multiplying* by the same factor each step (the common ratio). For example, 3, 7, 11, 15, … is arithmetic with common difference 4, while 3, 6, 12, 24, … is geometric with common ratio 2. This additive-versus-multiplicative distinction is the discrete version of the difference between linear and exponential functions: arithmetic sequences are linear functions of the term index, and geometric sequences are exponential. See Sequences.",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concepts": [
+        "Arithmetic Sequence",
+        "Geometric Sequence",
+        "Common Difference",
+        "Common Ratio"
+      ],
+      "keywords": [
+        "arithmetic",
+        "arithmetic sequence",
+        "common difference",
+        "common ratio",
+        "difference",
+        "geometric",
+        "geometric sequence",
+        "sequences"
+      ],
+      "source_links": [
+        "docs/chapters/12-sequences/index.md"
+      ],
+      "has_example": true,
+      "word_count": 86
+    },
+    {
+      "id": "faq-025",
+      "category": "Core Concepts",
+      "question": "What makes a function exponential?",
+      "answer": "An exponential function has the form f(x) = a \\cdot b^x, where a is the initial value and b is a positive base not equal to 1. The defining property is *proportional* change: over equal input intervals, the output is multiplied by the same factor. Linear functions add a constant amount per step; exponential functions multiply by a constant factor per step. This is why exponential functions model populations, investments, and radioactive decay — situations where the amount of change is proportional to the current amount. See Exponential Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concepts": [
+        "Exponential Function Def",
+        "Base of Exponential",
+        "Growth Factor"
+      ],
+      "keywords": [
+        "base of exponential",
+        "exponential",
+        "exponential function def",
+        "function",
+        "growth factor",
+        "makes"
+      ],
+      "source_links": [
+        "docs/chapters/13-exponential-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 89
+    },
+    {
+      "id": "faq-026",
+      "category": "Core Concepts",
+      "question": "What is the difference between exponential growth and decay?",
+      "answer": "Both have the form f(x) = a \\cdot b^x with a > 0; the base decides the direction. When b > 1, the function grows — b is a growth factor, like b = 1.05 for 5% annual interest. When 0 < b < 1, the function decays toward zero — b is a decay factor, like b = 0.5 for a substance losing half its mass each period. Growth curves rise steeply to the right and hug the x-axis to the left; decay curves are their mirror image. Half-life and doubling time measure how fast the change happens. See Exponential Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concepts": [
+        "Exponential Growth",
+        "Exponential Decay",
+        "Decay Factor",
+        "Half-Life",
+        "Doubling Time"
+      ],
+      "keywords": [
+        "decay",
+        "decay factor",
+        "difference",
+        "doubling time",
+        "exponential",
+        "exponential decay",
+        "exponential growth",
+        "growth",
+        "half-life"
+      ],
+      "source_links": [
+        "docs/chapters/13-exponential-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 102
+    },
+    {
+      "id": "faq-027",
+      "category": "Core Concepts",
+      "question": "What is the natural base e and why is it special?",
+      "answer": "The number e \\approx 2.71828 arises naturally from continuous growth. If interest compounds more and more frequently — yearly, monthly, daily, every second — the account value approaches the formula A = Pe^{rt}. The base e is the natural limit of that process, which is why it appears in models of continuously growing or decaying quantities like populations and radioactive samples. Its partner, the natural logarithm \\ln x, inverts it. In calculus, e^x has the remarkable property of being its own rate of change, which makes it the most important function in the subject. See Exponential Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Natural Base e",
+        "Continuous Growth",
+        "Compound Interest",
+        "Natural Logarithm"
+      ],
+      "keywords": [
+        "base",
+        "compound interest",
+        "continuous growth",
+        "natural",
+        "natural base e",
+        "natural logarithm",
+        "special"
+      ],
+      "source_links": [
+        "docs/chapters/13-exponential-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 97
+    },
+    {
+      "id": "faq-028",
+      "category": "Core Concepts",
+      "question": "What is a logarithm?",
+      "answer": "A logarithm answers the question \"what exponent do I need?\" The statement \\log_b(c) = a means exactly that b^a = c. For example, \\log_2(32) = 5 because 2^5 = 32. Logarithms let you solve for unknown exponents — the missing piece exponential equations cannot expose directly. The logarithmic function f(x) = \\log_b x is the inverse of the exponential b^x: it has domain x > 0, a vertical asymptote at x = 0, and grows slowly without bound. See Logarithmic Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concepts": [
+        "Logarithm Definition",
+        "Logarithmic Form",
+        "Exponential-Log Conversion",
+        "Logarithmic Graphs"
+      ],
+      "keywords": [
+        "exponential-log conversion",
+        "logarithm",
+        "logarithm definition",
+        "logarithmic form",
+        "logarithmic graphs"
+      ],
+      "source_links": [
+        "docs/chapters/14-logarithmic-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 81
+    },
+    {
+      "id": "faq-029",
+      "category": "Core Concepts",
+      "question": "How are exponential and logarithmic functions related?",
+      "answer": "They are inverse functions: \\log_b(b^x) = x and b^{\\log_b x} = x. Each undoes the other, their graphs are reflections across the line y = x, and their domains and ranges swap — the exponential has domain all reals and range y > 0, while the logarithm has domain x > 0 and range all reals. This inverse relationship is why logarithms solve exponential equations: taking a logarithm of both sides brings a variable exponent down where algebra can reach it. Every logarithm property is an exponent property in reverse. See Logarithmic Functions.",
+      "bloom_level": "Analyze",
+      "difficulty": "medium",
+      "concepts": [
+        "Exponential-Log Conversion",
+        "Inverse Function Definition",
+        "Logarithmic Graphs",
+        "Exponential Graphs"
+      ],
+      "keywords": [
+        "exponential",
+        "exponential graphs",
+        "exponential-log conversion",
+        "functions",
+        "inverse function definition",
+        "logarithmic",
+        "logarithmic graphs",
+        "related"
+      ],
+      "source_links": [
+        "docs/chapters/14-logarithmic-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 93
+    },
+    {
+      "id": "faq-030",
+      "category": "Core Concepts",
+      "question": "Why do we use radians instead of degrees?",
+      "answer": "A radian measures an angle by arc length: one radian is the angle whose arc equals the circle's radius, so a full circle is 2\\pi radians. Radians make formulas natural — arc length is simply s = r\\theta, with no conversion factor — and they let trigonometric functions take pure numbers as inputs, which is essential when modeling periodic phenomena where the input is time, not an angle. Calculus formulas for trigonometric functions only work in radians. Degrees remain useful for everyday descriptions, and converting uses 180° = \\pi radians. See Angles and the Unit Circle.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Radian Measure",
+        "Degree-Radian Conversion",
+        "Arc Length",
+        "Degree Measure"
+      ],
+      "keywords": [
+        "arc length",
+        "degree measure",
+        "degree-radian conversion",
+        "degrees",
+        "radian measure",
+        "radians",
+        "use"
+      ],
+      "source_links": [
+        "docs/chapters/15-angles-and-the-unit-circle/index.md"
+      ],
+      "has_example": false,
+      "word_count": 96
+    },
+    {
+      "id": "faq-031",
+      "category": "Core Concepts",
+      "question": "What is the unit circle?",
+      "answer": "The unit circle is the circle of radius 1 centered at the origin. It is the master reference for all of trigonometry: for an angle \\theta in standard position, the point where its terminal side crosses the unit circle has coordinates (\\cos\\theta, \\sin\\theta). Every trigonometric value, identity, and graph can be traced back to this picture. Memorizing the coordinates at the special angles — multiples of 30°, 45°, and 60° (\\pi/6, \\pi/4, \\pi/3) — gives you instant exact values for sine, cosine, and tangent. See Angles and the Unit Circle.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Unit Circle Definition",
+        "Unit Circle Coordinates",
+        "Special Angles"
+      ],
+      "keywords": [
+        "circle",
+        "special angles",
+        "unit",
+        "unit circle coordinates",
+        "unit circle definition"
+      ],
+      "source_links": [
+        "docs/chapters/15-angles-and-the-unit-circle/index.md"
+      ],
+      "has_example": false,
+      "word_count": 90
+    },
+    {
+      "id": "faq-032",
+      "category": "Core Concepts",
+      "question": "How are sine, cosine, and tangent defined on the unit circle?",
+      "answer": "For an angle \\theta in standard position, find where its terminal side intersects the unit circle. Cosine is the x-coordinate of that point, sine is the y-coordinate, and tangent is their ratio: \\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}, the slope of the terminal side. This definition works for *any* angle — including angles beyond 90° and negative angles — which is what lets sine and cosine become periodic functions defined for all real inputs. The right-triangle SOH-CAH-TOA definitions agree with the unit circle definitions for acute angles. See Trigonometric Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Sine Function",
+        "Cosine Function",
+        "Tangent Function",
+        "Right Triangle Trig",
+        "SOH-CAH-TOA"
+      ],
+      "keywords": [
+        "circle",
+        "cosine",
+        "cosine function",
+        "defined",
+        "right triangle trig",
+        "sine",
+        "sine function",
+        "soh-cah-toa",
+        "tangent",
+        "tangent function",
+        "unit"
+      ],
+      "source_links": [
+        "docs/chapters/16-trigonometric-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 87
+    },
+    {
+      "id": "faq-033",
+      "category": "Core Concepts",
+      "question": "What do amplitude, period, and midline describe?",
+      "answer": "These three parameters describe any sinusoidal graph. The midline is the horizontal center line the graph oscillates around — the average of the maximum and minimum values. The amplitude is the vertical distance from the midline to a peak. The period is the horizontal length of one complete cycle. For f(x) = a\\sin(b(x - c)) + d: the amplitude is |a|, the period is \\frac{2\\pi}{|b|}, and the midline is y = d. For example, average daily temperature over a year has a midline at the annual mean, amplitude equal to the seasonal swing, and a period of 12 months. See Trigonometric Graphs.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Amplitude",
+        "Period",
+        "Midline",
+        "Sinusoidal Functions"
+      ],
+      "keywords": [
+        "amplitude",
+        "describe",
+        "midline",
+        "period",
+        "sinusoidal functions"
+      ],
+      "source_links": [
+        "docs/chapters/17-trigonometric-graphs/index.md"
+      ],
+      "has_example": true,
+      "word_count": 102
+    },
+    {
+      "id": "faq-034",
+      "category": "Core Concepts",
+      "question": "What are polar coordinates?",
+      "answer": "Polar coordinates locate a point by distance and direction instead of horizontal and vertical position: (r, \\theta) means \"go out r units along the ray at angle \\theta.\" They connect to rectangular coordinates through x = r\\cos\\theta and y = r\\sin\\theta. Polar coordinates shine when a curve is naturally described by how far it is from a center point — circles, spirals, and flower-shaped rose curves have simple polar equations but complicated rectangular ones. One quirk: a point has many polar representations, since adding 2\\pi to the angle or negating r can name the same location. See Polar and Parametric Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Polar Coordinate System",
+        "Polar Point Plotting",
+        "Rectangular to Polar",
+        "Multiple Polar Represent"
+      ],
+      "keywords": [
+        "coordinates",
+        "multiple polar represent",
+        "polar",
+        "polar coordinate system",
+        "polar point plotting",
+        "rectangular to polar"
+      ],
+      "source_links": [
+        "docs/chapters/21-polar-and-parametric-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 101
+    },
+    {
+      "id": "faq-035",
+      "category": "Core Concepts",
+      "question": "What are parametric equations?",
+      "answer": "Parametric equations describe a curve by giving x and y separately as functions of a third variable, the parameter — usually t for time: x = f(t), y = g(t). Instead of describing a shape all at once, they describe a *journey along it*: where the object is at each moment, which direction it moves, and how fast. For example, x = 3\\cos t, y = 3\\sin t traces a circle of radius 3 counterclockwise. Parametric equations can represent curves that fail the vertical line test, which ordinary functions cannot. See Polar and Parametric Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Parametric Equations",
+        "Parameter",
+        "Parametric Graphs",
+        "Parametric Motion"
+      ],
+      "keywords": [
+        "equations",
+        "parameter",
+        "parametric",
+        "parametric equations",
+        "parametric graphs",
+        "parametric motion"
+      ],
+      "source_links": [
+        "docs/chapters/21-polar-and-parametric-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 95
+    },
+    {
+      "id": "faq-036",
+      "category": "Technical Details",
+      "question": "What is function notation and how do I read f(x)?",
+      "answer": "The notation f(x) is read \"f of x\" and names the output of function f at input x — it does **not** mean f times x. Writing f(3) = 7 says \"when the input is 3, the output is 7.\" The letter inside the parentheses is a placeholder: f(x) = x^2 + 1 and f(t) = t^2 + 1 define the same function. Notation like f(a + h) means \"substitute the entire expression a + h for every occurrence of the input variable.\" See Functions and Their Properties.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Function Notation",
+        "Function Evaluation"
+      ],
+      "keywords": [
+        "function",
+        "function evaluation",
+        "function notation",
+        "notation",
+        "read"
+      ],
+      "source_links": [
+        "docs/chapters/02-functions-and-their-properties/index.md"
+      ],
+      "has_example": false,
+      "word_count": 88
+    },
+    {
+      "id": "faq-037",
+      "category": "Technical Details",
+      "question": "What is the vertical line test?",
+      "answer": "The vertical line test checks whether a graph represents a function: if any vertical line crosses the graph more than once, the graph is not a function, because that input would have two or more outputs. A circle fails the test — the line x = 0 crosses x^2 + y^2 = 1 at both (0, 1) and (0, -1) — while a parabola opening upward passes. The test is simply the \"exactly one output per input\" rule stated geometrically. See Functions and Their Properties.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Vertical Line Test"
+      ],
+      "keywords": [
+        "line",
+        "test",
+        "vertical",
+        "vertical line test"
+      ],
+      "source_links": [
+        "docs/chapters/02-functions-and-their-properties/index.md"
+      ],
+      "has_example": false,
+      "word_count": 85
+    },
+    {
+      "id": "faq-038",
+      "category": "Technical Details",
+      "question": "What is interval notation?",
+      "answer": "Interval notation is a compact way to write sets of real numbers. Square brackets include an endpoint; parentheses exclude it. For example, [2, 5) means all numbers from 2 to 5, including 2 but not 5. Infinity always gets a parenthesis, as in (-\\infty, 3] for \"all numbers less than or equal to 3.\" Unions join separate pieces: the domain of \\frac{1}{x} is (-\\infty, 0) \\cup (0, \\infty). You will use interval notation constantly to state domains, ranges, and where functions increase or decrease. See Mathematical Foundations.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Interval Notation",
+        "Set-Builder Notation"
+      ],
+      "keywords": [
+        "interval",
+        "interval notation",
+        "notation",
+        "set-builder notation"
+      ],
+      "source_links": [
+        "docs/chapters/01-mathematical-foundations/index.md"
+      ],
+      "has_example": true,
+      "word_count": 87
+    },
+    {
+      "id": "faq-039",
+      "category": "Technical Details",
+      "question": "What does the discriminant tell me about a quadratic?",
+      "answer": "For a quadratic ax^2 + bx + c = 0, the discriminant is b^2 - 4ac — the expression under the square root in the quadratic formula. Its sign tells you the nature of the solutions without solving: positive means two distinct real solutions (the parabola crosses the x-axis twice), zero means exactly one repeated real solution (the vertex touches the axis), and negative means two complex conjugate solutions (the parabola misses the axis entirely). For example, x^2 + x + 1 has discriminant 1 - 4 = -3, so it has no real zeros. See Quadratic Functions and Complex Numbers.",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concepts": [
+        "Discriminant",
+        "Quadratic Formula",
+        "Complex Zeros"
+      ],
+      "keywords": [
+        "about",
+        "complex zeros",
+        "discriminant",
+        "quadratic",
+        "quadratic formula",
+        "tell"
+      ],
+      "source_links": [
+        "docs/chapters/05-quadratic-functions-and-complex-numbers/index.md"
+      ],
+      "has_example": true,
+      "word_count": 101
+    },
+    {
+      "id": "faq-040",
+      "category": "Technical Details",
+      "question": "What are complex numbers and where do they come from?",
+      "answer": "Complex numbers have the form a + bi, where i is the imaginary unit defined by i^2 = -1. They arise when solving equations like x^2 = -9, which no real number satisfies; its solutions are x = 3i and x = -3i. Complex numbers complete the algebra of polynomials: with them, every degree-n polynomial has exactly n zeros (the Fundamental Theorem of Algebra). When a polynomial has real coefficients, complex zeros always come in conjugate pairs a + bi and a - bi. See Quadratic Functions and Complex Numbers.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Complex Numbers",
+        "Imaginary Unit",
+        "Complex Conjugate Zeros",
+        "Fundamental Theorem of Algebra"
+      ],
+      "keywords": [
+        "come",
+        "complex",
+        "complex conjugate zeros",
+        "complex numbers",
+        "from",
+        "fundamental theorem of algebra",
+        "imaginary unit",
+        "numbers",
+        "they",
+        "where"
+      ],
+      "source_links": [
+        "docs/chapters/05-quadratic-functions-and-complex-numbers/index.md"
+      ],
+      "has_example": false,
+      "word_count": 90
+    },
+    {
+      "id": "faq-041",
+      "category": "Technical Details",
+      "question": "What is the difference between a horizontal and a slant asymptote?",
+      "answer": "Both describe a rational function's end behavior, and which one occurs depends on comparing the degrees of the numerator and denominator. If the numerator's degree is *less than* the denominator's, the horizontal asymptote is y = 0. If the degrees are *equal*, the horizontal asymptote is the ratio of leading coefficients. If the numerator's degree is *exactly one more*, there is no horizontal asymptote — instead the graph approaches a slanted line found by polynomial division. For example, \\frac{x^2 + 1}{x - 2} has slant asymptote y = x + 2. See Rational Functions.",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concepts": [
+        "Horizontal Asymptotes",
+        "Slant Asymptotes",
+        "End Behavior of Rationals"
+      ],
+      "keywords": [
+        "asymptote",
+        "difference",
+        "end behavior of rationals",
+        "horizontal",
+        "horizontal asymptotes",
+        "slant",
+        "slant asymptotes"
+      ],
+      "source_links": [
+        "docs/chapters/08-rational-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 94
+    },
+    {
+      "id": "faq-042",
+      "category": "Technical Details",
+      "question": "What is a one-to-one function?",
+      "answer": "A one-to-one function never sends two different inputs to the same output. Graphically, it passes the horizontal line test: no horizontal line crosses the graph more than once. One-to-one matters because it is exactly the condition for a function to have an inverse — if two inputs shared an output, the inverse could not decide which input to return. For example, f(x) = x^3 is one-to-one, but f(x) = x^2 is not, since f(2) = f(-2) = 4. Restricting the domain (keeping only x \\geq 0) can make a function one-to-one. See Composition and Inverse Functions.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "One-to-One Functions",
+        "Horizontal Line Test",
+        "Restricting Domains"
+      ],
+      "keywords": [
+        "function",
+        "horizontal line test",
+        "one-to-one",
+        "one-to-one functions",
+        "restricting domains"
+      ],
+      "source_links": [
+        "docs/chapters/11-composition-and-inverse-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 96
+    },
+    {
+      "id": "faq-043",
+      "category": "Technical Details",
+      "question": "What is the difference between common and natural logarithms?",
+      "answer": "The common logarithm, written \\log x, has base 10; the natural logarithm, written \\ln x, has base e \\approx 2.718. Both obey identical properties — only the base differs. Common logs suit base-10 contexts like the pH scale, decibels, and orders of magnitude. Natural logs suit continuous growth and decay, because they invert e^x; solving e^{0.03t} = 2 gives t = \\frac{\\ln 2}{0.03} directly. Your calculator has dedicated buttons for both, and the change of base formula converts any other base to either one. See Logarithmic Functions.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Common Logarithm",
+        "Natural Logarithm"
+      ],
+      "keywords": [
+        "common",
+        "common logarithm",
+        "difference",
+        "logarithms",
+        "natural",
+        "natural logarithm"
+      ],
+      "source_links": [
+        "docs/chapters/14-logarithmic-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 87
+    },
+    {
+      "id": "faq-044",
+      "category": "Technical Details",
+      "question": "What are the properties of logarithms?",
+      "answer": "Three core properties convert between multiplication and addition: the product rule \\log_b(MN) = \\log_b M + \\log_b N, the quotient rule \\log_b\\frac{M}{N} = \\log_b M - \\log_b N, and the power rule \\log_b(M^p) = p\\log_b M. Each is an exponent rule in disguise — for example, the product rule mirrors b^m \\cdot b^n = b^{m+n}. These properties let you expand a complicated logarithm into simple pieces, condense a sum into a single logarithm, and pull a variable out of an exponent when solving equations. See Logarithmic Functions.",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concepts": [
+        "Properties of Logarithms",
+        "Product Rule for Logs",
+        "Quotient Rule for Logs",
+        "Power Rule for Logs"
+      ],
+      "keywords": [
+        "logarithms",
+        "power rule for logs",
+        "product rule for logs",
+        "properties",
+        "properties of logarithms",
+        "quotient rule for logs"
+      ],
+      "source_links": [
+        "docs/chapters/14-logarithmic-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 87
+    },
+    {
+      "id": "faq-045",
+      "category": "Technical Details",
+      "question": "What is the change of base formula and when do I need it?",
+      "answer": "The change of base formula rewrites a logarithm in any base using a base your calculator has: \\log_b x = \\frac{\\log x}{\\log b} = \\frac{\\ln x}{\\ln b}. You need it whenever you must evaluate something like \\log_3 20 numerically — compute \\frac{\\ln 20}{\\ln 3} \\approx 2.727. It also converts between exponential models with different bases and shows that all logarithmic functions are vertical stretches of one another, which is why they all share the same fundamental shape. See Logarithmic Functions.",
+      "bloom_level": "Apply",
+      "difficulty": "easy",
+      "concepts": [
+        "Change of Base Formula"
+      ],
+      "keywords": [
+        "base",
+        "change",
+        "change of base formula",
+        "formula",
+        "need"
+      ],
+      "source_links": [
+        "docs/chapters/14-logarithmic-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 80
+    },
+    {
+      "id": "faq-046",
+      "category": "Technical Details",
+      "question": "What is a reference angle?",
+      "answer": "A reference angle is the acute angle between an angle's terminal side and the x-axis. It lets you evaluate trigonometric functions of any angle using only the special angles of the first quadrant: find the reference angle, look up its sine or cosine, then attach the sign for the quadrant. For example, 150° has reference angle 30°, and since sine is positive in Quadrant II, \\sin 150° = \\sin 30° = \\frac{1}{2}. Reference angles turn one memorized quadrant of values into all four. See Angles and the Unit Circle.",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concepts": [
+        "Reference Angle",
+        "Special Angles",
+        "Signs by Quadrant",
+        "Exact Trig Values"
+      ],
+      "keywords": [
+        "angle",
+        "exact trig values",
+        "reference",
+        "reference angle",
+        "signs by quadrant",
+        "special angles"
+      ],
+      "source_links": [
+        "docs/chapters/15-angles-and-the-unit-circle/index.md"
+      ],
+      "has_example": true,
+      "word_count": 89
+    },
+    {
+      "id": "faq-047",
+      "category": "Technical Details",
+      "question": "What are coterminal angles?",
+      "answer": "Coterminal angles share the same terminal side — they point the same direction but differ by full rotations. Adding or subtracting 360° (or 2\\pi radians) any number of times produces a coterminal angle: 45°, 405°, and -315° are all coterminal. Because trigonometric functions depend only on the terminal side, coterminal angles have identical sine, cosine, and tangent values — this is precisely why trigonometric functions are periodic. To find the coterminal angle between 0 and 2\\pi, add or subtract 2\\pi until you land in that interval. See Angles and the Unit Circle.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Coterminal Angles",
+        "Standard Position",
+        "Terminal Side"
+      ],
+      "keywords": [
+        "angles",
+        "coterminal",
+        "coterminal angles",
+        "standard position",
+        "terminal side"
+      ],
+      "source_links": [
+        "docs/chapters/15-angles-and-the-unit-circle/index.md"
+      ],
+      "has_example": false,
+      "word_count": 92
+    },
+    {
+      "id": "faq-048",
+      "category": "Technical Details",
+      "question": "What are the reciprocal trigonometric functions?",
+      "answer": "Secant, cosecant, and cotangent are the reciprocals of cosine, sine, and tangent: \\sec\\theta = \\frac{1}{\\cos\\theta}, \\csc\\theta = \\frac{1}{\\sin\\theta}, and \\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{\\cos\\theta}{\\sin\\theta}. Each is undefined wherever its partner equals zero, which produces vertical asymptotes in their graphs — for example, \\sec\\theta has asymptotes at \\theta = \\frac{\\pi}{2} + k\\pi, where cosine vanishes. Watch the pairing: secant goes with *cosine* and cosecant with *sine*, not the other way around. See Trigonometric Functions.",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concepts": [
+        "Reciprocal Trig Functions",
+        "Secant Function",
+        "Cosecant Function",
+        "Cotangent Function"
+      ],
+      "keywords": [
+        "cosecant function",
+        "cotangent function",
+        "functions",
+        "reciprocal",
+        "reciprocal trig functions",
+        "secant function",
+        "trigonometric"
+      ],
+      "source_links": [
+        "docs/chapters/16-trigonometric-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 73
+    },
+    {
+      "id": "faq-049",
+      "category": "Technical Details",
+      "question": "What is the Pythagorean identity?",
+      "answer": "The Pythagorean identity states that \\sin^2\\theta + \\cos^2\\theta = 1 for every angle \\theta. It comes straight from the unit circle: the point (\\cos\\theta, \\sin\\theta) lies on a circle of radius 1, so its coordinates satisfy x^2 + y^2 = 1. Dividing through by \\cos^2\\theta or \\sin^2\\theta yields the companion forms \\tan^2\\theta + 1 = \\sec^2\\theta and 1 + \\cot^2\\theta = \\csc^2\\theta. It is the most-used identity in the course — the standard tool for finding one trig value from another and for simplifying expressions. See Trigonometric Identities.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Pythagorean Identity",
+        "Unit Circle Definition"
+      ],
+      "keywords": [
+        "identity",
+        "pythagorean",
+        "pythagorean identity",
+        "unit circle definition"
+      ],
+      "source_links": [
+        "docs/chapters/19-trigonometric-identities/index.md"
+      ],
+      "has_example": false,
+      "word_count": 88
+    },
+    {
+      "id": "faq-050",
+      "category": "Technical Details",
+      "question": "What are the domains and ranges of the inverse trigonometric functions?",
+      "answer": "Each inverse trig function returns angles from a restricted range so that every input has exactly one answer. Arcsine takes inputs in [-1, 1] and returns angles in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]. Arccosine takes [-1, 1] and returns [0, \\pi]. Arctangent accepts all real numbers and returns angles in (-\\frac{\\pi}{2}, \\frac{\\pi}{2}). These ranges matter on the exam: \\arcsin and \\arctan can return negative angles but \\arccos cannot, and an equation's full solution set usually contains angles *outside* these ranges that you must recover yourself. See Inverse Trigonometric Functions and Equations.",
+      "bloom_level": "Remember",
+      "difficulty": "hard",
+      "concepts": [
+        "Arcsine",
+        "Arccosine",
+        "Arctangent",
+        "Inverse Trig Domains",
+        "Inverse Trig Ranges"
+      ],
+      "keywords": [
+        "arccosine",
+        "arcsine",
+        "arctangent",
+        "domains",
+        "functions",
+        "inverse",
+        "inverse trig domains",
+        "inverse trig ranges",
+        "ranges",
+        "trigonometric"
+      ],
+      "source_links": [
+        "docs/chapters/20-inverse-trig-functions-and-equations/index.md"
+      ],
+      "has_example": false,
+      "word_count": 88
+    },
+    {
+      "id": "faq-051",
+      "category": "Technical Details",
+      "question": "What is a semi-log plot?",
+      "answer": "A semi-log plot graphs data with a logarithmic scale on the vertical axis and a linear scale on the horizontal axis. Its power is diagnostic: exponential data plots as a *straight line* on semi-log axes, because taking the logarithm of y = ab^x gives \\log y = \\log a + x\\log b, which is linear in x. If your data looks straight on a semi-log plot, an exponential model fits; if it curves, try another family. Semi-log plots also make quantities spanning many orders of magnitude — like bacterial counts — readable on one graph. See Logarithmic Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Semi-Log Plot",
+        "Logarithmic Scale",
+        "Linearizing Exp Data"
+      ],
+      "keywords": [
+        "linearizing exp data",
+        "logarithmic scale",
+        "plot",
+        "semi-log",
+        "semi-log plot"
+      ],
+      "source_links": [
+        "docs/chapters/14-logarithmic-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 98
+    },
+    {
+      "id": "faq-052",
+      "category": "Common Challenges",
+      "question": "Why does the order of transformations matter?",
+      "answer": "Transformations are function compositions, and composition is order-sensitive. Applying \"stretch vertically by 2, then shift up 3\" to f gives 2f(x) + 3, but \"shift up 3, then stretch by 2\" gives 2(f(x) + 3) = 2f(x) + 6 — different graphs. A reliable rule: follow the order of operations as applied to the function value. For g(x) = a\\,f(b(x - h)) + k, handle horizontal shifts and stretches first (inside), then vertical stretches and reflections, then vertical shifts (outside). When in doubt, track one specific point through each step. See Function Transformations.",
+      "bloom_level": "Analyze",
+      "difficulty": "hard",
+      "concepts": [
+        "Transformation Order",
+        "Combined Transformations"
+      ],
+      "keywords": [
+        "combined transformations",
+        "matter",
+        "order",
+        "transformation order",
+        "transformations"
+      ],
+      "source_links": [
+        "docs/chapters/09-function-transformations/index.md"
+      ],
+      "has_example": false,
+      "word_count": 93
+    },
+    {
+      "id": "faq-053",
+      "category": "Common Challenges",
+      "question": "Why can't I take the logarithm of a negative number?",
+      "answer": "Because a logarithm asks an exponent question that has no answer for negative numbers. The expression \\log_b(-4) asks: to what power must the positive base b be raised to produce -4? A positive base raised to *any* real power is always positive — it can be huge or tiny, but never negative or zero. So logarithms of negative numbers and of zero are undefined, and every logarithmic function has domain x > 0. This is also why checking answers in logarithmic equations matters: an algebraic solution that forces a log of a negative number must be rejected. See Logarithmic Functions.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Logarithm Definition",
+        "Domain Restrictions",
+        "Logarithmic Graphs"
+      ],
+      "keywords": [
+        "can",
+        "domain restrictions",
+        "logarithm",
+        "logarithm definition",
+        "logarithmic graphs",
+        "negative",
+        "number",
+        "take"
+      ],
+      "source_links": [
+        "docs/chapters/14-logarithmic-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 100
+    },
+    {
+      "id": "faq-054",
+      "category": "Common Challenges",
+      "question": "Why doesn't sin⁻¹(x) mean 1/sin(x)?",
+      "answer": "The notation collides, and you have to read it by context. In \\sin^{-1}(x), the -1 means *inverse function* — arcsine, the function that returns the angle whose sine is x. The reciprocal \\frac{1}{\\sin x} is a different function with its own name: cosecant, written \\csc x. Confusingly, \\sin^2 x *does* mean (\\sin x)^2, so the exponent convention is inconsistent — the -1 position is special. To stay safe, read \\sin^{-1} as \"arcsine\" aloud, and write reciprocals as \\csc, \\sec, and \\cot. See Inverse Trigonometric Functions and Equations.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Arcsine",
+        "Cosecant Function",
+        "Reciprocal Trig Functions"
+      ],
+      "keywords": [
+        "arcsine",
+        "cosecant function",
+        "doesn",
+        "mean",
+        "reciprocal trig functions",
+        "sin"
+      ],
+      "source_links": [
+        "docs/chapters/20-inverse-trig-functions-and-equations/index.md"
+      ],
+      "has_example": false,
+      "word_count": 87
+    },
+    {
+      "id": "faq-055",
+      "category": "Common Challenges",
+      "question": "Why do logarithmic equations produce extraneous solutions?",
+      "answer": "Solving a logarithmic equation usually involves condensing logs and converting to exponential form — algebraic moves that can *enlarge* the domain. The original equation requires every logarithm's argument to be positive, but the converted equation doesn't remember that. For example, \\log(x) + \\log(x - 3) = 1 becomes x(x - 3) = 10, giving x = 5 and x = -2; substituting x = -2 back requires \\log(-2), which is undefined, so it must be discarded. Always substitute each candidate into the *original* equation and reject any that produce a log of a non-positive number. See Logarithmic Functions.",
+      "bloom_level": "Analyze",
+      "difficulty": "hard",
+      "concepts": [
+        "Logarithmic Equations",
+        "Domain Restrictions"
+      ],
+      "keywords": [
+        "domain restrictions",
+        "equations",
+        "extraneous",
+        "logarithmic",
+        "logarithmic equations",
+        "produce",
+        "solutions"
+      ],
+      "source_links": [
+        "docs/chapters/14-logarithmic-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 98
+    },
+    {
+      "id": "faq-056",
+      "category": "Common Challenges",
+      "question": "Why is my calculator giving unexpected trigonometric values?",
+      "answer": "The most common cause is angle mode: calculators evaluate trig functions in either degree or radian mode, and the wrong mode gives silently wrong answers. Computing \\sin(30) in radian mode returns -0.988 instead of the 0.5 you expected from \\sin(30°). Check the mode indicator before every trig calculation, and match it to the problem — AP exam problems use radians unless degrees are explicitly marked. Other culprits: missing parentheses (\\sin 2x entered as \\sin(2)x) and expecting exact values like \\frac{\\sqrt{3}}{2} when the calculator shows decimals. See Matrices and Exam Preparation.",
+      "bloom_level": "Apply",
+      "difficulty": "easy",
+      "concepts": [
+        "Calculator Strategies",
+        "Radian Measure",
+        "Degree Measure"
+      ],
+      "keywords": [
+        "calculator",
+        "calculator strategies",
+        "degree measure",
+        "giving",
+        "radian measure",
+        "trigonometric",
+        "unexpected",
+        "values"
+      ],
+      "source_links": [
+        "docs/chapters/23-matrices-and-exam-preparation/index.md"
+      ],
+      "has_example": false,
+      "word_count": 90
+    },
+    {
+      "id": "faq-057",
+      "category": "Common Challenges",
+      "question": "How do I find the domain of a composite function?",
+      "answer": "The domain of f(g(x)) has two requirements, and forgetting the first is the classic error: x must be in the domain of g, *and* the output g(x) must be in the domain of f. Work from the inside out. For example, if f(x) = \\sqrt{x} and g(x) = \\frac{1}{x}, then f(g(x)) = \\sqrt{1/x}: first x \\neq 0 (domain of g), then \\frac{1}{x} \\geq 0, which forces x > 0. The simplified formula alone can hide restrictions from the inner function, so always check both layers before simplifying. See Composition and Inverse Functions.",
+      "bloom_level": "Apply",
+      "difficulty": "hard",
+      "concepts": [
+        "Domain of Compositions",
+        "Composition of Functions",
+        "Domain Restrictions"
+      ],
+      "keywords": [
+        "composite",
+        "composition of functions",
+        "domain",
+        "domain of compositions",
+        "domain restrictions",
+        "find",
+        "function"
+      ],
+      "source_links": [
+        "docs/chapters/11-composition-and-inverse-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 92
+    },
+    {
+      "id": "faq-058",
+      "category": "Common Challenges",
+      "question": "Why do trigonometric equations have infinitely many solutions?",
+      "answer": "Because trigonometric functions are periodic — they repeat their values forever in both directions. If \\sin\\theta = \\frac{1}{2} at \\theta = \\frac{\\pi}{6}, it equals \\frac{1}{2} again at \\frac{\\pi}{6} + 2\\pi, \\frac{\\pi}{6} + 4\\pi, and so on, plus a second family from the other side of the circle at \\frac{5\\pi}{6} + 2\\pi k. A complete answer is a *general solution* listing all families, such as \\theta = \\frac{\\pi}{6} + 2\\pi k or \\theta = \\frac{5\\pi}{6} + 2\\pi k. When a problem restricts the interval, list only the finitely many solutions inside it. See Inverse Trigonometric Functions and Equations.",
+      "bloom_level": "Analyze",
+      "difficulty": "medium",
+      "concepts": [
+        "Solving Trig Equations",
+        "General Solutions",
+        "Solutions in an Interval",
+        "Period"
+      ],
+      "keywords": [
+        "equations",
+        "general solutions",
+        "have",
+        "infinitely",
+        "many",
+        "period",
+        "solutions",
+        "solutions in an interval",
+        "solving trig equations",
+        "trigonometric"
+      ],
+      "source_links": [
+        "docs/chapters/20-inverse-trig-functions-and-equations/index.md"
+      ],
+      "has_example": false,
+      "word_count": 97
+    },
+    {
+      "id": "faq-059",
+      "category": "Common Challenges",
+      "question": "Why does f(2x) compress the graph instead of stretching it?",
+      "answer": "Inside changes act on *inputs*, and they work opposite to intuition. In f(2x), the input is doubled before the function sees it, so the function reaches each output value at *half* the original x — every feature of the graph arrives twice as fast, squeezing it horizontally by a factor of \\frac{1}{2}. For example, if f peaks at x = 6, then f(2x) peaks at x = 3. The pattern holds for shifts too: f(x - 3) moves the graph *right*, not left. When unsure, ask \"what input makes the inside equal what it used to be?\" See Function Transformations.",
+      "bloom_level": "Analyze",
+      "difficulty": "medium",
+      "concepts": [
+        "Horizontal Compression",
+        "Horizontal Stretch",
+        "Transformation Order"
+      ],
+      "keywords": [
+        "compress",
+        "graph",
+        "horizontal compression",
+        "horizontal stretch",
+        "stretching",
+        "transformation order"
+      ],
+      "source_links": [
+        "docs/chapters/09-function-transformations/index.md"
+      ],
+      "has_example": true,
+      "word_count": 100
+    },
+    {
+      "id": "faq-060",
+      "category": "Common Challenges",
+      "question": "How do I keep the asymptote rules for rational functions straight?",
+      "answer": "Anchor each type of asymptote to what causes it. Vertical asymptotes come from the *denominator*: they appear at inputs that make the denominator zero after canceling common factors. Horizontal and slant asymptotes come from *comparing degrees*, because end behavior is a battle between leading terms: bottom-heavy (denominator degree larger) gives y = 0; equal degrees give the ratio of leading coefficients; top-heavy by exactly one gives a slant asymptote via division. A quick mental example like \\frac{3x^2}{x^2 + 1} \\to y = 3 rebuilds the rules whenever memory fails. See Rational Functions.",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concepts": [
+        "Vertical Asymptotes",
+        "Horizontal Asymptotes",
+        "Slant Asymptotes",
+        "End Behavior of Rationals"
+      ],
+      "keywords": [
+        "asymptote",
+        "end behavior of rationals",
+        "functions",
+        "horizontal asymptotes",
+        "keep",
+        "rational",
+        "rules",
+        "slant asymptotes",
+        "straight",
+        "vertical asymptotes"
+      ],
+      "source_links": [
+        "docs/chapters/08-rational-functions/index.md"
+      ],
+      "has_example": true,
+      "word_count": 92
+    },
+    {
+      "id": "faq-061",
+      "category": "Common Challenges",
+      "question": "What are the most common mistakes students make on the AP Pre-Calculus exam?",
+      "answer": "The highest-frequency errors are avoidable process mistakes: leaving the calculator in the wrong angle mode; giving only one solution to a trig equation when the interval contains several; forgetting to reject extraneous solutions in logarithmic equations; confusing \\sin^{-1}x with \\csc x; applying horizontal transformations in the wrong direction; and dropping domain restrictions when simplifying rational or composite functions. On free-response questions, students also lose points by not showing setup work and by omitting units or context in modeling answers. Building a personal error checklist during practice is one of the highest-return study habits. See Matrices and Exam Preparation.",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concepts": [
+        "Multiple Choice Strategy",
+        "Free Response Strategy",
+        "Showing Work on Free Resp"
+      ],
+      "keywords": [
+        "common",
+        "exam",
+        "free response strategy",
+        "make",
+        "mistakes",
+        "most",
+        "multiple choice strategy",
+        "pre-calculus",
+        "showing work on free resp",
+        "students"
+      ],
+      "source_links": [
+        "docs/chapters/23-matrices-and-exam-preparation/index.md"
+      ],
+      "has_example": false,
+      "word_count": 98
+    },
+    {
+      "id": "faq-062",
+      "category": "Best Practices",
+      "question": "How do I choose the best function model for a data set?",
+      "answer": "Match the *pattern of change* in the data to the function family that produces it. Roughly equal differences over equal input steps suggest a linear model; differences that grow or shrink by a constant factor suggest exponential; a single peak or valley suggests quadratic; repeating cycles suggest sinusoidal; slowing growth that never levels off suggests logarithmic. Plot the data first and examine its shape, then fit candidate models with regression and compare residuals. Also apply context: a population constrained by resources or a quantity that must stay positive rules out some families no matter how well they fit the sample. See Data Modeling and Regression.",
+      "bloom_level": "Evaluate",
+      "difficulty": "hard",
+      "concepts": [
+        "Function Model Selection",
+        "Regression Models",
+        "Model Assumptions",
+        "Competing Models"
+      ],
+      "keywords": [
+        "choose",
+        "competing models",
+        "data",
+        "function",
+        "function model selection",
+        "model",
+        "model assumptions",
+        "regression models",
+        "set"
+      ],
+      "source_links": [
+        "docs/chapters/10-data-modeling-and-regression/index.md"
+      ],
+      "has_example": false,
+      "word_count": 105
+    },
+    {
+      "id": "faq-063",
+      "category": "Best Practices",
+      "question": "How do I use residuals to judge a model's fit?",
+      "answer": "A residual is the error of one prediction: actual value minus predicted value. After fitting a model, plot the residuals against the input variable. A good fit leaves residuals scattered randomly around zero with no pattern. A *curved* pattern in the residual plot is the key warning sign — it means the model family is wrong, not just imprecise, no matter how high the correlation looks. For example, fitting a line to exponential data gives a residual plot with a clear U-shape. Residual analysis appears directly on the AP exam, so practice reading residual plots, not just computing them. See Data Modeling and Regression.",
+      "bloom_level": "Analyze",
+      "difficulty": "medium",
+      "concepts": [
+        "Residuals",
+        "Residual Analysis",
+        "Goodness of Fit"
+      ],
+      "keywords": [
+        "fit",
+        "goodness of fit",
+        "judge",
+        "model",
+        "residual analysis",
+        "residuals",
+        "use"
+      ],
+      "source_links": [
+        "docs/chapters/10-data-modeling-and-regression/index.md"
+      ],
+      "has_example": true,
+      "word_count": 104
+    },
+    {
+      "id": "faq-064",
+      "category": "Best Practices",
+      "question": "What is a good strategy for graphing a polynomial by hand?",
+      "answer": "Work through four anchors in order. First, find the end behavior from the degree and leading coefficient. Second, find the zeros by factoring and mark each with its multiplicity — cross for odd, bounce for even. Third, find the y-intercept by evaluating at x = 0. Fourth, determine the sign of the function between consecutive zeros (one test point per interval) and sketch a smooth curve consistent with everything you know. A degree-n polynomial has at most n - 1 turning points, which is a useful sanity check on your sketch. See Polynomial Zeros and Graphs.",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concepts": [
+        "Polynomial Graphs",
+        "Turning Points",
+        "Zeros of Polynomials",
+        "Polynomial End Behavior",
+        "Y-Intercept"
+      ],
+      "keywords": [
+        "graphing",
+        "hand",
+        "polynomial",
+        "polynomial end behavior",
+        "polynomial graphs",
+        "strategy",
+        "turning points",
+        "y-intercept",
+        "zeros of polynomials"
+      ],
+      "source_links": [
+        "docs/chapters/07-polynomial-zeros-and-graphs/index.md"
+      ],
+      "has_example": false,
+      "word_count": 96
+    },
+    {
+      "id": "faq-065",
+      "category": "Best Practices",
+      "question": "What is a good strategy for graphing a rational function?",
+      "answer": "Factor the numerator and denominator completely first — everything else reads off the factored form. Canceled factors mark holes; remaining denominator zeros give vertical asymptotes; remaining numerator zeros give x-intercepts. Compare degrees for the horizontal or slant asymptote, and evaluate at x = 0 for the y-intercept. Then test the sign of the function on each interval between zeros and vertical asymptotes, and check whether the graph approaches each asymptote from above or below. Finally, sketch one branch at a time. See Rational Functions.",
+      "bloom_level": "Apply",
+      "difficulty": "hard",
+      "concepts": [
+        "Rational Function Graphs",
+        "Vertical Asymptotes",
+        "Holes in Graphs",
+        "Rational Function Zeros"
+      ],
+      "keywords": [
+        "function",
+        "graphing",
+        "holes in graphs",
+        "rational",
+        "rational function graphs",
+        "rational function zeros",
+        "strategy",
+        "vertical asymptotes"
+      ],
+      "source_links": [
+        "docs/chapters/08-rational-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 84
+    },
+    {
+      "id": "faq-066",
+      "category": "Best Practices",
+      "question": "How do I build a sinusoidal model from real-world data?",
+      "answer": "Extract the four parameters in a fixed order. The midline d is the average of the maximum and minimum values. The amplitude a is half the distance between them. The period comes from the time for one full cycle, giving b = \\frac{2\\pi}{\\text{period}}. Finally, the phase shift c comes from where a recognizable feature occurs — using cosine when the data starts at a maximum often avoids a shift entirely. For example, if high tide is 8 ft at noon and low tide is 2 ft at 6 pm, the midline is 5, the amplitude is 3, and the period is 12 hours. See Sinusoidal Modeling.",
+      "bloom_level": "Create",
+      "difficulty": "hard",
+      "concepts": [
+        "Sinusoidal Modeling",
+        "Amplitude from Data",
+        "Period from Data",
+        "Phase Shift",
+        "Tidal Models"
+      ],
+      "keywords": [
+        "amplitude from data",
+        "build",
+        "data",
+        "from",
+        "model",
+        "period from data",
+        "phase shift",
+        "real-world",
+        "sinusoidal",
+        "sinusoidal modeling",
+        "tidal models"
+      ],
+      "source_links": [
+        "docs/chapters/18-sinusoidal-modeling/index.md"
+      ],
+      "has_example": true,
+      "word_count": 106
+    },
+    {
+      "id": "faq-067",
+      "category": "Best Practices",
+      "question": "What is the best way to learn the unit circle?",
+      "answer": "Learn the structure instead of memorizing 48 coordinates. All first-quadrant special values come from two triangles: the 45-45-90 triangle gives \\frac{\\sqrt{2}}{2}, and the 30-60-90 triangle gives \\frac{1}{2} and \\frac{\\sqrt{3}}{2}. Every other quadrant repeats those values with signs determined by the quadrant — cosine positive on the right half, sine positive on the top half. Combine that with reference angles and you can reconstruct any special value in seconds. Practice with the unit circle MicroSims in Angles and the Unit Circle until reconstruction feels automatic, then use quick self-quizzes to build speed.",
+      "bloom_level": "Apply",
+      "difficulty": "easy",
+      "concepts": [
+        "Unit Circle Coordinates",
+        "Special Angles",
+        "Reference Angle",
+        "Exact Trig Values"
+      ],
+      "keywords": [
+        "circle",
+        "exact trig values",
+        "learn",
+        "reference angle",
+        "special angles",
+        "unit",
+        "unit circle coordinates",
+        "way"
+      ],
+      "source_links": [
+        "docs/chapters/15-angles-and-the-unit-circle/index.md"
+      ],
+      "has_example": false,
+      "word_count": 91
+    },
+    {
+      "id": "faq-068",
+      "category": "Best Practices",
+      "question": "What is a good strategy for verifying trigonometric identities?",
+      "answer": "Work on one side only — usually the more complicated side — and transform it step by step until it matches the other. Reliable moves, in rough order of usefulness: rewrite everything in terms of sine and cosine; apply the Pythagorean identity to swap \\sin^2 and \\cos^2 forms; combine fractions over a common denominator; and factor. Never move terms across the equals sign — verifying an identity is not equation solving, and treating it that way assumes what you are trying to prove. If you stall, try starting from the other side, or convert both sides independently to sines and cosines and compare. See Trigonometric Identities.",
+      "bloom_level": "Apply",
+      "difficulty": "hard",
+      "concepts": [
+        "Verifying Identities",
+        "Simplifying Trig Expr",
+        "Pythagorean Identity"
+      ],
+      "keywords": [
+        "identities",
+        "pythagorean identity",
+        "simplifying trig expr",
+        "strategy",
+        "trigonometric",
+        "verifying",
+        "verifying identities"
+      ],
+      "source_links": [
+        "docs/chapters/19-trigonometric-identities/index.md"
+      ],
+      "has_example": false,
+      "word_count": 106
+    },
+    {
+      "id": "faq-069",
+      "category": "Best Practices",
+      "question": "When should I use polar coordinates instead of rectangular?",
+      "answer": "Use polar coordinates when a curve or situation is naturally organized around a central point — when \"how far from the center, in which direction\" is simpler to state than \"how far over and up.\" Circles centered at the origin, spirals, and the rose and limaçon families have short polar equations but awkward rectangular ones: the four-petal rose r = \\cos 2\\theta would be a mess in x and y. Rectangular coordinates remain better for lines, parabolas, and anything organized around horizontal and vertical directions. The conversion equations x = r\\cos\\theta, y = r\\sin\\theta let you move between systems when a problem mixes both. See Polar and Parametric Functions.",
+      "bloom_level": "Evaluate",
+      "difficulty": "medium",
+      "concepts": [
+        "Polar Coordinate System",
+        "Polar Graphs",
+        "Rose Curves",
+        "Polar to Rectangular"
+      ],
+      "keywords": [
+        "coordinates",
+        "polar",
+        "polar coordinate system",
+        "polar graphs",
+        "polar to rectangular",
+        "rectangular",
+        "rose curves",
+        "use"
+      ],
+      "source_links": [
+        "docs/chapters/21-polar-and-parametric-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 109
+    },
+    {
+      "id": "faq-070",
+      "category": "Best Practices",
+      "question": "How should I use my graphing calculator on the AP exam?",
+      "answer": "Use it for what it does best — regression, numerical solving, and checking — while showing the mathematical setup on paper. On calculator-active free-response questions, write the equation you are solving or the model you are fitting before reporting the calculator result, because setup earns points even when arithmetic slips. Keep the mode in radians unless a problem specifies degrees. Learn the intersection, zero, and maximum/minimum features cold before exam day, and store common window settings mentally for trig graphs. On the no-calculator sections, expect values chosen to work out exactly — if you hit ugly decimals, re-examine the approach. See Matrices and Exam Preparation.",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concepts": [
+        "Calculator Strategies",
+        "Free Response Strategy",
+        "Showing Work on Free Resp"
+      ],
+      "keywords": [
+        "calculator",
+        "calculator strategies",
+        "exam",
+        "free response strategy",
+        "graphing",
+        "showing work on free resp",
+        "use"
+      ],
+      "source_links": [
+        "docs/chapters/23-matrices-and-exam-preparation/index.md"
+      ],
+      "has_example": false,
+      "word_count": 105
+    },
+    {
+      "id": "faq-071",
+      "category": "Best Practices",
+      "question": "How should I manage my time on the AP exam?",
+      "answer": "Budget by points, not by question order. Section I Part A allows just under 3 minutes per multiple-choice question — flag anything that stalls you and return after a full pass, since every question is worth the same. In free response, read all parts before starting, because later parts often reuse earlier results and reveal the intended method. Leave nothing blank: there is no guessing penalty on multiple choice, and partial free-response work earns points. Practicing full timed sections during review matters more than any single content topic, because pacing errors are the most common self-inflicted score loss. See Matrices and Exam Preparation.",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concepts": [
+        "Time Management on Exams",
+        "Multiple Choice Strategy",
+        "Free Response Strategy"
+      ],
+      "keywords": [
+        "exam",
+        "free response strategy",
+        "manage",
+        "multiple choice strategy",
+        "time",
+        "time management on exams"
+      ],
+      "source_links": [
+        "docs/chapters/23-matrices-and-exam-preparation/index.md"
+      ],
+      "has_example": false,
+      "word_count": 103
+    },
+    {
+      "id": "faq-072",
+      "category": "Advanced Topics",
+      "question": "How do I evaluate competing models for the same data set?",
+      "answer": "Compare candidates on three levels. Statistically, examine residual plots — random scatter beats patterned residuals — and goodness-of-fit measures. Contextually, check whether each model's assumptions match the situation: does the phenomenon really grow without bound, or must it level off? Predictively, test behavior *beyond* the data window, where models that fit equally well can diverge wildly — a quadratic and an exponential may match five data points yet predict opposite futures. Prefer the simplest model consistent with the data, and state the assumptions your choice depends on. Extrapolation is where wrong model choices become expensive. See Data Modeling and Regression.",
+      "bloom_level": "Evaluate",
+      "difficulty": "hard",
+      "concepts": [
+        "Competing Models",
+        "Model Validation",
+        "Extrapolation",
+        "Residual Analysis",
+        "Goodness of Fit"
+      ],
+      "keywords": [
+        "competing",
+        "competing models",
+        "data",
+        "evaluate",
+        "extrapolation",
+        "goodness of fit",
+        "model validation",
+        "models",
+        "residual analysis",
+        "same",
+        "set"
+      ],
+      "source_links": [
+        "docs/chapters/10-data-modeling-and-regression/index.md"
+      ],
+      "has_example": false,
+      "word_count": 100
+    },
+    {
+      "id": "faq-073",
+      "category": "Advanced Topics",
+      "question": "How does a semi-log plot linearize exponential data?",
+      "answer": "Taking the logarithm of an exponential relationship turns multiplication into addition. Starting from y = ab^x and taking logs of both sides gives \\log y = \\log a + (\\log b)\\,x — a linear equation in x with slope \\log b and intercept \\log a. Plotting \\log y against x (or using a log-scaled axis) therefore renders exponential data as a straight line, and fitting that line recovers the model's parameters: the slope exposes the growth factor and the intercept exposes the initial value. The same trick with \\log y versus \\log x (a log-log plot) linearizes power functions instead, which is how you distinguish the two families. See Logarithmic Functions.",
+      "bloom_level": "Analyze",
+      "difficulty": "hard",
+      "concepts": [
+        "Linearizing Exp Data",
+        "Semi-Log Plot",
+        "Log-Log Plots",
+        "Exponential Regression",
+        "Power Regression"
+      ],
+      "keywords": [
+        "data",
+        "exponential",
+        "exponential regression",
+        "linearize",
+        "linearizing exp data",
+        "log-log plots",
+        "plot",
+        "power regression",
+        "semi-log",
+        "semi-log plot"
+      ],
+      "source_links": [
+        "docs/chapters/14-logarithmic-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 111
+    },
+    {
+      "id": "faq-074",
+      "category": "Advanced Topics",
+      "question": "How do I design a polar equation with a specific shape?",
+      "answer": "Each polar family is a recipe with tunable knobs. For rose curves r = a\\cos(n\\theta) or r = a\\sin(n\\theta): a sets petal length, and n sets the count — n petals when n is odd, 2n petals when even. For limaçons r = a + b\\cos\\theta: the ratio \\frac{a}{b} controls the shape — an inner loop when \\frac{a}{b} < 1, a cardioid when equal, a dimple when between 1 and 2. Choosing cosine gives symmetry about the polar axis; sine rotates the figure to symmetry about \\theta = \\frac{\\pi}{2}. To design a curve, pick the family, then set each parameter against your target symmetry and dimensions. See Polar and Parametric Functions.",
+      "bloom_level": "Create",
+      "difficulty": "hard",
+      "concepts": [
+        "Rose Curves",
+        "Petal Count of Roses",
+        "Limaçons",
+        "Cardioids",
+        "Symmetry of Polar Graphs"
+      ],
+      "keywords": [
+        "cardioids",
+        "design",
+        "equation",
+        "limaçons",
+        "petal count of roses",
+        "polar",
+        "rose curves",
+        "shape",
+        "specific",
+        "symmetry of polar graphs"
+      ],
+      "source_links": [
+        "docs/chapters/21-polar-and-parametric-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 111
+    },
+    {
+      "id": "faq-075",
+      "category": "Advanced Topics",
+      "question": "How do parametric equations model projectile motion?",
+      "answer": "Projectile motion splits naturally into independent horizontal and vertical components, which is exactly what parametric form expresses. For launch speed v_0 at angle \\theta from initial height h_0: the horizontal position is x(t) = (v_0\\cos\\theta)\\,t — constant velocity — while the vertical position is y(t) = h_0 + (v_0\\sin\\theta)\\,t - 16t^2 in feet (or -4.9t^2 in meters), where the squared term captures gravity. The parameter t is time, so the model answers questions a single y(x) equation obscures: where the object is at each moment, when it lands (y = 0), and how far it travels. See Polar and Parametric Functions.",
+      "bloom_level": "Create",
+      "difficulty": "hard",
+      "concepts": [
+        "Projectile Motion Model",
+        "Parametric Motion",
+        "Position Functions",
+        "Parametric Modeling"
+      ],
+      "keywords": [
+        "equations",
+        "model",
+        "motion",
+        "parametric",
+        "parametric modeling",
+        "parametric motion",
+        "position functions",
+        "projectile",
+        "projectile motion model"
+      ],
+      "source_links": [
+        "docs/chapters/21-polar-and-parametric-functions/index.md"
+      ],
+      "has_example": false,
+      "word_count": 101
+    },
+    {
+      "id": "faq-076",
+      "category": "Advanced Topics",
+      "question": "How do matrices act as linear transformations?",
+      "answer": "A 2 \\times 2 matrix is a function whose inputs and outputs are points in the plane: multiplying \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix} by the vector \\begin{bmatrix} x \\\\ y \\end{bmatrix} sends every point to a new location, and the matrix's columns show exactly where the unit vectors land. Specific matrices produce specific geometric moves — rotation matrices spin the plane, reflection matrices flip it, and scalar multiples stretch it. The determinant reports the area-scaling factor of the transformation. This \"matrix as function\" viewpoint connects Unit 4 back to the course's central theme and previews linear algebra. See Matrices and Exam Preparation.",
+      "bloom_level": "Analyze",
+      "difficulty": "hard",
+      "concepts": [
+        "Linear Transformations",
+        "Matrix Multiplication",
+        "Rotation Matrix",
+        "Reflection Matrix",
+        "Determinant"
+      ],
+      "keywords": [
+        "act",
+        "determinant",
+        "linear",
+        "linear transformations",
+        "matrices",
+        "matrix multiplication",
+        "reflection matrix",
+        "rotation matrix",
+        "transformations"
+      ],
+      "source_links": [
+        "docs/chapters/23-matrices-and-exam-preparation/index.md"
+      ],
+      "has_example": false,
+      "word_count": 106
+    },
+    {
+      "id": "faq-077",
+      "category": "Advanced Topics",
+      "question": "How does this course prepare me for calculus?",
+      "answer": "Nearly every calculus idea has its seed here. Average rate of change over shrinking intervals becomes the derivative; end behavior and asymptotes become limits; function families, compositions, and inverses are the raw material for differentiation rules; and the unit circle definitions make the calculus of periodic functions possible. The modeling emphasis matters too: calculus is applied to functions someone had to *choose*, and this course trains that judgment. Students who arrive in calculus fluent in transformations, exponential-logarithm relationships, and exact trigonometric values spend their effort on the genuinely new ideas instead of re-deriving pre-calculus facts. See Rates of Change.",
+      "bloom_level": "Evaluate",
+      "difficulty": "medium",
+      "concepts": [
+        "Average Rate of Change",
+        "Secant Line",
+        "Polynomial End Behavior"
+      ],
+      "keywords": [
+        "average rate of change",
+        "calculus",
+        "course",
+        "polynomial end behavior",
+        "prepare",
+        "secant line"
+      ],
+      "source_links": [
+        "docs/chapters/03-rates-of-change/index.md"
+      ],
+      "has_example": false,
+      "word_count": 99
+    }
+  ]
+}

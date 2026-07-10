@@ -1,0 +1,15 @@
+{
+  "sim_id": "rational-function-explorer",
+  "diagram_name": "Rational Function Explorer",
+  "chapter_number": 8,
+  "chapter_title": "Rational Functions",
+  "chapter_dir": "08-rational-functions",
+  "chapter_rel_dir": "chapters/08-rational-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** rational-function-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim that lets students construct a rational function from factored form and reveals each graphical feature — asymptotes, holes, zeros, intercept, end behavior — as separate toggleable layers.\n\nLearning objective (Bloom's Applying): Students will apply the seven-step graphing procedure to sketch a rational function and verify that each layer of the graph corresponds to an algebraic feature.\n\nVisual elements:\n\n- A coordinate plane from -8 to 8 on each axis with gridlines.\n- A maroon curve drawn piecewise across the domain of the function.\n- Dashed cyan-blue lines for each vertical asymptote and the horizontal/slant asymptote.\n- Hollow cyan dots marking each hole; filled black dots marking each zero and the y-intercept.\n- A side panel listing the seven-step procedure with a checkbox and a live toggle for each visual layer.\n\nInteractive controls:\n\n- Factored-form input fields for up to three linear factors in the numerator and three in the denominator, with multiplicity.\n- Preset buttons: \\( \\dfrac{1}{x} \\), \\( \\dfrac{x-1}{x^2-4} \\), \\( \\dfrac{(x-1)(x+4)}{(x-1)(x+2)} \\), \\( \\dfrac{x^2+1}{x-2} \\).\n- \"Show Sign Chart\" toggle that overlays a sign-analysis strip beneath the x-axis showing intervals where \\( R(x) \\) is positive or negative.\n\nInstructional rationale: Apply-level graphing becomes reliable when each visual feature is tied back to a specific algebraic fact. Layer-by-layer construction prevents the \"memorize the whole picture\" trap and makes errors traceable.\n\nCanvas: 1000 × 650 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createInput for factor entry, createButton for presets, createCheckbox for layer toggles and sign chart."
+}

@@ -111,6 +111,10 @@ Example: \( P(x) = -2x^5 + 100x^2 - 1 \). Degree 5 (odd), leading coefficient \(
 
 #### Diagram: Leading Term Test Sandbox
 
+
+<iframe src="../../sims/leading-term-test-sandbox/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Leading Term Test Sandbox Fullscreen](../../sims/leading-term-test-sandbox/main.html)
+
 <details markdown="1">
 <summary>Interactive explorer for degree-and-sign combinations</summary>
 Type: MicroSim
@@ -192,6 +196,10 @@ Worked example: \( P(x) = (x + 2)(x - 1)^2(x - 3) \).
 - Sketch: comes in from the upper-left, crosses the axis at \( x = -2 \), passes below zero to the y-intercept \( -6 \), bounces up off the axis at \( x = 1 \), then crosses down through \( x = 3 \) before rising to the upper-right. That path uses exactly 3 turning points, the maximum allowed.
 
 #### Diagram: Polynomial Graph Builder
+
+
+<iframe src="../../sims/polynomial-graph-builder/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Polynomial Graph Builder Fullscreen](../../sims/polynomial-graph-builder/main.html)
 
 <details markdown="1">
 <summary>Six-step guided graph construction from a factored polynomial</summary>

@@ -219,6 +219,10 @@ Before the comparison table, notice the division method you choose depends on on
 
 #### Diagram: Synthetic Division Animator
 
+
+<iframe src="../../sims/synthetic-division-animator/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Synthetic Division Animator Fullscreen](../../sims/synthetic-division-animator/main.html)
+
 <details markdown="1">
 <summary>Step-by-step animation of synthetic division with tracked intermediate values</summary>
 Type: MicroSim

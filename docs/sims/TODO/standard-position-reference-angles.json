@@ -1,0 +1,15 @@
+{
+  "sim_id": "standard-position-reference-angles",
+  "diagram_name": "Standard Position and Reference Angles Explorer",
+  "chapter_number": 15,
+  "chapter_title": "Angles and the Unit Circle",
+  "chapter_dir": "15-angles-and-the-unit-circle",
+  "chapter_rel_dir": "chapters/15-angles-and-the-unit-circle",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** standard-position-reference-angles<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim with a draggable angle in standard position, displaying the terminal side, the reference angle, and the quadrant in real time.\n\nLearning objective (Bloom's Applying): Students will apply the reference-angle rules to compute the acute angle to the \\( x \\)-axis for any given angle.\n\nVisual elements:\n\n- A coordinate plane with the four quadrants clearly labeled (QI, QII, QIII, QIV).\n- The angle \\( \\theta \\) drawn from the positive \\( x \\)-axis to the terminal side, shaded as a sector.\n- The reference angle drawn from the terminal side to the nearest part of the \\( x \\)-axis, in a contrasting color.\n- A status panel showing \\( \\theta \\) in both degrees and radians, the quadrant, and the reference angle.\n\nInteractive controls:\n\n- A slider for \\( \\theta \\) ranging from \\( -2\\pi \\) to \\( 4\\pi \\).\n- A \"Snap to Special Angles\" button that jumps to the nearest multiple of \\( \\pi/6 \\) or \\( \\pi/4 \\).\n- A \"Show Coterminal\" toggle that draws additional dashed terminal sides for \\( \\theta + 2\\pi \\) and \\( \\theta - 2\\pi \\).\n\nInstructional rationale: Reference angles and coterminal angles are spatial concepts that students struggle to internalize from formulas alone. Watching the reference angle update live as the terminal side rotates anchors the idea visually.\n\nCanvas: 800 × 800 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSlider for the angle, createButton for snap, createCheckbox for coterminal display."
+}

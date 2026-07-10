@@ -63,6 +63,10 @@ Before we look at the diagram below, note that it visualizes the *containment* r
 
 #### Diagram: Real Number System Hierarchy
 
+
+<iframe src="../../sims/real-number-hierarchy/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Real Number System Hierarchy Fullscreen](../../sims/real-number-hierarchy/main.html)
+
 <details markdown="1">
 <summary>Nested Venn diagram of number categories</summary>
 Type: infographic
@@ -153,6 +157,10 @@ Before exploring the interactive below, note that the horizontal coordinate alwa
 
 #### Diagram: Coordinate Plane Explorer
 
+
+<iframe src="../../sims/coordinate-plane-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Coordinate Plane Explorer Fullscreen](../../sims/coordinate-plane-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive coordinate plane with clickable points</summary>
 Type: MicroSim
@@ -224,6 +232,10 @@ Interval notation and set-builder notation often describe the same set — they 
     Use *interval notation* whenever you can — it's shorter and easier to read. Switch to *set-builder notation* when the set follows a rule that isn't a simple interval, like "all \( x \) whose cosine is positive." The rule-based form handles cases that brackets cannot.
 
 #### Diagram: Notation Translator
+
+
+<iframe src="../../sims/notation-translator/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Notation Translator Fullscreen](../../sims/notation-translator/main.html)
 
 <details markdown="1">
 <summary>Three-way translator between inequality, interval, and set-builder notation</summary>

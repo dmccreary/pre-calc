@@ -108,6 +108,10 @@ All three equations describe the same curve. The table below compares what each 
 
 #### Diagram: Three Forms of a Parabola
 
+
+<iframe src="../../sims/three-forms-parabola/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Three Forms of a Parabola Fullscreen](../../sims/three-forms-parabola/main.html)
+
 <details markdown="1">
 <summary>Interactive display of a single parabola in standard, vertex, and factored form</summary>
 Type: MicroSim
@@ -221,6 +225,10 @@ The two zeros are \( -2 + 3i \) and \( -2 - 3i \). They come in a matched pair: 
 The diagram below visualizes the three discriminant cases on one screen so the geometric meaning of the zeros is unambiguous.
 
 #### Diagram: Discriminant Decision Tree
+
+
+<iframe src="../../sims/discriminant-decision-tree/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Discriminant Decision Tree Fullscreen](../../sims/discriminant-decision-tree/main.html)
 
 <details markdown="1">
 <summary>Infographic mapping the sign of the discriminant to zero behavior</summary>

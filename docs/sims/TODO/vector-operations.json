@@ -1,0 +1,15 @@
+{
+  "sim_id": "vector-operations",
+  "diagram_name": "Vector Operations Playground",
+  "chapter_number": 22,
+  "chapter_title": "Vectors",
+  "chapter_dir": "22-vectors",
+  "chapter_rel_dir": "chapters/22-vectors",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** vector-operations<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Apply, L3, demonstrate): Demonstrate the geometric meaning of vector addition, subtraction, and scalar multiplication through hands-on manipulation of component vectors.\n\nCanvas layout:\n- Main area: coordinate plane with two draggable vectors\n- Right panel: results panel showing the sum, difference, and scalar multiples\n\nVisual elements:\n- Vector \\( \\mathbf{u} \\) drawn in blue from origin, with draggable tip\n- Vector \\( \\mathbf{v} \\) drawn in orange from origin, with draggable tip\n- Sum \\( \\mathbf{u} + \\mathbf{v} \\) drawn in maroon using tip-to-tail construction, dashed parallelogram shown\n- Difference \\( \\mathbf{u} - \\mathbf{v} \\) drawn in green\n- Scalar multiple \\( c\\mathbf{v} \\) shown in orange (light) with \\( c \\) controllable\n\nInteractive controls:\n- Drag endpoints of both vectors\n- Slider for scalar \\( c \\), range -3 to 3 step 0.1\n- Toggle: tip-to-tail mode vs. parallelogram mode for displaying the sum\n- Button: Reset vectors to standard positions\n\nData Visibility Requirements:\n- Stage 1: Display component form of \\( \\mathbf{u} \\) and \\( \\mathbf{v} \\)\n- Stage 2: Display computed \\( \\mathbf{u} + \\mathbf{v} \\), \\( \\mathbf{u} - \\mathbf{v} \\), \\( c\\mathbf{v} \\) in component form\n- Stage 3: Display magnitudes of all vectors\n- Stage 4: Display direction angle of each vector\n\nInstructional Rationale: Dragging the vector tips produces continuous updates to the computed sum and difference, making the algebraic component-wise rule visibly the same as the geometric tip-to-tail construction. This dual presentation anchors both representations.\n\nImplementation: p5.js with responsive canvas."
+}

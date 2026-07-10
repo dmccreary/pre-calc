@@ -1,0 +1,15 @@
+{
+  "sim_id": "six-trig-graphs",
+  "diagram_name": "Six Trig Graph Comparison",
+  "chapter_number": 17,
+  "chapter_title": "Trigonometric Graphs",
+  "chapter_dir": "17-trigonometric-graphs",
+  "chapter_rel_dir": "chapters/17-trigonometric-graphs",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** six-trig-graphs<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Analyze, L4, compare): Compare and contrast the six trigonometric graphs side-by-side, identifying periods, asymptotes, and the reciprocal relationships.\n\nLayout: 2x3 grid of small graphs, each plotting one trig function over \\( [-2\\pi, 2\\pi] \\).\n\nElements in each panel:\n- Axes with tick marks at multiples of \\( \\pi/2 \\)\n- The primary function curve in maroon\n- Light gray dashed curve of its reciprocal (or reciprocal of reciprocal) partner for visual pairing\n- Red vertical dashed lines at vertical asymptotes\n- Label showing the period and function name\n\nInteractive controls:\n- Toggle button: Show / hide paired reciprocal ghost curve\n- Dropdown: Highlight one feature across all six graphs (zeros, asymptotes, max/min values)\n- Click any panel to bring that function to an enlarged center view\n\nData Visibility Requirements:\n- Stage 1: All six graphs visible in grid with labels\n- Stage 2: When user selects \"asymptotes,\" red dashed lines appear on the four graphs that have them\n- Stage 3: When user selects \"zeros,\" hollow circles mark every zero across all graphs\n\nInstructional Rationale: Seeing all six graphs in a single view supports the analyze-level objective of comparing structural features. The highlighting tool draws attention to one feature at a time so the student doesn't have to hold six mental images simultaneously.\n\nImplementation: p5.js grid layout with responsive sizing."
+}

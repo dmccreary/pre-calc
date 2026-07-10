@@ -186,6 +186,10 @@ Worked example: \( R(x) = \dfrac{x - 1}{x^2 - 4} \).
 
 #### Diagram: Rational Function Explorer
 
+
+<iframe src="../../sims/rational-function-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Rational Function Explorer Fullscreen](../../sims/rational-function-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive layered display of every rational function feature</summary>
 Type: MicroSim

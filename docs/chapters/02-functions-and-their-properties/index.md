@@ -88,6 +88,10 @@ Function evaluation also works for expressions, not just numbers. To find \( f(a
 
 #### Diagram: Function Machine
 
+
+<iframe src="../../sims/function-machine/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Function Machine Fullscreen](../../sims/function-machine/main.html)
+
 <details markdown="1">
 <summary>Interactive function machine that evaluates user-chosen inputs</summary>
 Type: MicroSim
@@ -129,6 +133,10 @@ The test makes it easy to spot non-functions at a glance. A circle \( x^2 + y^2 
 Before looking at the diagram below, note what "passes" and "fails" will look like: a passing graph is one you can sweep a vertical line across from left to right without ever hitting two points at once.
 
 #### Diagram: Vertical Line Test Explorer
+
+
+<iframe src="../../sims/vertical-line-test/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Vertical Line Test Explorer Fullscreen](../../sims/vertical-line-test/main.html)
 
 <details markdown="1">
 <summary>Interactive test that drags a vertical line across multiple curves</summary>
@@ -232,6 +240,10 @@ Notice how intervals and function behavior work together: a function's behavior 
 
 #### Diagram: Function Behavior Labeler
 
+
+<iframe src="../../sims/function-behavior-labeler/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Function Behavior Labeler Fullscreen](../../sims/function-behavior-labeler/main.html)
+
 <details markdown="1">
 <summary>Interactive labeler for increasing, decreasing, and constant intervals</summary>
 Type: MicroSim
@@ -303,6 +315,10 @@ The table below summarizes the two symmetries side by side. Notice that "neither
 | Neither | Neither test passes | No standard symmetry | \( f(x) = x^2 + x \) |
 
 #### Diagram: Even and Odd Function Explorer
+
+
+<iframe src="../../sims/even-odd-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Even and Odd Function Explorer Fullscreen](../../sims/even-odd-explorer/main.html)
 
 <details markdown="1">
 <summary>Side-by-side comparison of even, odd, and neither symmetries</summary>

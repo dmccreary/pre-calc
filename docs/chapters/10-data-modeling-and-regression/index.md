@@ -129,6 +129,10 @@ Three simple validation techniques are common in pre-calculus:
 
 #### Diagram: Residual Plot Validator
 
+
+<iframe src="../../sims/residual-plot-validator/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Residual Plot Validator Fullscreen](../../sims/residual-plot-validator/main.html)
+
 <details markdown="1">
 <summary>Interactive comparison of a fit and its residual plot for three function families</summary>
 Type: MicroSim
@@ -210,6 +214,10 @@ When two or more function families produce reasonable fits to the same data, the
 A good analyst reports *both* competing models when neither clearly wins, and makes the assumptions behind the choice explicit.
 
 #### Diagram: Competing Models Comparison
+
+
+<iframe src="../../sims/competing-models-comparison/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Competing Models Comparison Fullscreen](../../sims/competing-models-comparison/main.html)
 
 <details markdown="1">
 <summary>Side-by-side evaluation of linear, quadratic, and exponential fits on the same data</summary>

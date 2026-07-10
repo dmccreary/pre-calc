@@ -144,6 +144,10 @@ The next table places the two formulas side by side so the parallel structure is
 
 #### Diagram: Arithmetic vs Geometric Sequence Explorer
 
+
+<iframe src="../../sims/arithmetic-vs-geometric-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Arithmetic vs Geometric Sequence Explorer Fullscreen](../../sims/arithmetic-vs-geometric-explorer/main.html)
+
 <details markdown="1">
 <summary>Side-by-side plot of arithmetic and geometric sequences with adjustable parameters</summary>
 Type: MicroSim

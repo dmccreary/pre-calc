@@ -1,0 +1,15 @@
+{
+  "sim_id": "function-behavior-labeler",
+  "diagram_name": "Function Behavior Labeler",
+  "chapter_number": 2,
+  "chapter_title": "Functions and Their Properties",
+  "chapter_dir": "02-functions-and-their-properties",
+  "chapter_rel_dir": "chapters/02-functions-and-their-properties",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** function-behavior-labeler<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim showing a multi-feature graph (typically a cubic or piecewise curve) on a coordinate plane. The student divides the domain into intervals and labels each with a behavior type.\n\nLearning objective (Bloom's Analyzing): Students will partition a function's domain into maximal intervals of uniform behavior and label each interval as increasing, decreasing, or constant.\n\nVisual elements:\n\n- A coordinate plane with a pre-drawn curve selected from a dropdown (cubic, absolute value, piecewise, or a sinusoidal fragment).\n- Draggable vertical dividers the student places at the \\( x \\)-coordinates where behavior changes (turning points and corners).\n- Three colored bands along the top of each sub-interval: blue for increasing, orange for decreasing, gray for constant.\n\nInteractive controls:\n\n- Dropdown to choose the curve.\n- \"Add Divider\" button to place a new vertical divider at the current mouse position.\n- Click on each band to cycle its label through increasing → decreasing → constant.\n- \"Check\" button grades the student's labeling, highlighting any incorrectly labeled band in red.\n\nData visibility: Whenever the student hovers over the curve, the coordinates of the hovered point appear in a tooltip, so they can confirm that \\( y \\)-values are actually rising or falling.\n\nInstructional rationale: Partitioning and labeling forces students to commit to specific boundaries where behavior changes, making turning points visible rather than hidden. Hovering to see coordinates gives concrete numeric evidence to back the classification.\n\nCanvas: 800 × 500 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSelect for curve choice, createButton for Add Divider and Check, mousePressed/mouseDragged for divider placement."
+}

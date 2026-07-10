@@ -1,0 +1,15 @@
+{
+  "sim_id": "four-shapes-of-change",
+  "diagram_name": "The Four Shapes of Change",
+  "chapter_number": 3,
+  "chapter_title": "Rates of Change",
+  "chapter_dir": "03-rates-of-change",
+  "chapter_rel_dir": "chapters/03-rates-of-change",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** four-shapes-of-change<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js infographic arranged as a 2 × 2 grid showing the four possible combinations of function behavior and concavity. Each cell displays a small reference curve, a descriptive label, and a real-world example.\n\nLearning objective (Bloom's Analyzing): Students will classify a function graph into one of four combined behavior-concavity categories and connect each category to a familiar real-world scenario.\n\nGrid layout:\n\n- Top-left: Increasing, Concave Up. Curve: right half of \\( y = x^2 \\) starting from the vertex. Example: \"A savings account earning compound interest — growing and accelerating.\"\n- Top-right: Increasing, Concave Down. Curve: \\( y = \\sqrt{x} \\). Example: \"A coffee cup filling at a tapering rate — growing but slowing.\"\n- Bottom-left: Decreasing, Concave Up. Curve: right half of \\( y = 1/x \\). Example: \"A hot object cooling toward room temperature — falling but at a slowing rate.\"\n- Bottom-right: Decreasing, Concave Down. Curve: left half of a downward parabola. Example: \"A thrown ball slowing near apex then falling faster — falling at an accelerating rate.\"\n\nEach cell displays: the sketch curve, the behavior label (\"Increasing\"/\"Decreasing\"), the concavity label (\"Concave up\"/\"Concave down\"), a rate-of-change arrow (↑ for increasing rate, ↓ for decreasing rate), and one sentence of real-world context.\n\nInteractive behavior:\n\n- Hovering over any cell enlarges it and adds a miniature chord-and-curve drawing showing that the chord sits above the curve (concave down) or below (concave up).\n- A \"Quiz Me\" button displays a mystery graph in the center and four clickable quadrant labels; the student clicks the correct category to score a point.\n\nInstructional rationale: Analyze-level objectives require comparing and distinguishing categories. Putting all four cases on one screen lets students see at a glance that behavior and concavity are independent axes — you can have any combination — rather than thinking of them as a single \"rising/falling\" property.\n\nCanvas: 900 × 600 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with mouseOver detection for cell enlargement, createButton for Quiz Me."
+}

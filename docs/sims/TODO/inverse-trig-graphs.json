@@ -1,0 +1,15 @@
+{
+  "sim_id": "inverse-trig-graphs",
+  "diagram_name": "Inverse Trig Graph Explorer",
+  "chapter_number": 20,
+  "chapter_title": "Inverse Trigonometric Functions and Equations",
+  "chapter_dir": "20-inverse-trig-functions-and-equations",
+  "chapter_rel_dir": "chapters/20-inverse-trig-functions-and-equations",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** inverse-trig-graphs<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Understand, L2, interpret): Interpret each inverse trig graph as the reflection of a restricted piece of the corresponding trig function across the line \\( y = x \\).\n\nCanvas layout:\n- Left half: original trig function graph on \\( [-2\\pi, 2\\pi] \\) with the restricted piece highlighted\n- Right half: corresponding inverse trig graph\n- Dashed line \\( y = x \\) drawn across the full display to make the reflection visible\n\nVisual elements:\n- Original trig curve in gray with the restricted piece in maroon\n- Inverse curve in maroon on the right panel\n- Horizontal asymptote lines in red for arctangent\n- Axis labels showing \\( \\pi/2 \\), \\( \\pi \\), etc. as tick marks\n- Moving point with coordinates displayed as the user drags the input slider\n\nInteractive controls:\n- Radio buttons: select sine, cosine, or tangent\n- Slider: input value on the inverse function\n- Toggle: show / hide reflection line \\( y = x \\)\n- Toggle: animate reflection from original to inverse\n\nData Visibility Requirements:\n- Stage 1: Show the selected trig function's restricted domain highlighted\n- Stage 2: Show \\( (a, b) \\) on the original graph corresponding to the user's input\n- Stage 3: Show the reflected point \\( (b, a) \\) on the inverse graph\n- Stage 4: Display the numerical values and the inverse function notation\n\nInstructional Rationale: Side-by-side display plus slider-driven reflection makes the abstract \"swap inputs and outputs\" rule concrete. Students can verify each point's reflection before seeing the full curve.\n\nImplementation: p5.js with responsive canvas."
+}

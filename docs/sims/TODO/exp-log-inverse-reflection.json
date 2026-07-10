@@ -1,0 +1,15 @@
+{
+  "sim_id": "exp-log-inverse-reflection",
+  "diagram_name": "Exponential and Logarithm as Inverse Reflections",
+  "chapter_number": 14,
+  "chapter_title": "Logarithmic Functions",
+  "chapter_dir": "14-logarithmic-functions",
+  "chapter_rel_dir": "chapters/14-logarithmic-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** exp-log-inverse-reflection<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim showing the exponential function \\( y = b^x \\) and the logarithmic function \\( y = \\log_b x \\) on the same coordinate plane, with the line \\( y = x \\) drawn as a reflection axis.\n\nLearning objective (Bloom's Understanding): Students will explain that the logarithmic function is the reflection of the exponential function across \\( y = x \\), with each function's domain matching the other's range.\n\nVisual elements:\n\n- A coordinate plane from -5 to 8 on both axes.\n- The graph of \\( y = b^x \\) in maroon and the graph of \\( y = \\log_b x \\) in gold.\n- A dashed diagonal line \\( y = x \\).\n- A draggable point on the exponential at \\( (a, b^a) \\) with its mirror \\( (b^a, a) \\) automatically on the logarithm, joined by a dotted segment through \\( y = x \\).\n\nInteractive controls:\n\n- A slider for the base \\( b \\) ranging from 1.1 to 5 in steps of 0.1.\n- A \"Show \\( y = x \\)\" toggle.\n- A \"Trace Asymptotes\" button highlighting how the horizontal asymptote of the exponential at \\( y = 0 \\) becomes the vertical asymptote of the logarithm at \\( x = 0 \\).\n\nInstructional rationale: Students often memorize \"logs are inverses of exponentials\" without seeing what that means geometrically. Watching points reflect across the diagonal — and the asymptotes swap orientation — anchors the inverse relationship visually.\n\nCanvas: 800 × 800 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSlider for base, createCheckbox for diagonal, createButton for asymptote trace."
+}

@@ -58,6 +58,10 @@ Composition can be visualized as a pipeline: the input enters one function, its 
 
 #### Diagram: Function Composition Pipeline
 
+
+<iframe src="../../sims/function-composition-pipeline/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Function Composition Pipeline Fullscreen](../../sims/function-composition-pipeline/main.html)
+
 <details markdown="1">
 <summary>Pipeline view of f(g(x)) showing input flowing through g, then through f</summary>
 Type: MicroSim
@@ -178,6 +182,10 @@ The horizontal line test pairs neatly with the *vertical line test* from Chapter
 
 #### Diagram: Vertical and Horizontal Line Tests Compared
 
+
+<iframe src="../../sims/line-tests-compared/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Vertical and Horizontal Line Tests Compared Fullscreen](../../sims/line-tests-compared/main.html)
+
 <details markdown="1">
 <summary>Side-by-side demonstration of vertical-line-test (function) and horizontal-line-test (one-to-one)</summary>
 Type: infographic
@@ -247,6 +255,10 @@ A few visual consequences worth remembering:
 - A horizontal asymptote of \( f \) becomes a vertical asymptote of \( f^{-1} \), and vice versa.
 
 #### Diagram: Inverse as Reflection Across y = x
+
+
+<iframe src="../../sims/inverse-reflection-yx/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Inverse as Reflection Across y = x Fullscreen](../../sims/inverse-reflection-yx/main.html)
 
 <details markdown="1">
 <summary>Interactive reflection of a function across the line y = x to produce its inverse</summary>

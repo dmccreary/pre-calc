@@ -1,0 +1,15 @@
+{
+  "sim_id": "halflife-doubling-visualizer",
+  "diagram_name": "Half-Life and Doubling-Time Visualizer",
+  "chapter_number": 13,
+  "chapter_title": "Exponential Functions",
+  "chapter_dir": "13-exponential-functions",
+  "chapter_rel_dir": "chapters/13-exponential-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** halflife-doubling-visualizer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim that animates an exponential process across a configurable number of half-lives or doubling times, displaying both the time axis and the value axis.\n\nLearning objective (Bloom's Applying): Students will apply the half-life and doubling-time concepts to compute remaining or accumulated amounts after a given number of cycles.\n\nVisual elements:\n\n- A horizontal time axis labeled in units of half-life or doubling time \\( T \\).\n- A vertical bar chart showing the current value at each completed cycle (1T, 2T, 3T, ...).\n- An overlaid continuous exponential curve passing through the bar tops.\n- A status line: \"After \\( n \\) half-lives, fraction remaining = \\( (1/2)^n = \\) ___.\"\n\nInteractive controls:\n\n- A radio toggle: Half-Life mode or Doubling-Time mode.\n- A slider for initial value from 1 to 100.\n- A slider for the time scale \\( T \\) from 1 to 10.\n- A \"Step Forward\" button that advances one cycle at a time.\n\nInstructional rationale: Half-life and doubling-time problems are essentially counting problems — how many cycles fit into the elapsed time. Stepping through one cycle at a time makes the integer-power pattern visible, then transitions to non-integer exponents naturally.\n\nCanvas: 1000 × 500 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createRadio for mode, createSlider for parameters, createButton for step."
+}

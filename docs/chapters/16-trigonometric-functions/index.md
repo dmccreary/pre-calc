@@ -194,6 +194,10 @@ The next table tabulates the exact sine, cosine, and tangent values at every spe
 
 #### Diagram: Six-Function Evaluation Wheel
 
+
+<iframe src="../../sims/six-function-evaluation-wheel/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Six-Function Evaluation Wheel Fullscreen](../../sims/six-function-evaluation-wheel/main.html)
+
 <details markdown="1">
 <summary>Interactive unit circle that displays all six trigonometric values for the selected angle</summary>
 Type: MicroSim
@@ -264,6 +268,10 @@ The Pythagorean theorem gives the missing adjacent side: \( a^2 + 3^2 = 5^2 \imp
 This 3-4-5 triangle is one of the most useful exact triangles in trig. Two others worth memorizing are the 5-12-13 and 8-15-17 right triangles, which give exact values for angles other than the special angles.
 
 #### Diagram: Right Triangle SOH-CAH-TOA Visualizer
+
+
+<iframe src="../../sims/right-triangle-soh-cah-toa/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Right Triangle SOH-CAH-TOA Visualizer Fullscreen](../../sims/right-triangle-soh-cah-toa/main.html)
 
 <details markdown="1">
 <summary>Interactive right triangle with adjustable acute angle showing the three side ratios</summary>

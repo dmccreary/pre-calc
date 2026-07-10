@@ -1,0 +1,15 @@
+{
+  "sim_id": "real-number-hierarchy",
+  "diagram_name": "Real Number System Hierarchy",
+  "chapter_number": 1,
+  "chapter_title": "Mathematical Foundations",
+  "chapter_dir": "01-mathematical-foundations",
+  "chapter_rel_dir": "chapters/01-mathematical-foundations",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** real-number-hierarchy<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA nested Venn-style infographic showing the containment of number categories within the real numbers. The outermost region is labeled \"Real Numbers (ℝ)\" in a maroon color. Inside, a large circle labeled \"Rational Numbers (ℚ)\" sits to the left, and a separate circle labeled \"Irrational Numbers\" sits to the right with no overlap with Rationals. Inside Rationals, nested circles appear in order: Integers (ℤ), Whole Numbers, Natural Numbers (ℕ). Each region displays 2-3 example numbers: Naturals show {1, 2, 3}, Integers add {-3, 0}, Rationals add {1/2, -3/4, 0.25}, Irrationals show {π, √2, e}.\n\nLearning objective (Bloom's Understanding): Students will classify a given real number into its most restrictive category.\n\nInteractive behavior: A clickable number tray at the bottom offers numbers like -5, π, 2/3, √9, 0, 1.7. When the student clicks one, the number animates into the correct region(s) and the region briefly highlights in gold. A counter shows \"Correctly placed: X of 6.\" A \"Reset\" button returns all numbers to the tray.\n\nCanvas: 700 × 500 pixels, responsive to container width via updateCanvasSize() in setup(). Color palette matches textbook maroon (#800020) for outer boundaries and cyan-blue (#00BFFF) for highlights.\n\nImplementation: p5.js MicroSim using createButton for reset and createSelect for difficulty (easy/medium/hard, which changes the set of tray numbers)."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "inverse-reflection-yx",
+  "diagram_name": "Inverse as Reflection Across y = x",
+  "chapter_number": 11,
+  "chapter_title": "Composition and Inverse Functions",
+  "chapter_dir": "11-composition-and-inverse-functions",
+  "chapter_rel_dir": "chapters/11-composition-and-inverse-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** inverse-reflection-yx<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim showing a function and its inverse mirrored across the line \\( y = x \\), with a draggable point that simultaneously appears on both curves.\n\nLearning objective (Bloom's Understanding): Students will describe the geometric relationship between a function and its inverse as a reflection across \\( y = x \\).\n\nVisual elements:\n\n- Coordinate plane from -10 to 10 on both axes.\n- A dashed line \\( y = x \\) drawn diagonally.\n- The graph of a chosen function in maroon and its inverse in gold.\n- A draggable point on \\( f \\) at \\( (a, b) \\) and an automatically synced point on \\( f^{-1} \\) at \\( (b, a) \\), with a dotted segment connecting them through \\( y = x \\).\n\nInteractive controls:\n\n- A function dropdown: linear \\( 2x + 1 \\), cubic \\( x^3 \\), exponential \\( 2^x \\), square root \\( \\sqrt{x} \\).\n- A \"Show/Hide \\( y = x \\)\" toggle.\n- A \"Trace Reflection\" button that animates many points being reflected across the diagonal.\n\nInstructional rationale: The reflection idea sticks better when students drag a point on one curve and watch its mirror image move on the other. The dotted connector across \\( y = x \\) makes the symmetry concrete.\n\nCanvas: 800 × 800 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSelect for function, createCheckbox for diagonal, createButton for trace."
+}

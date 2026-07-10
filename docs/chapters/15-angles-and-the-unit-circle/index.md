@@ -207,6 +207,10 @@ Coterminal angles have *exactly the same* trigonometric values, because trig fun
 
 #### Diagram: Standard Position and Reference Angles Explorer
 
+
+<iframe src="../../sims/standard-position-reference-angles/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Standard Position and Reference Angles Explorer Fullscreen](../../sims/standard-position-reference-angles/main.html)
+
 <details markdown="1">
 <summary>Interactive coordinate plane showing an angle, its terminal side, and its reference angle</summary>
 Type: MicroSim
@@ -316,6 +320,10 @@ The next table summarizes the signs for sine, cosine, and tangent in all four qu
 | QIV      | + | − | − |
 
 #### Diagram: Unit Circle with Special Angles and Coordinates
+
+
+<iframe src="../../sims/unit-circle-special-angles/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Unit Circle with Special Angles and Coordinates Fullscreen](../../sims/unit-circle-special-angles/main.html)
 
 <details markdown="1">
 <summary>Interactive unit circle showing all special-angle coordinates and signs by quadrant</summary>

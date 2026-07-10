@@ -1,0 +1,15 @@
+{
+  "sim_id": "matrix-multiplication",
+  "diagram_name": "Matrix Multiplication Walkthrough",
+  "chapter_number": 23,
+  "chapter_title": "Matrices and Exam Preparation",
+  "chapter_dir": "23-matrices-and-exam-preparation",
+  "chapter_rel_dir": "chapters/23-matrices-and-exam-preparation",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** matrix-multiplication<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Apply, L3, demonstrate): Demonstrate matrix multiplication step-by-step by following the row-column dot product rule and producing each entry of the result.\n\nCanvas layout:\n- Left: matrix \\( A \\) displayed\n- Middle: matrix \\( B \\) displayed\n- Right: the result matrix \\( AB \\) with entries filled in one at a time\n\nVisual elements:\n- When the student clicks an empty cell in the result, the relevant row of \\( A \\) highlights in one color, the relevant column of \\( B \\) in another color\n- The dot product calculation appears below with numbers substituted\n- Completed cells show the computed value\n- Invalid dimension attempts show a red error message\n\nInteractive controls:\n- Dimension controls for both matrices\n- Input fields to fill each entry\n- Button: \"Fill all\" to animate all entries being computed\n- Button: \"Reset\"\n\nData Visibility Requirements:\n- Stage 1: Show the two matrices and compute the expected result dimensions\n- Stage 2: When computing one entry, show the row, column, element-by-element products, and sum\n- Stage 3: After computing, display the full product matrix\n- Stage 4: For illegal multiplications, explain why dimensions don't match\n\nInstructional Rationale: Step-through cell-by-cell with visible highlighted row and column reinforces that each product entry is a dot product. Continuous animation would hide the key computation.\n\nImplementation: p5.js with responsive canvas."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "vertical-line-test",
+  "diagram_name": "Vertical Line Test Explorer",
+  "chapter_number": 2,
+  "chapter_title": "Functions and Their Properties",
+  "chapter_dir": "02-functions-and-their-properties",
+  "chapter_rel_dir": "chapters/02-functions-and-their-properties",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** vertical-line-test<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim showing a coordinate plane with one curve drawn at a time. A draggable vertical red line lives on the plane; the student drags it left or right across the curve.\n\nLearning objective (Bloom's Analyzing): Students will classify graphs as functions or non-functions by observing how many times a vertical line intersects them.\n\nVisual elements:\n\n- Coordinate plane from -10 to 10 on each axis with light gridlines.\n- One curve drawn in maroon at a time, selected from a dropdown: parabola \\( y = x^2 \\), sideways parabola \\( x = y^2 \\), circle \\( x^2 + y^2 = 16 \\), line \\( y = 2x - 1 \\), absolute value \\( y = |x| \\), and square root \\( y = \\sqrt{x} \\).\n- A vertical cyan-blue line the student can drag horizontally across the plane.\n- A counter at the top right displaying \"Intersections: N\" that updates in real time as the line moves.\n- A banner at the bottom turning green (\"Function so far\") while N ≤ 1 for all positions the student has tested, and red (\"Not a function — more than one output at \\( x = \\_\\_ \\)\") the first time N ≥ 2.\n\nInteractive controls:\n\n- Dropdown to select which curve is displayed.\n- \"Auto-sweep\" button that animates the vertical line from -10 to 10 across the plane, displaying intersection counts continuously.\n- \"Reset\" button to clear the test banner.\n\nInstructional rationale: The Analyze-level objective requires students to make a judgment based on observed behavior. A live intersection counter lets students test their hypothesis interactively rather than just memorizing which shapes are functions.\n\nCanvas: 650 × 650 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSelect for curve choice, createButton for Auto-sweep and Reset, and mouseDragged logic for the vertical line."
+}

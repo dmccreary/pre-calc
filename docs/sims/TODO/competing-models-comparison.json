@@ -1,0 +1,15 @@
+{
+  "sim_id": "competing-models-comparison",
+  "diagram_name": "Competing Models Comparison",
+  "chapter_number": 10,
+  "chapter_title": "Data Modeling and Regression",
+  "chapter_dir": "10-data-modeling-and-regression",
+  "chapter_rel_dir": "chapters/10-data-modeling-and-regression",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** competing-models-comparison<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js infographic showing the same data set with three simultaneous fitted curves — linear, quadratic, and exponential — along with a summary table of their \\( R^2 \\), RMSE, and visual residual-plot quality.\n\nLearning objective (Bloom's Evaluating): Students will evaluate competing function models for a single data set and justify the choice of one model over the others using multiple criteria.\n\nVisual elements:\n\n- A main scatterplot with about 30 data points generated from a known underlying process.\n- Three fitted curves overlaid: linear (blue), quadratic (green), exponential (red).\n- Three small residual plots beneath the main plot, one per model.\n- A comparison table showing each model's equation, \\( R^2 \\), RMSE, residual-plot quality (\"random,\" \"slight curve,\" \"strong curve\").\n\nInteractive controls:\n\n- A \"True Underlying Process\" dropdown regenerates data under a linear, quadratic, or exponential ground truth.\n- A \"Reveal Winner\" button highlights the best-fitting family and explains the criteria that support the choice.\n- A \"Add Noise\" slider to vary data variability and show how fit quality degrades with noise.\n\nInstructional rationale: Evaluate-level decisions require weighing multiple criteria. Showing all three candidates simultaneously — along with their residual plots and fit numbers — prevents the common mistake of choosing a model on \\( R^2 \\) alone.\n\nCanvas: 1100 × 650 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSelect for ground truth, createSlider for noise, createButton for Reveal Winner."
+}

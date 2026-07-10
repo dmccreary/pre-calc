@@ -1,0 +1,15 @@
+{
+  "sim_id": "notation-translator",
+  "diagram_name": "Notation Translator",
+  "chapter_number": 1,
+  "chapter_title": "Mathematical Foundations",
+  "chapter_dir": "01-mathematical-foundations",
+  "chapter_rel_dir": "chapters/01-mathematical-foundations",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: interactive infographic\n**sim-id:** notation-translator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nAn infographic with three synchronized panels arranged horizontally: (1) a number line showing a shaded region with open/closed endpoints, (2) interval notation (e.g., `[-2, 5)`), and (3) set-builder notation (e.g., `{x | -2 ≤ x < 5}`). All three representations always agree.\n\nLearning objective (Bloom's Applying): Students will translate between inequality, interval, and set-builder notations for the same set.\n\nInteractive behavior:\n- The student can drag two endpoint handles along the number line from -10 to 10. As the handles move, all three representations update in real time.\n- Each endpoint has a clickable toggle (open circle ⚪ or filled circle ⚫) that flips inclusion on or off. The bracket/parenthesis in the interval panel and the \\( \\le \\)/\\( < \\) in the set-builder panel update together.\n- A \"Challenge Mode\" button displays a random target interval in one representation (e.g., shows only the interval notation) and asks the student to reproduce it using the number-line handles. Correct matches award a point and unlock the next challenge.\n- A \"Union\" button adds a second shaded region on the number line; the interval and set-builder panels both update to use \\( \\cup \\) notation.\n\nCanvas: 900 × 400 pixels, responsive via updateCanvasSize() in setup(). Number line is horizontal, 800 pixels wide, with integer tick marks; the shaded region is drawn in maroon with 40% opacity.\n\nImplementation: p5.js with createButton for Challenge Mode, Union, and Reset, plus mousePressed/mouseDragged logic for endpoint handles and inclusion toggles."
+}

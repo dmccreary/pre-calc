@@ -1,0 +1,15 @@
+{
+  "sim_id": "unit-circle-special-angles",
+  "diagram_name": "Unit Circle with Special Angles and Coordinates",
+  "chapter_number": 15,
+  "chapter_title": "Angles and the Unit Circle",
+  "chapter_dir": "15-angles-and-the-unit-circle",
+  "chapter_rel_dir": "chapters/15-angles-and-the-unit-circle",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** unit-circle-special-angles<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim displaying the unit circle with all 16 standard special-angle points labeled, plus a draggable point that shows the current angle's exact coordinates and sign verdicts.\n\nLearning objective (Bloom's Remembering): Students will recall the unit-circle coordinates of the special angles and the sign of each trigonometric function in each quadrant.\n\nVisual elements:\n\n- The unit circle drawn at the center of a coordinate plane spanning \\(-1.5\\) to \\(1.5\\) on both axes.\n- 16 special-angle points marked with their coordinates in exact form (e.g., \\( (\\sqrt{3}/2, 1/2) \\)).\n- ASTC labels in each quadrant (All, Sine, Tangent, Cosine) listing which functions are positive.\n- A draggable point on the circle showing the current angle in degrees and radians, plus its coordinates.\n\nInteractive controls:\n\n- Drag the point on the circle to move the terminal side.\n- A \"Snap to Special Angles\" button.\n- A \"Show/Hide ASTC Labels\" toggle.\n- A \"Quiz Me\" mode that hides the coordinates and prompts the student to recall them.\n\nInstructional rationale: The unit circle is the single most-used reference object in trigonometry. Repeated, interactive exposure with both the coordinates and the sign rules visible builds the recall fluency the rest of the unit assumes.\n\nCanvas: 800 × 800 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with mouseDragged for the moving point, createButton for snap and quiz, createCheckbox for ASTC display."
+}

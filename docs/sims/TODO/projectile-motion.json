@@ -1,0 +1,15 @@
+{
+  "sim_id": "projectile-motion",
+  "diagram_name": "Projectile Motion Simulator",
+  "chapter_number": 21,
+  "chapter_title": "Polar and Parametric Functions",
+  "chapter_dir": "21-polar-and-parametric-functions",
+  "chapter_rel_dir": "chapters/21-polar-and-parametric-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** projectile-motion<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Apply, L3, use): Use parametric equations to model projectile motion and predict maximum height, time of flight, and range from given launch conditions.\n\nCanvas layout:\n- Main view: side-on scene with ground line and the projectile's trajectory\n- Control panel: sliders for launch conditions\n- Data panel: computed metrics (max height, time, range)\n\nVisual elements:\n- Ground as a horizontal line\n- Launcher at the origin with an adjustable angle indicator\n- Trajectory traced in maroon as \\( t \\) increases\n- Current position shown as a gold dot moving along the trajectory\n- Velocity vector decomposition (horizontal and vertical components) drawn as arrows from the dot\n\nInteractive controls:\n- Slider: initial speed \\( v_0 \\), 0 to 50 m/s\n- Slider: launch angle \\( \\alpha \\), 0° to 90°\n- Slider: initial height \\( h_0 \\), 0 to 10 m\n- Button: Launch (animate \\( t \\) from 0 to impact)\n- Button: Reset\n- Toggle: show velocity vector decomposition\n\nData Visibility Requirements:\n- Stage 1: Show launch parameters and the two parametric equations\n- Stage 2: Show current \\( t \\), \\( x(t) \\), \\( y(t) \\) during animation\n- Stage 3: Show computed max height, time of flight, and range after landing\n- Stage 4: Show the eliminated-parameter form \\( y = f(x) \\) revealing the parabolic trajectory\n\nInstructional Rationale: Separating the motion into two component equations — one for horizontal, one for vertical — makes the independence of the two motions explicit. The velocity vector decomposition reinforces why the horizontal component stays constant while the vertical component changes.\n\nImplementation: p5.js with responsive canvas."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "coordinate-plane-explorer",
+  "diagram_name": "Coordinate Plane Explorer",
+  "chapter_number": 1,
+  "chapter_title": "Mathematical Foundations",
+  "chapter_dir": "01-mathematical-foundations",
+  "chapter_rel_dir": "chapters/01-mathematical-foundations",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** coordinate-plane-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA MicroSim showing a coordinate plane spanning x from -10 to 10 and y from -10 to 10 with integer gridlines. Axes are labeled with tick marks at every integer and larger labels at every fifth integer. The four quadrants are softly tinted (Q1 light blue, Q2 light green, Q3 light yellow, Q4 light pink) with Roman numeral labels in the corner of each quadrant.\n\nLearning objective (Bloom's Applying): Students will locate and identify ordered pairs on the coordinate plane and name the quadrant containing a given point.\n\nInteractive behavior:\n- A \"Mystery Point\" label displays an ordered pair like (4, -3). The student clicks anywhere on the plane to guess the location; correct clicks within a 0.5-unit radius flash gold and play a confirmation tone. Incorrect clicks display the actual pair next to the click location so the student can see their offset.\n- A slider labeled \"Mystery points remaining\" decrements on each correct answer.\n- A checkbox labeled \"Show coordinates on hover\" displays the (x, y) value at the mouse cursor when enabled.\n- A \"New Round\" button generates a fresh set of 5 mystery points.\n- A dropdown lets the student filter which quadrants are sampled (All, Quadrant I only, Quadrants I and II, etc.).\n\nCanvas: 600 × 600 pixels, responsive via updateCanvasSize() in setup(). Gridlines are pale gray; axes are bold black; the maroon brand color highlights the most recent clicked point.\n\nImplementation: p5.js with createButton for \"New Round,\" createCheckbox for hover coordinates, createSelect for quadrant filter, and createSlider for grid density (integer-only or half-integer gridlines)."
+}

@@ -134,6 +134,10 @@ Before the unified table, note the pattern that ties every transformation togeth
 
 #### Diagram: Transformation Sandbox
 
+
+<iframe src="../../sims/transformation-sandbox/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Transformation Sandbox Fullscreen](../../sims/transformation-sandbox/main.html)
+
 <details markdown="1">
 <summary>Side-by-side parent and transformed graphs with live slider controls</summary>
 Type: MicroSim
@@ -220,6 +224,10 @@ Going the other direction — graph to equation — is a matter of comparing the
 4. Compare a second point on the graph with the parent's corresponding point to find \( |a| \).
 
 #### Diagram: Transformation Composer
+
+
+<iframe src="../../sims/transformation-composer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Transformation Composer Fullscreen](../../sims/transformation-composer/main.html)
 
 <details markdown="1">
 <summary>Step-by-step construction of a transformed function from verbal description</summary>

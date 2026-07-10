@@ -101,6 +101,10 @@ The three forms describe the same family of lines but emphasize different inform
 
 #### Diagram: Three-Form Translator
 
+
+<iframe src="../../sims/linear-form-translator/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Three-Form Translator Fullscreen](../../sims/linear-form-translator/main.html)
+
 <details markdown="1">
 <summary>Interactive converter between the three forms of a linear equation</summary>
 Type: MicroSim
@@ -175,6 +179,10 @@ Squaring serves two purposes. First, squared residuals are always non-negative, 
 Before the diagram below, let's name the three pieces it will show: the scatterplot points, the regression line, and the vertical residual segments connecting each point to the line.
 
 #### Diagram: Residuals and the Line of Best Fit
+
+
+<iframe src="../../sims/residuals-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Residuals and the Line of Best Fit Fullscreen](../../sims/residuals-explorer/main.html)
 
 <details markdown="1">
 <summary>Interactive scatterplot with a draggable line and live residual display</summary>

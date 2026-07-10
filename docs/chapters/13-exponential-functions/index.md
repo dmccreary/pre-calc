@@ -129,6 +129,10 @@ The graph of exponential decay has a horizontal asymptote at \( y = 0 \) (the fu
 
 #### Diagram: Exponential Growth vs Decay Explorer
 
+
+<iframe src="../../sims/exponential-growth-vs-decay/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Exponential Growth vs Decay Explorer Fullscreen](../../sims/exponential-growth-vs-decay/main.html)
+
 <details markdown="1">
 <summary>Two side-by-side exponential graphs with a draggable base parameter</summary>
 Type: MicroSim
@@ -320,6 +324,10 @@ The exponent \( t/T \) counts how many doublings have elapsed. A handy rule of t
 Half-life and doubling time both reframe an exponential function in terms of a *time scale* that is meaningful for the underlying process — usually easier to interpret than the abstract base \( b \).
 
 #### Diagram: Half-Life and Doubling-Time Visualizer
+
+
+<iframe src="../../sims/halflife-doubling-visualizer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Half-Life and Doubling-Time Visualizer Fullscreen](../../sims/halflife-doubling-visualizer/main.html)
 
 <details markdown="1">
 <summary>Animated decay or growth showing successive halvings or doublings on a number line</summary>

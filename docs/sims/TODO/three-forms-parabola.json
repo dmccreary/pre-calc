@@ -1,0 +1,15 @@
+{
+  "sim_id": "three-forms-parabola",
+  "diagram_name": "Three Forms of a Parabola",
+  "chapter_number": 5,
+  "chapter_title": "Quadratic Functions and Complex Numbers",
+  "chapter_dir": "05-quadratic-functions-and-complex-numbers",
+  "chapter_rel_dir": "chapters/05-quadratic-functions-and-complex-numbers",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** three-forms-parabola<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim showing a single parabola with its three algebraic forms updated live as the student drags its vertex and one additional anchor point.\n\nLearning objective (Bloom's Applying): Students will convert a quadratic function between standard, vertex, and factored forms and verify algebraically and visually that the forms describe the same parabola.\n\nVisual elements:\n\n- A coordinate plane from -10 to 10 on each axis with gridlines.\n- A single maroon parabola.\n- A draggable vertex handle (solid dot) and a draggable zero handle (hollow dot) that define the curve.\n- A side panel with three labelled boxes showing the current standard, vertex, and factored forms.\n- Highlighted tick marks on the axis at the vertex's x-coordinate, at both zeros, and at the y-intercept, each labelled.\n\nInteractive controls:\n\n- Drag the vertex handle to translate the parabola.\n- Drag the zero handle to change the width (the value of \\( a \\)).\n- Preset buttons for \\( f(x) = x^2 - 4 \\), \\( f(x) = -(x+1)^2 + 9 \\), and \\( f(x) = 2(x-1)(x-3) \\).\n- \"Hide Factored\" toggle that removes the factored box when no real zeros exist (to be used later with parabolas that don't cross the x-axis).\n\nInstructional rationale: Apply-level fluency requires converting between representations. Seeing all three equations shift simultaneously makes the translations concrete rather than mechanical.\n\nCanvas: 900 × 600 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createButton for presets, createCheckbox for hiding factored form, custom drag logic for both handles."
+}
