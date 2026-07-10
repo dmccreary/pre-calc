@@ -1,0 +1,15 @@
+{
+  "sim_id": "arithmetic-vs-geometric-explorer",
+  "diagram_name": "Arithmetic vs Geometric Sequence Explorer",
+  "chapter_number": 12,
+  "chapter_title": "Sequences",
+  "chapter_dir": "12-sequences",
+  "chapter_rel_dir": "chapters/12-sequences",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** arithmetic-vs-geometric-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim showing two sequences plotted as points: an arithmetic sequence on the left, a geometric sequence on the right, with sliders to control the starting value, the common difference, and the common ratio.\n\nLearning objective (Bloom's Analyzing): Students will analyze the contrast between additive and multiplicative growth patterns by adjusting parameters and observing the resulting shapes.\n\nVisual elements:\n\n- Two side-by-side coordinate planes, each showing the index \\( n \\) on the horizontal axis and the term value \\( a_n \\) on the vertical axis.\n- Up to 20 points plotted per panel, with the explicit formula displayed above each plot.\n- Connecting line for the arithmetic sequence (straight); a dashed exponential curve drawn through the geometric points to emphasize the curved shape.\n- A dynamic value table showing \\( a_1 \\) through \\( a_{10} \\) for both sequences.\n\nInteractive controls:\n\n- A slider for \\( a_1 \\) ranging from -20 to 20.\n- A slider for \\( d \\) ranging from -5 to 5 (controls arithmetic sequence).\n- A slider for \\( r \\) ranging from -2 to 2 in steps of 0.1 (controls geometric sequence).\n- A \"Match Growth\" button that picks \\( d \\) and \\( r \\) so the two sequences agree at \\( a_5 \\), highlighting how multiplicative growth pulls ahead afterward.\n\nInstructional rationale: Students grasp the linear-vs-exponential contrast much faster when they see both patterns side by side and can drag the parameters to watch the geometric points rocket past the arithmetic ones.\n\nCanvas: 1100 × 500 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSlider for parameters, createButton for Match Growth."
+}

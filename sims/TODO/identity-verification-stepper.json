@@ -1,0 +1,15 @@
+{
+  "sim_id": "identity-verification-stepper",
+  "diagram_name": "Identity Verification Worked Examples",
+  "chapter_number": 19,
+  "chapter_title": "Trigonometric Identities",
+  "chapter_dir": "19-trigonometric-identities",
+  "chapter_rel_dir": "chapters/19-trigonometric-identities",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** identity-verification-stepper<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Apply, L3, demonstrate): Demonstrate the step-by-step verification of trigonometric identities by choosing the next algebraic move at each stage.\n\nCanvas layout:\n- Top: current state of the expression being transformed, with the two sides displayed\n- Middle: list of available moves (e.g., \"Convert to sin/cos,\" \"Apply Pythagorean identity,\" \"Factor,\" \"Combine fractions\")\n- Bottom: feedback area showing whether the chosen move brings the two sides closer\n\nVisual elements:\n- Current expression in large math-typeset form\n- Highlighted portion of the expression that the selected move will transform\n- Move history stack on the right side\n- Success check when the two sides match\n\nInteractive controls:\n- Dropdown: choose from 6 preset identities to verify\n- Button array: select the next move\n- Button: Undo last move\n- Button: Show full solution\n\nData Visibility Requirements:\n- Stage 1: Starting identity displayed in full\n- Stage 2: After each move, show which rule was applied and the resulting expression\n- Stage 3: Show a progress indicator (how many moves completed vs. expected)\n- Stage 4: When complete, display the full proof as a sequence\n\nInstructional Rationale: Guided move selection teaches identity verification as a search problem with a small number of good moves, not a magic trick. The undo button encourages experimentation without penalty.\n\nImplementation: p5.js with math rendering."
+}

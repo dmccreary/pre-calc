@@ -1,0 +1,15 @@
+{
+  "sim_id": "trig-equation-unit-circle",
+  "diagram_name": "Trig Equation Solution Unit Circle",
+  "chapter_number": 20,
+  "chapter_title": "Inverse Trigonometric Functions and Equations",
+  "chapter_dir": "20-inverse-trig-functions-and-equations",
+  "chapter_rel_dir": "chapters/20-inverse-trig-functions-and-equations",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** trig-equation-unit-circle<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Apply, L3, solve): Apply unit-circle reasoning to find all solutions of a trigonometric equation in a given interval.\n\nCanvas layout:\n- Left half: unit circle with the relevant horizontal or vertical line corresponding to the equation's value\n- Right half: listing of solution angles in both exact form and decimal approximation\n\nVisual elements:\n- Unit circle with angle markers at multiples of \\( \\pi/6 \\) and \\( \\pi/4 \\)\n- Horizontal dashed line at \\( y = c \\) (for sine equations) or vertical dashed line at \\( x = c \\) (for cosine equations)\n- Intersection points of the dashed line with the unit circle marked as gold dots\n- Rays drawn from origin to each intersection, labeled with their angles\n\nInteractive controls:\n- Dropdown: choose sine, cosine, or tangent equation\n- Slider: value of \\( c \\) in the equation\n- Dropdown: coefficient \\( k \\) in multiple-angle equations (1, 2, 3)\n- Radio: interval \\( [0, 2\\pi) \\) or \\( [0, 4\\pi) \\) or general solution\n\nData Visibility Requirements:\n- Stage 1: Show the equation in standard form\n- Stage 2: Show the reference angle computed from arcsin, arccos, or arctan\n- Stage 3: Show all quadrants where the function takes the required sign\n- Stage 4: List all solutions in the selected interval with both exact and decimal values\n\nInstructional Rationale: Seeing the horizontal line slice the unit circle at one or two points directly explains why sine equations have up to two solutions per period. Animating \\( c \\) across \\( [-1, 1] \\) shows how the number of solutions changes at the boundary values.\n\nImplementation: p5.js with responsive canvas."
+}

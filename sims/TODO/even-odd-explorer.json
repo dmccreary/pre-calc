@@ -1,0 +1,15 @@
+{
+  "sim_id": "even-odd-explorer",
+  "diagram_name": "Even and Odd Function Explorer",
+  "chapter_number": 2,
+  "chapter_title": "Functions and Their Properties",
+  "chapter_dir": "02-functions-and-their-properties",
+  "chapter_rel_dir": "chapters/02-functions-and-their-properties",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: interactive infographic\n**sim-id:** even-odd-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js infographic with three synchronized panels: the student picks a function from a dropdown, and each panel illustrates a different symmetry test on that function.\n\nLearning objective (Bloom's Evaluating): Students will determine whether a function is even, odd, or neither by applying both algebraic and graphical tests and justifying the conclusion.\n\nPanels:\n\n- Left: the graph of \\( f(x) \\) plotted on a coordinate plane. A mirror reflection across the \\( y \\)-axis is drawn in translucent cyan on top. If the reflection and the original match, the panel flashes green and labels \"Even ✓.\"\n- Middle: the same graph rotated 180° about the origin, drawn in translucent gold on top. If the rotation matches the original, the panel flashes green and labels \"Odd ✓.\"\n- Right: the algebraic test. Shows the user-chosen \\( f(x) \\), computes and displays \\( f(-x) \\), and compares to \\( f(x) \\) and \\( -f(x) \\). The conclusion (Even, Odd, or Neither) is printed below.\n\nInteractive controls:\n\n- Dropdown to select from six functions: \\( x^2 \\), \\( x^3 \\), \\( |x| \\), \\( x^2 + x \\), \\( \\frac{1}{x} \\), and \\( \\cos(x) \\).\n- \"Compute\" button that animates the algebraic substitution for \\( f(-x) \\) step by step.\n- Checkboxes to toggle the reflection overlay and rotation overlay on or off.\n\nInstructional rationale: The Evaluate-level objective requires students to justify a classification. Showing the algebraic proof alongside the visual symmetry lets students connect two independent lines of evidence — a student who sees both green checks develops a far stronger grasp than one who memorizes \"x² is even.\"\n\nCanvas: 900 × 450 pixels (three 300 × 450 panels), responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSelect for the function, createButton for Compute, createCheckbox for overlay toggles."
+}

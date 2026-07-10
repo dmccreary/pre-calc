@@ -1,0 +1,15 @@
+{
+  "sim_id": "function-machine",
+  "diagram_name": "Function Machine",
+  "chapter_number": 2,
+  "chapter_title": "Functions and Their Properties",
+  "chapter_dir": "02-functions-and-their-properties",
+  "chapter_rel_dir": "chapters/02-functions-and-their-properties",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** function-machine<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim showing a stylized \"function machine\" as a box in the center of the canvas. An input chute enters from the left labeled \\( x \\), and an output chute exits to the right labeled \\( f(x) \\). The rule currently loaded into the machine is displayed on the front of the box (e.g., \\( f(x) = 2x + 1 \\)).\n\nLearning objective (Bloom's Applying): Students will evaluate a function at specific numeric and expression inputs and predict outputs before they are revealed.\n\nInteractive controls:\n\n- A text input lets the student type any input value (a number or simple expression like \"3\", \"-2\", or \"a+1\").\n- A dropdown lets the student choose among five pre-loaded rules: \\( 2x+1 \\), \\( x^2 \\), \\( x^2 - 2x + 5 \\), \\( \\sqrt{x} \\), and \\( \\frac{1}{x} \\).\n- A \"Predict\" button locks the student's typed answer, then a \"Reveal\" button animates the input traveling through the machine and shows the computed output. If the prediction matches, the output flashes gold.\n- A \"Next\" button presents the next input in a preset challenge sequence.\n\nData visibility: On each run, the display shows three stages — the raw input, the substituted expression (e.g., \\( 2(3) + 1 \\)), and the simplified output. Students see the intermediate step, not just the final answer.\n\nInstructional rationale: Step-through with concrete substituted values is appropriate for an Apply-level objective because it lets students verify their mental substitution matches the machine's substitution, catching errors in arithmetic and order of operations.\n\nCanvas: 700 × 400 pixels, responsive via updateCanvasSize() in setup(). Maroon for the machine body, cyan-blue for input/output chutes, gold for correct answers.\n\nImplementation: p5.js using createInput for the typed value, createSelect for the rule, createButton for Predict/Reveal/Next."
+}

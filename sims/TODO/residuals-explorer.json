@@ -1,0 +1,15 @@
+{
+  "sim_id": "residuals-explorer",
+  "diagram_name": "Residuals and the Line of Best Fit",
+  "chapter_number": 4,
+  "chapter_title": "Linear Functions",
+  "chapter_dir": "04-linear-functions",
+  "chapter_rel_dir": "chapters/04-linear-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** residuals-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim that lets students drag a candidate line across a scatterplot and watch the sum of squared residuals change in real time. A \"Best Fit\" button snaps the line to the true least-squares solution.\n\nLearning objective (Bloom's Analyzing): Students will analyze how vertical distances from data to a model line combine into a single goodness-of-fit measure, and recognize that the least-squares line minimizes that measure.\n\nVisual elements:\n\n- A coordinate plane with about 15 scatterplot points showing a roughly linear trend with noise.\n- A movable regression line candidate drawn in cyan-blue with two draggable handles.\n- For each data point, a thin vertical segment (dashed) connecting the point to the line, colored red for points above the line and blue for points below.\n- A readout panel showing: current slope, current y-intercept, sum of residuals, sum of squared residuals (\\( SSR \\)).\n\nInteractive controls:\n\n- Drag either handle to reshape the candidate line.\n- \"Best Fit\" button computes the least-squares line and animates the candidate into position.\n- \"New Data\" button regenerates the scatterplot with a different seed.\n- \"Show Squares\" toggle replaces each vertical segment with a visible red/blue square of side length \\( |e_i| \\), making the squared-residual quantity literal.\n\nInstructional rationale: Analyze-level objectives require students to take apart a composite measurement. Seeing each residual as a square that gets bigger when the line is poorly chosen makes the sum-of-squares criterion intuitive rather than arbitrary.\n\nCanvas: 900 × 600 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createButton for Best Fit and New Data, createCheckbox for Show Squares, custom drag logic for the line handles, and a small in-sketch regression calculation."
+}

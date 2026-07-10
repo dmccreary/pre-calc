@@ -1,0 +1,15 @@
+{
+  "sim_id": "right-triangle-soh-cah-toa",
+  "diagram_name": "Right Triangle SOH-CAH-TOA Visualizer",
+  "chapter_number": 16,
+  "chapter_title": "Trigonometric Functions",
+  "chapter_dir": "16-trigonometric-functions",
+  "chapter_rel_dir": "chapters/16-trigonometric-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** right-triangle-soh-cah-toa<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim displaying a right triangle with one acute angle controllable by a slider, showing the side lengths, the three ratios, and the SOH-CAH-TOA labels in real time.\n\nLearning objective (Bloom's Understanding): Students will explain that the three trig ratios depend only on the acute angle, not on the triangle's size.\n\nVisual elements:\n\n- A right triangle drawn in the lower-left corner of the canvas.\n- The acute angle \\( \\theta \\) labeled at one vertex; the right angle marked by a small square at the corner.\n- Side labels: opposite (green), adjacent (blue), hypotenuse (maroon).\n- A side panel showing the three ratios, the SOH-CAH-TOA mnemonic, and the decimal values.\n- An optional second similar triangle of different scale shown side-by-side to demonstrate that the ratios are unchanged.\n\nInteractive controls:\n\n- A slider for the acute angle \\( \\theta \\) ranging from \\( 5° \\) to \\( 85° \\).\n- A slider for the triangle's overall scale.\n- A \"Show Similar Triangle\" toggle that displays a second, larger triangle with the same angles.\n\nInstructional rationale: Many students first meet trig ratios in geometry without seeing why the ratio depends only on the angle. The side-by-side similar triangle demonstration makes the size-independence visible.\n\nCanvas: 1000 × 600 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSlider for angle and scale, createCheckbox for similar triangle."
+}

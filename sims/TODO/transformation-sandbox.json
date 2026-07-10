@@ -1,0 +1,15 @@
+{
+  "sim_id": "transformation-sandbox",
+  "diagram_name": "Transformation Sandbox",
+  "chapter_number": 9,
+  "chapter_title": "Function Transformations",
+  "chapter_dir": "09-function-transformations",
+  "chapter_rel_dir": "chapters/09-function-transformations",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** transformation-sandbox<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim that places a parent function graph next to a transformed version and lets students adjust transformation parameters with sliders, watching the transformed graph update live.\n\nLearning objective (Bloom's Analyzing): Students will analyze the effect of each transformation parameter on a graph and distinguish inside-the-argument changes (horizontal) from outside-the-function changes (vertical).\n\nVisual elements:\n\n- Two side-by-side coordinate planes from -8 to 8 on each axis.\n- Left plane: the chosen parent function in gray.\n- Right plane: the transformed function in maroon, with the parent faintly overlaid for comparison.\n- A readout under the right plane showing the current equation as \\( g(x) = a \\cdot f(b(x - h)) + k \\).\n- Colored dots on corresponding key points in both planes (e.g., vertex, intercept) connected by faint matching-color lines to emphasize the one-to-one correspondence.\n\nInteractive controls:\n\n- A parent selector (dropdown): \\( x \\), \\( x^2 \\), \\( x^3 \\), \\( \\sqrt{x} \\), \\( |x| \\), \\( 1/x \\).\n- Four sliders for \\( a \\) (vertical stretch/reflection), \\( b \\) (horizontal stretch/reflection), \\( h \\) (horizontal shift), \\( k \\) (vertical shift).\n- \"Reset\" button restores all sliders to identity values (\\( a = 1 \\), \\( b = 1 \\), \\( h = 0 \\), \\( k = 0 \\)).\n- \"Challenge Mode\" button displays a mystery transformed graph and asks the student to match it with the sliders.\n\nInstructional rationale: Analyze-level mastery comes from manipulating a single parameter at a time and noting the visual effect. Pairing the parent and transformed graphs prevents students from memorizing graphs and forces them to reason about transformations.\n\nCanvas: 1100 × 550 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSelect for parent, createSlider for each parameter, createButton for Reset and Challenge."
+}

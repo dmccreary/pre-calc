@@ -1,0 +1,15 @@
+{
+  "sim_id": "exponential-growth-vs-decay",
+  "diagram_name": "Exponential Growth vs Decay Explorer",
+  "chapter_number": 13,
+  "chapter_title": "Exponential Functions",
+  "chapter_dir": "13-exponential-functions",
+  "chapter_rel_dir": "chapters/13-exponential-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** exponential-growth-vs-decay<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim displaying \\( f(x) = a \\cdot b^x \\) with a slider that smoothly sweeps the base \\( b \\) from 0.1 to 5, letting students see the transition from decay to growth in real time.\n\nLearning objective (Bloom's Analyzing): Students will analyze how the value of the base \\( b \\) determines whether an exponential function grows, decays, or stays constant.\n\nVisual elements:\n\n- A coordinate plane with \\( x \\) ranging from -5 to 5 and \\( y \\) ranging from 0 to 30.\n- The graph of \\( f(x) = a \\cdot b^x \\) drawn in maroon, redrawn in real time.\n- A horizontal line at \\( y = 0 \\) emphasizing the asymptote.\n- A label showing the current \\( b \\) value and verdict: \"growth\" (green) for \\( b > 1 \\), \"decay\" (gold) for \\( 0 < b < 1 \\), \"constant\" (gray) for \\( b = 1 \\).\n\nInteractive controls:\n\n- A slider for the initial value \\( a \\) ranging from 0.1 to 10.\n- A slider for the base \\( b \\) ranging from 0.1 to 5 in steps of 0.05, with a tick mark at \\( b = 1 \\).\n- A \"Show Y-Intercept\" toggle that highlights the point \\( (0, a) \\).\n\nInstructional rationale: Sliding the base across \\( b = 1 \\) makes the boundary between growth and decay visceral. The asymptote remains visible no matter the base, reinforcing its persistence.\n\nCanvas: 900 × 600 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSlider for both parameters, createCheckbox for y-intercept."
+}

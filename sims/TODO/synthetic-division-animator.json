@@ -1,0 +1,15 @@
+{
+  "sim_id": "synthetic-division-animator",
+  "diagram_name": "Synthetic Division Animator",
+  "chapter_number": 6,
+  "chapter_title": "Polynomial Fundamentals",
+  "chapter_dir": "06-polynomial-fundamentals",
+  "chapter_rel_dir": "chapters/06-polynomial-fundamentals",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** synthetic-division-animator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim that performs synthetic division one step at a time, highlighting the currently active cells and annotating the arithmetic so students see each multiplication and addition.\n\nLearning objective (Bloom's Applying): Students will execute the synthetic-division procedure to divide a polynomial by a linear factor and verify the result using the Remainder Theorem.\n\nVisual elements:\n\n- A three-row grid on the left: top row shows the coefficients of the dividend, middle row accumulates the \"bring-down × r\" values, bottom row shows the running result.\n- A boxed \\( r \\) value to the left of the grid.\n- A cell highlighted in maroon for the current active position; an arrow showing the current multiplication and an arrow showing the current addition.\n- On the right, a live status panel showing the quotient being built and the final remainder.\n\nInteractive controls:\n\n- Input boxes for the dividend coefficients and for \\( r \\).\n- \"Next Step\" and \"Previous Step\" buttons to walk through the procedure one operation at a time.\n- \"Auto Play\" button animates through all steps at a fixed pace.\n- \"Check with Remainder Theorem\" button evaluates \\( P(r) \\) directly and compares to the computed remainder.\n\nInstructional rationale: Apply-level procedures stick better when students see the mechanism, not just the result. Highlighting the active cell and showing each multiplication makes the compressed notation of synthetic division intelligible rather than mysterious.\n\nCanvas: 900 × 500 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createInput for coefficients, createButton for step controls and check, state machine to track the current step."
+}

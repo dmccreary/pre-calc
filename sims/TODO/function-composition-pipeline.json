@@ -1,0 +1,15 @@
+{
+  "sim_id": "function-composition-pipeline",
+  "diagram_name": "Function Composition Pipeline",
+  "chapter_number": 11,
+  "chapter_title": "Composition and Inverse Functions",
+  "chapter_dir": "11-composition-and-inverse-functions",
+  "chapter_rel_dir": "chapters/11-composition-and-inverse-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** function-composition-pipeline<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim that visualizes the composition \\( f(g(x)) \\) as two boxes connected by an arrow, with a draggable input value that flows through the pipeline.\n\nLearning objective (Bloom's Understanding): Students will explain that in \\( f(g(x)) \\), the inner function runs first and its output becomes the input to the outer function.\n\nVisual elements:\n\n- An input slider on the left labeled \\( x \\).\n- A box labeled \\( g(x) = x + 3 \\) showing the intermediate value.\n- An arrow connecting the box to a second box labeled \\( f(x) = x^2 \\).\n- A final output value on the right labeled \\( f(g(x)) \\).\n- A toggle to swap the order of \\( f \\) and \\( g \\), showing how \\( g(f(x)) \\) produces a different result.\n\nInteractive controls:\n\n- A slider for the input \\( x \\) ranging from -5 to 5 in steps of 0.1.\n- A \"Swap Order\" button to compare \\( f \\circ g \\) with \\( g \\circ f \\).\n- A dropdown to choose between three preset \\( f, g \\) pairs: \\( (x^2, x+3) \\), \\( (\\sqrt{x}, 2x) \\), \\( (1/x, x-1) \\).\n\nInstructional rationale: Composition order is the most common student confusion in this chapter. Watching a single value flow through a pipeline — and seeing the answer change when the order swaps — builds the inside-out reading habit that the algebra requires.\n\nCanvas: 900 × 400 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSlider for input, createButton for swap, createSelect for function pairs."
+}

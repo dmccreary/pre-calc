@@ -1,0 +1,15 @@
+{
+  "sim_id": "circle-to-sine-graph",
+  "diagram_name": "Unit Circle to Sine Graph Animation",
+  "chapter_number": 17,
+  "chapter_title": "Trigonometric Graphs",
+  "chapter_dir": "17-trigonometric-graphs",
+  "chapter_rel_dir": "chapters/17-trigonometric-graphs",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** circle-to-sine-graph<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Understand, L2, explain): Explain how the sine graph is generated point-by-point from the \\( y \\)-coordinate of a point moving around the unit circle.\n\nCanvas layout:\n- Left half: unit circle with a rotating radius and moving point P\n- Right half: sine graph with horizontal axis labeled in radians from 0 to \\( 2\\pi \\)\n- A horizontal dashed line connects the \\( y \\)-coordinate of point P on the circle to the current plotting point on the graph\n\nVisual elements:\n- Unit circle with axes, tick marks at multiples of \\( \\pi/6 \\) and \\( \\pi/4 \\)\n- Point P moving counterclockwise at a controllable speed\n- Trailing sine wave drawn in maroon as the angle advances\n- Vertical gold line on the graph showing the current angle value\n- Labels for the five key points (0, \\( \\pi/2 \\), \\( \\pi \\), \\( 3\\pi/2 \\), \\( 2\\pi \\))\n\nInteractive controls:\n- Slider: angle \\( \\theta \\) from 0 to \\( 4\\pi \\)\n- Button: Play / Pause animation\n- Button: Reset\n- Checkbox: Show \\( y \\)-coordinate value in text\n\nData Visibility Requirements:\n- Stage 1: Show current angle \\( \\theta \\) in radians and degrees\n- Stage 2: Show coordinates of point P: \\( (\\cos\\theta, \\sin\\theta) \\)\n- Stage 3: Show the sine value as a numeric readout\n- Stage 4: Show the plotted point on the graph matching the value\n\nInstructional Rationale: Step-through with the slider lets a student pause at any angle, predict the next point, and verify the connection between circle \\( y \\)-coordinate and graph height. Continuous animation alone would not give the learner time to make these predictions.\n\nImplementation: p5.js with responsive canvas sizing."
+}

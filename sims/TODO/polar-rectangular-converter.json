@@ -1,0 +1,15 @@
+{
+  "sim_id": "polar-rectangular-converter",
+  "diagram_name": "Polar-Rectangular Converter",
+  "chapter_number": 21,
+  "chapter_title": "Polar and Parametric Functions",
+  "chapter_dir": "21-polar-and-parametric-functions",
+  "chapter_rel_dir": "chapters/21-polar-and-parametric-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** polar-rectangular-converter<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Apply, L3, convert): Convert points between rectangular \\( (x, y) \\) and polar \\( (r, \\theta) \\) coordinate forms and visualize the equivalence.\n\nCanvas layout:\n- Main drawing area: coordinate plane with both rectangular grid and polar grid overlaid\n- Side panel: numerical readouts for both representations\n\nVisual elements:\n- Draggable point shown as a gold dot\n- Blue line from origin to the point representing \\( r \\)\n- Arc showing the angle \\( \\theta \\) with a label\n- Vertical and horizontal dashed lines showing \\( x \\) and \\( y \\) components\n- Circles of radius 1, 2, 3, ... lightly drawn for polar reference\n\nInteractive controls:\n- Click-and-drag to move the point\n- Toggle: enter point in rectangular form (two inputs)\n- Toggle: enter point in polar form (two inputs)\n- Button: show alternative polar representations for the current point\n\nData Visibility Requirements:\n- Stage 1: Show the current point's \\( (x, y) \\) coordinates\n- Stage 2: Show the current point's \\( (r, \\theta) \\) coordinates\n- Stage 3: Show the conversion formulas applied with actual numbers\n- Stage 4: On \"alternatives\" button, list three equivalent polar representations\n\nInstructional Rationale: Dragging a single point and watching both coordinate readouts update in tandem makes the two systems feel like different descriptions of the same underlying point, which is the key conceptual move.\n\nImplementation: p5.js with responsive canvas."
+}

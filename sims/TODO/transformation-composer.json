@@ -1,0 +1,15 @@
+{
+  "sim_id": "transformation-composer",
+  "diagram_name": "Transformation Composer",
+  "chapter_number": 9,
+  "chapter_title": "Function Transformations",
+  "chapter_dir": "09-function-transformations",
+  "chapter_rel_dir": "chapters/09-function-transformations",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** transformation-composer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js infographic that walks students through composing a transformed function equation one transformation at a time, showing how the graph and equation evolve at each step.\n\nLearning objective (Bloom's Applying): Students will construct the equation of a transformed function from a sequence of described transformations, correctly applying the transformation order.\n\nVisual elements:\n\n- A coordinate plane on the left showing the current transformed graph, with the parent function faintly overlaid.\n- A step panel on the right listing the four transformations in correct order (horizontal stretch → horizontal shift → vertical stretch → vertical shift), each with an empty slot for the parameter value.\n- A live equation display at the bottom showing the current composed equation \\( g(x) = a f(b(x - h)) + k \\) with unfilled parameters shown as placeholders.\n- Animated arrows showing each transformation being applied to the graph as the user fills in each step.\n\nInteractive controls:\n\n- A parent dropdown.\n- Four input fields for \\( a, b, h, k \\), each grayed out until the previous step is entered.\n- \"Randomize\" button generates a random transformed graph and asks the student to fill in the parameters to match.\n- \"Reveal Answer\" button fills in the correct values after a randomize challenge.\n\nInstructional rationale: Apply-level composition requires explicit ordering and bookkeeping. Forcing entry one step at a time prevents students from writing the wrong order and lets them see how each transformation builds on the previous ones.\n\nCanvas: 1000 × 600 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSelect for parent, createInput for each parameter, createButton for Randomize and Reveal Answer."
+}

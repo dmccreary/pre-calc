@@ -1,0 +1,15 @@
+{
+  "sim_id": "secant-line-explorer",
+  "diagram_name": "Secant Line Explorer",
+  "chapter_number": 3,
+  "chapter_title": "Rates of Change",
+  "chapter_dir": "03-rates-of-change",
+  "chapter_rel_dir": "chapters/03-rates-of-change",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** secant-line-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim showing a coordinate plane with a curve and two draggable points that sit on the curve. The line through the two points — the secant line — is drawn, and its slope is displayed.\n\nLearning objective (Bloom's Understanding): Students will interpret the average rate of change as the slope of the secant line connecting two points on a function's graph.\n\nVisual elements:\n\n- A coordinate plane from -10 to 10 on each axis with gridlines.\n- A curve drawn in maroon, selected from a dropdown: \\( f(x) = x^2 \\), \\( f(x) = x^3 \\), \\( f(x) = \\sqrt{x} \\), \\( f(x) = 2^x \\), \\( f(x) = \\sin(x) \\).\n- Two draggable points \\( P_1 \\) and \\( P_2 \\) that slide along the curve only (their \\( x \\)-coordinates are controlled, and the \\( y \\)-coordinate is always \\( f(x) \\)).\n- A cyan-blue straight line extending through both points — the secant line.\n- A readout panel showing \\( P_1 = (x_1, y_1) \\), \\( P_2 = (x_2, y_2) \\), \\( \\Delta y \\), \\( \\Delta x \\), and the slope \\( m = \\Delta y / \\Delta x \\) computed live.\n\nData visibility: On every drag, the readout updates to show each stage: the coordinates of \\( P_1 \\) and \\( P_2 \\), the computed \\( \\Delta y = y_2 - y_1 \\), the computed \\( \\Delta x = x_2 - x_1 \\), and the final slope. Students see the full computation chain, not just the answer.\n\nInteractive controls:\n\n- Dropdown to choose the curve.\n- Two sliders that control the \\( x \\)-coordinates of \\( P_1 \\) and \\( P_2 \\) from -10 to 10.\n- A \"Match Target\" button that displays a target slope (e.g., \"Find two points whose secant has slope 3\") and lights up when the student succeeds.\n\nInstructional rationale: The Understand-level objective requires students to see the connection between a computed number and a visible line. Real-time updates tie the ratio computation to the geometric steepness of the secant, building an intuition that carries forward into calculus.\n\nCanvas: 800 × 550 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSelect for curve, createSlider for each point's \\( x \\), createButton for Match Target."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "daylight-hours-by-latitude",
+  "diagram_name": "Daylight Hours by Latitude",
+  "chapter_number": 18,
+  "chapter_title": "Sinusoidal Modeling",
+  "chapter_dir": "18-sinusoidal-modeling",
+  "chapter_rel_dir": "chapters/18-sinusoidal-modeling",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** daylight-hours-by-latitude<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Analyze, L4, examine): Examine how the amplitude of a sinusoidal daylight model changes with latitude while the midline stays constant at 12 hours.\n\nCanvas layout:\n- Top (70%): plot of daylight hours vs. day of year with the curve for the current latitude\n- Bottom (30%): latitude slider and a compass / globe icon\n\nVisual elements:\n- Sinusoidal curve drawn in maroon\n- Horizontal gold line at \\( y = 12 \\) hours (midline)\n- Labels at key dates: March equinox, June solstice, September equinox, December solstice\n- Numeric readout of current amplitude and peak daylight hours\n\nInteractive controls:\n- Slider: latitude, range -66° to +66° (south to north, excluding polar circle extremes)\n- Button: \"Compare two latitudes\" to overlay a second curve\n- Toggle: show equator (amplitude 0), a mid-latitude, and arctic circle simultaneously\n\nData Visibility Requirements:\n- Stage 1: Show current latitude in degrees\n- Stage 2: Show computed amplitude (function of latitude)\n- Stage 3: Show peak daylight and minimum daylight values\n- Stage 4: Show the model equation for the current latitude\n\nInstructional Rationale: Sweeping the latitude slider lets the learner watch amplitude grow from zero at the equator to very large values near the polar circles while the midline never moves. This isolates the pedagogical point that amplitude and midline are independent parameters.\n\nImplementation: p5.js with responsive canvas."
+}

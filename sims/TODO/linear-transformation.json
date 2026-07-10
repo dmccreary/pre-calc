@@ -1,0 +1,15 @@
+{
+  "sim_id": "linear-transformation",
+  "diagram_name": "Linear Transformation Visualizer",
+  "chapter_number": 23,
+  "chapter_title": "Matrices and Exam Preparation",
+  "chapter_dir": "23-matrices-and-exam-preparation",
+  "chapter_rel_dir": "chapters/23-matrices-and-exam-preparation",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** linear-transformation<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Analyze, L4, examine): Examine how a 2 × 2 matrix transforms the unit square and the standard basis vectors, connecting the visible geometric effect to the matrix entries.\n\nCanvas layout:\n- Left: the original coordinate plane with a unit square and labeled basis vectors \\( \\mathbf{i} \\) and \\( \\mathbf{j} \\)\n- Right: the transformed plane showing how the square and basis vectors map\n\nVisual elements:\n- Original plane with light gridlines and a highlighted unit square\n- Standard basis vectors \\( \\mathbf{i} \\) and \\( \\mathbf{j} \\) drawn in distinct colors\n- Transformed square and basis vectors in the same colors on the right panel\n- Dashed outline of original square shown on transformed panel for comparison\n- Live display of matrix entries\n\nInteractive controls:\n- Entry fields for each of the four matrix entries\n- Dropdown: preset transformations (rotation 90°, reflection across \\( x \\)-axis, shear, scaling)\n- Slider: rotation angle for rotation preset\n- Button: animate the transformation as a continuous morph\n\nData Visibility Requirements:\n- Stage 1: Show current matrix with entries\n- Stage 2: Show where \\( \\mathbf{i} \\) and \\( \\mathbf{j} \\) map — the columns of the matrix\n- Stage 3: Show the determinant as a signed area ratio\n- Stage 4: Indicate whether orientation is preserved (positive det) or reversed (negative det)\n\nInstructional Rationale: Seeing that the columns of the matrix are exactly the images of \\( \\mathbf{i} \\) and \\( \\mathbf{j} \\) is the biggest conceptual payoff of this chapter. The step-through morph makes the geometric action of the transformation unmistakable.\n\nImplementation: p5.js with responsive canvas."
+}

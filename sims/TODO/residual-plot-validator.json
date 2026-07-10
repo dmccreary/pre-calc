@@ -1,0 +1,15 @@
+{
+  "sim_id": "residual-plot-validator",
+  "diagram_name": "Residual Plot Validator",
+  "chapter_number": 10,
+  "chapter_title": "Data Modeling and Regression",
+  "chapter_dir": "10-data-modeling-and-regression",
+  "chapter_rel_dir": "chapters/10-data-modeling-and-regression",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** residual-plot-validator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim showing a scatterplot with a fitted model on the left and the corresponding residual plot on the right, letting students see how a bad choice of model family reveals itself as a pattern in the residuals.\n\nLearning objective (Bloom's Analyzing): Students will analyze residual plots to detect model misspecification and distinguish random scatter (good fit) from systematic patterns (wrong family).\n\nVisual elements:\n\n- Left panel: scatterplot of 20 data points following a real pattern (e.g., mildly quadratic), with a fitted curve in maroon.\n- Right panel: residual plot with \\( x \\) on the horizontal axis and residual value on the vertical axis; a horizontal line at zero.\n- Annotations on the residual plot showing \"looks random\" (green) or \"visible pattern\" (red) based on live analysis.\n\nInteractive controls:\n\n- A \"Fit Family\" dropdown: Linear, Quadratic, Exponential.\n- A \"True Pattern\" dropdown that regenerates the data following Linear, Quadratic, or Exponential ground truth.\n- \"Swap\" button to reverse the currently chosen fit family.\n- \"Show Ideal\" toggle that overlays the true underlying curve on the scatterplot.\n\nInstructional rationale: Analyze-level detection skills require repeated exposure to both correct and incorrect model choices. Seeing the residual plot transform from pattern-free to visibly curved as the wrong family is chosen builds reliable intuition for diagnosis.\n\nCanvas: 1100 × 500 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSelect for fit family and true pattern, createButton for Swap, createCheckbox for Show Ideal."
+}

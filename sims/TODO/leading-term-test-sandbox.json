@@ -1,0 +1,15 @@
+{
+  "sim_id": "leading-term-test-sandbox",
+  "diagram_name": "Leading Term Test Sandbox",
+  "chapter_number": 7,
+  "chapter_title": "Polynomial Zeros and Graphs",
+  "chapter_dir": "07-polynomial-zeros-and-graphs",
+  "chapter_rel_dir": "chapters/07-polynomial-zeros-and-graphs",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** leading-term-test-sandbox<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim that lets students pick a degree (1 through 6) and a leading-coefficient sign, then instantly displays a representative polynomial graph with its end behavior annotated.\n\nLearning objective (Bloom's Analyzing): Students will analyze the leading term of a polynomial to predict the direction of its two ends before examining any other feature of the graph.\n\nVisual elements:\n\n- A coordinate plane from -6 to 6 on each axis with gridlines.\n- A polynomial graph in maroon, generated from the user's chosen degree and sign with small random lower-order terms for variety.\n- Two arrow annotations pointing to the left and right ends of the visible graph, labelled with their end behavior (\\( P(x) \\to +\\infty \\) or \\( P(x) \\to -\\infty \\)).\n- A readout showing the currently displayed polynomial expression and its degree/leading-coefficient pair.\n\nInteractive controls:\n\n- A degree dropdown (1 through 6).\n- A sign toggle (+/-) for the leading coefficient.\n- \"Shuffle Lower Terms\" button that regenerates the smaller terms to show that end behavior is unchanged.\n- \"Add Grid of Four Cases\" button that shows all four sign-degree parity combinations side by side for comparison.\n\nInstructional rationale: Analyze-level objectives require students to isolate a single cause (leading term) from irrelevant noise (lower terms). Shuffling lower-order terms while the ends stay fixed drives home that the leading term controls the asymptotic shape alone.\n\nCanvas: 900 × 600 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSelect for degree, createButton for sign toggle, Shuffle, and Add Grid."
+}

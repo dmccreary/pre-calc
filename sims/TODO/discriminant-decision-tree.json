@@ -1,0 +1,15 @@
+{
+  "sim_id": "discriminant-decision-tree",
+  "diagram_name": "Discriminant Decision Tree",
+  "chapter_number": 5,
+  "chapter_title": "Quadratic Functions and Complex Numbers",
+  "chapter_dir": "05-quadratic-functions-and-complex-numbers",
+  "chapter_rel_dir": "chapters/05-quadratic-functions-and-complex-numbers",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** discriminant-decision-tree<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js infographic showing a three-branch decision tree driven by the sign of \\( b^2 - 4ac \\). Each branch displays a miniature parabola showing the zero configuration.\n\nLearning objective (Bloom's Analyzing): Students will analyze the discriminant of a quadratic to predict the number and nature of its zeros without computing the zeros directly.\n\nLayout:\n\n- Top of the diagram shows \\( f(x) = ax^2 + bx + c \\) with a prompt to compute \\( b^2 - 4ac \\).\n- Three branches lead downward, one for each case.\n- Left branch (\\( b^2 - 4ac > 0 \\)): small parabola crossing the x-axis at two points; caption \"Two distinct real zeros\"; example \\( x^2 - 5x + 6 \\) with zeros 2 and 3.\n- Middle branch (\\( b^2 - 4ac = 0 \\)): small parabola touching the x-axis at its vertex; caption \"One repeated real zero\"; example \\( x^2 - 4x + 4 \\) with zero 2.\n- Right branch (\\( b^2 - 4ac < 0 \\)): small parabola floating above the x-axis; caption \"Two complex conjugate zeros\"; example \\( x^2 + 4x + 13 \\) with zeros \\( -2 \\pm 3i \\).\n\nInteractive behavior:\n\n- Input boxes for \\( a \\), \\( b \\), \\( c \\) at the top; entering values live-highlights the correct branch.\n- \"Show Zeros\" button reveals the exact zeros for the entered quadratic.\n- Preset buttons that cycle through the three example quadratics.\n\nInstructional rationale: Analyze-level objectives require classifying based on evidence. Mapping a single calculation (the discriminant) to three visually distinct graph types makes the link between algebra and geometry immediate.\n\nCanvas: 900 × 550 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createInput for coefficient entry, createButton for presets and Show Zeros."
+}

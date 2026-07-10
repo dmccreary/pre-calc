@@ -1,0 +1,15 @@
+{
+  "sim_id": "sinusoidal-model-builder",
+  "diagram_name": "Sinusoidal Model Builder",
+  "chapter_number": 18,
+  "chapter_title": "Sinusoidal Modeling",
+  "chapter_dir": "18-sinusoidal-modeling",
+  "chapter_rel_dir": "chapters/18-sinusoidal-modeling",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: microsim\n**sim-id:** sinusoidal-model-builder<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Apply, L3, construct): Construct a sinusoidal function that fits a given set of data points by adjusting the four parameters \\( A, B, C, D \\).\n\nCanvas layout:\n- Top (70%): scatter plot of data points overlaid with the student's current sinusoidal curve\n- Bottom (30%): four sliders for A, B, C, D and a computed equation display\n\nVisual elements:\n- Scattered data points as blue circles\n- Current model curve drawn in maroon\n- Horizontal gold dashed midline at \\( y = D \\)\n- Vertical dashed lines at peaks and troughs of the current model\n- Sum-of-squared-errors number displayed as feedback\n\nInteractive controls:\n- Slider A: amplitude, range 0 to 20, step 0.1\n- Slider B: angular frequency, range 0.1 to 3, step 0.05\n- Slider C: phase shift, range 0 to 24, step 0.25\n- Slider D: vertical shift, range 0 to 100, step 0.5\n- Dropdown: choose a preset data set (tide, temperature, daylight)\n- Button: \"Show best fit\" to reveal the regression answer\n\nData Visibility Requirements:\n- Stage 1: Show current A, B, C, D values\n- Stage 2: Show computed period \\( T = 2\\pi/B \\) and the equation in full\n- Stage 3: Show sum-of-squared-errors updating in real time\n- Stage 4: On \"Show best fit,\" show the target parameters and the error they achieve\n\nInstructional Rationale: Manually adjusting parameters builds intuition about what each one controls before a regression tool hides that reasoning behind a button. The real-time error readout gives immediate feedback without showing the answer prematurely.\n\nImplementation: p5.js with responsive canvas."
+}

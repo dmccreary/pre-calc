@@ -1,0 +1,15 @@
+{
+  "sim_id": "semilog-linearization",
+  "diagram_name": "Linear vs Semi-Log Plot of Exponential Data",
+  "chapter_number": 14,
+  "chapter_title": "Logarithmic Functions",
+  "chapter_dir": "14-logarithmic-functions",
+  "chapter_rel_dir": "chapters/14-logarithmic-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** semilog-linearization<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js infographic with two side-by-side plots of the same data: a linear-axis plot showing the exponential curve and a semi-log plot showing the same data as a straight line.\n\nLearning objective (Bloom's Analyzing): Students will analyze how a logarithmic vertical axis transforms an exponential curve into a straight line, and read the line's slope and intercept to recover the exponential's parameters.\n\nVisual elements:\n\n- Left panel: linear axes from \\( x = 0 \\) to 20 and \\( y = 0 \\) to 1000, exponential curve in maroon.\n- Right panel: same \\( x \\) axis but vertical axis labeled with powers of 10 (1, 10, 100, 1000), same data points as a straight line in gold.\n- Annotations on the right panel showing the slope = \\( \\log b \\) and intercept = \\( \\log a \\).\n- A side panel showing the recovered equation \\( y = a \\cdot b^x \\) with current values.\n\nInteractive controls:\n\n- A slider for the true initial value \\( a \\) ranging from 1 to 50.\n- A slider for the true growth factor \\( b \\) ranging from 1.05 to 1.5.\n- A \"Add Noise\" toggle to scatter the data points slightly so the linearization gain is visible even with imperfect data.\n\nInstructional rationale: Linearization is far easier to grasp visually than algebraically. Watching the same data simultaneously bend on linear axes and straighten on semi-log axes makes the role of the logarithm concrete.\n\nCanvas: 1100 × 500 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createSlider for parameters, createCheckbox for noise toggle."
+}

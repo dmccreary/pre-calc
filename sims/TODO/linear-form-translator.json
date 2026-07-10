@@ -1,0 +1,15 @@
+{
+  "sim_id": "linear-form-translator",
+  "diagram_name": "Three-Form Translator",
+  "chapter_number": 4,
+  "chapter_title": "Linear Functions",
+  "chapter_dir": "04-linear-functions",
+  "chapter_rel_dir": "chapters/04-linear-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: MicroSim\n**sim-id:** linear-form-translator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js MicroSim that displays the same line in all three algebraic forms simultaneously as the student manipulates the line on a coordinate plane.\n\nLearning objective (Bloom's Applying): Students will convert a linear equation between slope-intercept, point-slope, and standard forms and verify that all three describe the same line.\n\nVisual elements:\n\n- A coordinate plane from -10 to 10 on each axis with gridlines.\n- A single maroon line drawn across the plane.\n- Two draggable anchor points on the line — a movable y-intercept handle and a second point that controls the slope.\n- A side panel with three labelled boxes: \"Slope-Intercept,\" \"Point-Slope,\" and \"Standard.\" Each box shows the equation of the current line in that form, updated live.\n- A \"Show Work\" toggle that reveals the algebraic steps between the forms (distributing, rearranging, clearing denominators).\n\nInteractive controls:\n\n- Drag either handle to reshape the line.\n- A \"Lock Slope\" checkbox that freezes the slope while the y-intercept changes (or vice versa).\n- Preset buttons for \\( y = 2x + 1 \\), \\( y = -\\tfrac{1}{2}x + 4 \\), and \\( 5x + 3y = 60 \\).\n\nInstructional rationale: Apply-level fluency requires seeing that a single line has multiple equivalent algebraic descriptions. Live updates in all three forms reinforce that the forms are interchangeable — a change in one is a change in all.\n\nCanvas: 900 × 550 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with createCheckbox for Show Work and Lock Slope, createButton for presets, custom drag logic for the two handles."
+}

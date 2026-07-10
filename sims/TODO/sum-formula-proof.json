@@ -1,0 +1,15 @@
+{
+  "sim_id": "sum-formula-proof",
+  "diagram_name": "Sum Formula Geometric Proof",
+  "chapter_number": 19,
+  "chapter_title": "Trigonometric Identities",
+  "chapter_dir": "19-trigonometric-identities",
+  "chapter_rel_dir": "chapters/19-trigonometric-identities",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** sum-formula-proof<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nLearning objective (Understand, L2, interpret): Interpret the geometric origin of the cosine sum formula by following a rotation-and-distance argument on the unit circle.\n\nLayout: Unit circle on the left, worked-example panel on the right.\n\nVisual elements:\n- Unit circle with two adjustable angles \\( \\alpha \\) and \\( \\beta \\) marked with colored arcs\n- Points \\( P_1 = (\\cos\\alpha, \\sin\\alpha) \\) and \\( P_2 = (\\cos(\\alpha+\\beta), \\sin(\\alpha+\\beta)) \\) highlighted\n- Chord connecting \\( P_1 \\) and \\( P_2 \\) with its length labeled\n- The same chord length recomputed after rotating the figure so one endpoint is at \\( (1, 0) \\)\n\nInteractive controls:\n- Slider for \\( \\alpha \\): 0 to \\( \\pi \\)\n- Slider for \\( \\beta \\): 0 to \\( \\pi \\)\n- Step-through buttons: Next / Previous to walk through the four algebraic steps\n\nData Visibility Requirements:\n- Stage 1: Show the two angles as numeric values and highlighted arcs\n- Stage 2: Show the coordinates of both points\n- Stage 3: Show the distance formula applied to get a numeric chord length\n- Stage 4: Show the second expression for the chord length and equate them\n- Stage 5: Show the algebraic simplification that produces \\( \\cos(\\alpha+\\beta) = \\cos\\alpha\\cos\\beta - \\sin\\alpha\\sin\\beta \\)\n\nInstructional Rationale: Step-through with concrete numeric values at every stage turns what can feel like a formula memorization exercise into a visible geometric argument. Continuous animation would not let students pause and read the algebra.\n\nImplementation: p5.js with responsive canvas."
+}

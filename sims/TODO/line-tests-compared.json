@@ -1,0 +1,15 @@
+{
+  "sim_id": "line-tests-compared",
+  "diagram_name": "Vertical and Horizontal Line Tests Compared",
+  "chapter_number": 11,
+  "chapter_title": "Composition and Inverse Functions",
+  "chapter_dir": "11-composition-and-inverse-functions",
+  "chapter_rel_dir": "chapters/11-composition-and-inverse-functions",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-07-09",
+  "specification": "Type: infographic\n**sim-id:** line-tests-compared<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nA p5.js infographic showing four sample graphs, each tested against both vertical and horizontal lines, with passing/failing indicators.\n\nLearning objective (Bloom's Analyzing): Students will analyze a graph against both line tests and determine whether the relation is a function and whether the function has an inverse.\n\nVisual elements:\n\n- Four graph panels arranged 2×2: a parabola \\( y = x^2 \\), a sideways parabola \\( x = y^2 \\), a cubic \\( y = x^3 \\), and a circle \\( x^2 + y^2 = 4 \\).\n- A draggable vertical line and a draggable horizontal line on each panel.\n- Status badges per panel: \"Function?\" (green/red) and \"One-to-one?\" (green/red).\n\nInteractive controls:\n\n- Drag handles to slide the vertical and horizontal lines across each panel.\n- A \"Reveal Verdicts\" button that animates the test lines across each graph, showing intersection counts.\n\nInstructional rationale: Side-by-side display makes the relationship between the two tests concrete. Students see that a function (vertical-line pass) might still fail to have an inverse (horizontal-line fail) and vice versa.\n\nCanvas: 900 × 700 pixels, responsive via updateCanvasSize() in setup().\n\nImplementation: p5.js with mouseDragged for line handles, createButton for reveal verdicts."
+}
