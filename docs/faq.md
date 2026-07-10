@@ -54,6 +54,10 @@ A function is a rule that assigns exactly one output to each input. Think of it 
 
 The domain of a function is the set of all allowed input values; the range is the set of all output values the function actually produces. For example, \(f(x) = \sqrt{x}\) has domain \(x \geq 0\) (you cannot take the square root of a negative number in the real numbers) and range \(y \geq 0\). Common domain restrictions come from division by zero, square roots of negatives, and logarithms of non-positive numbers. Interval notation is the standard way to write domains and ranges. [Functions and Their Properties](chapters/02-functions-and-their-properties/index.md) covers both in detail.
 
+### What does it mean to graph a function?
+
+The graph of a function is the picture of every input-output pair at once: the set of all ordered pairs \((x, f(x))\) plotted on the coordinate plane. Reading a graph reverses the process — the height of the curve above any \(x\) tells you \(f(x)\). Key features to identify on any graph are the intercepts (where it crosses the axes), the intervals where it rises or falls, and any symmetry. For example, the graph of \(f(x) = x^2 - 4\) is a parabola with y-intercept \(-4\) and x-intercepts at \(\pm 2\). Fluent graph reading is tested on every part of the AP exam. See [Functions and Their Properties](chapters/02-functions-and-their-properties/index.md).
+
 ### What is average rate of change?
 
 The average rate of change of a function over an interval \([a, b]\) is the change in output divided by the change in input: \(\frac{f(b) - f(a)}{b - a}\). Graphically, it is the slope of the secant line connecting the two points. For example, if a ball's height goes from 10 meters at \(t = 1\) second to 4 meters at \(t = 3\) seconds, the average rate of change is \(\frac{4 - 10}{3 - 1} = -3\) meters per second. This single idea underlies how AP Pre-Calculus classifies function families and is the gateway to derivatives in calculus. See [Rates of Change](chapters/03-rates-of-change/index.md).
@@ -61,6 +65,18 @@ The average rate of change of a function over an interval \([a, b]\) is the chan
 ### What does concavity tell me about a function?
 
 Concavity describes how a function's *rate of change* is itself changing. A graph is concave up when its rate of change is increasing — the graph bends upward like a cup. It is concave down when its rate of change is decreasing — bending like a dome. A function can be increasing while concave down (growing, but more slowly each step) or decreasing while concave up (falling, but leveling off). For example, a car braking smoothly has decreasing position change — concave down distance. Distinguishing increasing/decreasing from concave up/down is heavily tested on the AP exam. See [Rates of Change](chapters/03-rates-of-change/index.md).
+
+### What is a linear function?
+
+A linear function has a constant rate of change: \(f(x) = mx + b\), where \(m\) is the slope (the change in output per unit of input) and \(b\) is the y-intercept. Equal input steps always produce equal output steps, which makes the graph a straight line. Linear equations come in three interchangeable forms — slope-intercept form \(y = mx + b\), point-slope form \(y - y_1 = m(x - x_1)\), and standard form \(Ax + By = C\). Parallel lines share the same slope, while perpendicular lines have slopes that are negative reciprocals, like \(2\) and \(-\frac{1}{2}\). See [Linear Functions](chapters/04-linear-functions/index.md).
+
+### What do the three forms of a quadratic function reveal?
+
+Each form of a quadratic makes different features visible without computation. Standard form \(f(x) = ax^2 + bx + c\) shows the y-intercept \(c\) directly. Vertex form \(f(x) = a(x - h)^2 + k\) shows the vertex \((h, k)\) and the axis of symmetry \(x = h\). Factored form \(f(x) = a(x - r_1)(x - r_2)\) shows the zeros \(r_1\) and \(r_2\). All three describe the same parabola, so choose the form that exposes what a problem asks for, and convert between forms by expanding, factoring, or completing the square. For example, to find a maximum height, convert to vertex form. See [Quadratic Functions and Complex Numbers](chapters/05-quadratic-functions-and-complex-numbers/index.md).
+
+### What is a polynomial?
+
+A polynomial is a sum of terms, each a constant times a whole-number power of the variable — for example, \(4x^3 - 2x + 7\). The degree is the highest power, and the leading coefficient is the number multiplying that highest-power term. Polynomials with one, two, or three terms are called monomials, binomials, and trinomials. Polynomials are the best-behaved functions in mathematics: their graphs are smooth and continuous with no breaks, holes, or asymptotes, and their domain is all real numbers. Expressions with negative or fractional exponents, like \(x^{-1}\) or \(\sqrt{x}\), are not polynomials. See [Polynomial Fundamentals](chapters/06-polynomial-fundamentals/index.md).
 
 ### How do the degree and leading coefficient determine a polynomial's end behavior?
 
@@ -97,6 +113,10 @@ Composition applies one function to the output of another: \((f \circ g)(x) = f(
 ### What is an inverse function?
 
 An inverse function reverses the input-output relationship: if \(f\) sends \(a\) to \(b\), then \(f^{-1}\) sends \(b\) back to \(a\). Composing them returns the original input: \(f^{-1}(f(x)) = x\). Only one-to-one functions — those passing the horizontal line test — have inverses, because reversing a function that sends two inputs to the same output would be ambiguous. Graphically, a function and its inverse are reflections of each other across the line \(y = x\), and the domain and range swap roles. Exponential and logarithmic functions are the most important inverse pair in this course. See [Composition and Inverse Functions](chapters/11-composition-and-inverse-functions/index.md).
+
+### What is a sequence?
+
+A sequence is an ordered list of numbers, where each position (the term index) has a value. Sequences are really functions whose domain is the counting numbers: term \(a_n\) is the output at input \(n\). They can be described two ways — a recursive formula tells how to get each term from the previous one, like \(a_n = a_{n-1} + 4\), while an explicit formula computes any term directly from its position, like \(a_n = 4n - 1\). For example, both formulas describe 3, 7, 11, 15, … Sequences are the discrete bridge between linear/exponential functions and real-world step-by-step change. See [Sequences](chapters/12-sequences/index.md).
 
 ### What is the difference between arithmetic and geometric sequences?
 
@@ -160,6 +180,10 @@ The vertical line test checks whether a graph represents a function: if any vert
 
 Interval notation is a compact way to write sets of real numbers. Square brackets include an endpoint; parentheses exclude it. For example, \([2, 5)\) means all numbers from 2 to 5, including 2 but not 5. Infinity always gets a parenthesis, as in \((-\infty, 3]\) for "all numbers less than or equal to 3." Unions join separate pieces: the domain of \(\frac{1}{x}\) is \((-\infty, 0) \cup (0, \infty)\). You will use interval notation constantly to state domains, ranges, and where functions increase or decrease. See [Mathematical Foundations](chapters/01-mathematical-foundations/index.md).
 
+### What are even and odd functions?
+
+Even and odd describe two kinds of symmetry. An even function satisfies \(f(-x) = f(x)\) — opposite inputs give the *same* output — so its graph is symmetric about the y-axis, like \(f(x) = x^2\) or \(\cos x\). An odd function satisfies \(f(-x) = -f(x)\) — opposite inputs give opposite outputs — so its graph has rotational symmetry about the origin, like \(f(x) = x^3\) or \(\sin x\). Most functions are neither. To test algebraically, substitute \(-x\) and simplify. These symmetries later become the even-odd trigonometric identities. See [Functions and Their Properties](chapters/02-functions-and-their-properties/index.md).
+
 ### What does the discriminant tell me about a quadratic?
 
 For a quadratic \(ax^2 + bx + c = 0\), the discriminant is \(b^2 - 4ac\) — the expression under the square root in the quadratic formula. Its sign tells you the nature of the solutions without solving: positive means two distinct real solutions (the parabola crosses the x-axis twice), zero means exactly one repeated real solution (the vertex touches the axis), and negative means two complex conjugate solutions (the parabola misses the axis entirely). For example, \(x^2 + x + 1\) has discriminant \(1 - 4 = -3\), so it has no real zeros. See [Quadratic Functions and Complex Numbers](chapters/05-quadratic-functions-and-complex-numbers/index.md).
@@ -200,6 +224,10 @@ Coterminal angles share the same terminal side — they point the same direction
 
 Secant, cosecant, and cotangent are the reciprocals of cosine, sine, and tangent: \(\sec\theta = \frac{1}{\cos\theta}\), \(\csc\theta = \frac{1}{\sin\theta}\), and \(\cot\theta = \frac{1}{\tan\theta} = \frac{\cos\theta}{\sin\theta}\). Each is undefined wherever its partner equals zero, which produces vertical asymptotes in their graphs — for example, \(\sec\theta\) has asymptotes at \(\theta = \frac{\pi}{2} + k\pi\), where cosine vanishes. Watch the pairing: secant goes with *cosine* and cosecant with *sine*, not the other way around. See [Trigonometric Functions](chapters/16-trigonometric-functions/index.md).
 
+### What do the graphs of sine and cosine look like?
+
+Both are smooth, endless waves oscillating between \(-1\) and \(1\) with period \(2\pi\). The sine graph starts at the origin, rises to 1 at \(\frac{\pi}{2}\), returns to 0 at \(\pi\), dips to \(-1\) at \(\frac{3\pi}{2}\), and completes its cycle at \(2\pi\). The cosine graph is the same wave shifted left: it starts at its maximum of 1 when \(x = 0\). Both have domain all real numbers and range \([-1, 1]\). The frequency — cycles per unit of input — is the reciprocal of the period. Sketching one accurate cycle of each from memory pays off constantly. See [Trigonometric Graphs](chapters/17-trigonometric-graphs/index.md).
+
 ### What is the Pythagorean identity?
 
 The Pythagorean identity states that \(\sin^2\theta + \cos^2\theta = 1\) for every angle \(\theta\). It comes straight from the unit circle: the point \((\cos\theta, \sin\theta)\) lies on a circle of radius 1, so its coordinates satisfy \(x^2 + y^2 = 1\). Dividing through by \(\cos^2\theta\) or \(\sin^2\theta\) yields the companion forms \(\tan^2\theta + 1 = \sec^2\theta\) and \(1 + \cot^2\theta = \csc^2\theta\). It is the most-used identity in the course — the standard tool for finding one trig value from another and for simplifying expressions. See [Trigonometric Identities](chapters/19-trigonometric-identities/index.md).
@@ -211,6 +239,10 @@ Each inverse trig function returns angles from a restricted range so that every 
 ### What is a semi-log plot?
 
 A semi-log plot graphs data with a logarithmic scale on the vertical axis and a linear scale on the horizontal axis. Its power is diagnostic: exponential data plots as a *straight line* on semi-log axes, because taking the logarithm of \(y = ab^x\) gives \(\log y = \log a + x\log b\), which is linear in \(x\). If your data looks straight on a semi-log plot, an exponential model fits; if it curves, try another family. Semi-log plots also make quantities spanning many orders of magnitude — like bacterial counts — readable on one graph. See [Logarithmic Functions](chapters/14-logarithmic-functions/index.md).
+
+### What is linear regression?
+
+Linear regression finds the line that best fits a set of data points, minimizing the total squared vertical distance between the points and the line — which is why it is also called the least-squares line. Your calculator computes it directly from entered data, reporting the slope, intercept, and the correlation coefficient \(r\), which measures how tightly the points cluster around the line (\(r\) near \(\pm 1\) is strong, near 0 is weak). For example, regressing height on age for growing children yields a slope in inches per year. Always inspect the scatterplot and residuals — a high \(r\) alone does not prove a line is the right model. See [Linear Functions](chapters/04-linear-functions/index.md).
 
 ## Common Challenges
 
@@ -246,6 +278,10 @@ Because trigonometric functions are periodic — they repeat their values foreve
 
 Inside changes act on *inputs*, and they work opposite to intuition. In \(f(2x)\), the input is doubled before the function sees it, so the function reaches each output value at *half* the original \(x\) — every feature of the graph arrives twice as fast, squeezing it horizontally by a factor of \(\frac{1}{2}\). For example, if \(f\) peaks at \(x = 6\), then \(f(2x)\) peaks at \(x = 3\). The pattern holds for shifts too: \(f(x - 3)\) moves the graph *right*, not left. When unsure, ask "what input makes the inside equal what it used to be?" See [Function Transformations](chapters/09-function-transformations/index.md).
 
+### Why does an exponential function eventually overtake any polynomial?
+
+Because multiplying beats adding in the long run. A polynomial grows by amounts determined by its degree, but an exponential function multiplies by the same factor over every equal input step, so its *rate of growth itself grows*. Compare \(x^3\) with \(2^x\): at \(x = 8\), the polynomial leads 512 to 256, but by \(x = 10\) the exponential passes it (1024 vs 1000) and the gap then explodes. On the AP exam, this is the fact behind statements like "exponential growth dominates polynomial growth" and explains why doubling processes outrun any fixed-degree model. See [Exponential Functions](chapters/13-exponential-functions/index.md).
+
 ### How do I keep the asymptote rules for rational functions straight?
 
 Anchor each type of asymptote to what causes it. Vertical asymptotes come from the *denominator*: they appear at inputs that make the denominator zero after canceling common factors. Horizontal and slant asymptotes come from *comparing degrees*, because end behavior is a battle between leading terms: bottom-heavy (denominator degree larger) gives \(y = 0\); equal degrees give the ratio of leading coefficients; top-heavy by exactly one gives a slant asymptote via division. A quick mental example like \(\frac{3x^2}{x^2 + 1} \to y = 3\) rebuilds the rules whenever memory fails. See [Rational Functions](chapters/08-rational-functions/index.md).
@@ -263,6 +299,10 @@ Match the *pattern of change* in the data to the function family that produces i
 ### How do I use residuals to judge a model's fit?
 
 A residual is the error of one prediction: actual value minus predicted value. After fitting a model, plot the residuals against the input variable. A good fit leaves residuals scattered randomly around zero with no pattern. A *curved* pattern in the residual plot is the key warning sign — it means the model family is wrong, not just imprecise, no matter how high the correlation looks. For example, fitting a line to exponential data gives a residual plot with a clear U-shape. Residual analysis appears directly on the AP exam, so practice reading residual plots, not just computing them. See [Data Modeling and Regression](chapters/10-data-modeling-and-regression/index.md).
+
+### Should I use a recursive or an explicit formula for a sequence?
+
+It depends on what you need to compute. A recursive formula mirrors how a process actually unfolds — each account balance from the previous balance — which makes it natural for modeling and easy to write down, but finding term 50 requires computing all 49 terms before it. An explicit formula jumps straight to any term — \(a_{50}\) in one evaluation — which is what you want for predictions and for graphing the sequence as a function. On the exam, be ready to convert: for an arithmetic sequence, common difference \(d\) turns \(a_n = a_{n-1} + d\) into \(a_n = a_1 + d(n-1)\). See [Sequences](chapters/12-sequences/index.md).
 
 ### What is a good strategy for graphing a polynomial by hand?
 
@@ -313,6 +353,14 @@ Each polar family is a recipe with tunable knobs. For rose curves \(r = a\cos(n\
 ### How do parametric equations model projectile motion?
 
 Projectile motion splits naturally into independent horizontal and vertical components, which is exactly what parametric form expresses. For launch speed \(v_0\) at angle \(\theta\) from initial height \(h_0\): the horizontal position is \(x(t) = (v_0\cos\theta)\,t\) — constant velocity — while the vertical position is \(y(t) = h_0 + (v_0\sin\theta)\,t - 16t^2\) in feet (or \(-4.9t^2\) in meters), where the squared term captures gravity. The parameter \(t\) is time, so the model answers questions a single \(y(x)\) equation obscures: where the object is at each moment, when it lands (\(y = 0\)), and how far it travels. See [Polar and Parametric Functions](chapters/21-polar-and-parametric-functions/index.md).
+
+### What are vectors and how are they used?
+
+A vector is a quantity with both magnitude (size) and direction — velocity, force, and displacement are all vectors, while plain numbers like temperature are scalars. In component form \(\langle a, b \rangle\), a vector records its horizontal and vertical parts, its magnitude is \(\sqrt{a^2 + b^2}\), and its direction comes from trigonometry. Vectors add tip-to-tail (add the components), and unit vectors describe pure direction with magnitude 1. For example, a plane flying at 300 mph into a 40 mph crosswind has an actual path given by the vector sum. Vectors are the language of motion and the foundation for physics and multivariable calculus. See [Vectors](chapters/22-vectors/index.md).
+
+### What is a matrix and what operations can I perform on it?
+
+A matrix is a rectangular array of numbers organized in rows and columns; its dimensions are stated as rows × columns, so a \(2 \times 3\) matrix has 2 rows and 3 columns. Matrices of matching dimensions add and subtract entry by entry, and any matrix can be multiplied by a scalar. Matrix multiplication is the powerful operation: it combines rows of the first matrix with columns of the second, requires the inner dimensions to match, and — unlike ordinary multiplication — is not commutative: \(AB \neq BA\) in general. The identity matrix plays the role of the number 1. See [Matrices and Exam Preparation](chapters/23-matrices-and-exam-preparation/index.md).
 
 ### How do matrices act as linear transformations?
 
