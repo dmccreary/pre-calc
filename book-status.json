@@ -1,0 +1,533 @@
+{
+  "project": {
+    "title": "Pre-Calculus",
+    "subtitle": "Auto-scanned intelligent textbook",
+    "author": "Dan McCreary",
+    "costPerMTokens": 15,
+    "sessionBudget": {
+      "pro": 900000,
+      "max": 3500000
+    }
+  },
+  "sections": {
+    "scaffold": {
+      "status": "published",
+      "tokensTarget": 2000,
+      "tokensDone": 2000
+    },
+    "course-description": {
+      "status": "published",
+      "tokensTarget": 4000,
+      "tokensDone": 2417
+    },
+    "learning-graph": {
+      "status": "published",
+      "tokensTarget": 20000,
+      "tokensDone": 20000
+    },
+    "chapter-structure": {
+      "status": "published",
+      "tokensTarget": 15000,
+      "tokensDone": 15000
+    },
+    "chapter-content": {
+      "countLabel": "23 chapters",
+      "children": [
+        {
+          "n": 1,
+          "title": "Mathematical Foundations",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 2,
+          "title": "Functions and Their Properties",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 3,
+          "title": "Rates of Change",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 4,
+          "title": "Linear Functions",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 5,
+          "title": "Quadratic Functions and Complex Numbers",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 6,
+          "title": "Polynomial Fundamentals",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 7,
+          "title": "Polynomial Zeros and Graphs",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 8,
+          "title": "Rational Functions",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 9,
+          "title": "Function Transformations",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 10,
+          "title": "Data Modeling and Regression",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 11,
+          "title": "Composition and Inverse Functions",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 12,
+          "title": "Sequences",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 13,
+          "title": "Exponential Functions",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 14,
+          "title": "Logarithmic Functions",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 15,
+          "title": "Angles and the Unit Circle",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 16,
+          "title": "Trigonometric Functions",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 17,
+          "title": "Trigonometric Graphs",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 18,
+          "title": "Sinusoidal Modeling",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 19,
+          "title": "Trigonometric Identities",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 20,
+          "title": "Inverse Trigonometric Functions and Equations",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 21,
+          "title": "Polar and Parametric Functions",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 22,
+          "title": "Vectors",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 23,
+          "title": "Matrices and Exam Preparation",
+          "status": "reviewed",
+          "tokens": 10000
+        }
+      ]
+    },
+    "chapter-images": {
+      "status": "published",
+      "tokensTarget": 8000,
+      "tokensDone": 8000
+    },
+    "microsims": {
+      "countLabel": "51 simulations",
+      "children": [
+        {
+          "n": 1,
+          "title": "AP Exam Timing Planner",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 2,
+          "title": "Arithmetic vs Geometric Sequence Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 3,
+          "title": "Unit Circle to Sine Graph Animation",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 4,
+          "title": "Competing Models Comparison",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 5,
+          "title": "Coordinate Plane Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 6,
+          "title": "Daylight Hours by Latitude",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 7,
+          "title": "Discriminant Decision Tree",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 8,
+          "title": "Even and Odd Function Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 9,
+          "title": "Exponential and Logarithm as Inverse Reflections",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 10,
+          "title": "Exponential Growth vs Decay Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 11,
+          "title": "Force and Displacement Workout",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 12,
+          "title": "The Four Shapes of Change",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 13,
+          "title": "Function Behavior Labeler",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 14,
+          "title": "Function Composition Pipeline",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 15,
+          "title": "Function Machine",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 16,
+          "title": "Graph Viewer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 17,
+          "title": "Half-Life and Doubling-Time Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 18,
+          "title": "Identity Verification Worked Examples",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 19,
+          "title": "Inverse as Reflection Across y = x",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 20,
+          "title": "Inverse Trig Graph Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 21,
+          "title": "Leading Term Test Sandbox",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 22,
+          "title": "Vertical and Horizontal Line Tests Compared",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 23,
+          "title": "Three-Form Translator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 24,
+          "title": "Linear Transformation Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 25,
+          "title": "Matrix Multiplication Walkthrough",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 26,
+          "title": "Notation Translator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 27,
+          "title": "Polar Curve Gallery",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 28,
+          "title": "Polar-Rectangular Converter",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 29,
+          "title": "Polynomial Graph Builder",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 30,
+          "title": "Projectile Motion Simulator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 31,
+          "title": "Rational Function Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 32,
+          "title": "Real Number System Hierarchy",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 33,
+          "title": "Residual Plot Validator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 34,
+          "title": "Residuals and the Line of Best Fit",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 35,
+          "title": "Right Triangle SOH-CAH-TOA Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 36,
+          "title": "Secant Line Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 37,
+          "title": "Linear vs Semi-Log Plot of Exponential Data",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 38,
+          "title": "Sinusoidal Model Builder",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 39,
+          "title": "Sinusoidal Parameter Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 40,
+          "title": "Six-Function Evaluation Wheel",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 41,
+          "title": "Six Trig Graph Comparison",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 42,
+          "title": "Standard Position and Reference Angles Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 43,
+          "title": "Sum Formula Geometric Proof",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 44,
+          "title": "Synthetic Division Animator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 45,
+          "title": "Three Forms of a Parabola",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 46,
+          "title": "Transformation Composer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 47,
+          "title": "Transformation Sandbox",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 48,
+          "title": "Trig Equation Solution Unit Circle",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 49,
+          "title": "Unit Circle with Special Angles and Coordinates",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 50,
+          "title": "Vector Operations Playground",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 51,
+          "title": "Vertical Line Test Explorer",
+          "status": "published",
+          "tokens": 5000
+        }
+      ]
+    },
+    "glossary": {
+      "status": "published",
+      "tokensTarget": 16566,
+      "tokensDone": 16566
+    },
+    "faq": {
+      "status": "published",
+      "tokensTarget": 12374,
+      "tokensDone": 12374
+    },
+    "quiz": {
+      "status": "published",
+      "tokensTarget": 41560,
+      "tokensDone": 41560
+    },
+    "reference": {
+      "status": "not-started",
+      "tokensTarget": 20000,
+      "tokensDone": 0
+    },
+    "teachers-guide": {
+      "status": "not-started",
+      "tokensTarget": 15000,
+      "tokensDone": 0
+    },
+    "book-metrics": {
+      "status": "drafted",
+      "tokensTarget": 2000,
+      "tokensDone": 900
+    },
+    "publish": {
+      "status": "not-started",
+      "tokensTarget": 10000,
+      "tokensDone": 0
+    },
+    "stories": {
+      "status": "not-started",
+      "tokensTarget": 30000,
+      "tokensDone": 0
+    }
+  }
+}
